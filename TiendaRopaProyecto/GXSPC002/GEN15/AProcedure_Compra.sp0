@@ -1,0 +1,277 @@
+spec_i([ proc,14,'Procedure_Compra','Procedure_Compra',78,eng,'17_0_5-152925' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+default_i(e('Output',2,2,'''FIL''')).
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'ISOLATION_LEVEL','CR')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','10')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','Yes')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'SORT_ATTRIBUTES','Yes')).
+rule_i(0,datastore(1,'JRN400','QSQJRN')).
+rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
+rule_i(0,datastore(1,'PGMLIB','')).
+rule_i(0,datastore(1,'DTALIB','')).
+rule_i(0,datastore(1,'CC_USER_PASS','ÖgUuπkèÄ|tgYLwwK')).
+rule_i(0,datastore(1,'CC_USER_ID',uWIa1KopxjgQJwwK)).
+rule_i(0,datastore(1,'CC_SERVER','trialapps3.genexus.com')).
+rule_i(0,datastore(1,'CC_DBNAME','Ide6a88d0d06980621108bd2aa768d6e5e')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','Timeout=120')).
+rule_i(0,datastore(1,'USER_PASSWORD','uW⁄I]ÙQ“KOjvrgqHááS')).
+rule_i(0,datastore(1,'USER_ID',uWIa1KopxjgQJwwK)).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','No')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','trialapps3.genexus.com')).
+rule_i(0,datastore(1,'CS_DBNAME','Ide6a88d0d06980621108bd2aa768d6e5e')).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','net.sourceforge.jtds.jdbc.Driver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','20')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop('PWFCallable','0')).
+rule_i(0,prop('ObjectVisibility','Public')).
+rule_i(0,prop('FullyQualifiedName','Procedure_Compra')).
+rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('CS_ORA_FORUPD','UMPV')).
+rule_i(0,prop('Optimize_copy','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('NULLVALUE_AS_NULL','UMPV')).
+rule_i(0,prop('INITIALIZE_NEW','UMPV')).
+rule_i(0,prop('STD_FUNC_OBJECT','Yes')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED','spc0096 spc0107 spc0142')).
+rule_i(0,prop('TRNEND','Yes')).
+rule_i(0,prop('AUTOCENTER','UMPV')).
+rule_i(0,prop('LSTPFOOT','YES')).
+rule_i(0,prop('CANCEL','YES')).
+rule_i(0,prop('CONFIRM','UMPV')).
+rule_i(0,prop('TRNCFM','UMPV')).
+rule_i(0,prop('PRINT_CUST_LAYOUT','UMPV')).
+rule_i(0,prop('OUTPUT','FIL')).
+rule_i(0,prop(idConnectivitySupport,idInherit)).
+rule_i(0,prop(idISPRCWEBSERVICE,'0')).
+rule_i(0,prop('AppGenerator','1')).
+rule_i(0,prop('AppLocation','')).
+rule_i(0,prop('AppIcon','')).
+rule_i(0,prop('AppTitle','')).
+rule_i(0,prop('WEB_SECURITY_LEVEL','High')).
+rule_i(0,prop('HTTP_PROTOCOL','Secure')).
+rule_i(0,prop('USE_ENCRYPTION','NO')).
+rule_i(0,prop('COMPRESS_HTML','UMPV')).
+rule_i(0,prop('EXECUTE_IN_NEW_UTL','0')).
+rule_i(0,prop('Theme',o(25,'Carmine'))).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('CALL_PROTOCOL','HTTP')).
+rule_i(0,prop('IsMain','-1')).
+rule_i(0,prop(sessiontype,'RW')).
+rule_i(0,prop('Folder',o(120,'Root Module'))).
+rule_i(0,prop('ObjDesc','Procedure_Compra')).
+rule_i(0,prop('ObjName','Procedure_Compra')).
+rule_i(0,maingen(15)).
+rule_i(0,prop('PGMTYPE',main)).
+rule_i(0,output_file(t('Reporte de compras.pdf',3),t(pdf,3))).
+rule_i(0,output('FIL')).
+ 
+a_i(1,1,f,'Line',[],[ [],[ t(0,3) ] ]).
+a_i(2,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Line').
+v_i(f,i,2,[]).
+v_i(f,o,2,'Err').
+ 
+ 
+ 
+ 
+ 
+ 
+attri_i('Output',[ 'Gx_out',char,3,0,'',1,'','',6 ]).
+attri_i('Page',[ 'Gx_page',int,6,0,'ZZZZZ9',0,'Page number','',5 ]).
+attri_i('Line',[ 'Gx_line',int,6,0,'ZZZZZ9',0,'Line number','',4 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',3 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',2 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+break_i(1,rpt,0,[],[ [],[],[] ]).
+ 
+b_group_i(1,1,lit,0,1,0).
+ 
+b_line_i(0,1,1,cmd,0,[]).
+b_line_i(1,1,1,pb,0,[ t('Titulo',29,0,7) ]).
+b_line_i([ 1,0 ],1,1,line,0,[ t(' ',3,0,0) ]).
+b_line_i([ 1,8 ],1,1,line,8,[ t('REPORTE SEMANAL DE COMPRA DE LA TIENDA DE MODA',3,8,67) ]).
+b_line_i([ 1,12 ],1,1,line,12,[ t('Fecha: xx/xx/xx',3,12,8),t('Hora: 12:00',3,12,25) ]).
+b_line_i([ 1,14 ],1,1,line,14,[ t(' ',3,14,0) ]).
+b_line_i(2,1,1,pb,15,[ t('Listacompras',29,15,7) ]).
+b_line_i([ 2,0 ],1,1,line,15,[ t(' ',3,0,0) ]).
+b_line_i([ 2,1 ],1,1,line,16,[ t('ID',3,1,7),t('FECHA',3,1,13),t('DESCRIPCION',3,1,22),t('IDPROVEEDOR',3,1,38),t('NOMBREPROVEEDOR',3,1,54),t('IDEMPLEADO',3,1,76),t('NOMREEMPLEADO',3,1,91),t('IDPRODUCTO',3,1,110),t('DESCRIPCION_PRODUCTO',3,1,126),t('CANTIDAD',3,1,152),t('PRECIO',3,1,165),t('SUBTOTAL',3,1,175),t('TOTAL',3,1,188) ]).
+b_line_i([ 2,5 ],1,1,line,20,[ t(' ',3,5,0) ]).
+b_line_i(3,1,1,pb,21,[ t('Footerpagina',29,21,7) ]).
+b_line_i([ 3,0 ],1,1,line,21,[ t(' ',3,0,0) ]).
+b_line_i([ 3,1 ],1,1,line,22,[ t('TIENDA:',3,1,8),t('DE MODA',3,1,15) ]).
+b_line_i([ 3,3 ],1,1,line,24,[ t(' ',3,3,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+page_layout_i([ 66,0,6 ]).
+ 
+ 
+ 
+paper_info_i([ 0,256,'',20232,16834,0,0,0,0,1 ]).
+ 
+ppi_i([ 100,100 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+lit_i(3,1,t('REPORTE SEMANAL DE COMPRA DE LA TIENDA DE MODA',3),[ font('Microsoft Sans Serif',10,[ bold,underline ]),rect(475,133,917,151),outstyle(none),align(left),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel1'),gxcolor([]) ]).
+lit_i(4,1,bitmap(i(98,'4d15e4e0-2197-40a1-8159-7bb6d664cf7d')),[ ctlname('Gxreportimage1'),rect(592,17,809,123) ]).
+lit_i(5,1,rect(5),[ rect(33,217,1375,217),outstyle(none),fill,back(rgb(0,0,0)),fore(rgb(0,0,0)),border(1),ctlname('Gxreportline1'),gxcolor([]),borderstyle(0) ]).
+lit_i(6,1,t('Fecha: xx/xx/xx',3),[ font('Microsoft Sans Serif',8,[]),rect(58,183,138,197),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel2'),gxcolor([]) ]).
+lit_i(7,1,t('Hora: 12:00',3),[ font('Microsoft Sans Serif',8,[]),rect(175,183,234,197),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel3'),gxcolor([]) ]).
+lit_i(1,1,window,[ title('Text'),rect(0,0,1405,232),outstyle(none),fill,graph,back(rgb(0,0,0)),fore(rgb(0,0,0)),border(0),ctlname('Titulo'),align(left),valign(top),gxcolor([]),defgxcolor('BLK','WHT') ]).
+lit_i(8,2,t('ID',3),[ font('Microsoft Sans Serif',8,[ bold ]),rect(50,17,65,31),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel4'),gxcolor([]) ]).
+lit_i(9,2,t('FECHA',3),[ font('Microsoft Sans Serif',8,[ bold ]),rect(92,17,135,31),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel5'),gxcolor([]) ]).
+lit_i(10,2,t('DESCRIPCION',3),[ font('Microsoft Sans Serif',8,[ bold ]),rect(158,17,247,31),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel6'),gxcolor([]) ]).
+lit_i(11,2,t('IDPROVEEDOR',3),[ font('Microsoft Sans Serif',8,[ bold ]),rect(267,17,362,31),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel7'),gxcolor([]) ]).
+lit_i(12,2,t('NOMBREPROVEEDOR',3),[ font('Microsoft Sans Serif',8,[ bold ]),rect(383,17,519,31),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel8'),gxcolor([]) ]).
+lit_i(13,2,t('IDEMPLEADO',3),[ font('Microsoft Sans Serif',8,[ bold ]),rect(533,17,617,31),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel9'),gxcolor([]) ]).
+lit_i(14,2,t('NOMREEMPLEADO',3),[ font('Microsoft Sans Serif',8,[ bold ]),rect(642,17,760,31),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel10'),gxcolor([]) ]).
+lit_i(15,2,t('IDPRODUCTO',3),[ font('Microsoft Sans Serif',8,[ bold ]),rect(775,17,861,31),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel11'),gxcolor([]) ]).
+lit_i(16,2,t('DESCRIPCION_PRODUCTO',3),[ font('Microsoft Sans Serif',8,[ bold ]),rect(883,17,1051,31),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel12'),gxcolor([]) ]).
+lit_i(17,2,t('CANTIDAD',3),[ font('Microsoft Sans Serif',8,[ bold ]),rect(1067,17,1134,31),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel13'),gxcolor([]) ]).
+lit_i(18,2,t('PRECIO',3),[ font('Microsoft Sans Serif',8,[ bold ]),rect(1158,17,1207,31),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel14'),gxcolor([]) ]).
+lit_i(19,2,t('SUBTOTAL',3),[ font('Microsoft Sans Serif',8,[ bold ]),rect(1225,17,1294,31),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel15'),gxcolor([]) ]).
+lit_i(20,2,t('TOTAL',3),[ font('Microsoft Sans Serif',8,[ bold ]),rect(1317,17,1360,31),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel16'),gxcolor([]) ]).
+lit_i(2,2,window,[ title('Text'),rect(0,0,1405,98),outstyle(none),fill,graph,back(rgb(0,0,0)),fore(rgb(0,0,0)),border(0),ctlname('Listacompras'),align(left),valign(top),gxcolor([]),defgxcolor('BLK','WHT') ]).
+lit_i(1,3,t('TIENDA:',3),[ font('Microsoft Sans Serif',8,[]),rect(58,17,104,31),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel17'),gxcolor([]) ]).
+lit_i(22,3,t('DE MODA',3),[ font('Microsoft Sans Serif',8,[ bold,underline ]),rect(108,17,168,31),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel18'),gxcolor([]) ]).
+lit_i(21,3,window,[ title('Text'),rect(0,0,1405,64),outstyle(none),fill,graph,back(rgb(0,0,0)),fore(rgb(0,0,0)),border(0),ctlname('Footerpagina'),align(left),valign(top),gxcolor([]),defgxcolor('BLK','WHT') ]).
+ 
+grid_i(7,15).
+ 
+ 
+ 
+form_class_i(1,'Graphic').
+ 
+ 
+ 
+ 
+calling_main_i(1,14).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+pgm_callprotocol_i(proc,14,'PROCEDURE_COMPRA','HTTP','Secure').
+ 
+ 
+pgm_main_info_i(proc,14,'PROCEDURE_COMPRA',[ 15,'APROCEDURE_COMPRA','Procedure_Compra','','','','HTTP' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

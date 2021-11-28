@@ -1,0 +1,3 @@
+C:\Models\TiendaRopaProyecto\CSharpModel\web\bin\recentlinks.dll
+C:\Models\TiendaRopaProyecto\CSharpModel\build\recentlinks\obj\Release\recentlinks.csprojResolveAssemblyReference.cache
+C:\Models\TiendaRopaProyecto\CSharpModel\build\recentlinks\obj\Release\recentlinks.dll

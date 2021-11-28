@@ -1,0 +1,3 @@
+C:\Models\TiendaRopaProyecto\CSharpModel\web\bin\marca_producto.dll
+C:\Models\TiendaRopaProyecto\CSharpModel\build\marca_producto\obj\Release\marca_producto.csprojResolveAssemblyReference.cache
+C:\Models\TiendaRopaProyecto\CSharpModel\build\marca_producto\obj\Release\marca_producto.dll

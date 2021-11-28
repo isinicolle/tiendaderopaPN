@@ -1,0 +1,3 @@
+C:\Models\TiendaRopaProyecto\CSharpModel\web\bin\empleadosventas_inventariowc.dll
+C:\Models\TiendaRopaProyecto\CSharpModel\build\empleadosventas_inventariowc\obj\Release\empleadosventas_inventariowc.csprojResolveAssemblyReference.cache
+C:\Models\TiendaRopaProyecto\CSharpModel\build\empleadosventas_inventariowc\obj\Release\empleadosventas_inventariowc.dll

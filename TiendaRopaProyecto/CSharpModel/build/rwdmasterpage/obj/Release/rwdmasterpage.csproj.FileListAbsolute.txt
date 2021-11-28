@@ -1,0 +1,3 @@
+C:\Models\TiendaRopaProyecto\CSharpModel\web\bin\rwdmasterpage.dll
+C:\Models\TiendaRopaProyecto\CSharpModel\build\rwdmasterpage\obj\Release\rwdmasterpage.csprojResolveAssemblyReference.cache
+C:\Models\TiendaRopaProyecto\CSharpModel\build\rwdmasterpage\obj\Release\rwdmasterpage.dll

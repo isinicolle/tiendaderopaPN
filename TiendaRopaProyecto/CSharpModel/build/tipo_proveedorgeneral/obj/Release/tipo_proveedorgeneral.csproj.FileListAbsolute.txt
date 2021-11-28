@@ -1,0 +1,3 @@
+C:\Models\TiendaRopaProyecto\CSharpModel\web\bin\tipo_proveedorgeneral.dll
+C:\Models\TiendaRopaProyecto\CSharpModel\build\tipo_proveedorgeneral\obj\Release\tipo_proveedorgeneral.csprojResolveAssemblyReference.cache
+C:\Models\TiendaRopaProyecto\CSharpModel\build\tipo_proveedorgeneral\obj\Release\tipo_proveedorgeneral.dll

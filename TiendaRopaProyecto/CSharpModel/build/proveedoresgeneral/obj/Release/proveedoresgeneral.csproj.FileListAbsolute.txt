@@ -1,0 +1,3 @@
+C:\Models\TiendaRopaProyecto\CSharpModel\web\bin\proveedoresgeneral.dll
+C:\Models\TiendaRopaProyecto\CSharpModel\build\proveedoresgeneral\obj\Release\proveedoresgeneral.csprojResolveAssemblyReference.cache
+C:\Models\TiendaRopaProyecto\CSharpModel\build\proveedoresgeneral\obj\Release\proveedoresgeneral.dll

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<Import Project="..\..\web\GeneXus.Programs.Common.sdts.targets" Condition="Exists('..\..\web\GeneXus.Programs.Common.sdts.targets')"/>
+
+
+	<PropertyGroup>
+		<AssemblyName>GeneXus.Programs.Common</AssemblyName>
+		<ProjectGuid>{00000000-0000-0000-0000-000000000000}</ProjectGuid>
+		<OutputType>Library</OutputType>
+		<PostgresqlSupport>false</PostgresqlSupport>
+	</PropertyGroup>
+
+	<ItemGroup>
+
+	</ItemGroup>
+
+	<ItemGroup>
+
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include = "$(WebDirectory)\GxWebServicesConfig.cs" />
+		<Compile Include = "$(WebDirectory)\gxdomainpage.cs" />
+		<Compile Include = "$(WebDirectory)\SoapParm.cs" />
+		<Compile Include = "$(WebDirectory)\GxWebStd.cs" />
+		<Compile Include = "$(WebDirectory)\GxFullTextSearchReindexer.cs" />
+		<Compile Include = "$(WebDirectory)\GxModelInfoProvider.cs" />
+		<Compile Include = "$(WebDirectory)\GxObjectCollection.cs" />
+
+	</ItemGroup>
+	
+	<Import Project="..\DotNetBaseProject.targets"/>
+</Project>

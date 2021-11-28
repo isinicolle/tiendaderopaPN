@@ -1,0 +1,3 @@
+C:\Models\TiendaRopaProyecto\CSharpModel\web\bin\wwestado_empleado.dll
+C:\Models\TiendaRopaProyecto\CSharpModel\build\wwestado_empleado\obj\Release\wwestado_empleado.csprojResolveAssemblyReference.cache
+C:\Models\TiendaRopaProyecto\CSharpModel\build\wwestado_empleado\obj\Release\wwestado_empleado.dll

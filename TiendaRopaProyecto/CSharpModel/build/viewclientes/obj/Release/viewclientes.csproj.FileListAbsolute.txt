@@ -1,0 +1,3 @@
+C:\Models\TiendaRopaProyecto\CSharpModel\web\bin\viewclientes.dll
+C:\Models\TiendaRopaProyecto\CSharpModel\build\viewclientes\obj\Release\viewclientes.csprojResolveAssemblyReference.cache
+C:\Models\TiendaRopaProyecto\CSharpModel\build\viewclientes\obj\Release\viewclientes.dll

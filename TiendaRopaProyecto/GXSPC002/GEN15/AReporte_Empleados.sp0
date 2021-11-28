@@ -1,0 +1,511 @@
+spec_i([ proc,16,'Reporte_Empleados','Reporte_Empleados',78,eng,'17_0_5-152925' ]).
+ 
+struct_i(2,1,[],[]).
+ 
+level_i(2,[ 1,[ [ 1,many ],[ 6,one ],[ 7,one ] ],[],[],[ [ [ 1,6,7 ],[ 40000,23,29,27,28,52,22,21,26,1,2,3 ] ] ],[ [ [ 1,6,7 ],[] ] ],[ 1 ],'IEMPLEADOS',[],[] ]).
+ 
+tw_i(2,[ [ 6,[ [ 1,2,2 ] ] ],[ 7,[ [ 1,3,3 ] ] ] ]).
+ 
+lwi_i(2,[ [] ]).
+ 
+ 
+ 
+ 
+ta_i(2,[ [ [ 1,2 ],[ 1,3 ],[ 1,40000 ],[ 1,23 ],[ 1,29 ],[ 1,27 ],[ 1,28 ],[ 1,52 ],[ 7,22 ],[ 6,21 ],[ 1,26 ],[ 1,1 ] ] ]).
+ 
+las_i(2,[ [ 40000,23,29,27,28,52,22,21,26,1,2,3 ] ]).
+ 
+lac_i(2,[ [] ]).
+ 
+ 
+ 
+ 
+ 
+ 
+default_i(e('Output',2,2,'''FIL''')).
+default_i(e('Today',2,2,'''today''')).
+default_i(e('Time',2,2,'systime(')).
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'ISOLATION_LEVEL','CR')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','10')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','Yes')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'SORT_ATTRIBUTES','Yes')).
+rule_i(0,datastore(1,'JRN400','QSQJRN')).
+rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
+rule_i(0,datastore(1,'PGMLIB','')).
+rule_i(0,datastore(1,'DTALIB','')).
+rule_i(0,datastore(1,'CC_USER_PASS','ÖgUuπkèÄ|tgYLwwK')).
+rule_i(0,datastore(1,'CC_USER_ID',uWIa1KopxjgQJwwK)).
+rule_i(0,datastore(1,'CC_SERVER','trialapps3.genexus.com')).
+rule_i(0,datastore(1,'CC_DBNAME','Ide6a88d0d06980621108bd2aa768d6e5e')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','Timeout=120')).
+rule_i(0,datastore(1,'USER_PASSWORD','uW⁄I]ÙQ“KOjvrgqHááS')).
+rule_i(0,datastore(1,'USER_ID',uWIa1KopxjgQJwwK)).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','No')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','trialapps3.genexus.com')).
+rule_i(0,datastore(1,'CS_DBNAME','Ide6a88d0d06980621108bd2aa768d6e5e')).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','net.sourceforge.jtds.jdbc.Driver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','20')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop('PWFCallable','0')).
+rule_i(0,prop('ObjectVisibility','Public')).
+rule_i(0,prop('FullyQualifiedName','Reporte_Empleados')).
+rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('CS_ORA_FORUPD','UMPV')).
+rule_i(0,prop('Optimize_copy','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('NULLVALUE_AS_NULL','UMPV')).
+rule_i(0,prop('INITIALIZE_NEW','UMPV')).
+rule_i(0,prop('STD_FUNC_OBJECT','Yes')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED','spc0096 spc0107 spc0142')).
+rule_i(0,prop('TRNEND','Yes')).
+rule_i(0,prop('AUTOCENTER','UMPV')).
+rule_i(0,prop('LSTPFOOT','YES')).
+rule_i(0,prop('CANCEL','YES')).
+rule_i(0,prop('CONFIRM','UMPV')).
+rule_i(0,prop('TRNCFM','UMPV')).
+rule_i(0,prop('PRINT_CUST_LAYOUT','UMPV')).
+rule_i(0,prop('OUTPUT','FIL')).
+rule_i(0,prop(idConnectivitySupport,idInherit)).
+rule_i(0,prop(idISPRCWEBSERVICE,'0')).
+rule_i(0,prop('AppGenerator','1')).
+rule_i(0,prop('AppLocation','')).
+rule_i(0,prop('AppIcon','')).
+rule_i(0,prop('AppTitle','')).
+rule_i(0,prop('WEB_SECURITY_LEVEL','High')).
+rule_i(0,prop('HTTP_PROTOCOL','Secure')).
+rule_i(0,prop('USE_ENCRYPTION','NO')).
+rule_i(0,prop('COMPRESS_HTML','UMPV')).
+rule_i(0,prop('EXECUTE_IN_NEW_UTL','0')).
+rule_i(0,prop('Theme',o(25,'Carmine'))).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('CALL_PROTOCOL','HTTP')).
+rule_i(0,prop('IsMain','-1')).
+rule_i(0,prop(sessiontype,'RW')).
+rule_i(0,prop('Folder',o(120,'Root Module'))).
+rule_i(0,prop('ObjDesc','Reporte_Empleados')).
+rule_i(0,prop('ObjName','Reporte_Empleados')).
+rule_i(0,maingen(15)).
+rule_i(0,prop('PGMTYPE',main)).
+rule_i(0,output_file(t('Reporte de Empleados.pdf',3),t(pdf,3))).
+rule_i(0,output('FIL')).
+ 
+a_i(1,1,f,'Line',[],[ [],[ t(0,3) ] ]).
+a_i(2,1,f,'Today',[],[ [],[ t('today(',1),t(')',4) ] ]).
+a_i(3,1,f,'Time',[],[ [],[ t('systime(',1),t(')',4) ] ]).
+a_i(4,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+a_i(5,2,t,1,[],[ [],'IEMPLEADOS',[] ]).
+a_i(6,2,r,6,[],[ [ [ 1,2,2 ] ],'ITIPO_EMPLEADO',[] ]).
+a_i(7,2,r,7,[],[ [ [ 1,3,3 ] ],'IESTADO_EMPLEADO',[] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Line').
+v_i(f,i,2,[]).
+v_i(f,o,2,'Today').
+v_i(f,i,3,[]).
+v_i(f,o,3,'Time').
+v_i(f,i,4,[]).
+v_i(f,o,4,'Err').
+v_i(t,i,5,[]).
+v_i(t,o,5,2).
+v_i(t,o,5,3).
+v_i(t,o,5,40000).
+v_i(t,o,5,23).
+v_i(t,o,5,29).
+v_i(t,o,5,27).
+v_i(t,o,5,28).
+v_i(t,o,5,52).
+v_i(t,o,5,26).
+v_i(t,o,5,1).
+v_i(r,i,6,2).
+v_i(r,o,6,21).
+v_i(r,i,7,3).
+v_i(r,o,7,22).
+ 
+ 
+ 
+ 
+ 
+ 
+attri_i('Output',[ 'Gx_out',char,3,0,'',1,'','',9 ]).
+attri_i(3,[ 'IDESTADOEMPLEADO',int,12,0,'ZZZZZZZZZZZ9',0,'IDESTADOEMPLEADO','',0 ]).
+attri_i(2,[ 'IDTIPOEMPLEADO',int,12,0,'ZZZZZZZZZZZ9',0,'IDTIPOEMPLEADO','',0 ]).
+attri_i('Line',[ 'Gx_line',int,6,0,'ZZZZZ9',0,'Line number','',8 ]).
+attri_i(23,[ 'NOMBRECOMPLETOEMPLEADO',svchar,255,0,'',0,'NOMBRECOMPLETOEMPLEADO','',0 ]).
+attri_i(29,[ 'FECHACONTRATACIONEMPLEADO',date,8,0,'99/99/99',0,'FECHACONTRATACIONEMPLEADO','',0 ]).
+attri_i(27,[ 'CORREOEMPLEADO',svchar,100,0,'',0,'CORREOEMPLEADO','',0 ]).
+attri_i(28,[ 'DIRECCIONEMPLEADO',svchar,255,0,'',0,'DIRECCIONEMPLEADO','',0 ]).
+attri_i(52,[ 'FOTOEMPLEADO',bits,4,0,'',0,'FOTOEMPLEADO','',0 ]).
+attri_i(22,[ 'DESCRIPCIONESTADOEMPLEADO',svchar,255,0,'',0,'DESCRIPCIONESTADOEMPLEADO','',0 ]).
+attri_i(21,[ 'DESCRIPCIONTIPOEMPLEADO',svchar,255,0,'',0,'DESCRIPCIONTIPOEMPLEADO','',0 ]).
+attri_i(26,[ 'TELEFONOEMPLEADO',char,20,0,'',0,'TELEFONOEMPLEADO','',0 ]).
+attri_i(1,[ 'IDEMPLEADO',int,12,0,'ZZZZZZZZZZZ9',0,'IDEMPLEADO','',0 ]).
+attri_i(40000,[ 'FOTOEMPLEADO_GXI',svchar,2048,0,'',0,'',[],0 ]).
+attri_i('Page',[ 'Gx_page',int,6,0,'ZZZZZ9',0,'Page number','',6 ]).
+attri_i('Today',[ 'Gx_date',date,8,0,'99/99/99',1,'','',5 ]).
+attri_i('Time',[ 'Gx_time',char,8,0,'',1,'','',4 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',3 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',2 ]).
+ 
+table_i(6,[ 'Tipo_empleado',[ 2,21 ],'Tipo_empleado','Tipo_empleado' ]).
+table_i(7,[ 'Estado_empleado',[ 3,22 ],'Estado_empleado','Estado_empleado' ]).
+table_i(1,[ 'Empleados',[ 1,23,26,29,27,28,52,40000,2,3 ],'Empleados','Empleados' ]).
+ 
+index_i(1,[ 'IEMPLEADOS',u,[ 1 ],'IEmpleados' ]).
+index_i(6,[ 'ITIPO_EMPLEADO',u,[ 2 ],'ITipo_empleado' ]).
+index_i(7,[ 'IESTADO_EMPLEADO',u,[ 3 ],'IEstado_empleado' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+add_att_i(bits,2,40000,52,'FOTOEMPLEADO_GXI',[ svchar,2048,0,0 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+dom_info_i(84,[ 'Codigo' ]).
+dom_info_i(45,[ 'GeneXus\Phone' ]).
+dom_info_i(85,[ 'Nombre' ]).
+dom_info_i(42,[ 'GeneXus\Email' ]).
+ 
+ 
+break_i(2,nvg,1,[ 1 ],[ [ 1,26,21,22,52,28,27,29,23,40000 ],[],[] ]).
+break_i(1,rpt,0,[],[ [],[],[] ]).
+ 
+b_group_i(1,1,lit,0,1,16).
+b_group_i(1,2,nvg,2,2,2).
+b_group_i(2,1,lit,0,18,28).
+b_group_i(1,3,lit,0,29,0).
+ 
+b_line_i(0,1,1,cmd,0,[]).
+b_line_i(1,1,1,pb,0,[ t('Titulo',29,0,7) ]).
+b_line_i([ 1,0 ],1,1,line,0,[ t(' ',3,0,0) ]).
+b_line_i([ 1,10 ],1,1,line,10,[ t('REPORTE DE EMPLEADOS DE LA TIENDA DE MODA',3,10,54) ]).
+b_line_i([ 1,11 ],1,1,line,11,[ t('Page',23,11,197) ]).
+b_line_i([ 1,12 ],1,1,line,12,[ t('Today',23,12,5),t('Time',23,12,15) ]).
+b_line_i([ 1,15 ],1,1,line,15,[ t('ID',3,15,4),t('Nombre Completo',3,15,16),t('Telefono',3,15,42),t('Fecha de Contratacion',3,15,62),t('Correo Electronico',3,15,89),t('Direccion',3,15,115),t('Fotografia',3,15,139),t('Estado',3,15,165),t('Tipo',3,15,194) ]).
+b_line_i(2,2,1,cmd,18,[ t('',121,2,0),t(table,3,2,10),t(1,3,2,10),t('ORDER',39,2,20),t(1,2,2,26) ]).
+b_line_i(3,2,1,pb,18,[ t('Listadoempleados',29,18,8) ]).
+b_line_i([ 3,0 ],2,1,line,18,[ t(52,2,0,134),t(40000,2,0,134) ]).
+b_line_i([ 3,5 ],2,1,line,23,[ t(1,2,5,0),t(23,2,5,12),t(26,2,5,39),t(29,2,5,59),t(27,2,5,89),t(28,2,5,111),t(22,2,5,156),t(21,2,5,185) ]).
+b_line_i([ 3,9 ],2,1,line,27,[ t(' ',3,9,0) ]).
+b_line_i(4,2,1,cmd,28,[ t('',128,4,0) ]).
+b_line_i(5,1,3,pb,28,[ t('Piereporte',29,28,7) ]).
+b_line_i([ 5,0 ],1,3,line,28,[ t('Tienda: DE MODA',3,0,1) ]).
+b_line_i([ 5,1 ],1,3,line,29,[ t(' ',3,1,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+page_layout_i([ 66,0,6 ]).
+ 
+ 
+ 
+paper_info_i([ 0,256,'',21298,16834,0,0,0,0,1 ]).
+ 
+ppi_i([ 100,100 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+lit_i(2,1,t('REPORTE DE EMPLEADOS DE LA TIENDA DE MODA',3),[ font('Microsoft Sans Serif',12,[ bold,underline ]),rect(380,160,960,187),outstyle(none),align(center),valign(top),fore(rgb(0,0,0)),border(0),ctlname('Gxreportlabel1'),gxcolor([]) ]).
+lit_i(4,1,t('Time',23),[ font('Microsoft Sans Serif',8,[]),rect(107,187,200,202),outstyle(none),align(left),valign(top),noclip,fore(rgb(0,0,0)),border(1),format(0),ctlname('&time'),ctrltype(edit,4),ispwd(0),gxcolor([]) ]).
+lit_i(5,1,rect(5),[ rect(0,214,1480,214),outstyle(none),fill,back(rgb(0,0,0)),fore(rgb(0,0,0)),border(2),ctlname('Gxreportline1'),gxcolor([]),borderstyle(0) ]).
+lit_i(16,1,t('ID',3),[ font('Microsoft Sans Serif',8,[ bold ]),rect(33,227,53,241),outstyle(none),align(center),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel2'),gxcolor([]) ]).
+lit_i(17,1,t('Nombre Completo',3),[ font('Microsoft Sans Serif',8,[ bold ]),rect(113,227,246,241),outstyle(none),align(center),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel3'),gxcolor([]) ]).
+lit_i(18,1,t('Telefono',3),[ font('Microsoft Sans Serif',8,[ bold ]),rect(300,227,373,241),outstyle(none),align(center),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel4'),gxcolor([]) ]).
+lit_i(19,1,t('Fecha de Contratacion',3),[ font('Microsoft Sans Serif',8,[ bold ]),rect(440,227,607,241),outstyle(none),align(center),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel5'),gxcolor([]) ]).
+lit_i(21,1,t('Correo Electronico',3),[ font('Microsoft Sans Serif',8,[ bold ]),rect(627,227,760,241),outstyle(none),align(center),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel7'),gxcolor([]) ]).
+lit_i(22,1,t('Tipo',3),[ font('Microsoft Sans Serif',8,[ bold ]),rect(1360,227,1393,241),outstyle(none),align(center),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel8'),gxcolor([]) ]).
+lit_i(23,1,t('Fotografia',3),[ font('Microsoft Sans Serif',8,[ bold ]),rect(973,227,1040,241),outstyle(none),align(center),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel9'),gxcolor([]) ]).
+lit_i(24,1,t('Direccion',3),[ font('Microsoft Sans Serif',8,[ bold ]),rect(807,227,887,241),outstyle(none),align(center),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel10'),gxcolor([]) ]).
+lit_i(25,1,t('Estado',3),[ font('Microsoft Sans Serif',8,[ bold ]),rect(1160,227,1213,241),outstyle(none),align(center),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel11'),gxcolor([]) ]).
+lit_i(27,1,t('Today',23),[ font('Microsoft Sans Serif',8,[]),rect(40,187,89,202),outstyle(none),align(right),valign(top),noclip,fore(rgb(0,0,0)),border(1),format(0),ctlname('&today'),ctrltype(edit,27),ispwd(0),gxcolor([]) ]).
+lit_i(28,1,t('Page',23),[ font('Microsoft Sans Serif',8,[]),rect(1380,173,1419,188),outstyle(none),align(right),valign(top),noclip,fore(rgb(0,0,0)),border(1),format(0),ctlname('&page'),ctrltype(edit,28),ispwd(0),gxcolor([]) ]).
+lit_i(29,1,bitmap(i(98,'6426d147-e335-46f3-9b38-8ad85a90aa77')),[ ctlname('Gxreportimage1'),rect(540,13,833,146) ]).
+lit_i(1,1,window,[ title('Text'),rect(0,0,1479,253),outstyle(none),fill,graph,back(rgb(0,0,0)),fore(rgb(0,0,0)),border(0),ctlname('Titulo'),align(left),valign(top),gxcolor([]),defgxcolor('BLK','WHT') ]).
+lit_i(8,3,t(26,2),[ font('Microsoft Sans Serif',8,[]),rect(273,80,406,93),outstyle(none),align(center),valign(top),fore(rgb(0,0,0)),border(1),format(0),ctlname('26'),ctrltype(edit,8),ispwd(0),gxcolor([]) ]).
+lit_i(14,3,t(21,2),[ font('Microsoft Sans Serif',8,[]),rect(1300,80,1469,95),outstyle(none),align(center),valign(top),fore(rgb(0,0,0)),border(1),format(0),ctlname('21'),ctrltype(edit,14),ispwd(0),gxcolor([]) ]).
+lit_i(13,3,t(22,2),[ font('Microsoft Sans Serif',8,[]),rect(1093,80,1286,95),outstyle(none),align(center),valign(top),fore(rgb(0,0,0)),border(1),format(0),ctlname('22'),ctrltype(edit,13),ispwd(0),gxcolor([]) ]).
+lit_i(12,3,t(52,2),[ font('Microsoft Sans Serif',8,[]),rect(940,13,1073,146),outstyle(none),align(center),valign(top),fore(rgb(0,0,0)),border(1),format(0),ctlname('52'),ctrltype(edit,12),ispwd(0),gxcolor([]) ]).
+lit_i(11,3,t(28,2),[ font('Microsoft Sans Serif',8,[]),rect(780,80,920,95),outstyle(none),align(center),valign(top),fore(rgb(0,0,0)),border(1),format(0),ctlname('28'),ctrltype(edit,11),ispwd(0),gxcolor([]) ]).
+lit_i(10,3,t(27,2),[ font('Microsoft Sans Serif',8,[]),rect(627,80,767,95),outstyle(none),align(center),valign(top),fore(rgb(0,0,0)),border(1),format(0),ctlname('27'),ctrltype(edit,10),ispwd(0),gxcolor([]) ]).
+lit_i(9,3,t(29,2),[ font('Microsoft Sans Serif',8,[]),rect(413,80,613,95),outstyle(none),align(center),valign(middle),fore(rgb(0,0,0)),border(1),format(0),ctlname('29'),ctrltype(edit,9),ispwd(0),gxcolor([]) ]).
+lit_i(7,3,t(23,2),[ font('Microsoft Sans Serif',8,[]),rect(87,80,267,93),outstyle(none),align(center),valign(top),fore(rgb(0,0,0)),border(1),format(0),ctlname('23'),ctrltype(edit,7),ispwd(0),gxcolor([]) ]).
+lit_i(6,3,t(1,2),[ font('Microsoft Sans Serif',8,[]),rect(0,80,80,93),outstyle(none),align(center),valign(top),fore(rgb(0,0,0)),border(1),format(0),ctlname('1'),ctrltype(edit,6),ispwd(0),gxcolor([]) ]).
+lit_i(15,3,window,[ title('Text'),rect(0,0,1479,158),outstyle(none),fill,graph,back(rgb(0,0,0)),fore(rgb(0,0,0)),border(0),ctlname('Listadoempleados'),align(left),valign(top),gxcolor([]),defgxcolor('BLK','WHT') ]).
+lit_i(1,5,t('Tienda: DE MODA',3),[ font('Microsoft Sans Serif',8,[ underline ]),rect(13,0,146,27),outstyle(none),align(left),valign(top),fore(rgb(0,0,0)),border(1),ctlname('Gxreportlabel6'),gxcolor([]) ]).
+lit_i(26,5,window,[ title('Text'),rect(0,0,1479,35),outstyle(none),fill,graph,back(rgb(0,0,0)),fore(rgb(0,0,0)),border(0),ctlname('Piereporte'),align(left),valign(top),gxcolor([]),defgxcolor('BLK','WHT') ]).
+ 
+grid_i(7,15).
+ 
+ 
+ 
+form_class_i(1,'Graphic').
+ 
+ 
+ctrl_info_i(1,4,[ [ 0,0,sort,[],[],0,0,5,0,0 ] ]).
+ctrl_info_i(1,27,[ [ 0,0,sort,[],[],0,0,5,0,0 ] ]).
+ctrl_info_i(1,28,[ [ 0,0,sort,[],[],0,0,5,0,0 ] ]).
+ 
+ 
+calling_main_i(1,16).
+ 
+att_prop_i(2,1,'ExternalName','IDEMPLEADO',d).
+att_prop_i(2,1,'ExternalNamespace','TiendaRopaProyecto',d).
+att_prop_i(2,1,'EmptyAsNull','Yes',d).
+att_prop_i(2,1,idBasedOn,84,v).
+att_prop_i(2,1,'AUTONUMBER','-1',d).
+att_prop_i(2,1,'AUTONUMBER_START','1',d).
+att_prop_i(2,1,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,1,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,1,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,1,'AttRegEx','',d).
+att_prop_i(2,1,'AttValidationFailedMsg','',d).
+att_prop_i(2,1,'DownloadOffline','0',d).
+att_prop_i(2,1,'VarServiceExtName','',d).
+att_prop_i(2,1,'FullName','IDEMPLEADO',v).
+att_prop_i(2,26,'ExternalName','TELEFONOEMPLEADO',d).
+att_prop_i(2,26,'ExternalNamespace','TiendaRopaProyecto',d).
+att_prop_i(2,26,'EmptyAsNull','Yes',d).
+att_prop_i(2,26,idBasedOn,45,v).
+att_prop_i(2,26,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,26,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(2,26,'AttRegEx','',d).
+att_prop_i(2,26,'AttValidationFailedMsg','',d).
+att_prop_i(2,26,'DownloadOffline','0',d).
+att_prop_i(2,26,'VarServiceExtName','',d).
+att_prop_i(2,26,'FullName','TELEFONOEMPLEADO',v).
+att_prop_i(2,21,'ExternalName','DESCRIPCIONTIPOEMPLEADO',d).
+att_prop_i(2,21,'ExternalNamespace','TiendaRopaProyecto',d).
+att_prop_i(2,21,'EmptyAsNull','Yes',d).
+att_prop_i(2,21,idBasedOn,85,v).
+att_prop_i(2,21,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,21,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(2,21,'AttRegEx','',d).
+att_prop_i(2,21,'AttValidationFailedMsg','',d).
+att_prop_i(2,21,'DownloadOffline','0',d).
+att_prop_i(2,21,'VarServiceExtName','',d).
+att_prop_i(2,21,'FullName','DESCRIPCIONTIPOEMPLEADO',v).
+att_prop_i(2,22,'ExternalName','DESCRIPCIONESTADOEMPLEADO',d).
+att_prop_i(2,22,'ExternalNamespace','TiendaRopaProyecto',d).
+att_prop_i(2,22,'EmptyAsNull','Yes',d).
+att_prop_i(2,22,idBasedOn,85,v).
+att_prop_i(2,22,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,22,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(2,22,'AttRegEx','',d).
+att_prop_i(2,22,'AttValidationFailedMsg','',d).
+att_prop_i(2,22,'DownloadOffline','0',d).
+att_prop_i(2,22,'VarServiceExtName','',d).
+att_prop_i(2,22,'FullName','DESCRIPCIONESTADOEMPLEADO',v).
+att_prop_i(2,52,'ExternalName','FOTOEMPLEADO',d).
+att_prop_i(2,52,'ExternalNamespace','TiendaRopaProyecto',d).
+att_prop_i(2,52,'EmptyAsNull','Yes',d).
+att_prop_i(2,52,'ExternalStorage','-1',d).
+att_prop_i(2,52,idBasedOn,'',d).
+att_prop_i(2,52,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,52,'AttRegEx','',d).
+att_prop_i(2,52,'AttValidationFailedMsg','',d).
+att_prop_i(2,52,'DownloadOffline','0',d).
+att_prop_i(2,52,'VarServiceExtName','',d).
+att_prop_i(2,52,'FullName','FOTOEMPLEADO',v).
+att_prop_i(2,28,'ExternalName','DIRECCIONEMPLEADO',d).
+att_prop_i(2,28,'ExternalNamespace','TiendaRopaProyecto',d).
+att_prop_i(2,28,'EmptyAsNull','Yes',d).
+att_prop_i(2,28,idBasedOn,85,v).
+att_prop_i(2,28,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,28,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(2,28,'AttRegEx','',d).
+att_prop_i(2,28,'AttValidationFailedMsg','',d).
+att_prop_i(2,28,'DownloadOffline','0',d).
+att_prop_i(2,28,'VarServiceExtName','',d).
+att_prop_i(2,28,'FullName','DIRECCIONEMPLEADO',v).
+att_prop_i(2,27,'ExternalName','CORREOEMPLEADO',d).
+att_prop_i(2,27,'ExternalNamespace','TiendaRopaProyecto',d).
+att_prop_i(2,27,'EmptyAsNull','Yes',d).
+att_prop_i(2,27,idBasedOn,42,v).
+att_prop_i(2,27,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,27,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(2,27,'AttRegEx','^((\w+([-+.'']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*)|(\s*))$',d).
+att_prop_i(2,27,'AttValidationFailedMsg','GXM_DoesNotMatchRegExp',d).
+att_prop_i(2,27,'DownloadOffline','0',d).
+att_prop_i(2,27,'VarServiceExtName','',d).
+att_prop_i(2,27,'FullName','CORREOEMPLEADO',v).
+att_prop_i(2,29,'ExternalName','FECHACONTRATACIONEMPLEADO',d).
+att_prop_i(2,29,'ExternalNamespace','TiendaRopaProyecto',d).
+att_prop_i(2,29,'EmptyAsNull','Yes',d).
+att_prop_i(2,29,idBasedOn,'',d).
+att_prop_i(2,29,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,29,'AttRegEx','',d).
+att_prop_i(2,29,'AttValidationFailedMsg','',d).
+att_prop_i(2,29,idDATEFORMAT,idDATEFORMAT_SHORT,d).
+att_prop_i(2,29,'DownloadOffline','0',d).
+att_prop_i(2,29,'VarServiceExtName','',d).
+att_prop_i(2,29,'FullName','FECHACONTRATACIONEMPLEADO',v).
+att_prop_i(2,23,'ExternalName','NOMBRECOMPLETOEMPLEADO',d).
+att_prop_i(2,23,'ExternalNamespace','TiendaRopaProyecto',d).
+att_prop_i(2,23,'EmptyAsNull','Yes',d).
+att_prop_i(2,23,idBasedOn,85,v).
+att_prop_i(2,23,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,23,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(2,23,'AttRegEx','',d).
+att_prop_i(2,23,'AttValidationFailedMsg','',d).
+att_prop_i(2,23,'DownloadOffline','0',d).
+att_prop_i(2,23,'VarServiceExtName','',d).
+att_prop_i(2,23,'FullName','NOMBRECOMPLETOEMPLEADO',v).
+att_prop_i(2,2,'ExternalName','IDTIPOEMPLEADO',d).
+att_prop_i(2,2,'ExternalNamespace','TiendaRopaProyecto',d).
+att_prop_i(2,2,'EmptyAsNull','Yes',d).
+att_prop_i(2,2,idBasedOn,84,v).
+att_prop_i(2,2,'AUTONUMBER','-1',d).
+att_prop_i(2,2,'AUTONUMBER_START','1',d).
+att_prop_i(2,2,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,2,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,2,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,2,'AttRegEx','',d).
+att_prop_i(2,2,'AttValidationFailedMsg','',d).
+att_prop_i(2,2,'DownloadOffline','0',d).
+att_prop_i(2,2,'VarServiceExtName','',d).
+att_prop_i(2,2,'FullName','IDTIPOEMPLEADO',v).
+att_prop_i(2,3,'ExternalName','IDESTADOEMPLEADO',d).
+att_prop_i(2,3,'ExternalNamespace','TiendaRopaProyecto',d).
+att_prop_i(2,3,'EmptyAsNull','Yes',d).
+att_prop_i(2,3,idBasedOn,84,v).
+att_prop_i(2,3,'AUTONUMBER','-1',d).
+att_prop_i(2,3,'AUTONUMBER_START','1',d).
+att_prop_i(2,3,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,3,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,3,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,3,'AttRegEx','',d).
+att_prop_i(2,3,'AttValidationFailedMsg','',d).
+att_prop_i(2,3,'DownloadOffline','0',d).
+att_prop_i(2,3,'VarServiceExtName','',d).
+att_prop_i(2,3,'FullName','IDESTADOEMPLEADO',v).
+att_prop_i(2,40000,'ExternalName','',d).
+att_prop_i(2,40000,'ExternalNamespace','',d).
+att_prop_i(2,40000,'EmptyAsNull','Yes',d).
+att_prop_i(2,40000,idBasedOn,'',d).
+att_prop_i(2,40000,'AUTONUMBER','0',d).
+att_prop_i(2,40000,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,40000,'AttRegEx','',d).
+att_prop_i(2,40000,'AttValidationFailedMsg','',d).
+att_prop_i(2,40000,'FullName','',v).
+ 
+tbl_prop_i(2,1,'AllDirSuper',[ [ 7,[ 3 ] ],[ 6,[ 2 ] ] ],v).
+tbl_prop_i(2,7,'DirSubor',[ [ 1,[ 3 ] ] ],v).
+tbl_prop_i(2,6,'DirSubor',[ [ 1,[ 2 ] ] ],v).
+tbl_prop_i(2,1,'DirSuper',[ [ 7,[ 3 ] ],[ 6,[ 2 ] ] ],v).
+ 
+tbl_att_prop_i(2,1,1,'AllowNulls',n).
+tbl_att_prop_i(2,1,1,'AUTONUMBER',y).
+tbl_att_prop_i(2,1,23,'AllowNulls',n).
+tbl_att_prop_i(2,1,26,'AllowNulls',n).
+tbl_att_prop_i(2,1,29,'AllowNulls',n).
+tbl_att_prop_i(2,1,27,'AllowNulls',n).
+tbl_att_prop_i(2,1,28,'AllowNulls',n).
+tbl_att_prop_i(2,1,52,'AllowNulls',n).
+tbl_att_prop_i(2,1,40000,'AllowNulls',n).
+tbl_att_prop_i(2,1,2,'AllowNulls',n).
+tbl_att_prop_i(2,1,3,'AllowNulls',n).
+tbl_att_prop_i(2,6,2,'AllowNulls',n).
+tbl_att_prop_i(2,6,2,'AUTONUMBER',y).
+tbl_att_prop_i(2,6,21,'AllowNulls',n).
+tbl_att_prop_i(2,7,3,'AllowNulls',n).
+tbl_att_prop_i(2,7,3,'AUTONUMBER',y).
+tbl_att_prop_i(2,7,22,'AllowNulls',n).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+pgm_callprotocol_i(proc,16,'REPORTE_EMPLEADOS','HTTP','Secure').
+ 
+ 
+pgm_main_info_i(proc,16,'REPORTE_EMPLEADOS',[ 15,'AREPORTE_EMPLEADOS','Reporte_Empleados','','','','HTTP' ]).
+ 
+ 
+module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus','AssemblyName','GeneXus.dll').
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

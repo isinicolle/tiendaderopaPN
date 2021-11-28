@@ -1,0 +1,3 @@
+C:\Models\TiendaRopaProyecto\CSharpModel\web\bin\wwempleados.dll
+C:\Models\TiendaRopaProyecto\CSharpModel\build\wwempleados\obj\Release\wwempleados.csprojResolveAssemblyReference.cache
+C:\Models\TiendaRopaProyecto\CSharpModel\build\wwempleados\obj\Release\wwempleados.dll

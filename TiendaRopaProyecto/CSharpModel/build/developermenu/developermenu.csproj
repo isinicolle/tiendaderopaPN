@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	
+
+	<PropertyGroup>
+		<AssemblyName>developermenu</AssemblyName>
+		<ProjectGuid>{00000000-0000-0000-0000-000000000000}</ProjectGuid>
+		<OutputType>Library</OutputType>
+		<PostgresqlSupport>false</PostgresqlSupport>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include=".\..\aprocedure_compra\aprocedure_compra.csproj" />
+		<ProjectReference Include=".\..\aprocedure_compra\aprocedure_compra.csproj" />
+		<ProjectReference Include=".\..\procedure_proveedores\procedure_proveedores.csproj" />
+		<ProjectReference Include=".\..\areporte_empleados\areporte_empleados.csproj" />
+		<ProjectReference Include=".\..\areporte_empleados\areporte_empleados.csproj" />
+		<ProjectReference Include=".\..\areporte_inventario\areporte_inventario.csproj" />
+		<ProjectReference Include=".\..\areporte_inventario\areporte_inventario.csproj" />
+		<ProjectReference Include=".\..\appmasterpage\appmasterpage.csproj" />
+		<ProjectReference Include=".\..\recentlinks\recentlinks.csproj" />
+		<ProjectReference Include=".\..\promptmasterpage\promptmasterpage.csproj" />
+		<ProjectReference Include=".\..\rwdmasterpage\rwdmasterpage.csproj" />
+		<ProjectReference Include=".\..\rwdrecentlinks\rwdrecentlinks.csproj" />
+		<ProjectReference Include=".\..\rwdpromptmasterpage\rwdpromptmasterpage.csproj" />
+		<ProjectReference Include=".\..\notauthorized\notauthorized.csproj" />
+		<ProjectReference Include=".\..\home\home.csproj" />
+		<ProjectReference Include=".\..\home\home.csproj" />
+		<ProjectReference Include=".\..\tabbedview\tabbedview.csproj" />
+		<ProjectReference Include=".\..\wwempleados\wwempleados.csproj" />
+		<ProjectReference Include=".\..\wwcompra_inventario\wwcompra_inventario.csproj" />
+		<ProjectReference Include=".\..\wwventas_inventario\wwventas_inventario.csproj" />
+		<ProjectReference Include=".\..\wwtipo_empleado\wwtipo_empleado.csproj" />
+		<ProjectReference Include=".\..\wwestado_empleado\wwestado_empleado.csproj" />
+		<ProjectReference Include=".\..\wwclientes\wwclientes.csproj" />
+		<ProjectReference Include=".\..\wwinventario\wwinventario.csproj" />
+		<ProjectReference Include=".\..\wwestado_producto\wwestado_producto.csproj" />
+		<ProjectReference Include=".\..\wwcategoria_producto\wwcategoria_producto.csproj" />
+		<ProjectReference Include=".\..\wwmarca_producto\wwmarca_producto.csproj" />
+		<ProjectReference Include=".\..\wwproveedores\wwproveedores.csproj" />
+		<ProjectReference Include=".\..\wwtipo_proveedor\wwtipo_proveedor.csproj" />
+		<ProjectReference Include=".\..\viewempleados\viewempleados.csproj" />
+		<ProjectReference Include=".\..\viewtipo_empleado\viewtipo_empleado.csproj" />
+		<ProjectReference Include=".\..\viewestado_empleado\viewestado_empleado.csproj" />
+		<ProjectReference Include=".\..\viewclientes\viewclientes.csproj" />
+		<ProjectReference Include=".\..\viewestado_producto\viewestado_producto.csproj" />
+		<ProjectReference Include=".\..\viewcategoria_producto\viewcategoria_producto.csproj" />
+		<ProjectReference Include=".\..\viewinventario\viewinventario.csproj" />
+		<ProjectReference Include=".\..\viewmarca_producto\viewmarca_producto.csproj" />
+		<ProjectReference Include=".\..\viewtipo_proveedor\viewtipo_proveedor.csproj" />
+		<ProjectReference Include=".\..\viewproveedores\viewproveedores.csproj" />
+		<ProjectReference Include=".\..\viewcompra_inventario\viewcompra_inventario.csproj" />
+		<ProjectReference Include=".\..\viewventas_inventario\viewventas_inventario.csproj" />
+		<ProjectReference Include=".\..\empleadosgeneral\empleadosgeneral.csproj" />
+		<ProjectReference Include=".\..\empleadoscompra_inventariowc\empleadoscompra_inventariowc.csproj" />
+		<ProjectReference Include=".\..\empleadosventas_inventariowc\empleadosventas_inventariowc.csproj" />
+		<ProjectReference Include=".\..\tipo_empleadogeneral\tipo_empleadogeneral.csproj" />
+		<ProjectReference Include=".\..\tipo_empleadoempleadoswc\tipo_empleadoempleadoswc.csproj" />
+		<ProjectReference Include=".\..\estado_empleadogeneral\estado_empleadogeneral.csproj" />
+		<ProjectReference Include=".\..\estado_empleadoempleadoswc\estado_empleadoempleadoswc.csproj" />
+		<ProjectReference Include=".\..\clientesgeneral\clientesgeneral.csproj" />
+		<ProjectReference Include=".\..\clientesventas_inventariowc\clientesventas_inventariowc.csproj" />
+		<ProjectReference Include=".\..\inventariogeneral\inventariogeneral.csproj" />
+		<ProjectReference Include=".\..\inventariodetalle_venta_productowc\inventariodetalle_venta_productowc.csproj" />
+		<ProjectReference Include=".\..\inventariodetalle_compra_productowc\inventariodetalle_compra_productowc.csproj" />
+		<ProjectReference Include=".\..\estado_productogeneral\estado_productogeneral.csproj" />
+		<ProjectReference Include=".\..\estado_productoinventariowc\estado_productoinventariowc.csproj" />
+		<ProjectReference Include=".\..\categoria_productogeneral\categoria_productogeneral.csproj" />
+		<ProjectReference Include=".\..\categoria_productoinventariowc\categoria_productoinventariowc.csproj" />
+		<ProjectReference Include=".\..\marca_productogeneral\marca_productogeneral.csproj" />
+		<ProjectReference Include=".\..\marca_productoinventariowc\marca_productoinventariowc.csproj" />
+		<ProjectReference Include=".\..\proveedoresgeneral\proveedoresgeneral.csproj" />
+		<ProjectReference Include=".\..\proveedorestipo_proveedorwc\proveedorestipo_proveedorwc.csproj" />
+		<ProjectReference Include=".\..\proveedorescompra_inventariowc\proveedorescompra_inventariowc.csproj" />
+		<ProjectReference Include=".\..\tipo_proveedorgeneral\tipo_proveedorgeneral.csproj" />
+		<ProjectReference Include=".\..\tipo_proveedortipo_proveedorwc\tipo_proveedortipo_proveedorwc.csproj" />
+		<ProjectReference Include=".\..\compra_inventariogeneral\compra_inventariogeneral.csproj" />
+		<ProjectReference Include=".\..\compra_inventariodetalle_compra_productowc\compra_inventariodetalle_compra_productowc.csproj" />
+		<ProjectReference Include=".\..\ventas_inventariogeneral\ventas_inventariogeneral.csproj" />
+		<ProjectReference Include=".\..\ventas_inventariodetalle_venta_productowc\ventas_inventariodetalle_venta_productowc.csproj" />
+		<ProjectReference Include=".\..\gx0060\gx0060.csproj" />
+		<ProjectReference Include=".\..\gx0070\gx0070.csproj" />
+		<ProjectReference Include=".\..\gx0010\gx0010.csproj" />
+		<ProjectReference Include=".\..\gx0031\gx0031.csproj" />
+		<ProjectReference Include=".\..\gx0051\gx0051.csproj" />
+		<ProjectReference Include=".\..\gx0080\gx0080.csproj" />
+		<ProjectReference Include=".\..\gx0090\gx0090.csproj" />
+		<ProjectReference Include=".\..\gx00a0\gx00a0.csproj" />
+		<ProjectReference Include=".\..\gx00b0\gx00b0.csproj" />
+		<ProjectReference Include=".\..\gx00c0\gx00c0.csproj" />
+		<ProjectReference Include=".\..\gx00d0\gx00d0.csproj" />
+		<ProjectReference Include=".\..\gx00e1\gx00e1.csproj" />
+		<ProjectReference Include=".\..\gx00f0\gx00f0.csproj" />
+		<ProjectReference Include=".\..\empleados\empleados.csproj" />
+		<ProjectReference Include=".\..\compra_inventario\compra_inventario.csproj" />
+		<ProjectReference Include=".\..\ventas_inventario\ventas_inventario.csproj" />
+		<ProjectReference Include=".\..\tipo_empleado\tipo_empleado.csproj" />
+		<ProjectReference Include=".\..\estado_empleado\estado_empleado.csproj" />
+		<ProjectReference Include=".\..\clientes\clientes.csproj" />
+		<ProjectReference Include=".\..\inventario\inventario.csproj" />
+		<ProjectReference Include=".\..\estado_producto\estado_producto.csproj" />
+		<ProjectReference Include=".\..\categoria_producto\categoria_producto.csproj" />
+		<ProjectReference Include=".\..\marca_producto\marca_producto.csproj" />
+		<ProjectReference Include=".\..\proveedores\proveedores.csproj" />
+		<ProjectReference Include=".\..\tipo_proveedor\tipo_proveedor.csproj" />
+		<ProjectReference Include=".\..\GeneXus.Programs.Common\GeneXus.Programs.Common.csproj" />
+
+	</ItemGroup>
+
+	<ItemGroup>
+
+	</ItemGroup>
+	<ItemGroup>
+
+	</ItemGroup>
+	
+	<Import Project="..\DotNetBaseProject.targets"/>
+</Project>
