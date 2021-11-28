@@ -1,3 +1,6 @@
 C:\Models\TiendaRopaProyecto\CSharpModel\web\bin\areporte_inventario.dll
 C:\Models\TiendaRopaProyecto\CSharpModel\build\areporte_inventario\obj\Release\areporte_inventario.csprojResolveAssemblyReference.cache
 C:\Models\TiendaRopaProyecto\CSharpModel\build\areporte_inventario\obj\Release\areporte_inventario.dll
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\web\bin\areporte_inventario.dll
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\build\areporte_inventario\obj\Release\areporte_inventario.csprojResolveAssemblyReference.cache
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\build\areporte_inventario\obj\Release\areporte_inventario.dll

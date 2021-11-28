@@ -1,3 +1,6 @@
 C:\Models\TiendaRopaProyecto\CSharpModel\web\bin\clientes.dll
 C:\Models\TiendaRopaProyecto\CSharpModel\build\clientes\obj\Release\clientes.csprojResolveAssemblyReference.cache
 C:\Models\TiendaRopaProyecto\CSharpModel\build\clientes\obj\Release\clientes.dll
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\web\bin\clientes.dll
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\build\clientes\obj\Release\clientes.csprojResolveAssemblyReference.cache
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\build\clientes\obj\Release\clientes.dll

@@ -1,3 +1,6 @@
 C:\Models\TiendaRopaProyecto\CSharpModel\web\bin\wwcompra_inventario.dll
 C:\Models\TiendaRopaProyecto\CSharpModel\build\wwcompra_inventario\obj\Release\wwcompra_inventario.csprojResolveAssemblyReference.cache
 C:\Models\TiendaRopaProyecto\CSharpModel\build\wwcompra_inventario\obj\Release\wwcompra_inventario.dll
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\web\bin\wwcompra_inventario.dll
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\build\wwcompra_inventario\obj\Release\wwcompra_inventario.csprojResolveAssemblyReference.cache
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\build\wwcompra_inventario\obj\Release\wwcompra_inventario.dll

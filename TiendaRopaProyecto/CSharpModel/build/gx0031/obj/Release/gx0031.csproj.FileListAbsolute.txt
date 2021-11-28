@@ -1,3 +1,6 @@
 C:\Models\TiendaRopaProyecto\CSharpModel\web\bin\gx0031.dll
 C:\Models\TiendaRopaProyecto\CSharpModel\build\gx0031\obj\Release\gx0031.csprojResolveAssemblyReference.cache
 C:\Models\TiendaRopaProyecto\CSharpModel\build\gx0031\obj\Release\gx0031.dll
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\web\bin\gx0031.dll
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\build\gx0031\obj\Release\gx0031.csprojResolveAssemblyReference.cache
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\build\gx0031\obj\Release\gx0031.dll

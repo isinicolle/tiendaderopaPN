@@ -1,3 +1,6 @@
 C:\Models\TiendaRopaProyecto\CSharpModel\web\bin\procedure_proveedores.dll
 C:\Models\TiendaRopaProyecto\CSharpModel\build\procedure_proveedores\obj\Release\procedure_proveedores.csprojResolveAssemblyReference.cache
 C:\Models\TiendaRopaProyecto\CSharpModel\build\procedure_proveedores\obj\Release\procedure_proveedores.dll
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\web\bin\procedure_proveedores.dll
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\build\procedure_proveedores\obj\Release\procedure_proveedores.csprojResolveAssemblyReference.cache
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\build\procedure_proveedores\obj\Release\procedure_proveedores.dll

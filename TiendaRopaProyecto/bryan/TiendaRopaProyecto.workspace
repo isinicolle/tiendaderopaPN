@@ -1,22 +1,42 @@
 <Objects>
+  <Object>
+    <Type>84a12160-f59b-4ad7-a683-ea4481ac23e9</Type>
+    <Id>18</Id>
+    <Part>c414ed00-8cc4-4f44-8820-4baf93547173</Part>
+  </Object>
+  <Object>
+    <Type>84a12160-f59b-4ad7-a683-ea4481ac23e9</Type>
+    <Id>16</Id>
+    <Part>528d1c06-a9c2-420d-bd35-21dca83f12ff</Part>
+  </Object>
+  <Object>
+    <Type>1db606f2-af09-4cf9-a3b5-b481519d28f6</Type>
+    <Id>3</Id>
+    <Part>264be5fb-1b28-4b25-a598-6ca900dd059f</Part>
+  </Object>
   <Recent>
     <RecentKBObjectsList>
       <MaximumItems>10</MaximumItems>
       <RecentKBObjects>
         <RecentKBObject>
+          <Key>1db606f2-af09-4cf9-a3b5-b481519d28f6-3</Key>
+          <Name>Ventas_inventario</Name>
+          <LastAccess>2021-11-27T23:50:15.7816553-06:00</LastAccess>
+        </RecentKBObject>
+        <RecentKBObject>
           <Key>84a12160-f59b-4ad7-a683-ea4481ac23e9-16</Key>
           <Name>Reporte_Empleados</Name>
-          <LastAccess>2021-11-26T20:48:45.1522155-06:00</LastAccess>
+          <LastAccess>2021-11-27T21:39:42.6164287-06:00</LastAccess>
+        </RecentKBObject>
+        <RecentKBObject>
+          <Key>84a12160-f59b-4ad7-a683-ea4481ac23e9-15</Key>
+          <Name>Procedure_Proveedores</Name>
+          <LastAccess>2021-11-27T21:37:03.4976868-06:00</LastAccess>
         </RecentKBObject>
         <RecentKBObject>
           <Key>84a12160-f59b-4ad7-a683-ea4481ac23e9-14</Key>
           <Name>Procedure_Compra</Name>
           <LastAccess>2021-11-26T20:39:48.3640172-06:00</LastAccess>
-        </RecentKBObject>
-        <RecentKBObject>
-          <Key>84a12160-f59b-4ad7-a683-ea4481ac23e9-15</Key>
-          <Name>Procedure_Proveedores</Name>
-          <LastAccess>2021-11-26T20:36:31.4069578-06:00</LastAccess>
         </RecentKBObject>
         <RecentKBObject>
           <Key>1db606f2-af09-4cf9-a3b5-b481519d28f6-11</Key>

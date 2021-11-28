@@ -1,3 +1,6 @@
 C:\Models\TiendaRopaProyecto\CSharpModel\web\bin\viewtipo_empleado.dll
 C:\Models\TiendaRopaProyecto\CSharpModel\build\viewtipo_empleado\obj\Release\viewtipo_empleado.csprojResolveAssemblyReference.cache
 C:\Models\TiendaRopaProyecto\CSharpModel\build\viewtipo_empleado\obj\Release\viewtipo_empleado.dll
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\web\bin\viewtipo_empleado.dll
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\build\viewtipo_empleado\obj\Release\viewtipo_empleado.csprojResolveAssemblyReference.cache
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\build\viewtipo_empleado\obj\Release\viewtipo_empleado.dll

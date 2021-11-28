@@ -1,3 +1,6 @@
 C:\Models\TiendaRopaProyecto\CSharpModel\web\bin\empleadosgeneral.dll
 C:\Models\TiendaRopaProyecto\CSharpModel\build\empleadosgeneral\obj\Release\empleadosgeneral.csprojResolveAssemblyReference.cache
 C:\Models\TiendaRopaProyecto\CSharpModel\build\empleadosgeneral\obj\Release\empleadosgeneral.dll
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\web\bin\empleadosgeneral.dll
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\build\empleadosgeneral\obj\Release\empleadosgeneral.csprojResolveAssemblyReference.cache
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\build\empleadosgeneral\obj\Release\empleadosgeneral.dll

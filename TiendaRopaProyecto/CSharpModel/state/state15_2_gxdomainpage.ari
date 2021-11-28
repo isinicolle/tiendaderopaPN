@@ -25,6 +25,7 @@ ij_object_dependency(gxdomainpage,[],[],[],82).
  
  
 obj_parms_i([],[]).
+obj_parms_i([],[]).
  
  
  

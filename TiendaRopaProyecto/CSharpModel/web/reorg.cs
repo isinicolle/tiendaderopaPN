@@ -61,239 +61,71 @@ namespace GeneXus.Programs {
          /* Load data into tables. */
       }
 
-      public void ReorganizeEmpleados( )
+      public void CreateTransaccionDePrueba( )
       {
          string cmdBuffer = "";
-         /* Indices for table Empleados */
-         cmdBuffer=" ALTER TABLE [Empleados] ALTER COLUMN [CONTRASENAEMPLEADO] nvarchar(255) NOT NULL  "
-         ;
-         RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-         RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
-         RGZ.ExecuteStmt() ;
-         RGZ.Drop();
-         cmdBuffer=" ALTER TABLE [Empleados] ALTER COLUMN [USUARIOEMPLEADO] nvarchar(255) NOT NULL  "
-         ;
-         RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-         RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
-         RGZ.ExecuteStmt() ;
-         RGZ.Drop();
-         cmdBuffer=" ALTER TABLE [Empleados] ALTER COLUMN [NOMBRECOMPLETOEMPLEADO] nvarchar(255) NOT NULL  "
-         ;
-         RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-         RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
-         RGZ.ExecuteStmt() ;
-         RGZ.Drop();
-      }
-
-      public void ReorganizeCompra_inventario( )
-      {
-         string cmdBuffer = "";
-         /* Indices for table Compra_inventario */
-         cmdBuffer=" ALTER TABLE [Compra_inventario] ALTER COLUMN [DESCRIPCIONCOMPRA] nvarchar(255) NOT NULL  "
-         ;
-         RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-         RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
-         RGZ.ExecuteStmt() ;
-         RGZ.Drop();
-      }
-
-      public void ReorganizeVentas_inventario( )
-      {
-         string cmdBuffer = "";
-         /* Indices for table Ventas_inventario */
-         cmdBuffer=" ALTER TABLE [Ventas_inventario] ALTER COLUMN [DESCRIPCIONVENTA] nvarchar(255) NOT NULL  "
-         ;
-         RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-         RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
-         RGZ.ExecuteStmt() ;
-         RGZ.Drop();
-      }
-
-      public void ReorganizeTipo_empleado( )
-      {
-         string cmdBuffer = "";
-         /* Indices for table Tipo_empleado */
-         cmdBuffer=" ALTER TABLE [Tipo_empleado] ALTER COLUMN [DESCRIPCIONTIPOEMPLEADO] nvarchar(255) NOT NULL  "
-         ;
-         RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-         RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
-         RGZ.ExecuteStmt() ;
-         RGZ.Drop();
-      }
-
-      public void ReorganizeEstado_empleado( )
-      {
-         string cmdBuffer = "";
-         /* Indices for table Estado_empleado */
-         cmdBuffer=" ALTER TABLE [Estado_empleado] ALTER COLUMN [DESCRIPCIONESTADOEMPLEADO] nvarchar(255) NOT NULL  "
-         ;
-         RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-         RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
-         RGZ.ExecuteStmt() ;
-         RGZ.Drop();
-      }
-
-      public void ReorganizeClientes( )
-      {
-         string cmdBuffer = "";
-         /* Indices for table Clientes */
-         cmdBuffer=" ALTER TABLE [Clientes] ALTER COLUMN [CONTRASENACLIENTE] nvarchar(255) NOT NULL  "
-         ;
-         RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-         RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
-         RGZ.ExecuteStmt() ;
-         RGZ.Drop();
-         cmdBuffer=" ALTER TABLE [Clientes] ALTER COLUMN [USUARIOCLIENTE] nvarchar(255) NOT NULL  "
-         ;
-         RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-         RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
-         RGZ.ExecuteStmt() ;
-         RGZ.Drop();
-         cmdBuffer=" ALTER TABLE [Clientes] ALTER COLUMN [NOMBRECOMPLETOCLIENTE] nvarchar(255) NOT NULL  "
-         ;
-         RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-         RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
-         RGZ.ExecuteStmt() ;
-         RGZ.Drop();
-      }
-
-      public void ReorganizeInventario( )
-      {
-         string cmdBuffer = "";
-         /* Indices for table Inventario */
-         cmdBuffer=" ALTER TABLE [Inventario] ALTER COLUMN [DESCRIPCIONPRODUCTO] nvarchar(255) NOT NULL  "
-         ;
-         RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-         RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
-         RGZ.ExecuteStmt() ;
-         RGZ.Drop();
-      }
-
-      public void ReorganizeEstado_producto( )
-      {
-         string cmdBuffer = "";
-         /* Indices for table Estado_producto */
-         cmdBuffer=" ALTER TABLE [Estado_producto] ALTER COLUMN [DESCRIPCIONESTADOPRODUCTO] nvarchar(255) NOT NULL  "
-         ;
-         RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-         RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
-         RGZ.ExecuteStmt() ;
-         RGZ.Drop();
-      }
-
-      public void ReorganizeCategoria_producto( )
-      {
-         string cmdBuffer = "";
-         /* Indices for table Categoria_producto */
-         cmdBuffer=" ALTER TABLE [Categoria_producto] ALTER COLUMN [DESCRIPCIONCATEGORIAPRODUCTO] nvarchar(255) NOT NULL  "
-         ;
-         RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-         RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
-         RGZ.ExecuteStmt() ;
-         RGZ.Drop();
-      }
-
-      public void ReorganizeMarca_producto( )
-      {
-         string cmdBuffer = "";
-         /* Indices for table Marca_producto */
-         cmdBuffer=" ALTER TABLE [Marca_producto] ALTER COLUMN [DESCRIPCIONMARCAPRODUCTO] nvarchar(255) NOT NULL  "
-         ;
-         RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-         RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
-         RGZ.ExecuteStmt() ;
-         RGZ.Drop();
-      }
-
-      public void ReorganizeProveedores( )
-      {
-         string cmdBuffer = "";
-         /* Indices for table Proveedores */
-         cmdBuffer=" ALTER TABLE [Proveedores] ALTER COLUMN [NOMBREPROVEEDOR] nvarchar(255) NOT NULL  "
-         ;
-         RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-         RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
-         RGZ.ExecuteStmt() ;
-         RGZ.Drop();
-      }
-
-      public void ReorganizeTipo_proveedor( )
-      {
-         string cmdBuffer = "";
-         /* Indices for table Tipo_proveedor */
-         cmdBuffer=" ALTER TABLE [Tipo_proveedor] ALTER COLUMN [DESCRIPCIONTIPOPROVEEDOR] nvarchar(255) NOT NULL  "
-         ;
-         RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
-         RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
-         RGZ.ExecuteStmt() ;
-         RGZ.Drop();
+         /* Indices for table TransaccionDePrueba */
+         try
+         {
+            cmdBuffer=" CREATE TABLE [TransaccionDePrueba] ([IDPRUEBA] decimal( 12) NOT NULL IDENTITY(1,1), [DESCRIPCIONPRUEBA] nvarchar(255) NOT NULL , PRIMARY KEY([IDPRUEBA]))  "
+            ;
+            RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+            RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
+            RGZ.ExecuteStmt() ;
+            RGZ.Drop();
+         }
+         catch
+         {
+            try
+            {
+               DropTableConstraints( "[TransaccionDePrueba]") ;
+               cmdBuffer=" DROP TABLE [TransaccionDePrueba] "
+               ;
+               RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+               RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
+               RGZ.ExecuteStmt() ;
+               RGZ.Drop();
+            }
+            catch
+            {
+               try
+               {
+                  DropTableConstraints( "[TransaccionDePrueba]") ;
+                  cmdBuffer=" DROP VIEW [TransaccionDePrueba] "
+                  ;
+                  RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+                  RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
+                  RGZ.ExecuteStmt() ;
+                  RGZ.Drop();
+               }
+               catch
+               {
+                  try
+                  {
+                     DropTableConstraints( "[TransaccionDePrueba]") ;
+                     cmdBuffer=" DROP FUNCTION [TransaccionDePrueba] "
+                     ;
+                     RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+                     RGZ.ErrorMask = GxErrorMask.GX_MASKNOTFOUND | GxErrorMask.GX_MASKLOOPLOCK;
+                     RGZ.ExecuteStmt() ;
+                     RGZ.Drop();
+                  }
+                  catch
+                  {
+                  }
+               }
+            }
+            cmdBuffer=" CREATE TABLE [TransaccionDePrueba] ([IDPRUEBA] decimal( 12) NOT NULL IDENTITY(1,1), [DESCRIPCIONPRUEBA] nvarchar(255) NOT NULL , PRIMARY KEY([IDPRUEBA]))  "
+            ;
+            RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+            RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
+            RGZ.ExecuteStmt() ;
+            RGZ.Drop();
+         }
       }
 
       private void TablesCount( )
       {
-         if ( ! IsResumeMode( ) )
-         {
-            /* Using cursor P00012 */
-            pr_default.execute(0);
-            EmpleadosCount = P00012_AEmpleadosCount[0];
-            pr_default.close(0);
-            PrintRecordCount ( "Empleados" ,  EmpleadosCount );
-            /* Using cursor P00023 */
-            pr_default.execute(1);
-            Compra_inventarioCount = P00023_ACompra_inventarioCount[0];
-            pr_default.close(1);
-            PrintRecordCount ( "Compra_inventario" ,  Compra_inventarioCount );
-            /* Using cursor P00034 */
-            pr_default.execute(2);
-            Ventas_inventarioCount = P00034_AVentas_inventarioCount[0];
-            pr_default.close(2);
-            PrintRecordCount ( "Ventas_inventario" ,  Ventas_inventarioCount );
-            /* Using cursor P00045 */
-            pr_default.execute(3);
-            Tipo_empleadoCount = P00045_ATipo_empleadoCount[0];
-            pr_default.close(3);
-            PrintRecordCount ( "Tipo_empleado" ,  Tipo_empleadoCount );
-            /* Using cursor P00056 */
-            pr_default.execute(4);
-            Estado_empleadoCount = P00056_AEstado_empleadoCount[0];
-            pr_default.close(4);
-            PrintRecordCount ( "Estado_empleado" ,  Estado_empleadoCount );
-            /* Using cursor P00067 */
-            pr_default.execute(5);
-            ClientesCount = P00067_AClientesCount[0];
-            pr_default.close(5);
-            PrintRecordCount ( "Clientes" ,  ClientesCount );
-            /* Using cursor P00078 */
-            pr_default.execute(6);
-            InventarioCount = P00078_AInventarioCount[0];
-            pr_default.close(6);
-            PrintRecordCount ( "Inventario" ,  InventarioCount );
-            /* Using cursor P00089 */
-            pr_default.execute(7);
-            Estado_productoCount = P00089_AEstado_productoCount[0];
-            pr_default.close(7);
-            PrintRecordCount ( "Estado_producto" ,  Estado_productoCount );
-            /* Using cursor P000910 */
-            pr_default.execute(8);
-            Categoria_productoCount = P000910_ACategoria_productoCount[0];
-            pr_default.close(8);
-            PrintRecordCount ( "Categoria_producto" ,  Categoria_productoCount );
-            /* Using cursor P000A11 */
-            pr_default.execute(9);
-            Marca_productoCount = P000A11_AMarca_productoCount[0];
-            pr_default.close(9);
-            PrintRecordCount ( "Marca_producto" ,  Marca_productoCount );
-            /* Using cursor P000B12 */
-            pr_default.execute(10);
-            ProveedoresCount = P000B12_AProveedoresCount[0];
-            pr_default.close(10);
-            PrintRecordCount ( "Proveedores" ,  ProveedoresCount );
-            /* Using cursor P000C13 */
-            pr_default.execute(11);
-            Tipo_proveedorCount = P000C13_ATipo_proveedorCount[0];
-            pr_default.close(11);
-            PrintRecordCount ( "Tipo_proveedor" ,  Tipo_proveedorCount );
-         }
       }
 
       private bool PreviousCheck( )
@@ -312,45 +144,59 @@ namespace GeneXus.Programs {
          }
          if ( GXUtil.IsSQLSERVER2005( context, "DEFAULT") )
          {
-            /* Using cursor P000D14 */
-            pr_default.execute(12);
-            while ( (pr_default.getStatus(12) != 101) )
+            /* Using cursor P00012 */
+            pr_default.execute(0);
+            while ( (pr_default.getStatus(0) != 101) )
             {
-               sSchemaVar = P000D14_AsSchemaVar[0];
-               nsSchemaVar = P000D14_nsSchemaVar[0];
-               pr_default.readNext(12);
+               sSchemaVar = P00012_AsSchemaVar[0];
+               nsSchemaVar = P00012_nsSchemaVar[0];
+               pr_default.readNext(0);
             }
-            pr_default.close(12);
+            pr_default.close(0);
          }
          else
          {
-            /* Using cursor P000E15 */
-            pr_default.execute(13);
-            while ( (pr_default.getStatus(13) != 101) )
+            /* Using cursor P00023 */
+            pr_default.execute(1);
+            while ( (pr_default.getStatus(1) != 101) )
             {
-               sSchemaVar = P000E15_AsSchemaVar[0];
-               nsSchemaVar = P000E15_nsSchemaVar[0];
-               pr_default.readNext(13);
+               sSchemaVar = P00023_AsSchemaVar[0];
+               nsSchemaVar = P00023_nsSchemaVar[0];
+               pr_default.readNext(1);
             }
-            pr_default.close(13);
+            pr_default.close(1);
+         }
+         if ( tableexist("TransaccionDePrueba",sSchemaVar) )
+         {
+            SetCheckError ( GXResourceManager.GetMessage("GXM_table_exist", new   object[]  {"TransaccionDePrueba"}) ) ;
+            return false ;
          }
          return true ;
       }
 
+      private bool tableexist( string sTableName ,
+                               string sMySchemaName )
+      {
+         bool result;
+         result = false;
+         /* Using cursor P00034 */
+         pr_default.execute(2, new Object[] {sTableName, sMySchemaName});
+         while ( (pr_default.getStatus(2) != 101) )
+         {
+            tablename = P00034_Atablename[0];
+            ntablename = P00034_ntablename[0];
+            schemaname = P00034_Aschemaname[0];
+            nschemaname = P00034_nschemaname[0];
+            result = true;
+            pr_default.readNext(2);
+         }
+         pr_default.close(2);
+         return result ;
+      }
+
       private void ExecuteOnlyTablesReorganization( )
       {
-         ReorgExecute.RegisterBlockForSubmit( 1 ,  "ReorganizeEmpleados" , new Object[]{ });
-         ReorgExecute.RegisterBlockForSubmit( 2 ,  "ReorganizeCompra_inventario" , new Object[]{ });
-         ReorgExecute.RegisterBlockForSubmit( 3 ,  "ReorganizeVentas_inventario" , new Object[]{ });
-         ReorgExecute.RegisterBlockForSubmit( 4 ,  "ReorganizeTipo_empleado" , new Object[]{ });
-         ReorgExecute.RegisterBlockForSubmit( 5 ,  "ReorganizeEstado_empleado" , new Object[]{ });
-         ReorgExecute.RegisterBlockForSubmit( 6 ,  "ReorganizeClientes" , new Object[]{ });
-         ReorgExecute.RegisterBlockForSubmit( 7 ,  "ReorganizeInventario" , new Object[]{ });
-         ReorgExecute.RegisterBlockForSubmit( 8 ,  "ReorganizeEstado_producto" , new Object[]{ });
-         ReorgExecute.RegisterBlockForSubmit( 9 ,  "ReorganizeCategoria_producto" , new Object[]{ });
-         ReorgExecute.RegisterBlockForSubmit( 10 ,  "ReorganizeMarca_producto" , new Object[]{ });
-         ReorgExecute.RegisterBlockForSubmit( 11 ,  "ReorganizeProveedores" , new Object[]{ });
-         ReorgExecute.RegisterBlockForSubmit( 12 ,  "ReorganizeTipo_proveedor" , new Object[]{ });
+         ReorgExecute.RegisterBlockForSubmit( 1 ,  "CreateTransaccionDePrueba" , new Object[]{ });
       }
 
       private void ExecuteOnlyRisReorganization( )
@@ -372,18 +218,7 @@ namespace GeneXus.Programs {
 
       private void SetPrecedencetables( )
       {
-         GXReorganization.SetMsg( 1 ,  GXResourceManager.GetMessage("GXM_fileupdate", new   object[]  {"Empleados", ""}) );
-         GXReorganization.SetMsg( 2 ,  GXResourceManager.GetMessage("GXM_fileupdate", new   object[]  {"Compra_inventario", ""}) );
-         GXReorganization.SetMsg( 3 ,  GXResourceManager.GetMessage("GXM_fileupdate", new   object[]  {"Ventas_inventario", ""}) );
-         GXReorganization.SetMsg( 4 ,  GXResourceManager.GetMessage("GXM_fileupdate", new   object[]  {"Tipo_empleado", ""}) );
-         GXReorganization.SetMsg( 5 ,  GXResourceManager.GetMessage("GXM_fileupdate", new   object[]  {"Estado_empleado", ""}) );
-         GXReorganization.SetMsg( 6 ,  GXResourceManager.GetMessage("GXM_fileupdate", new   object[]  {"Clientes", ""}) );
-         GXReorganization.SetMsg( 7 ,  GXResourceManager.GetMessage("GXM_fileupdate", new   object[]  {"Inventario", ""}) );
-         GXReorganization.SetMsg( 8 ,  GXResourceManager.GetMessage("GXM_fileupdate", new   object[]  {"Estado_producto", ""}) );
-         GXReorganization.SetMsg( 9 ,  GXResourceManager.GetMessage("GXM_fileupdate", new   object[]  {"Categoria_producto", ""}) );
-         GXReorganization.SetMsg( 10 ,  GXResourceManager.GetMessage("GXM_fileupdate", new   object[]  {"Marca_producto", ""}) );
-         GXReorganization.SetMsg( 11 ,  GXResourceManager.GetMessage("GXM_fileupdate", new   object[]  {"Proveedores", ""}) );
-         GXReorganization.SetMsg( 12 ,  GXResourceManager.GetMessage("GXM_fileupdate", new   object[]  {"Tipo_proveedor", ""}) );
+         GXReorganization.SetMsg( 1 ,  GXResourceManager.GetMessage("GXM_filecrea", new   object[]  {"TransaccionDePrueba", ""}) );
       }
 
       private void SetPrecedenceris( )
@@ -404,6 +239,30 @@ namespace GeneXus.Programs {
          }
       }
 
+      [System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.Synchronized)]
+      public void DropTableConstraints( string sTableName )
+      {
+         string cmdBuffer;
+         /* Using cursor P00045 */
+         pr_default.execute(3, new Object[] {sTableName});
+         while ( (pr_default.getStatus(3) != 101) )
+         {
+            constid = P00045_Aconstid[0];
+            nconstid = P00045_nconstid[0];
+            fkeyid = P00045_Afkeyid[0];
+            nfkeyid = P00045_nfkeyid[0];
+            rkeyid = P00045_Arkeyid[0];
+            nrkeyid = P00045_nrkeyid[0];
+            cmdBuffer = "ALTER TABLE " + "[" + fkeyid + "] DROP CONSTRAINT " + constid;
+            RGZ = new GxCommand(dsDefault.Db, cmdBuffer, dsDefault,0,true,false,null);
+            RGZ.ErrorMask = GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK;
+            RGZ.ExecuteStmt() ;
+            RGZ.Drop();
+            pr_default.readNext(3);
+         }
+         pr_default.close(3);
+      }
+
       public void UtilsCleanup( )
       {
          this.cleanup();
@@ -420,68 +279,46 @@ namespace GeneXus.Programs {
 
       public override void initialize( )
       {
-         scmdbuf = "";
-         P00012_AEmpleadosCount = new int[1] ;
-         P00023_ACompra_inventarioCount = new int[1] ;
-         P00034_AVentas_inventarioCount = new int[1] ;
-         P00045_ATipo_empleadoCount = new int[1] ;
-         P00056_AEstado_empleadoCount = new int[1] ;
-         P00067_AClientesCount = new int[1] ;
-         P00078_AInventarioCount = new int[1] ;
-         P00089_AEstado_productoCount = new int[1] ;
-         P000910_ACategoria_productoCount = new int[1] ;
-         P000A11_AMarca_productoCount = new int[1] ;
-         P000B12_AProveedoresCount = new int[1] ;
-         P000C13_ATipo_proveedorCount = new int[1] ;
          sSchemaVar = "";
          nsSchemaVar = false;
-         P000D14_AsSchemaVar = new string[] {""} ;
-         P000D14_nsSchemaVar = new bool[] {false} ;
-         P000E15_AsSchemaVar = new string[] {""} ;
-         P000E15_nsSchemaVar = new bool[] {false} ;
+         scmdbuf = "";
+         P00012_AsSchemaVar = new string[] {""} ;
+         P00012_nsSchemaVar = new bool[] {false} ;
+         P00023_AsSchemaVar = new string[] {""} ;
+         P00023_nsSchemaVar = new bool[] {false} ;
+         sTableName = "";
+         sMySchemaName = "";
+         tablename = "";
+         ntablename = false;
+         schemaname = "";
+         nschemaname = false;
+         P00034_Atablename = new string[] {""} ;
+         P00034_ntablename = new bool[] {false} ;
+         P00034_Aschemaname = new string[] {""} ;
+         P00034_nschemaname = new bool[] {false} ;
+         constid = "";
+         nconstid = false;
+         fkeyid = "";
+         nfkeyid = false;
+         P00045_Aconstid = new string[] {""} ;
+         P00045_nconstid = new bool[] {false} ;
+         P00045_Afkeyid = new string[] {""} ;
+         P00045_nfkeyid = new bool[] {false} ;
+         P00045_Arkeyid = new int[1] ;
+         P00045_nrkeyid = new bool[] {false} ;
          pr_default = new DataStoreProvider(context, new GeneXus.Programs.reorg__default(),
             new Object[][] {
                 new Object[] {
-               P00012_AEmpleadosCount
+               P00012_AsSchemaVar
                }
                , new Object[] {
-               P00023_ACompra_inventarioCount
+               P00023_AsSchemaVar
                }
                , new Object[] {
-               P00034_AVentas_inventarioCount
+               P00034_Atablename, P00034_Aschemaname
                }
                , new Object[] {
-               P00045_ATipo_empleadoCount
-               }
-               , new Object[] {
-               P00056_AEstado_empleadoCount
-               }
-               , new Object[] {
-               P00067_AClientesCount
-               }
-               , new Object[] {
-               P00078_AInventarioCount
-               }
-               , new Object[] {
-               P00089_AEstado_productoCount
-               }
-               , new Object[] {
-               P000910_ACategoria_productoCount
-               }
-               , new Object[] {
-               P000A11_AMarca_productoCount
-               }
-               , new Object[] {
-               P000B12_AProveedoresCount
-               }
-               , new Object[] {
-               P000C13_ATipo_proveedorCount
-               }
-               , new Object[] {
-               P000D14_AsSchemaVar
-               }
-               , new Object[] {
-               P000E15_AsSchemaVar
+               P00045_Aconstid, P00045_Afkeyid, P00045_Arkeyid
                }
             }
          );
@@ -489,40 +326,38 @@ namespace GeneXus.Programs {
       }
 
       protected short ErrCode ;
-      protected int EmpleadosCount ;
-      protected int Compra_inventarioCount ;
-      protected int Ventas_inventarioCount ;
-      protected int Tipo_empleadoCount ;
-      protected int Estado_empleadoCount ;
-      protected int ClientesCount ;
-      protected int InventarioCount ;
-      protected int Estado_productoCount ;
-      protected int Categoria_productoCount ;
-      protected int Marca_productoCount ;
-      protected int ProveedoresCount ;
-      protected int Tipo_proveedorCount ;
-      protected string scmdbuf ;
+      protected int rkeyid ;
       protected string sSchemaVar ;
+      protected string scmdbuf ;
+      protected string sTableName ;
+      protected string sMySchemaName ;
       protected bool nsSchemaVar ;
+      protected bool ntablename ;
+      protected bool nschemaname ;
+      protected bool nconstid ;
+      protected bool nfkeyid ;
+      protected bool nrkeyid ;
+      protected string tablename ;
+      protected string schemaname ;
+      protected string constid ;
+      protected string fkeyid ;
       protected IGxDataStore dsDefault ;
       protected GxCommand RGZ ;
       protected IDataStoreProvider pr_default ;
-      protected int[] P00012_AEmpleadosCount ;
-      protected int[] P00023_ACompra_inventarioCount ;
-      protected int[] P00034_AVentas_inventarioCount ;
-      protected int[] P00045_ATipo_empleadoCount ;
-      protected int[] P00056_AEstado_empleadoCount ;
-      protected int[] P00067_AClientesCount ;
-      protected int[] P00078_AInventarioCount ;
-      protected int[] P00089_AEstado_productoCount ;
-      protected int[] P000910_ACategoria_productoCount ;
-      protected int[] P000A11_AMarca_productoCount ;
-      protected int[] P000B12_AProveedoresCount ;
-      protected int[] P000C13_ATipo_proveedorCount ;
-      protected string[] P000D14_AsSchemaVar ;
-      protected bool[] P000D14_nsSchemaVar ;
-      protected string[] P000E15_AsSchemaVar ;
-      protected bool[] P000E15_nsSchemaVar ;
+      protected string[] P00012_AsSchemaVar ;
+      protected bool[] P00012_nsSchemaVar ;
+      protected string[] P00023_AsSchemaVar ;
+      protected bool[] P00023_nsSchemaVar ;
+      protected string[] P00034_Atablename ;
+      protected bool[] P00034_ntablename ;
+      protected string[] P00034_Aschemaname ;
+      protected bool[] P00034_nschemaname ;
+      protected string[] P00045_Aconstid ;
+      protected bool[] P00045_nconstid ;
+      protected string[] P00045_Afkeyid ;
+      protected bool[] P00045_nfkeyid ;
+      protected int[] P00045_Arkeyid ;
+      protected bool[] P00045_nrkeyid ;
    }
 
    public class reorg__default : DataStoreHelperBase, IDataStoreHelper
@@ -535,16 +370,6 @@ namespace GeneXus.Programs {
          ,new ForEachCursor(def[1])
          ,new ForEachCursor(def[2])
          ,new ForEachCursor(def[3])
-         ,new ForEachCursor(def[4])
-         ,new ForEachCursor(def[5])
-         ,new ForEachCursor(def[6])
-         ,new ForEachCursor(def[7])
-         ,new ForEachCursor(def[8])
-         ,new ForEachCursor(def[9])
-         ,new ForEachCursor(def[10])
-         ,new ForEachCursor(def[11])
-         ,new ForEachCursor(def[12])
-         ,new ForEachCursor(def[13])
        };
     }
 
@@ -561,55 +386,18 @@ namespace GeneXus.Programs {
           };
           Object[] prmP00034;
           prmP00034 = new Object[] {
+          new ParDef("@sTableName",GXType.Char,255,0) ,
+          new ParDef("@sMySchemaName",GXType.Char,255,0)
           };
           Object[] prmP00045;
           prmP00045 = new Object[] {
-          };
-          Object[] prmP00056;
-          prmP00056 = new Object[] {
-          };
-          Object[] prmP00067;
-          prmP00067 = new Object[] {
-          };
-          Object[] prmP00078;
-          prmP00078 = new Object[] {
-          };
-          Object[] prmP00089;
-          prmP00089 = new Object[] {
-          };
-          Object[] prmP000910;
-          prmP000910 = new Object[] {
-          };
-          Object[] prmP000A11;
-          prmP000A11 = new Object[] {
-          };
-          Object[] prmP000B12;
-          prmP000B12 = new Object[] {
-          };
-          Object[] prmP000C13;
-          prmP000C13 = new Object[] {
-          };
-          Object[] prmP000D14;
-          prmP000D14 = new Object[] {
-          };
-          Object[] prmP000E15;
-          prmP000E15 = new Object[] {
+          new ParDef("@sTableName",GXType.Char,255,0)
           };
           def= new CursorDef[] {
-              new CursorDef("P00012", "SELECT COUNT(*) FROM [Empleados] ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP00012,100, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("P00023", "SELECT COUNT(*) FROM [Compra_inventario] ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP00023,100, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("P00034", "SELECT COUNT(*) FROM [Ventas_inventario] ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP00034,100, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("P00045", "SELECT COUNT(*) FROM [Tipo_empleado] ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP00045,100, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("P00056", "SELECT COUNT(*) FROM [Estado_empleado] ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP00056,100, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("P00067", "SELECT COUNT(*) FROM [Clientes] ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP00067,100, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("P00078", "SELECT COUNT(*) FROM [Inventario] ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP00078,100, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("P00089", "SELECT COUNT(*) FROM [Estado_producto] ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP00089,100, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("P000910", "SELECT COUNT(*) FROM [Categoria_producto] ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP000910,100, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("P000A11", "SELECT COUNT(*) FROM [Marca_producto] ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP000A11,100, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("P000B12", "SELECT COUNT(*) FROM [Proveedores] ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP000B12,100, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("P000C13", "SELECT COUNT(*) FROM [Tipo_proveedor] ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP000C13,100, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("P000D14", "SELECT SCHEMA_NAME() ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP000D14,100, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("P000E15", "SELECT USER_NAME() ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP000E15,100, GxCacheFrequency.OFF ,true,false )
+              new CursorDef("P00012", "SELECT SCHEMA_NAME() ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP00012,100, GxCacheFrequency.OFF ,true,false )
+             ,new CursorDef("P00023", "SELECT USER_NAME() ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP00023,100, GxCacheFrequency.OFF ,true,false )
+             ,new CursorDef("P00034", "SELECT TABLE_NAME, TABLE_SCHEMA FROM INFORMATION_SCHEMA.TABLES WHERE (TABLE_NAME = @sTableName) AND (TABLE_SCHEMA = @sMySchemaName) ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP00034,100, GxCacheFrequency.OFF ,true,false )
+             ,new CursorDef("P00045", "SELECT OBJECT_NAME(object_id), OBJECT_NAME(parent_object_id), referenced_object_id FROM sys.foreign_keys WHERE referenced_object_id = OBJECT_ID(RTRIM(LTRIM(@sTableName))) ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmP00045,100, GxCacheFrequency.OFF ,true,false )
           };
        }
     }
@@ -621,46 +409,19 @@ namespace GeneXus.Programs {
        switch ( cursor )
        {
              case 0 :
-                ((int[]) buf[0])[0] = rslt.getInt(1);
+                ((string[]) buf[0])[0] = rslt.getString(1, 255);
                 return;
              case 1 :
-                ((int[]) buf[0])[0] = rslt.getInt(1);
+                ((string[]) buf[0])[0] = rslt.getString(1, 255);
                 return;
              case 2 :
-                ((int[]) buf[0])[0] = rslt.getInt(1);
+                ((string[]) buf[0])[0] = rslt.getVarchar(1);
+                ((string[]) buf[1])[0] = rslt.getVarchar(2);
                 return;
              case 3 :
-                ((int[]) buf[0])[0] = rslt.getInt(1);
-                return;
-             case 4 :
-                ((int[]) buf[0])[0] = rslt.getInt(1);
-                return;
-             case 5 :
-                ((int[]) buf[0])[0] = rslt.getInt(1);
-                return;
-             case 6 :
-                ((int[]) buf[0])[0] = rslt.getInt(1);
-                return;
-             case 7 :
-                ((int[]) buf[0])[0] = rslt.getInt(1);
-                return;
-             case 8 :
-                ((int[]) buf[0])[0] = rslt.getInt(1);
-                return;
-             case 9 :
-                ((int[]) buf[0])[0] = rslt.getInt(1);
-                return;
-             case 10 :
-                ((int[]) buf[0])[0] = rslt.getInt(1);
-                return;
-             case 11 :
-                ((int[]) buf[0])[0] = rslt.getInt(1);
-                return;
-             case 12 :
-                ((string[]) buf[0])[0] = rslt.getString(1, 255);
-                return;
-             case 13 :
-                ((string[]) buf[0])[0] = rslt.getString(1, 255);
+                ((string[]) buf[0])[0] = rslt.getVarchar(1);
+                ((string[]) buf[1])[0] = rslt.getVarchar(2);
+                ((int[]) buf[2])[0] = rslt.getInt(3);
                 return;
        }
     }

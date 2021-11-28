@@ -79,6 +79,8 @@ gx00c0
 gx00d0
 gx00e1
 gx00f0
+login
+gx00g0
 empleados
 compra_inventario
 ventas_inventario
@@ -91,4 +93,5 @@ categoria_producto
 marca_producto
 proveedores
 tipo_proveedor
+transacciondeprueba
 GeneXus.Programs.Common

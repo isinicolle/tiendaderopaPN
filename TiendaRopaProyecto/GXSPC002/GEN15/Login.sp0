@@ -1,0 +1,457 @@
+spec_i([ web,74,'Login','Login',0,eng,'17_0_5-152925' ]).
+ 
+struct_i(2,1,[],[]).
+ 
+level_i(2,[ 1,[ [ 1,many ] ],[],[],[ [ [ 1 ],[ 25,24 ] ] ],[ [ [ 1 ],[] ] ],[ 1 ],'IEMPLEADOS',[],[] ]).
+ 
+tw_i(2,[]).
+ 
+lwi_i(2,[ [] ]).
+ 
+ 
+ 
+ 
+ta_i(2,[ [ [ 1,25 ],[ 1,24 ] ] ]).
+ 
+las_i(2,[ [ 'Usuarioempleado','Contrasenaempleado',25,24 ] ]).
+ 
+lac_i(2,[ [ 'Usuarioempleado','Contrasenaempleado' ] ]).
+ 
+ 
+ 
+cls_i([ 0,0 ],[ 0,254 ]).
+ 
+pos_i('Usuarioempleado',[ 0,0,0 ]).
+pos_i('Contrasenaempleado',[ 0,0,0 ]).
+ 
+ 
+ 
+rule_i(0,datastore(1,'DS_LAST_CHANGE','')).
+rule_i(0,datastore(1,'LOCK_RETRY','10')).
+rule_i(0,datastore(1,'WAIT_RECORD','0')).
+rule_i(0,datastore(1,'ISOLATION_LEVEL','CR')).
+rule_i(0,datastore(1,'SQLSERVER_VERSION','10')).
+rule_i(0,datastore(1,'COMMENT_ON','No')).
+rule_i(0,datastore(1,'DFT_TMP_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_IDX_TBLSPACE','')).
+rule_i(0,datastore(1,'DFT_TBL_TBLSPACE','')).
+rule_i(0,datastore(1,'DCL_REF_INT_DB','Yes')).
+rule_i(0,datastore(1,'PRIMARY_KEY_TYPE','PK')).
+rule_i(0,datastore(1,'CS_SCHEMA','')).
+rule_i(0,datastore(1,'SORT_ATTRIBUTES','Yes')).
+rule_i(0,datastore(1,'JRN400','QSQJRN')).
+rule_i(0,datastore(1,'CREATE_SAVF','Yes')).
+rule_i(0,datastore(1,'PGMLIB','')).
+rule_i(0,datastore(1,'DTALIB','')).
+rule_i(0,datastore(1,'CC_USER_PASS','ÖgUuπkèÄ|tgYLwwK')).
+rule_i(0,datastore(1,'CC_USER_ID',uWIa1KopxjgQJwwK)).
+rule_i(0,datastore(1,'CC_SERVER','trialapps3.genexus.com')).
+rule_i(0,datastore(1,'CC_DBNAME','Ide6a88d0d06980621108bd2aa768d6e5e')).
+rule_i(0,datastore(1,'RecycleRWMin','30')).
+rule_i(0,datastore(1,'RecycleRWType','1')).
+rule_i(0,datastore(1,'RecycleRW','-1')).
+rule_i(0,datastore(1,'POOL_STARTUP','No')).
+rule_i(0,datastore(1,'POOLSIZE_RW','10')).
+rule_i(0,datastore(1,'UnlimitedRWPool','-1')).
+rule_i(0,datastore(1,'PoolRWEnabled','-1')).
+rule_i(0,datastore(1,'CS_RPCPGML','')).
+rule_i(0,datastore(1,'JDBC_DATASOURCE','')).
+rule_i(0,datastore(1,'USE_JDBC_DATASOURCE','0')).
+rule_i(0,datastore(1,'DS_DBMS_ADDINFO','Timeout=120')).
+rule_i(0,datastore(1,'USER_PASSWORD','uW⁄I]ÙQ“KOjvrgqHááS')).
+rule_i(0,datastore(1,'USER_ID',uWIa1KopxjgQJwwK)).
+rule_i(0,datastore(1,'TRUSTED_CONNECTION','No')).
+rule_i(0,datastore(1,'CS_CONNECT','First')).
+rule_i(0,datastore(1,'DBMS_PORT','')).
+rule_i(0,datastore(1,'CS_SERVER','trialapps3.genexus.com')).
+rule_i(0,datastore(1,'CS_DBNAME','Ide6a88d0d06980621108bd2aa768d6e5e')).
+rule_i(0,datastore(1,'CS_FLEDSNAME','')).
+rule_i(0,datastore(1,'CS_DRVNAME','sql server')).
+rule_i(0,datastore(1,'CS_DSNAME','')).
+rule_i(0,datastore(1,'DB_URL','')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_URL','0')).
+rule_i(0,datastore(1,'JDBC_CUSTOM_DRIVER','')).
+rule_i(0,datastore(1,'JDBC_DRIVER','net.sourceforge.jtds.jdbc.Driver')).
+rule_i(0,datastore(1,'CONNECT_METHOD','OPSYS')).
+rule_i(0,datastore(1,'ACCESS_TECHNO','ADONET')).
+rule_i(0,datastore(1,'MAIN_DS','-1')).
+rule_i(0,datastore(1,'REORG_GEN','8')).
+rule_i(0,datastore(1,'HelpKeyword','20')).
+rule_i(0,datastore(1,'DBMS',12)).
+rule_i(0,datastore(1,'NAME','Default')).
+rule_i(0,prop(idNULLS_BEHAVIOR,idNB_Current)).
+rule_i(0,prop('PWFCallable','0')).
+rule_i(0,prop('ObjectVisibility','Public')).
+rule_i(0,prop('FullyQualifiedName','Login')).
+rule_i(0,prop('GenerateObject','-1')).
+rule_i(0,prop('Hint_firstrows','UMPV')).
+rule_i(0,prop('JOIN_TYPE','UMPV')).
+rule_i(0,prop('DBMS_JOINS','UMPV')).
+rule_i(0,prop('REFRESH_TOUT_TRIG','ALL')).
+rule_i(0,prop('REFRESH_TOUT','')).
+rule_i(0,prop('KEY_ENTER','UMPV')).
+rule_i(0,prop('KEY_CANCEL','UMPV')).
+rule_i(0,prop('KEY_REFRESH','UMPV')).
+rule_i(0,prop('KEY_HELP','UMPV')).
+rule_i(0,prop('ASSIGNED_FNC_KEYS','UMPV')).
+rule_i(0,prop('WEB_SECURITY_LEVEL','High')).
+rule_i(0,prop('HTTP_PROTOCOL','Secure')).
+rule_i(0,prop('USE_ENCRYPTION','NO')).
+rule_i(0,prop('FIRST_WD_DATEPICKER','UMPV')).
+rule_i(0,prop('WNUM_DATEPICKER','UMPV')).
+rule_i(0,prop(idUSE_WEB_DATEPICKER,'UMPV')).
+rule_i(0,prop('WebUX','SMOOTH')).
+rule_i(0,prop('STD_FUNC_OBJECT','Yes')).
+rule_i(0,prop('SPC_WARNINGS_DISABLED','spc0096 spc0107 spc0142')).
+rule_i(0,prop('WebApplication',idDefault)).
+rule_i(0,prop('COMPRESS_HTML','UMPV')).
+rule_i(0,prop('AUTO_REFRESH','VARS_CHANGE')).
+rule_i(0,prop('CACHE_EXPIRES','')).
+rule_i(0,prop('WEB_AUTO_FOCUS','UMPV')).
+rule_i(0,prop('OnSessionTimeout','Ignore')).
+rule_i(0,prop('OBJECT_METADATA','')).
+rule_i(0,prop('IsMain','0')).
+rule_i(0,prop(sessiontype,'RW')).
+rule_i(0,prop('SHOWMASTERPAGE_POPUP','0')).
+rule_i(0,prop('MasterPage',o(13,'RwdMasterPage'))).
+rule_i(0,prop('WEB_COMP','No')).
+rule_i(0,prop('Theme',o(25,'Carmine'))).
+rule_i(0,prop('Folder',o(120,'Root Module'))).
+rule_i(0,prop('ObjDesc','Login')).
+rule_i(0,prop('ObjName','Login')).
+rule_i(0,maingen(15)).
+rule_i(0,rule([ a(22,[ '''INGRESAR''','''INGRESAR''','' ]) ],[],[],[])).
+ 
+a_i(1,1,f,'Err',[],[ [],[ t('0',3) ] ]).
+a_i(2,2,t,1,[],[ [],'IEMPLEADOS',[] ]).
+ 
+v_i(f,i,1,[]).
+v_i(f,o,1,'Err').
+v_i(t,i,2,[]).
+v_i(t,o,2,25).
+v_i(t,o,2,24).
+ 
+ 
+ 
+ 
+ 
+ 
+attri_i(1,[ 'IDEMPLEADO',int,12,0,'ZZZZZZZZZZZ9',0,'IDEMPLEADO','',0 ]).
+attri_i(25,[ 'CONTRASENAEMPLEADO',svchar,255,0,'',0,'CONTRASENAEMPLEADO','',0 ]).
+attri_i(24,[ 'USUARIOEMPLEADO',svchar,255,0,'',0,'USUARIOEMPLEADO','',0 ]).
+attri_i('Errmsg',[ 'Gx_emsg',char,70,0,'',1,'Error text','',8 ]).
+attri_i('Err',[ 'Gx_err',int,3,0,'ZZ9',1,'Error code','',7 ]).
+attri_i('Contrasenaempleado',[ 'CONTRASENAEMPLEADO',svchar,255,0,'',0,'CONTRASENAEMPLEADO','',6 ]).
+attri_i('Usuarioempleado',[ 'USUARIOEMPLEADO',svchar,255,0,'',0,'USUARIOEMPLEADO','',5 ]).
+ 
+table_i(1,[ 'Empleados',[ 1,24,25 ],'Empleados','Empleados' ]).
+ 
+index_i(1,[ 'IEMPLEADOS',u,[ 1 ],'IEmpleados' ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+add_att_i(bits,2,40000,52,'FOTOEMPLEADO_GXI',[ svchar,2048,0,0 ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+dom_info_i(85,[ 'Nombre' ]).
+dom_info_i(84,[ 'Codigo' ]).
+dom_info_i(45,[ 'GeneXus\Phone' ]).
+dom_info_i(42,[ 'GeneXus\Email' ]).
+ 
+ 
+break_i(2,nvg,1,[],[ [ 24,25 ],[],[] ]).
+ 
+b_group_i(2,1,lit,0,1,1).
+b_group_i(2,2,lit,0,2,0).
+ 
+b_line_i(1,2,1,cmd,1,[ t('',146,1,0),t('''INGRESAR''',3,1,7) ]).
+b_line_i(3,2,2,cmd,1,[ t('',109,3,0),t(24,2,1,5),t(=,10,1,20),t('Usuarioempleado',23,1,21),t('.AND.',9,1,38),t(25,2,1,44),t(=,10,1,62),t('Contrasenaempleado',23,1,63) ]).
+b_line_i(4,2,2,cmd,1,[ t('',171,4,0),t(o(13,'Home'),28,1,3) ]).
+b_line_i(5,2,2,cmd,1,[ t('',110,5,0) ]).
+b_line_i(6,2,2,cmd,1,[ t('',141,6,0),t('''El Usuario o ContraseÒa son incorrectos''',3,6,7),t(')',4,1,48) ]).
+b_line_i(7,2,2,cmd,1,[ t('',111,7,0) ]).
+b_line_i(9,2,2,cmd,1,[ t('',147,9,0) ]).
+b_line_i(1000,2,2,cmd,0,[ t('',146,0,0),t('Load',3,0,0) ]).
+b_line_i(1001,2,2,cmd,0,[ t('',155,0,0) ]).
+b_line_i(1002,2,2,cmd,0,[ t('',147,0,0) ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+html_i(2,table(2)).
+ 
+html_sub_i(2,0,html_i(0,html('<tbody>'))).
+html_sub_i(2,3,html_i(1,row(3))).
+html_sub_i(3,4,html_i(0,cell(4))).
+html_sub_i(2,5,html_i(2,row(5))).
+html_sub_i(5,6,html_i(0,cell(6))).
+html_sub_i(6,7,html_i(0,table(7))).
+html_sub_i(7,0,html_i(0,html('<tbody>'))).
+html_sub_i(7,8,html_i(1,row(8))).
+html_sub_i(8,9,html_i(0,cell(9))).
+html_sub_i(9,0,html_i(0,html('Usuario'))).
+html_sub_i(8,10,html_i(1,cell(10))).
+html_sub_i(10,11,html_i(0,t('Usuarioempleado',23))).
+html_sub_i(7,12,html_i(2,row(12))).
+html_sub_i(12,13,html_i(0,cell(13))).
+html_sub_i(13,0,html_i(0,html('ContraseÒa'))).
+html_sub_i(12,14,html_i(1,cell(14))).
+html_sub_i(14,15,html_i(0,t('Contrasenaempleado',23))).
+html_sub_i(7,16,html_i(3,row(16))).
+html_sub_i(16,17,html_i(0,cell(17))).
+html_sub_i(16,18,html_i(1,cell(18))).
+html_sub_i(18,19,html_i(0,button('''INGRESAR'''))).
+html_sub_i(7,0,html_i(4,html('</tbody>'))).
+html_sub_i(2,0,html_i(3,html('</tbody>'))).
+ 
+html_tags_i(1,'Class','Form').
+ 
+html_comp_i(2,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(2,'Id','Table1',v,[ str ]).
+html_comp_i(2,'Class','Table',v,[ str ]).
+html_comp_i(2,'Title','',d,[ str ]).
+html_comp_i(2,'Header','',d,[ str ]).
+html_comp_i(2,'Align',left,d,[ str ]).
+html_comp_i(2,'Backgroundgx','',d,[ str ]).
+html_comp_i(2,'Bgcolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(2,'Border','0',d,[ str ]).
+html_comp_i(2,'Bordercolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(2,'Cellpadding','1',d,[ str ]).
+html_comp_i(2,'Cellspacing','2',d,[ str ]).
+html_comp_i(2,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(2,'Width',measure(100,'%'),v,[ measure ]).
+html_comp_i(2,'Rules',none,d,[ str ]).
+html_comp_i(7,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(7,'Id','Table2',v,[ str ]).
+html_comp_i(7,'Class','Table',v,[ str ]).
+html_comp_i(7,'Title','',d,[ str ]).
+html_comp_i(7,'Header','',d,[ str ]).
+html_comp_i(7,'Align',center,v,[ str ]).
+html_comp_i(7,'Backgroundgx','',d,[ str ]).
+html_comp_i(7,'Bgcolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(7,'Border','0',d,[ str ]).
+html_comp_i(7,'Bordercolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(7,'Cellpadding','1',d,[ str ]).
+html_comp_i(7,'Cellspacing','2',d,[ str ]).
+html_comp_i(7,'Height',measure(0,px),d,[ measure ]).
+html_comp_i(7,'Width',measure(50,'%'),v,[ measure ]).
+html_comp_i(7,'Rules',none,d,[ str ]).
+html_comp_i(9,'Height',measure(33,px),v,[ measure ]).
+html_comp_i(9,'Width',measure(20,'%'),v,[ measure ]).
+html_comp_i(10,'Width',measure(20,'%'),v,[ measure ]).
+html_comp_i(11,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(11,'Colcount',80,d,[ num ]).
+html_comp_i(11,'Attid',-5,v,[ num ]).
+html_comp_i(11,'Class','Attribute',d,[ str ]).
+html_comp_i(11,'Controlname','&Usuarioempleado',d,[ str ]).
+html_comp_i(11,'Returnonclick',0,d,[ bool ]).
+html_comp_i(11,'Captionclass','',d,[ str ]).
+html_comp_i(11,'Captionstyle','',d,[ str ]).
+html_comp_i(11,'Captionposition','',d,[ str ]).
+html_comp_i(11,'Captionvalue','',d,[ str ]).
+html_comp_i(11,'Layoutclass','',d,[ str ]).
+html_comp_i(11,'Controltype',2,d,[ num ]).
+html_comp_i(11,'Inputtype',0,d,[ num ]).
+html_comp_i(11,'Editautocomplete',0,d,[ num ]).
+html_comp_i(11,'Autocorrection',-1,d,[ bool ]).
+html_comp_i(11,'Autocapitalization','FirstWord',d,[ str ]).
+html_comp_i(11,'Notifycontextchange',0,d,[ bool ]).
+html_comp_i(11,'Emptyasnull','Yes',d,[ str ]).
+html_comp_i(11,'Readonly',0,d,[ bool ]).
+html_comp_i(11,'Autocomplete',-1,d,[ bool ]).
+html_comp_i(11,'Ispassword',0,d,[ bool ]).
+html_comp_i(11,'Autoresize',0,v,[ bool ]).
+html_comp_i(11,'Gxwidth',measure(309,px),v,[ measure ]).
+html_comp_i(11,'Gxheight',measure(22,px),v,[ measure ]).
+html_comp_i(11,'Ismultiline',0,d,[ bool ]).
+html_comp_i(11,'Maxtextnumberlines',0,d,[ num ]).
+html_comp_i(11,'Fill',-1,d,[ bool ]).
+html_comp_i(11,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(11,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(11,'Font',font('Arial',10,[]),d,[ font ]).
+html_comp_i(11,'Horizontalalignment',left,d,[ str ]).
+html_comp_i(11,'Gxformat',0,d,[ num ]).
+html_comp_i(11,'Title','',d,[ str ]).
+html_comp_i(11,'Invitemsg','',d,[ str ]).
+html_comp_i(13,'Height',measure(24,px),v,[ measure ]).
+html_comp_i(14,'Width',measure(20,'%'),v,[ measure ]).
+html_comp_i(15,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(15,'Colcount',80,d,[ num ]).
+html_comp_i(15,'Attid',-6,v,[ num ]).
+html_comp_i(15,'Class','Attribute',d,[ str ]).
+html_comp_i(15,'Controlname','&Contrasenaempleado',d,[ str ]).
+html_comp_i(15,'Returnonclick',0,d,[ bool ]).
+html_comp_i(15,'Captionclass','',d,[ str ]).
+html_comp_i(15,'Captionstyle','',d,[ str ]).
+html_comp_i(15,'Captionposition','',d,[ str ]).
+html_comp_i(15,'Captionvalue','',d,[ str ]).
+html_comp_i(15,'Layoutclass','',d,[ str ]).
+html_comp_i(15,'Controltype',2,d,[ num ]).
+html_comp_i(15,'Inputtype',0,d,[ num ]).
+html_comp_i(15,'Editautocomplete',0,d,[ num ]).
+html_comp_i(15,'Autocorrection',-1,d,[ bool ]).
+html_comp_i(15,'Autocapitalization','FirstWord',d,[ str ]).
+html_comp_i(15,'Notifycontextchange',0,d,[ bool ]).
+html_comp_i(15,'Emptyasnull','Yes',d,[ str ]).
+html_comp_i(15,'Readonly',0,d,[ bool ]).
+html_comp_i(15,'Autocomplete',0,d,[ bool ]).
+html_comp_i(15,'Ispassword',-1,v,[ bool ]).
+html_comp_i(15,'Autoresize',0,v,[ bool ]).
+html_comp_i(15,'Gxwidth',measure(309,px),v,[ measure ]).
+html_comp_i(15,'Gxheight',measure(21,px),v,[ measure ]).
+html_comp_i(15,'Ismultiline',0,d,[ bool ]).
+html_comp_i(15,'Maxtextnumberlines',0,d,[ num ]).
+html_comp_i(15,'Fill',-1,d,[ bool ]).
+html_comp_i(15,'Backcolor',rgb(255,255,255),d,[ color ]).
+html_comp_i(15,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(15,'Font',font('Arial',10,[]),d,[ font ]).
+html_comp_i(15,'Horizontalalignment',left,d,[ str ]).
+html_comp_i(15,'Gxformat',0,d,[ num ]).
+html_comp_i(15,'Title','',d,[ str ]).
+html_comp_i(15,'Invitemsg','',d,[ str ]).
+html_comp_i(17,'Height',measure(24,px),v,[ measure ]).
+html_comp_i(18,'Height',measure(40,'%'),v,[ measure ]).
+html_comp_i(19,'Isabstractlayoutcontrol',0,d,[ bool ]).
+html_comp_i(19,'Controlname','Button',v,[ str ]).
+html_comp_i(19,'Class','Button',d,[ str ]).
+html_comp_i(19,'Event','''INGRESAR''',v,[ str ]).
+html_comp_i(19,'Caption','INGRESAR',d,[ str ]).
+html_comp_i(19,'Title','INGRESAR',d,[ str ]).
+html_comp_i(19,'Font',font('Microsoft Sans Serif',12,[ bold ]),v,[ font ]).
+html_comp_i(19,'Forecolor',rgb(0,0,0),d,[ color ]).
+html_comp_i(19,'Backcolor',rgb(255,160,122),v,[ color ]).
+html_comp_i(19,'Border','5',v,[ str ]).
+html_comp_i(19,'Bordercolor',rgb(255,245,238),v,[ color ]).
+html_comp_i(19,'Buttonborderstyle',standard,v,[ str ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+lit_i(11,1,t('Usuarioempleado',23),[ ctlname('&Usuarioempleado'),ctrltype(edit,11),pos(11),ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(15,1,t('Contrasenaempleado',23),[ ctlname('&Contrasenaempleado'),ctrltype(edit,15),pos(15),ispwd(1),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(19,1,button('''INGRESAR'''),[ ctlname('Button'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(7,1,table(7),[ ctlname('Table2') ]).
+lit_i(2,1,table(2),[ ctlname('Table1') ]).
+lit_i(1,1,window,[ rect(0,0,1000,1000),ctlname('Form') ]).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+att_prop_i(2,24,'ExternalName','USUARIOEMPLEADO',d).
+att_prop_i(2,24,'ExternalNamespace','TiendaRopaProyecto',d).
+att_prop_i(2,24,'EmptyAsNull','Yes',d).
+att_prop_i(2,24,idBasedOn,85,v).
+att_prop_i(2,24,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,24,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(2,24,'AttRegEx','',d).
+att_prop_i(2,24,'AttValidationFailedMsg','',d).
+att_prop_i(2,24,'DownloadOffline','0',d).
+att_prop_i(2,24,'VarServiceExtName','',d).
+att_prop_i(2,24,'FullName','USUARIOEMPLEADO',v).
+att_prop_i(2,25,'ExternalName','CONTRASENAEMPLEADO',d).
+att_prop_i(2,25,'ExternalNamespace','TiendaRopaProyecto',d).
+att_prop_i(2,25,'EmptyAsNull','Yes',d).
+att_prop_i(2,25,idBasedOn,85,v).
+att_prop_i(2,25,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,25,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(2,25,'AttRegEx','',d).
+att_prop_i(2,25,'AttValidationFailedMsg','',d).
+att_prop_i(2,25,'DownloadOffline','0',d).
+att_prop_i(2,25,'VarServiceExtName','',d).
+att_prop_i(2,25,'FullName','CONTRASENAEMPLEADO',v).
+att_prop_i(2,1,'ExternalName','IDEMPLEADO',d).
+att_prop_i(2,1,'ExternalNamespace','TiendaRopaProyecto',d).
+att_prop_i(2,1,'EmptyAsNull','Yes',d).
+att_prop_i(2,1,idBasedOn,84,v).
+att_prop_i(2,1,'AUTONUMBER','-1',d).
+att_prop_i(2,1,'AUTONUMBER_START','1',d).
+att_prop_i(2,1,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,1,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,1,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,1,'AttRegEx','',d).
+att_prop_i(2,1,'AttValidationFailedMsg','',d).
+att_prop_i(2,1,'DownloadOffline','0',d).
+att_prop_i(2,1,'VarServiceExtName','',d).
+att_prop_i(2,1,'FullName','IDEMPLEADO',v).
+ 
+ 
+tbl_att_prop_i(2,1,1,'AllowNulls',n).
+tbl_att_prop_i(2,1,1,'AUTONUMBER',y).
+tbl_att_prop_i(2,1,24,'AllowNulls',n).
+tbl_att_prop_i(2,1,25,'AllowNulls',n).
+ 
+var_prop_i(2,'Usuarioempleado',idBasedOn,'',v).
+var_prop_i(2,'Contrasenaempleado',idBasedOn,'',v).
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+sub_info_i(146,'''INGRESAR''',1,9,[ [ 24,'Usuarioempleado',25,'Contrasenaempleado' ],[] ]).
+ 
+pgm_parm_i(web,8,'HOME',[],[]).
+ 
+pgm_callprotocol_i(web,74,'LOGIN','INTERNAL','Secure').
+pgm_callprotocol_i(web,8,'HOME','INTERNAL','Secure').
+ 
+ 
+pgm_main_info_i(web,8,'HOME',[ 15,'HOME','','','','','INTERNAL' ]).
+ 
+ 
+module_info_i('GeneXus','CSHARP_NAME_SPACE','GeneXus.Core').
+module_info_i('GeneXus','AssemblyName','GeneXus.dll').
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

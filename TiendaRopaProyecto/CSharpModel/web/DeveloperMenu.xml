@@ -4,6 +4,12 @@
    <Charset>UTF-8</Charset>
    <Path>file:///C:/Program Files (x86)/GeneXus/GeneXus17Trial/</Path>
    <Object>
+      <ObjCls>0</ObjCls>
+      <ObjName>TransaccionDePrueba</ObjName>
+      <ObjDesc>Transaccion De Prueba</ObjDesc>
+      <ObjLink>transacciondeprueba.aspx</ObjLink>
+   </Object>
+   <Object>
       <ObjCls>13</ObjCls>
       <ObjName>Home</ObjName>
       <ObjDesc>Home</ObjDesc>
@@ -80,6 +86,12 @@
       <ObjName>WWTipo_proveedor</ObjName>
       <ObjDesc>Tipo_proveedors</ObjDesc>
       <ObjLink>wwtipo_proveedor.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>Login</ObjName>
+      <ObjDesc>Login</ObjDesc>
+      <ObjLink>login.aspx</ObjLink>
    </Object>
    <Object>
       <ObjCls>1</ObjCls>

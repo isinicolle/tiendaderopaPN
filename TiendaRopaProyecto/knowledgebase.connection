@@ -3,7 +3,7 @@
 	<IntegratedSecurity>True</IntegratedSecurity>
 	<ServerInstance>(LocalDB)\MSSQLLocalDB</ServerInstance>
 	<CreateDbInKbFolder>True</CreateDbInKbFolder>
-	<Directory>C:\Models\TiendaRopaProyecto</Directory>
+	<Directory>C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto</Directory>
 	<DataFile>GX_KB_TiendaRopaProyecto.mdf</DataFile>
 	<LogFile>GX_KB_TiendaRopaProyecto_log.ldf</LogFile>
 	<HostName>LAPTOP-VB5HIN48</HostName>

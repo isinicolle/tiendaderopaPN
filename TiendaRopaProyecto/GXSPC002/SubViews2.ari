@@ -1,4 +1,5 @@
  
+ 
 subtype_views_enabled_i(2,yes,'17_0_5-152576').
  
  
@@ -6,5 +7,4 @@ subtype_views_enabled_i(2,yes,'17_0_5-152576').
  
 subtype_view_last_no_i(2,515).
  
-subtype_view_ts_i(2,'2021-11-27 02:46:26').
- 
+subtype_view_ts_i(2,'2021-11-28 06:15:56').

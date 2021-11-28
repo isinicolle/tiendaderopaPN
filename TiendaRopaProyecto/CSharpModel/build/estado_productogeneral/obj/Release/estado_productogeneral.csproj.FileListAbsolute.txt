@@ -1,3 +1,6 @@
 C:\Models\TiendaRopaProyecto\CSharpModel\web\bin\estado_productogeneral.dll
 C:\Models\TiendaRopaProyecto\CSharpModel\build\estado_productogeneral\obj\Release\estado_productogeneral.csprojResolveAssemblyReference.cache
 C:\Models\TiendaRopaProyecto\CSharpModel\build\estado_productogeneral\obj\Release\estado_productogeneral.dll
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\web\bin\estado_productogeneral.dll
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\build\estado_productogeneral\obj\Release\estado_productogeneral.csprojResolveAssemblyReference.cache
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\build\estado_productogeneral\obj\Release\estado_productogeneral.dll

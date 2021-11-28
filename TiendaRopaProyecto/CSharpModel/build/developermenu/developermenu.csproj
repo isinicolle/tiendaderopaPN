@@ -91,6 +91,8 @@
 		<ProjectReference Include=".\..\gx00d0\gx00d0.csproj" />
 		<ProjectReference Include=".\..\gx00e1\gx00e1.csproj" />
 		<ProjectReference Include=".\..\gx00f0\gx00f0.csproj" />
+		<ProjectReference Include=".\..\login\login.csproj" />
+		<ProjectReference Include=".\..\gx00g0\gx00g0.csproj" />
 		<ProjectReference Include=".\..\empleados\empleados.csproj" />
 		<ProjectReference Include=".\..\compra_inventario\compra_inventario.csproj" />
 		<ProjectReference Include=".\..\ventas_inventario\ventas_inventario.csproj" />
@@ -103,6 +105,7 @@
 		<ProjectReference Include=".\..\marca_producto\marca_producto.csproj" />
 		<ProjectReference Include=".\..\proveedores\proveedores.csproj" />
 		<ProjectReference Include=".\..\tipo_proveedor\tipo_proveedor.csproj" />
+		<ProjectReference Include=".\..\transacciondeprueba\transacciondeprueba.csproj" />
 		<ProjectReference Include=".\..\GeneXus.Programs.Common\GeneXus.Programs.Common.csproj" />
 
 	</ItemGroup>

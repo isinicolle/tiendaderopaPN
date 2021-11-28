@@ -1,3 +1,6 @@
 C:\Models\TiendaRopaProyecto\CSharpModel\web\bin\viewproveedores.dll
 C:\Models\TiendaRopaProyecto\CSharpModel\build\viewproveedores\obj\Release\viewproveedores.csprojResolveAssemblyReference.cache
 C:\Models\TiendaRopaProyecto\CSharpModel\build\viewproveedores\obj\Release\viewproveedores.dll
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\web\bin\viewproveedores.dll
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\build\viewproveedores\obj\Release\viewproveedores.csprojResolveAssemblyReference.cache
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\build\viewproveedores\obj\Release\viewproveedores.dll

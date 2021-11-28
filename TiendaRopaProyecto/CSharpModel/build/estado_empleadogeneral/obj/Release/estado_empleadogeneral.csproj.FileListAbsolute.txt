@@ -1,3 +1,6 @@
 C:\Models\TiendaRopaProyecto\CSharpModel\web\bin\estado_empleadogeneral.dll
 C:\Models\TiendaRopaProyecto\CSharpModel\build\estado_empleadogeneral\obj\Release\estado_empleadogeneral.csprojResolveAssemblyReference.cache
 C:\Models\TiendaRopaProyecto\CSharpModel\build\estado_empleadogeneral\obj\Release\estado_empleadogeneral.dll
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\web\bin\estado_empleadogeneral.dll
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\build\estado_empleadogeneral\obj\Release\estado_empleadogeneral.csprojResolveAssemblyReference.cache
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\build\estado_empleadogeneral\obj\Release\estado_empleadogeneral.dll

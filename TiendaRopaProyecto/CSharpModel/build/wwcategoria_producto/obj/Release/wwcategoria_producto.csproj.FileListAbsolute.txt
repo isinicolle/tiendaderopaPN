@@ -1,3 +1,6 @@
 C:\Models\TiendaRopaProyecto\CSharpModel\web\bin\wwcategoria_producto.dll
 C:\Models\TiendaRopaProyecto\CSharpModel\build\wwcategoria_producto\obj\Release\wwcategoria_producto.csprojResolveAssemblyReference.cache
 C:\Models\TiendaRopaProyecto\CSharpModel\build\wwcategoria_producto\obj\Release\wwcategoria_producto.dll
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\web\bin\wwcategoria_producto.dll
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\build\wwcategoria_producto\obj\Release\wwcategoria_producto.csprojResolveAssemblyReference.cache
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\build\wwcategoria_producto\obj\Release\wwcategoria_producto.dll

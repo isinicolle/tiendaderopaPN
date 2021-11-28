@@ -1,3 +1,6 @@
 C:\Models\TiendaRopaProyecto\CSharpModel\web\bin\empleadosventas_inventariowc.dll
 C:\Models\TiendaRopaProyecto\CSharpModel\build\empleadosventas_inventariowc\obj\Release\empleadosventas_inventariowc.csprojResolveAssemblyReference.cache
 C:\Models\TiendaRopaProyecto\CSharpModel\build\empleadosventas_inventariowc\obj\Release\empleadosventas_inventariowc.dll
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\web\bin\empleadosventas_inventariowc.dll
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\build\empleadosventas_inventariowc\obj\Release\empleadosventas_inventariowc.csprojResolveAssemblyReference.cache
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\build\empleadosventas_inventariowc\obj\Release\empleadosventas_inventariowc.dll

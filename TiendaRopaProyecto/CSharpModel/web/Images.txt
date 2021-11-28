@@ -26,6 +26,7 @@ d4b5891b-4373-4ea4-8a97-68b77a0ce14c=PoweredByGeneXus
 9c1b08ed-b544-4096-b8aa-7de1e6446ab4=UndeleteRow
 4d15e4e0-2197-40a1-8159-7bb6d664cf7d=a1aff16e1bddb014e51dc80c436f972f
 6426d147-e335-46f3-9b38-8ad85a90aa77=logo_DeModa
+05fc4767-660c-46ea-b140-352897540936=logo_DeModa1
 [Location]
 90274dae-49c6-47ae-98c4-7a8f5eb82c12=English,Carmine,I,Carmine/PageFirst.png,
 90274dae-49c6-47ae-98c4-7a8f5eb82c12=Spanish,Carmine,I,Carmine/PageFirst.png,
@@ -81,3 +82,5 @@ d4b5891b-4373-4ea4-8a97-68b77a0ce14c=Spanish,Carmine,I,PoweredByGeneXus.png,
 4d15e4e0-2197-40a1-8159-7bb6d664cf7d=Spanish,Carmine,I,a1aff16e1bddb014e51dc80c436f972f.png,
 6426d147-e335-46f3-9b38-8ad85a90aa77=English,Carmine,I,logo_DeModa.jpg,
 6426d147-e335-46f3-9b38-8ad85a90aa77=Spanish,Carmine,I,logo_DeModa.jpg,
+05fc4767-660c-46ea-b140-352897540936=English,Carmine,I,logo_DeModa1.jpg,
+05fc4767-660c-46ea-b140-352897540936=Spanish,Carmine,I,logo_DeModa1.jpg,
