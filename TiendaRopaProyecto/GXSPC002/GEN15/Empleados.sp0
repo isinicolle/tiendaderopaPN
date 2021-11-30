@@ -265,8 +265,8 @@ act_info_i(9,[ [ 3 ] ]).
 ca_i(9,3).
 ca_i(7,2).
  
-tbl_to_delete_i(1,[ 4,[ [ 1,1,1 ] ],c,'IVENTAS_INVENTARIO2',0,[ 12 ],'' ]).
-tbl_to_delete_i(1,[ 2,[ [ 1,1,1 ] ],c,'ICOMPRA_INVENTARIO2',0,[ 11 ],'' ]).
+tbl_to_delete_i(1,[ 22,[ [ 1,1,1 ] ],c,'IVENTAS_INVENTARIO2',0,[ 12 ],'' ]).
+tbl_to_delete_i(1,[ 19,[ [ 1,1,1 ] ],c,'ICOMPRA_INVENTARIO2',0,[ 11 ],'' ]).
  
  
  
@@ -298,8 +298,8 @@ attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,'Is Authorized','',8 ])
 attri_i('Idempleado',[ 'IDEMPLEADO',int,12,0,'ZZZZZZZZZZZ9',0,'IDEMPLEADO','',7 ]).
 attri_i('Mode',[ 'Gx_mode',char,3,0,'@!',1,'','',2 ]).
  
-table_i(4,[ 'Ventas_inventario',[ 12,1 ],'Ventas_inventario','Ventas_inventario' ]).
-table_i(2,[ 'Compra_inventario',[ 11,1 ],'Compra_inventario','Compra_inventario' ]).
+table_i(22,[ 'Ventas_inventario',[ 12,1 ],'Ventas_inventario','Ventas_inventario' ]).
+table_i(19,[ 'Compra_inventario',[ 11,1 ],'Compra_inventario','Compra_inventario' ]).
 table_i(7,[ 'Estado_empleado',[ 3,22 ],'Estado_empleado','Estado_empleado' ]).
 table_i(6,[ 'Tipo_empleado',[ 2,21 ],'Tipo_empleado','Tipo_empleado' ]).
 table_i(1,[ 'Empleados',[ 1,23,24,25,26,29,27,28,52,40000,2,3 ],'Empleados','Empleados' ]).
@@ -307,10 +307,10 @@ table_i(1,[ 'Empleados',[ 1,23,24,25,26,29,27,28,52,40000,2,3 ],'Empleados','Emp
 index_i(1,[ 'IEMPLEADOS',u,[ 1 ],'IEmpleados' ]).
 index_i(6,[ 'ITIPO_EMPLEADO',u,[ 2 ],'ITipo_empleado' ]).
 index_i(7,[ 'IESTADO_EMPLEADO',u,[ 3 ],'IEstado_empleado' ]).
-index_i(2,[ 'ICOMPRA_INVENTARIO',u,[ 11 ],'ICompra_inventario' ]).
-index_i(2,[ 'ICOMPRA_INVENTARIO2',d,[ 1 ],'ICompra_inventario2' ]).
-index_i(4,[ 'IVENTAS_INVENTARIO',u,[ 12 ],'IVentas_inventario' ]).
-index_i(4,[ 'IVENTAS_INVENTARIO2',d,[ 1 ],'IVentas_inventario2' ]).
+index_i(19,[ 'ICOMPRA_INVENTARIO',u,[ 11 ],'ICompra_inventario' ]).
+index_i(19,[ 'ICOMPRA_INVENTARIO2',d,[ 1 ],'ICompra_inventario2' ]).
+index_i(22,[ 'IVENTAS_INVENTARIO',u,[ 12 ],'IVentas_inventario' ]).
+index_i(22,[ 'IVENTAS_INVENTARIO2',d,[ 1 ],'IVentas_inventario2' ]).
  
  
  
@@ -2027,14 +2027,14 @@ att_prop_i(2,40000,'AttRegEx','',d).
 att_prop_i(2,40000,'AttValidationFailedMsg','',d).
 att_prop_i(2,40000,'FullName','',v).
  
-tbl_prop_i(2,4,'AllDirSuper',[ [ 1,[ 1 ] ] ],v).
-tbl_prop_i(2,2,'AllDirSuper',[ [ 1,[ 1 ] ] ],v).
+tbl_prop_i(2,22,'AllDirSuper',[ [ 1,[ 1 ] ] ],v).
+tbl_prop_i(2,19,'AllDirSuper',[ [ 1,[ 1 ] ] ],v).
 tbl_prop_i(2,1,'AllDirSuper',[ [ 7,[ 3 ] ],[ 6,[ 2 ] ] ],v).
 tbl_prop_i(2,7,'DirSubor',[ [ 1,[ 3 ] ] ],v).
 tbl_prop_i(2,6,'DirSubor',[ [ 1,[ 2 ] ] ],v).
-tbl_prop_i(2,1,'DirSubor',[ [ 2,[ 1 ] ],[ 4,[ 1 ] ] ],v).
-tbl_prop_i(2,4,'DirSuper',[ [ 1,[ 1 ] ] ],v).
-tbl_prop_i(2,2,'DirSuper',[ [ 1,[ 1 ] ] ],v).
+tbl_prop_i(2,1,'DirSubor',[ [ 19,[ 1 ] ],[ 22,[ 1 ] ] ],v).
+tbl_prop_i(2,22,'DirSuper',[ [ 1,[ 1 ] ] ],v).
+tbl_prop_i(2,19,'DirSuper',[ [ 1,[ 1 ] ] ],v).
 tbl_prop_i(2,1,'DirSuper',[ [ 7,[ 3 ] ],[ 6,[ 2 ] ] ],v).
  
 tbl_att_prop_i(2,1,27,'AllowNulls',n).
@@ -2056,12 +2056,12 @@ tbl_att_prop_i(2,6,21,'AllowNulls',n).
 tbl_att_prop_i(2,7,3,'AllowNulls',n).
 tbl_att_prop_i(2,7,3,'AUTONUMBER',y).
 tbl_att_prop_i(2,7,22,'AllowNulls',n).
-tbl_att_prop_i(2,2,11,'AllowNulls',n).
-tbl_att_prop_i(2,2,11,'AUTONUMBER',y).
-tbl_att_prop_i(2,2,1,'AllowNulls',n).
-tbl_att_prop_i(2,4,12,'AllowNulls',n).
-tbl_att_prop_i(2,4,12,'AUTONUMBER',y).
-tbl_att_prop_i(2,4,1,'AllowNulls',n).
+tbl_att_prop_i(2,19,11,'AllowNulls',n).
+tbl_att_prop_i(2,19,11,'AUTONUMBER',y).
+tbl_att_prop_i(2,19,1,'AllowNulls',n).
+tbl_att_prop_i(2,22,12,'AllowNulls',n).
+tbl_att_prop_i(2,22,12,'AUTONUMBER',y).
+tbl_att_prop_i(2,22,1,'AllowNulls',n).
  
 var_prop_i(2,'Idempleado',idBasedOn,'',v).
 var_prop_i(2,'Insert_idtipoempleado',idBasedOn,'',v).

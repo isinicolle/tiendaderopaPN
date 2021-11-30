@@ -4,7 +4,7 @@
 
 	<PropertyGroup>
 		<AssemblyName>ventas_inventariogeneral</AssemblyName>
-		<ProjectGuid>{a3d7468c-e5d3-46ad-84db-15397bac3fcc}</ProjectGuid>
+		<ProjectGuid>{f4f2020a-f24a-40fa-9ade-b4261281e601}</ProjectGuid>
 		<OutputType>Library</OutputType>
 		<PostgresqlSupport>false</PostgresqlSupport>
 	</PropertyGroup>

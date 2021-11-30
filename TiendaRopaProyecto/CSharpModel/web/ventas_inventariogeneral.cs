@@ -177,18 +177,18 @@ namespace GeneXus.Programs {
             {
                ValidateSpaRequest();
             }
-            PA1N2( ) ;
+            PA2X2( ) ;
             if ( ( GxWebError == 0 ) && ! isAjaxCallMode( ) )
             {
                /* GeneXus formulas. */
                AV13Pgmname = "Ventas_inventarioGeneral";
                context.Gx_err = 0;
-               /* Using cursor H001N8 */
+               /* Using cursor H002X10 */
                pr_default.execute(0, new Object[] {A12IDVENTA});
                if ( (pr_default.getStatus(0) != 101) )
                {
-                  A59TOTALVENTA = H001N8_A59TOTALVENTA[0];
-                  n59TOTALVENTA = H001N8_n59TOTALVENTA[0];
+                  A59TOTALVENTA = H002X10_A59TOTALVENTA[0];
+                  n59TOTALVENTA = H002X10_n59TOTALVENTA[0];
                   AssignAttri(sPrefix, false, "A59TOTALVENTA", StringUtil.LTrimStr( A59TOTALVENTA, 12, 2));
                }
                else
@@ -198,12 +198,12 @@ namespace GeneXus.Programs {
                   AssignAttri(sPrefix, false, "A59TOTALVENTA", StringUtil.LTrimStr( A59TOTALVENTA, 12, 2));
                }
                pr_default.close(0);
-               /* Using cursor H001N12 */
+               /* Using cursor H002X15 */
                pr_default.execute(1, new Object[] {A12IDVENTA});
                if ( (pr_default.getStatus(1) != 101) )
                {
-                  A57IMPUESTOVENTA = H001N12_A57IMPUESTOVENTA[0];
-                  n57IMPUESTOVENTA = H001N12_n57IMPUESTOVENTA[0];
+                  A57IMPUESTOVENTA = H002X15_A57IMPUESTOVENTA[0];
+                  n57IMPUESTOVENTA = H002X15_n57IMPUESTOVENTA[0];
                   AssignAttri(sPrefix, false, "A57IMPUESTOVENTA", StringUtil.LTrimStr( A57IMPUESTOVENTA, 12, 2));
                }
                else
@@ -213,7 +213,7 @@ namespace GeneXus.Programs {
                   AssignAttri(sPrefix, false, "A57IMPUESTOVENTA", StringUtil.LTrimStr( A57IMPUESTOVENTA, 12, 2));
                }
                pr_default.close(1);
-               WS1N2( ) ;
+               WS2X2( ) ;
                if ( ! isAjaxCallMode( ) )
                {
                   if ( nDynComponent == 0 )
@@ -280,7 +280,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 1152180), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 1152180), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?202111280104833", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?2021113013582677", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -355,8 +355,8 @@ namespace GeneXus.Programs {
          GXKey = Decrypt64( context.GetCookie( "GX_SESSION_ID"), Crypto.GetServerKey( ));
          forbiddenHiddens = new GXProperties();
          forbiddenHiddens.Add("hshsalt", sPrefix+"hsh"+"Ventas_inventarioGeneral");
-         forbiddenHiddens.Add("IDCLIENTE", context.localUtil.Format( (decimal)(A4IDCLIENTE), "ZZZZZZZZZZZ9"));
          forbiddenHiddens.Add("IDEMPLEADO", context.localUtil.Format( (decimal)(A1IDEMPLEADO), "ZZZZZZZZZZZ9"));
+         forbiddenHiddens.Add("IDCLIENTE", context.localUtil.Format( (decimal)(A4IDCLIENTE), "ZZZZZZZZZZZ9"));
          GxWebStd.gx_hidden_field( context, sPrefix+"hsh", GetEncryptedHash( forbiddenHiddens.ToString(), GXKey));
          GXUtil.WriteLogInfo("ventas_inventariogeneral:[ SendSecurityCheck value for]"+forbiddenHiddens.ToJSonString());
       }
@@ -369,7 +369,7 @@ namespace GeneXus.Programs {
          GxWebStd.gx_hidden_field( context, sPrefix+"wcpOA12IDVENTA", StringUtil.LTrim( StringUtil.NToC( (decimal)(wcpOA12IDVENTA), 12, 0, ".", "")));
       }
 
-      protected void RenderHtmlCloseForm1N2( )
+      protected void RenderHtmlCloseForm2X2( )
       {
          SendCloseFormHiddens( ) ;
          if ( ( StringUtil.Len( sPrefix) != 0 ) && ( context.isAjaxRequest( ) || context.isSpaRequest( ) ) )
@@ -426,7 +426,7 @@ namespace GeneXus.Programs {
          return "Ventas_inventario General" ;
       }
 
-      protected void WB1N0( )
+      protected void WB2X0( )
       {
          if ( context.isAjaxRequest( ) )
          {
@@ -459,14 +459,14 @@ namespace GeneXus.Programs {
             TempTags = "  onfocus=\"gx.evt.onfocus(this, 8,'" + sPrefix + "',false,'',0)\"";
             ClassString = "BtnEnter";
             StyleString = "";
-            GxWebStd.gx_button_ctrl( context, bttBtnupdate_Internalname, "", "Update", bttBtnupdate_Jsonclick, 7, "Update", "", StyleString, ClassString, 1, 1, "standard", "'"+sPrefix+"'"+",false,"+"'"+"e111n1_client"+"'", TempTags, "", 2, "HLP_Ventas_inventarioGeneral.htm");
+            GxWebStd.gx_button_ctrl( context, bttBtnupdate_Internalname, "", "Update", bttBtnupdate_Jsonclick, 7, "Update", "", StyleString, ClassString, 1, 1, "standard", "'"+sPrefix+"'"+",false,"+"'"+"e112x1_client"+"'", TempTags, "", 2, "HLP_Ventas_inventarioGeneral.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "gx-button", "left", "top", "", "", "div");
             TempTags = "  onfocus=\"gx.evt.onfocus(this, 10,'" + sPrefix + "',false,'',0)\"";
             ClassString = "BtnDelete";
             StyleString = "";
-            GxWebStd.gx_button_ctrl( context, bttBtndelete_Internalname, "", "Delete", bttBtndelete_Jsonclick, 7, "Delete", "", StyleString, ClassString, 1, 1, "standard", "'"+sPrefix+"'"+",false,"+"'"+"e121n1_client"+"'", TempTags, "", 2, "HLP_Ventas_inventarioGeneral.htm");
+            GxWebStd.gx_button_ctrl( context, bttBtndelete_Internalname, "", "Delete", bttBtndelete_Jsonclick, 7, "Delete", "", StyleString, ClassString, 1, 1, "standard", "'"+sPrefix+"'"+",false,"+"'"+"e122x1_client"+"'", TempTags, "", 2, "HLP_Ventas_inventarioGeneral.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "Center", "top", "div");
@@ -528,6 +528,42 @@ namespace GeneXus.Programs {
             ClassString = "ReadonlyAttribute";
             StyleString = "";
             GxWebStd.gx_html_textarea( context, edtDESCRIPCIONVENTA_Internalname, A55DESCRIPCIONVENTA, "", "", 0, 1, edtDESCRIPCIONVENTA_Enabled, 0, 80, "chr", 4, "row", StyleString, ClassString, "", "", "255", -1, 0, "", "", -1, true, "Nombre", "'"+sPrefix+"'"+",false,"+"'"+""+"'", 0, "HLP_Ventas_inventarioGeneral.htm");
+            GxWebStd.gx_div_end( context, "left", "top", "div");
+            GxWebStd.gx_div_end( context, "left", "top", "div");
+            GxWebStd.gx_div_end( context, "left", "top", "div");
+            GxWebStd.gx_div_end( context, "left", "top", "div");
+            /* Div Control */
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
+            /* Div Control */
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 FormCell", "left", "top", "", "", "div");
+            /* Div Control */
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtIDEMPLEADO_Internalname+"\"", "", "div");
+            /* Attribute/Variable Label */
+            GxWebStd.gx_label_element( context, edtIDEMPLEADO_Internalname, "IDEMPLEADO", "col-sm-3 ReadonlyAttributeLabel", 1, true, "");
+            /* Div Control */
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
+            /* Single line edit */
+            GxWebStd.gx_single_line_edit( context, edtIDEMPLEADO_Internalname, StringUtil.LTrim( StringUtil.NToC( (decimal)(A1IDEMPLEADO), 12, 0, ".", "")), ((edtIDEMPLEADO_Enabled!=0) ? StringUtil.LTrim( context.localUtil.Format( (decimal)(A1IDEMPLEADO), "ZZZZZZZZZZZ9")) : context.localUtil.Format( (decimal)(A1IDEMPLEADO), "ZZZZZZZZZZZ9")), "", "'"+sPrefix+"'"+",false,"+"'"+""+"'", "", "", "", "", edtIDEMPLEADO_Jsonclick, 0, "ReadonlyAttribute", "", "", "", "", 1, edtIDEMPLEADO_Enabled, 0, "number", "1", 12, "chr", 1, "row", 12, 0, 0, 0, 1, -1, 0, true, "Codigo", "right", false, "", "HLP_Ventas_inventarioGeneral.htm");
+            GxWebStd.gx_div_end( context, "left", "top", "div");
+            GxWebStd.gx_div_end( context, "left", "top", "div");
+            GxWebStd.gx_div_end( context, "left", "top", "div");
+            GxWebStd.gx_div_end( context, "left", "top", "div");
+            /* Div Control */
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
+            /* Div Control */
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 FormCell", "left", "top", "", "", "div");
+            /* Div Control */
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtNOMBRECOMPLETOEMPLEADO_Internalname+"\"", "", "div");
+            /* Attribute/Variable Label */
+            GxWebStd.gx_label_element( context, edtNOMBRECOMPLETOEMPLEADO_Internalname, "NOMBRECOMPLETOEMPLEADO", "col-sm-3 ReadonlyAttributeLabel", 1, true, "");
+            /* Div Control */
+            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
+            /* Multiple line edit */
+            ClassString = "ReadonlyAttribute";
+            StyleString = "";
+            ClassString = "ReadonlyAttribute";
+            StyleString = "";
+            GxWebStd.gx_html_textarea( context, edtNOMBRECOMPLETOEMPLEADO_Internalname, A23NOMBRECOMPLETOEMPLEADO, edtNOMBRECOMPLETOEMPLEADO_Link, "", 0, 1, edtNOMBRECOMPLETOEMPLEADO_Enabled, 0, 80, "chr", 4, "row", StyleString, ClassString, "", "", "255", -1, 0, "", "", -1, true, "Nombre", "'"+sPrefix+"'"+",false,"+"'"+""+"'", 0, "HLP_Ventas_inventarioGeneral.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -616,42 +652,6 @@ namespace GeneXus.Programs {
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
-            /* Div Control */
-            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
-            /* Div Control */
-            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 FormCell", "left", "top", "", "", "div");
-            /* Div Control */
-            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtIDEMPLEADO_Internalname+"\"", "", "div");
-            /* Attribute/Variable Label */
-            GxWebStd.gx_label_element( context, edtIDEMPLEADO_Internalname, "IDEMPLEADO", "col-sm-3 ReadonlyAttributeLabel", 1, true, "");
-            /* Div Control */
-            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
-            /* Single line edit */
-            GxWebStd.gx_single_line_edit( context, edtIDEMPLEADO_Internalname, StringUtil.LTrim( StringUtil.NToC( (decimal)(A1IDEMPLEADO), 12, 0, ".", "")), ((edtIDEMPLEADO_Enabled!=0) ? StringUtil.LTrim( context.localUtil.Format( (decimal)(A1IDEMPLEADO), "ZZZZZZZZZZZ9")) : context.localUtil.Format( (decimal)(A1IDEMPLEADO), "ZZZZZZZZZZZ9")), "", "'"+sPrefix+"'"+",false,"+"'"+""+"'", "", "", "", "", edtIDEMPLEADO_Jsonclick, 0, "ReadonlyAttribute", "", "", "", "", 1, edtIDEMPLEADO_Enabled, 0, "number", "1", 12, "chr", 1, "row", 12, 0, 0, 0, 1, -1, 0, true, "Codigo", "right", false, "", "HLP_Ventas_inventarioGeneral.htm");
-            GxWebStd.gx_div_end( context, "left", "top", "div");
-            GxWebStd.gx_div_end( context, "left", "top", "div");
-            GxWebStd.gx_div_end( context, "left", "top", "div");
-            GxWebStd.gx_div_end( context, "left", "top", "div");
-            /* Div Control */
-            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
-            /* Div Control */
-            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 FormCell", "left", "top", "", "", "div");
-            /* Div Control */
-            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "form-group gx-form-group", "left", "top", ""+" data-gx-for=\""+edtNOMBRECOMPLETOEMPLEADO_Internalname+"\"", "", "div");
-            /* Attribute/Variable Label */
-            GxWebStd.gx_label_element( context, edtNOMBRECOMPLETOEMPLEADO_Internalname, "NOMBRECOMPLETOEMPLEADO", "col-sm-3 ReadonlyAttributeLabel", 1, true, "");
-            /* Div Control */
-            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-sm-9 gx-attribute", "left", "top", "", "", "div");
-            /* Multiple line edit */
-            ClassString = "ReadonlyAttribute";
-            StyleString = "";
-            ClassString = "ReadonlyAttribute";
-            StyleString = "";
-            GxWebStd.gx_html_textarea( context, edtNOMBRECOMPLETOEMPLEADO_Internalname, A23NOMBRECOMPLETOEMPLEADO, edtNOMBRECOMPLETOEMPLEADO_Link, "", 0, 1, edtNOMBRECOMPLETOEMPLEADO_Enabled, 0, 80, "chr", 4, "row", StyleString, ClassString, "", "", "255", -1, 0, "", "", -1, true, "Nombre", "'"+sPrefix+"'"+",false,"+"'"+""+"'", 0, "HLP_Ventas_inventarioGeneral.htm");
-            GxWebStd.gx_div_end( context, "left", "top", "div");
-            GxWebStd.gx_div_end( context, "left", "top", "div");
-            GxWebStd.gx_div_end( context, "left", "top", "div");
-            GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -661,7 +661,7 @@ namespace GeneXus.Programs {
          wbLoad = true;
       }
 
-      protected void START1N2( )
+      protected void START2X2( )
       {
          wbLoad = false;
          wbEnd = 0;
@@ -692,18 +692,18 @@ namespace GeneXus.Programs {
          {
             if ( nDoneStart == 0 )
             {
-               STRUP1N0( ) ;
+               STRUP2X0( ) ;
             }
          }
       }
 
-      protected void WS1N2( )
+      protected void WS2X2( )
       {
-         START1N2( ) ;
-         EVT1N2( ) ;
+         START2X2( ) ;
+         EVT2X2( ) ;
       }
 
-      protected void EVT1N2( )
+      protected void EVT2X2( )
       {
          sXEvt = cgiGet( "_EventName");
          if ( ( ( ( StringUtil.Len( sPrefix) == 0 ) ) || ( StringUtil.StringSearch( sXEvt, sPrefix, 1) > 0 ) ) && ! GetJustCreated( ) && ( StringUtil.StrCmp(context.GetRequestMethod( ), "POST") == 0 ) )
@@ -733,7 +733,7 @@ namespace GeneXus.Programs {
                            {
                               if ( ( StringUtil.Len( sPrefix) != 0 ) && ( nDoneStart == 0 ) )
                               {
-                                 STRUP1N0( ) ;
+                                 STRUP2X0( ) ;
                               }
                               if ( ! context.WillRedirect( ) && ( context.nUserReturn != 1 ) )
                               {
@@ -748,7 +748,7 @@ namespace GeneXus.Programs {
                            {
                               if ( ( StringUtil.Len( sPrefix) != 0 ) && ( nDoneStart == 0 ) )
                               {
-                                 STRUP1N0( ) ;
+                                 STRUP2X0( ) ;
                               }
                               if ( ! context.WillRedirect( ) && ( context.nUserReturn != 1 ) )
                               {
@@ -757,7 +757,7 @@ namespace GeneXus.Programs {
                                  {
                                     dynload_actions( ) ;
                                     /* Execute user event: Start */
-                                    E131N2 ();
+                                    E132X2 ();
                                  }
                               }
                            }
@@ -765,7 +765,7 @@ namespace GeneXus.Programs {
                            {
                               if ( ( StringUtil.Len( sPrefix) != 0 ) && ( nDoneStart == 0 ) )
                               {
-                                 STRUP1N0( ) ;
+                                 STRUP2X0( ) ;
                               }
                               if ( ! context.WillRedirect( ) && ( context.nUserReturn != 1 ) )
                               {
@@ -774,7 +774,7 @@ namespace GeneXus.Programs {
                                  {
                                     dynload_actions( ) ;
                                     /* Execute user event: Load */
-                                    E141N2 ();
+                                    E142X2 ();
                                  }
                               }
                            }
@@ -782,7 +782,7 @@ namespace GeneXus.Programs {
                            {
                               if ( ( StringUtil.Len( sPrefix) != 0 ) && ( nDoneStart == 0 ) )
                               {
-                                 STRUP1N0( ) ;
+                                 STRUP2X0( ) ;
                               }
                               if ( ! context.WillRedirect( ) && ( context.nUserReturn != 1 ) )
                               {
@@ -805,7 +805,7 @@ namespace GeneXus.Programs {
                            {
                               if ( ( StringUtil.Len( sPrefix) != 0 ) && ( nDoneStart == 0 ) )
                               {
-                                 STRUP1N0( ) ;
+                                 STRUP2X0( ) ;
                               }
                               if ( ! context.WillRedirect( ) && ( context.nUserReturn != 1 ) )
                               {
@@ -829,7 +829,7 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void WE1N2( )
+      protected void WE2X2( )
       {
          if ( ! GxWebStd.gx_redirect( context) )
          {
@@ -837,12 +837,12 @@ namespace GeneXus.Programs {
             Refresh( ) ;
             if ( ! GxWebStd.gx_redirect( context) )
             {
-               RenderHtmlCloseForm1N2( ) ;
+               RenderHtmlCloseForm2X2( ) ;
             }
          }
       }
 
-      protected void PA1N2( )
+      protected void PA2X2( )
       {
          if ( nDonePA == 0 )
          {
@@ -909,7 +909,7 @@ namespace GeneXus.Programs {
       public void Refresh( )
       {
          send_integrity_hashes( ) ;
-         RF1N2( ) ;
+         RF2X2( ) ;
          if ( isFullAjaxMode( ) )
          {
             send_integrity_footer_hashes( ) ;
@@ -923,7 +923,7 @@ namespace GeneXus.Programs {
          context.Gx_err = 0;
       }
 
-      protected void RF1N2( )
+      protected void RF2X2( )
       {
          initialize_formulas( ) ;
          clear_multi_value_controls( ) ;
@@ -932,51 +932,51 @@ namespace GeneXus.Programs {
          gxdyncontrolsrefreshing = false;
          if ( ! context.WillRedirect( ) && ( context.nUserReturn != 1 ) )
          {
-            /* Using cursor H001N22 */
+            /* Using cursor H002X28 */
             pr_default.execute(2, new Object[] {A12IDVENTA});
             while ( (pr_default.getStatus(2) != 101) )
             {
-               A23NOMBRECOMPLETOEMPLEADO = H001N22_A23NOMBRECOMPLETOEMPLEADO[0];
-               AssignAttri(sPrefix, false, "A23NOMBRECOMPLETOEMPLEADO", A23NOMBRECOMPLETOEMPLEADO);
-               A1IDEMPLEADO = H001N22_A1IDEMPLEADO[0];
-               AssignAttri(sPrefix, false, "A1IDEMPLEADO", StringUtil.LTrimStr( (decimal)(A1IDEMPLEADO), 12, 0));
-               A58DESCUENTOVENTA = H001N22_A58DESCUENTOVENTA[0];
+               A58DESCUENTOVENTA = H002X28_A58DESCUENTOVENTA[0];
                AssignAttri(sPrefix, false, "A58DESCUENTOVENTA", StringUtil.LTrimStr( A58DESCUENTOVENTA, 12, 2));
-               A30NOMBRECOMPLETOCLIENTE = H001N22_A30NOMBRECOMPLETOCLIENTE[0];
+               A30NOMBRECOMPLETOCLIENTE = H002X28_A30NOMBRECOMPLETOCLIENTE[0];
                AssignAttri(sPrefix, false, "A30NOMBRECOMPLETOCLIENTE", A30NOMBRECOMPLETOCLIENTE);
-               A4IDCLIENTE = H001N22_A4IDCLIENTE[0];
+               A4IDCLIENTE = H002X28_A4IDCLIENTE[0];
                AssignAttri(sPrefix, false, "A4IDCLIENTE", StringUtil.LTrimStr( (decimal)(A4IDCLIENTE), 12, 0));
-               A55DESCRIPCIONVENTA = H001N22_A55DESCRIPCIONVENTA[0];
-               AssignAttri(sPrefix, false, "A55DESCRIPCIONVENTA", A55DESCRIPCIONVENTA);
-               A54FECHAVENTA = H001N22_A54FECHAVENTA[0];
-               AssignAttri(sPrefix, false, "A54FECHAVENTA", context.localUtil.Format(A54FECHAVENTA, "99/99/99"));
-               A59TOTALVENTA = H001N22_A59TOTALVENTA[0];
-               n59TOTALVENTA = H001N22_n59TOTALVENTA[0];
-               AssignAttri(sPrefix, false, "A59TOTALVENTA", StringUtil.LTrimStr( A59TOTALVENTA, 12, 2));
-               A57IMPUESTOVENTA = H001N22_A57IMPUESTOVENTA[0];
-               n57IMPUESTOVENTA = H001N22_n57IMPUESTOVENTA[0];
-               AssignAttri(sPrefix, false, "A57IMPUESTOVENTA", StringUtil.LTrimStr( A57IMPUESTOVENTA, 12, 2));
-               A23NOMBRECOMPLETOEMPLEADO = H001N22_A23NOMBRECOMPLETOEMPLEADO[0];
+               A23NOMBRECOMPLETOEMPLEADO = H002X28_A23NOMBRECOMPLETOEMPLEADO[0];
                AssignAttri(sPrefix, false, "A23NOMBRECOMPLETOEMPLEADO", A23NOMBRECOMPLETOEMPLEADO);
-               A30NOMBRECOMPLETOCLIENTE = H001N22_A30NOMBRECOMPLETOCLIENTE[0];
-               AssignAttri(sPrefix, false, "A30NOMBRECOMPLETOCLIENTE", A30NOMBRECOMPLETOCLIENTE);
-               A59TOTALVENTA = H001N22_A59TOTALVENTA[0];
-               n59TOTALVENTA = H001N22_n59TOTALVENTA[0];
+               A1IDEMPLEADO = H002X28_A1IDEMPLEADO[0];
+               AssignAttri(sPrefix, false, "A1IDEMPLEADO", StringUtil.LTrimStr( (decimal)(A1IDEMPLEADO), 12, 0));
+               A55DESCRIPCIONVENTA = H002X28_A55DESCRIPCIONVENTA[0];
+               AssignAttri(sPrefix, false, "A55DESCRIPCIONVENTA", A55DESCRIPCIONVENTA);
+               A54FECHAVENTA = H002X28_A54FECHAVENTA[0];
+               AssignAttri(sPrefix, false, "A54FECHAVENTA", context.localUtil.Format(A54FECHAVENTA, "99/99/99"));
+               A59TOTALVENTA = H002X28_A59TOTALVENTA[0];
+               n59TOTALVENTA = H002X28_n59TOTALVENTA[0];
                AssignAttri(sPrefix, false, "A59TOTALVENTA", StringUtil.LTrimStr( A59TOTALVENTA, 12, 2));
-               A57IMPUESTOVENTA = H001N22_A57IMPUESTOVENTA[0];
-               n57IMPUESTOVENTA = H001N22_n57IMPUESTOVENTA[0];
+               A57IMPUESTOVENTA = H002X28_A57IMPUESTOVENTA[0];
+               n57IMPUESTOVENTA = H002X28_n57IMPUESTOVENTA[0];
+               AssignAttri(sPrefix, false, "A57IMPUESTOVENTA", StringUtil.LTrimStr( A57IMPUESTOVENTA, 12, 2));
+               A30NOMBRECOMPLETOCLIENTE = H002X28_A30NOMBRECOMPLETOCLIENTE[0];
+               AssignAttri(sPrefix, false, "A30NOMBRECOMPLETOCLIENTE", A30NOMBRECOMPLETOCLIENTE);
+               A23NOMBRECOMPLETOEMPLEADO = H002X28_A23NOMBRECOMPLETOEMPLEADO[0];
+               AssignAttri(sPrefix, false, "A23NOMBRECOMPLETOEMPLEADO", A23NOMBRECOMPLETOEMPLEADO);
+               A59TOTALVENTA = H002X28_A59TOTALVENTA[0];
+               n59TOTALVENTA = H002X28_n59TOTALVENTA[0];
+               AssignAttri(sPrefix, false, "A59TOTALVENTA", StringUtil.LTrimStr( A59TOTALVENTA, 12, 2));
+               A57IMPUESTOVENTA = H002X28_A57IMPUESTOVENTA[0];
+               n57IMPUESTOVENTA = H002X28_n57IMPUESTOVENTA[0];
                AssignAttri(sPrefix, false, "A57IMPUESTOVENTA", StringUtil.LTrimStr( A57IMPUESTOVENTA, 12, 2));
                /* Execute user event: Load */
-               E141N2 ();
+               E142X2 ();
                /* Exiting from a For First loop. */
                if (true) break;
             }
             pr_default.close(2);
-            WB1N0( ) ;
+            WB2X0( ) ;
          }
       }
 
-      protected void send_integrity_lvl_hashes1N2( )
+      protected void send_integrity_lvl_hashes2X2( )
       {
       }
 
@@ -984,12 +984,12 @@ namespace GeneXus.Programs {
       {
          AV13Pgmname = "Ventas_inventarioGeneral";
          context.Gx_err = 0;
-         /* Using cursor H001N29 */
+         /* Using cursor H002X37 */
          pr_default.execute(3, new Object[] {A12IDVENTA});
          if ( (pr_default.getStatus(3) != 101) )
          {
-            A59TOTALVENTA = H001N29_A59TOTALVENTA[0];
-            n59TOTALVENTA = H001N29_n59TOTALVENTA[0];
+            A59TOTALVENTA = H002X37_A59TOTALVENTA[0];
+            n59TOTALVENTA = H002X37_n59TOTALVENTA[0];
             AssignAttri(sPrefix, false, "A59TOTALVENTA", StringUtil.LTrimStr( A59TOTALVENTA, 12, 2));
          }
          else
@@ -999,12 +999,12 @@ namespace GeneXus.Programs {
             AssignAttri(sPrefix, false, "A59TOTALVENTA", StringUtil.LTrimStr( A59TOTALVENTA, 12, 2));
          }
          pr_default.close(3);
-         /* Using cursor H001N33 */
+         /* Using cursor H002X42 */
          pr_default.execute(4, new Object[] {A12IDVENTA});
          if ( (pr_default.getStatus(4) != 101) )
          {
-            A57IMPUESTOVENTA = H001N33_A57IMPUESTOVENTA[0];
-            n57IMPUESTOVENTA = H001N33_n57IMPUESTOVENTA[0];
+            A57IMPUESTOVENTA = H002X42_A57IMPUESTOVENTA[0];
+            n57IMPUESTOVENTA = H002X42_n57IMPUESTOVENTA[0];
             AssignAttri(sPrefix, false, "A57IMPUESTOVENTA", StringUtil.LTrimStr( A57IMPUESTOVENTA, 12, 2));
          }
          else
@@ -1017,14 +1017,14 @@ namespace GeneXus.Programs {
          fix_multi_value_controls( ) ;
       }
 
-      protected void STRUP1N0( )
+      protected void STRUP2X0( )
       {
          /* Before Start, stand alone formulas. */
          before_start_formulas( ) ;
          /* Execute Start event if defined. */
          context.wbGlbDoneStart = 0;
          /* Execute user event: Start */
-         E131N2 ();
+         E132X2 ();
          context.wbGlbDoneStart = 1;
          nDoneStart = 1;
          /* After Start, stand alone formulas. */
@@ -1039,6 +1039,10 @@ namespace GeneXus.Programs {
             AssignAttri(sPrefix, false, "A54FECHAVENTA", context.localUtil.Format(A54FECHAVENTA, "99/99/99"));
             A55DESCRIPCIONVENTA = cgiGet( edtDESCRIPCIONVENTA_Internalname);
             AssignAttri(sPrefix, false, "A55DESCRIPCIONVENTA", A55DESCRIPCIONVENTA);
+            A1IDEMPLEADO = (long)(context.localUtil.CToN( cgiGet( edtIDEMPLEADO_Internalname), ".", ","));
+            AssignAttri(sPrefix, false, "A1IDEMPLEADO", StringUtil.LTrimStr( (decimal)(A1IDEMPLEADO), 12, 0));
+            A23NOMBRECOMPLETOEMPLEADO = cgiGet( edtNOMBRECOMPLETOEMPLEADO_Internalname);
+            AssignAttri(sPrefix, false, "A23NOMBRECOMPLETOEMPLEADO", A23NOMBRECOMPLETOEMPLEADO);
             A4IDCLIENTE = (long)(context.localUtil.CToN( cgiGet( edtIDCLIENTE_Internalname), ".", ","));
             AssignAttri(sPrefix, false, "A4IDCLIENTE", StringUtil.LTrimStr( (decimal)(A4IDCLIENTE), 12, 0));
             A30NOMBRECOMPLETOCLIENTE = cgiGet( edtNOMBRECOMPLETOCLIENTE_Internalname);
@@ -1051,21 +1055,17 @@ namespace GeneXus.Programs {
             A59TOTALVENTA = context.localUtil.CToN( cgiGet( edtTOTALVENTA_Internalname), ".", ",");
             n59TOTALVENTA = false;
             AssignAttri(sPrefix, false, "A59TOTALVENTA", StringUtil.LTrimStr( A59TOTALVENTA, 12, 2));
-            A1IDEMPLEADO = (long)(context.localUtil.CToN( cgiGet( edtIDEMPLEADO_Internalname), ".", ","));
-            AssignAttri(sPrefix, false, "A1IDEMPLEADO", StringUtil.LTrimStr( (decimal)(A1IDEMPLEADO), 12, 0));
-            A23NOMBRECOMPLETOEMPLEADO = cgiGet( edtNOMBRECOMPLETOEMPLEADO_Internalname);
-            AssignAttri(sPrefix, false, "A23NOMBRECOMPLETOEMPLEADO", A23NOMBRECOMPLETOEMPLEADO);
             /* Read subfile selected row values. */
             /* Read hidden variables. */
             GXKey = Decrypt64( context.GetCookie( "GX_SESSION_ID"), Crypto.GetServerKey( ));
             forbiddenHiddens = new GXProperties();
             forbiddenHiddens.Add("hshsalt", sPrefix+"hsh"+"Ventas_inventarioGeneral");
-            A4IDCLIENTE = (long)(context.localUtil.CToN( cgiGet( edtIDCLIENTE_Internalname), ".", ","));
-            AssignAttri(sPrefix, false, "A4IDCLIENTE", StringUtil.LTrimStr( (decimal)(A4IDCLIENTE), 12, 0));
-            forbiddenHiddens.Add("IDCLIENTE", context.localUtil.Format( (decimal)(A4IDCLIENTE), "ZZZZZZZZZZZ9"));
             A1IDEMPLEADO = (long)(context.localUtil.CToN( cgiGet( edtIDEMPLEADO_Internalname), ".", ","));
             AssignAttri(sPrefix, false, "A1IDEMPLEADO", StringUtil.LTrimStr( (decimal)(A1IDEMPLEADO), 12, 0));
             forbiddenHiddens.Add("IDEMPLEADO", context.localUtil.Format( (decimal)(A1IDEMPLEADO), "ZZZZZZZZZZZ9"));
+            A4IDCLIENTE = (long)(context.localUtil.CToN( cgiGet( edtIDCLIENTE_Internalname), ".", ","));
+            AssignAttri(sPrefix, false, "A4IDCLIENTE", StringUtil.LTrimStr( (decimal)(A4IDCLIENTE), 12, 0));
+            forbiddenHiddens.Add("IDCLIENTE", context.localUtil.Format( (decimal)(A4IDCLIENTE), "ZZZZZZZZZZZ9"));
             hsh = cgiGet( sPrefix+"hsh");
             if ( ! GXUtil.CheckEncryptedHash( forbiddenHiddens.ToString(), hsh, GXKey) )
             {
@@ -1089,7 +1089,7 @@ namespace GeneXus.Programs {
       protected void GXStart( )
       {
          /* Execute user event: Start */
-         E131N2 ();
+         E132X2 ();
          if ( returnInSub )
          {
             returnInSub = true;
@@ -1097,7 +1097,7 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void E131N2( )
+      protected void E132X2( )
       {
          /* Start Routine */
          returnInSub = false;
@@ -1119,14 +1119,14 @@ namespace GeneXus.Programs {
       {
       }
 
-      protected void E141N2( )
+      protected void E142X2( )
       {
          /* Load Routine */
          returnInSub = false;
-         edtNOMBRECOMPLETOCLIENTE_Link = formatLink("viewclientes.aspx", new object[] {UrlEncode(StringUtil.LTrimStr(A4IDCLIENTE,12,0)),UrlEncode(StringUtil.RTrim(""))}, new string[] {"IDCLIENTE","TabCode"}) ;
-         AssignProp(sPrefix, false, edtNOMBRECOMPLETOCLIENTE_Internalname, "Link", edtNOMBRECOMPLETOCLIENTE_Link, true);
          edtNOMBRECOMPLETOEMPLEADO_Link = formatLink("viewempleados.aspx", new object[] {UrlEncode(StringUtil.LTrimStr(A1IDEMPLEADO,12,0)),UrlEncode(StringUtil.RTrim(""))}, new string[] {"IDEMPLEADO","TabCode"}) ;
          AssignProp(sPrefix, false, edtNOMBRECOMPLETOEMPLEADO_Internalname, "Link", edtNOMBRECOMPLETOEMPLEADO_Link, true);
+         edtNOMBRECOMPLETOCLIENTE_Link = formatLink("viewclientes.aspx", new object[] {UrlEncode(StringUtil.LTrimStr(A4IDCLIENTE,12,0)),UrlEncode(StringUtil.RTrim(""))}, new string[] {"IDCLIENTE","TabCode"}) ;
+         AssignProp(sPrefix, false, edtNOMBRECOMPLETOCLIENTE_Internalname, "Link", edtNOMBRECOMPLETOCLIENTE_Link, true);
       }
 
       protected void S112( )
@@ -1162,9 +1162,9 @@ namespace GeneXus.Programs {
          nGotPars = (short)(1);
          nGXWrapped = (short)(1);
          context.SetWrapped(true);
-         PA1N2( ) ;
-         WS1N2( ) ;
-         WE1N2( ) ;
+         PA2X2( ) ;
+         WS2X2( ) ;
+         WE2X2( ) ;
          this.cleanup();
          context.SetWrapped(false);
          SaveComponentMsgList(sPrefix);
@@ -1189,7 +1189,7 @@ namespace GeneXus.Programs {
                                                   string sPSFPrefix )
       {
          sPrefix = sPPrefix + sPSFPrefix;
-         PA1N2( ) ;
+         PA2X2( ) ;
          WCParametersGet( ) ;
       }
 
@@ -1209,7 +1209,7 @@ namespace GeneXus.Programs {
             init_default_properties( ) ;
             init_web_controls( ) ;
          }
-         PA1N2( ) ;
+         PA2X2( ) ;
          if ( ! GetJustCreated( ) && ( StringUtil.StrCmp(context.GetRequestMethod( ), "POST") == 0 ) && ( context.wbGlbDoneStart == 0 ) )
          {
             WCParametersGet( ) ;
@@ -1253,10 +1253,10 @@ namespace GeneXus.Programs {
          context.GX_msglist = LclMsgLst;
          INITWEB( ) ;
          nDraw = 0;
-         PA1N2( ) ;
+         PA2X2( ) ;
          sEvt = sCompEvt;
          WCParametersGet( ) ;
-         WS1N2( ) ;
+         WS2X2( ) ;
          if ( isFullAjaxMode( ) )
          {
             componentdraw();
@@ -1278,7 +1278,7 @@ namespace GeneXus.Programs {
          nDraw = 1;
          BackMsgLst = context.GX_msglist;
          context.GX_msglist = LclMsgLst;
-         WS1N2( ) ;
+         WS2X2( ) ;
          SaveComponentMsgList(sPrefix);
          context.GX_msglist = BackMsgLst;
       }
@@ -1301,7 +1301,7 @@ namespace GeneXus.Programs {
          BackMsgLst = context.GX_msglist;
          context.GX_msglist = LclMsgLst;
          WCParametersSet( ) ;
-         WE1N2( ) ;
+         WE2X2( ) ;
          SaveComponentMsgList(sPrefix);
          context.GX_msglist = BackMsgLst;
       }
@@ -1342,7 +1342,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202111280104880", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?2021113013582730", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1357,7 +1357,7 @@ namespace GeneXus.Programs {
 
       protected void include_jscripts( )
       {
-         context.AddJavascriptSource("ventas_inventariogeneral.js", "?202111280104880", false, true);
+         context.AddJavascriptSource("ventas_inventariogeneral.js", "?2021113013582730", false, true);
          /* End function include_jscripts */
       }
 
@@ -1373,13 +1373,13 @@ namespace GeneXus.Programs {
          edtIDVENTA_Internalname = sPrefix+"IDVENTA";
          edtFECHAVENTA_Internalname = sPrefix+"FECHAVENTA";
          edtDESCRIPCIONVENTA_Internalname = sPrefix+"DESCRIPCIONVENTA";
+         edtIDEMPLEADO_Internalname = sPrefix+"IDEMPLEADO";
+         edtNOMBRECOMPLETOEMPLEADO_Internalname = sPrefix+"NOMBRECOMPLETOEMPLEADO";
          edtIDCLIENTE_Internalname = sPrefix+"IDCLIENTE";
          edtNOMBRECOMPLETOCLIENTE_Internalname = sPrefix+"NOMBRECOMPLETOCLIENTE";
          edtIMPUESTOVENTA_Internalname = sPrefix+"IMPUESTOVENTA";
          edtDESCUENTOVENTA_Internalname = sPrefix+"DESCUENTOVENTA";
          edtTOTALVENTA_Internalname = sPrefix+"TOTALVENTA";
-         edtIDEMPLEADO_Internalname = sPrefix+"IDEMPLEADO";
-         edtNOMBRECOMPLETOEMPLEADO_Internalname = sPrefix+"NOMBRECOMPLETOEMPLEADO";
          divAttributestable_Internalname = sPrefix+"ATTRIBUTESTABLE";
          divMaintable_Internalname = sPrefix+"MAINTABLE";
          Form.Internalname = sPrefix+"FORM";
@@ -1399,10 +1399,6 @@ namespace GeneXus.Programs {
             }
          }
          init_default_properties( ) ;
-         edtNOMBRECOMPLETOEMPLEADO_Link = "";
-         edtNOMBRECOMPLETOEMPLEADO_Enabled = 0;
-         edtIDEMPLEADO_Jsonclick = "";
-         edtIDEMPLEADO_Enabled = 0;
          edtTOTALVENTA_Jsonclick = "";
          edtTOTALVENTA_Enabled = 0;
          edtDESCUENTOVENTA_Jsonclick = "";
@@ -1413,6 +1409,10 @@ namespace GeneXus.Programs {
          edtNOMBRECOMPLETOCLIENTE_Enabled = 0;
          edtIDCLIENTE_Jsonclick = "";
          edtIDCLIENTE_Enabled = 0;
+         edtNOMBRECOMPLETOEMPLEADO_Link = "";
+         edtNOMBRECOMPLETOEMPLEADO_Enabled = 0;
+         edtIDEMPLEADO_Jsonclick = "";
+         edtIDEMPLEADO_Enabled = 0;
          edtDESCRIPCIONVENTA_Enabled = 0;
          edtFECHAVENTA_Jsonclick = "";
          edtFECHAVENTA_Enabled = 0;
@@ -1434,18 +1434,18 @@ namespace GeneXus.Programs {
 
       public override void InitializeDynEvents( )
       {
-         setEventMetadata("REFRESH","{handler:'Refresh',iparms:[{av:'A12IDVENTA',fld:'IDVENTA',pic:'ZZZZZZZZZZZ9'},{av:'A4IDCLIENTE',fld:'IDCLIENTE',pic:'ZZZZZZZZZZZ9'},{av:'A1IDEMPLEADO',fld:'IDEMPLEADO',pic:'ZZZZZZZZZZZ9'}]");
+         setEventMetadata("REFRESH","{handler:'Refresh',iparms:[{av:'A12IDVENTA',fld:'IDVENTA',pic:'ZZZZZZZZZZZ9'},{av:'A1IDEMPLEADO',fld:'IDEMPLEADO',pic:'ZZZZZZZZZZZ9'},{av:'A4IDCLIENTE',fld:'IDCLIENTE',pic:'ZZZZZZZZZZZ9'}]");
          setEventMetadata("REFRESH",",oparms:[]}");
-         setEventMetadata("'DOUPDATE'","{handler:'E111N1',iparms:[{av:'A12IDVENTA',fld:'IDVENTA',pic:'ZZZZZZZZZZZ9'}]");
+         setEventMetadata("'DOUPDATE'","{handler:'E112X1',iparms:[{av:'A12IDVENTA',fld:'IDVENTA',pic:'ZZZZZZZZZZZ9'}]");
          setEventMetadata("'DOUPDATE'",",oparms:[]}");
-         setEventMetadata("'DODELETE'","{handler:'E121N1',iparms:[{av:'A12IDVENTA',fld:'IDVENTA',pic:'ZZZZZZZZZZZ9'}]");
+         setEventMetadata("'DODELETE'","{handler:'E122X1',iparms:[{av:'A12IDVENTA',fld:'IDVENTA',pic:'ZZZZZZZZZZZ9'}]");
          setEventMetadata("'DODELETE'",",oparms:[]}");
          setEventMetadata("VALID_IDVENTA","{handler:'Valid_Idventa',iparms:[]");
          setEventMetadata("VALID_IDVENTA",",oparms:[]}");
-         setEventMetadata("VALID_IDCLIENTE","{handler:'Valid_Idcliente',iparms:[]");
-         setEventMetadata("VALID_IDCLIENTE",",oparms:[]}");
          setEventMetadata("VALID_IDEMPLEADO","{handler:'Valid_Idempleado',iparms:[]");
          setEventMetadata("VALID_IDEMPLEADO",",oparms:[]}");
+         setEventMetadata("VALID_IDCLIENTE","{handler:'Valid_Idcliente',iparms:[]");
+         setEventMetadata("VALID_IDCLIENTE",",oparms:[]}");
          return  ;
       }
 
@@ -1470,10 +1470,10 @@ namespace GeneXus.Programs {
          sPrefix = "";
          AV13Pgmname = "";
          scmdbuf = "";
-         H001N8_A59TOTALVENTA = new decimal[1] ;
-         H001N8_n59TOTALVENTA = new bool[] {false} ;
-         H001N12_A57IMPUESTOVENTA = new decimal[1] ;
-         H001N12_n57IMPUESTOVENTA = new bool[] {false} ;
+         H002X10_A59TOTALVENTA = new decimal[1] ;
+         H002X10_n59TOTALVENTA = new bool[] {false} ;
+         H002X15_A57IMPUESTOVENTA = new decimal[1] ;
+         H002X15_n57IMPUESTOVENTA = new bool[] {false} ;
          sDynURL = "";
          FormProcess = "";
          bodyStyle = "";
@@ -1487,30 +1487,30 @@ namespace GeneXus.Programs {
          bttBtndelete_Jsonclick = "";
          A54FECHAVENTA = DateTime.MinValue;
          A55DESCRIPCIONVENTA = "";
-         A30NOMBRECOMPLETOCLIENTE = "";
          A23NOMBRECOMPLETOEMPLEADO = "";
+         A30NOMBRECOMPLETOCLIENTE = "";
          Form = new GXWebForm();
          sXEvt = "";
          sEvt = "";
          EvtGridId = "";
          EvtRowId = "";
          sEvtType = "";
-         H001N22_A12IDVENTA = new long[1] ;
-         H001N22_A23NOMBRECOMPLETOEMPLEADO = new string[] {""} ;
-         H001N22_A1IDEMPLEADO = new long[1] ;
-         H001N22_A58DESCUENTOVENTA = new decimal[1] ;
-         H001N22_A30NOMBRECOMPLETOCLIENTE = new string[] {""} ;
-         H001N22_A4IDCLIENTE = new long[1] ;
-         H001N22_A55DESCRIPCIONVENTA = new string[] {""} ;
-         H001N22_A54FECHAVENTA = new DateTime[] {DateTime.MinValue} ;
-         H001N22_A59TOTALVENTA = new decimal[1] ;
-         H001N22_n59TOTALVENTA = new bool[] {false} ;
-         H001N22_A57IMPUESTOVENTA = new decimal[1] ;
-         H001N22_n57IMPUESTOVENTA = new bool[] {false} ;
-         H001N29_A59TOTALVENTA = new decimal[1] ;
-         H001N29_n59TOTALVENTA = new bool[] {false} ;
-         H001N33_A57IMPUESTOVENTA = new decimal[1] ;
-         H001N33_n57IMPUESTOVENTA = new bool[] {false} ;
+         H002X28_A12IDVENTA = new long[1] ;
+         H002X28_A58DESCUENTOVENTA = new decimal[1] ;
+         H002X28_A30NOMBRECOMPLETOCLIENTE = new string[] {""} ;
+         H002X28_A4IDCLIENTE = new long[1] ;
+         H002X28_A23NOMBRECOMPLETOEMPLEADO = new string[] {""} ;
+         H002X28_A1IDEMPLEADO = new long[1] ;
+         H002X28_A55DESCRIPCIONVENTA = new string[] {""} ;
+         H002X28_A54FECHAVENTA = new DateTime[] {DateTime.MinValue} ;
+         H002X28_A59TOTALVENTA = new decimal[1] ;
+         H002X28_n59TOTALVENTA = new bool[] {false} ;
+         H002X28_A57IMPUESTOVENTA = new decimal[1] ;
+         H002X28_n57IMPUESTOVENTA = new bool[] {false} ;
+         H002X37_A59TOTALVENTA = new decimal[1] ;
+         H002X37_n59TOTALVENTA = new bool[] {false} ;
+         H002X42_A57IMPUESTOVENTA = new decimal[1] ;
+         H002X42_n57IMPUESTOVENTA = new bool[] {false} ;
          hsh = "";
          AV7TrnContext = new SdtTransactionContext(context);
          AV10HTTPRequest = new GxHttpRequest( context);
@@ -1522,20 +1522,20 @@ namespace GeneXus.Programs {
          pr_default = new DataStoreProvider(context, new GeneXus.Programs.ventas_inventariogeneral__default(),
             new Object[][] {
                 new Object[] {
-               H001N8_A59TOTALVENTA, H001N8_n59TOTALVENTA
+               H002X10_A59TOTALVENTA, H002X10_n59TOTALVENTA
                }
                , new Object[] {
-               H001N12_A57IMPUESTOVENTA, H001N12_n57IMPUESTOVENTA
+               H002X15_A57IMPUESTOVENTA, H002X15_n57IMPUESTOVENTA
                }
                , new Object[] {
-               H001N22_A12IDVENTA, H001N22_A23NOMBRECOMPLETOEMPLEADO, H001N22_A1IDEMPLEADO, H001N22_A58DESCUENTOVENTA, H001N22_A30NOMBRECOMPLETOCLIENTE, H001N22_A4IDCLIENTE, H001N22_A55DESCRIPCIONVENTA, H001N22_A54FECHAVENTA, H001N22_A59TOTALVENTA, H001N22_n59TOTALVENTA,
-               H001N22_A57IMPUESTOVENTA, H001N22_n57IMPUESTOVENTA
+               H002X28_A12IDVENTA, H002X28_A58DESCUENTOVENTA, H002X28_A30NOMBRECOMPLETOCLIENTE, H002X28_A4IDCLIENTE, H002X28_A23NOMBRECOMPLETOEMPLEADO, H002X28_A1IDEMPLEADO, H002X28_A55DESCRIPCIONVENTA, H002X28_A54FECHAVENTA, H002X28_A59TOTALVENTA, H002X28_n59TOTALVENTA,
+               H002X28_A57IMPUESTOVENTA, H002X28_n57IMPUESTOVENTA
                }
                , new Object[] {
-               H001N29_A59TOTALVENTA, H001N29_n59TOTALVENTA
+               H002X37_A59TOTALVENTA, H002X37_n59TOTALVENTA
                }
                , new Object[] {
-               H001N33_A57IMPUESTOVENTA, H001N33_n57IMPUESTOVENTA
+               H002X42_A57IMPUESTOVENTA, H002X42_n57IMPUESTOVENTA
                }
             }
          );
@@ -1559,18 +1559,18 @@ namespace GeneXus.Programs {
       private int edtIDVENTA_Enabled ;
       private int edtFECHAVENTA_Enabled ;
       private int edtDESCRIPCIONVENTA_Enabled ;
+      private int edtIDEMPLEADO_Enabled ;
+      private int edtNOMBRECOMPLETOEMPLEADO_Enabled ;
       private int edtIDCLIENTE_Enabled ;
       private int edtNOMBRECOMPLETOCLIENTE_Enabled ;
       private int edtIMPUESTOVENTA_Enabled ;
       private int edtDESCUENTOVENTA_Enabled ;
       private int edtTOTALVENTA_Enabled ;
-      private int edtIDEMPLEADO_Enabled ;
-      private int edtNOMBRECOMPLETOEMPLEADO_Enabled ;
       private int idxLst ;
       private long A12IDVENTA ;
       private long wcpOA12IDVENTA ;
-      private long A4IDCLIENTE ;
       private long A1IDEMPLEADO ;
+      private long A4IDCLIENTE ;
       private long AV6IDVENTA ;
       private decimal A59TOTALVENTA ;
       private decimal A57IMPUESTOVENTA ;
@@ -1601,6 +1601,10 @@ namespace GeneXus.Programs {
       private string edtFECHAVENTA_Internalname ;
       private string edtFECHAVENTA_Jsonclick ;
       private string edtDESCRIPCIONVENTA_Internalname ;
+      private string edtIDEMPLEADO_Internalname ;
+      private string edtIDEMPLEADO_Jsonclick ;
+      private string edtNOMBRECOMPLETOEMPLEADO_Internalname ;
+      private string edtNOMBRECOMPLETOEMPLEADO_Link ;
       private string edtIDCLIENTE_Internalname ;
       private string edtIDCLIENTE_Jsonclick ;
       private string edtNOMBRECOMPLETOCLIENTE_Internalname ;
@@ -1611,10 +1615,6 @@ namespace GeneXus.Programs {
       private string edtDESCUENTOVENTA_Jsonclick ;
       private string edtTOTALVENTA_Internalname ;
       private string edtTOTALVENTA_Jsonclick ;
-      private string edtIDEMPLEADO_Internalname ;
-      private string edtIDEMPLEADO_Jsonclick ;
-      private string edtNOMBRECOMPLETOEMPLEADO_Internalname ;
-      private string edtNOMBRECOMPLETOEMPLEADO_Link ;
       private string sXEvt ;
       private string sEvt ;
       private string EvtGridId ;
@@ -1633,32 +1633,32 @@ namespace GeneXus.Programs {
       private bool gxdyncontrolsrefreshing ;
       private bool returnInSub ;
       private string A55DESCRIPCIONVENTA ;
-      private string A30NOMBRECOMPLETOCLIENTE ;
       private string A23NOMBRECOMPLETOEMPLEADO ;
+      private string A30NOMBRECOMPLETOCLIENTE ;
       private GXProperties forbiddenHiddens ;
       private GXWebForm Form ;
       private IGxDataStore dsDefault ;
       private IDataStoreProvider pr_default ;
-      private decimal[] H001N8_A59TOTALVENTA ;
-      private bool[] H001N8_n59TOTALVENTA ;
-      private decimal[] H001N12_A57IMPUESTOVENTA ;
-      private bool[] H001N12_n57IMPUESTOVENTA ;
-      private long[] H001N22_A12IDVENTA ;
-      private string[] H001N22_A23NOMBRECOMPLETOEMPLEADO ;
-      private long[] H001N22_A1IDEMPLEADO ;
-      private decimal[] H001N22_A58DESCUENTOVENTA ;
-      private string[] H001N22_A30NOMBRECOMPLETOCLIENTE ;
-      private long[] H001N22_A4IDCLIENTE ;
-      private string[] H001N22_A55DESCRIPCIONVENTA ;
-      private DateTime[] H001N22_A54FECHAVENTA ;
-      private decimal[] H001N22_A59TOTALVENTA ;
-      private bool[] H001N22_n59TOTALVENTA ;
-      private decimal[] H001N22_A57IMPUESTOVENTA ;
-      private bool[] H001N22_n57IMPUESTOVENTA ;
-      private decimal[] H001N29_A59TOTALVENTA ;
-      private bool[] H001N29_n59TOTALVENTA ;
-      private decimal[] H001N33_A57IMPUESTOVENTA ;
-      private bool[] H001N33_n57IMPUESTOVENTA ;
+      private decimal[] H002X10_A59TOTALVENTA ;
+      private bool[] H002X10_n59TOTALVENTA ;
+      private decimal[] H002X15_A57IMPUESTOVENTA ;
+      private bool[] H002X15_n57IMPUESTOVENTA ;
+      private long[] H002X28_A12IDVENTA ;
+      private decimal[] H002X28_A58DESCUENTOVENTA ;
+      private string[] H002X28_A30NOMBRECOMPLETOCLIENTE ;
+      private long[] H002X28_A4IDCLIENTE ;
+      private string[] H002X28_A23NOMBRECOMPLETOEMPLEADO ;
+      private long[] H002X28_A1IDEMPLEADO ;
+      private string[] H002X28_A55DESCRIPCIONVENTA ;
+      private DateTime[] H002X28_A54FECHAVENTA ;
+      private decimal[] H002X28_A59TOTALVENTA ;
+      private bool[] H002X28_n59TOTALVENTA ;
+      private decimal[] H002X28_A57IMPUESTOVENTA ;
+      private bool[] H002X28_n57IMPUESTOVENTA ;
+      private decimal[] H002X37_A59TOTALVENTA ;
+      private bool[] H002X37_n59TOTALVENTA ;
+      private decimal[] H002X42_A57IMPUESTOVENTA ;
+      private bool[] H002X42_n57IMPUESTOVENTA ;
       private msglist BackMsgLst ;
       private msglist LclMsgLst ;
       private GxHttpRequest AV10HTTPRequest ;
@@ -1686,35 +1686,42 @@ namespace GeneXus.Programs {
     {
        if ( def == null )
        {
-          Object[] prmH001N8;
-          prmH001N8 = new Object[] {
+          Object[] prmH002X10;
+          prmH002X10 = new Object[] {
           new ParDef("@IDVENTA",GXType.Decimal,12,0)
           };
-          Object[] prmH001N12;
-          prmH001N12 = new Object[] {
+          string cmdBufferH002X10;
+          cmdBufferH002X10=" SELECT COALESCE( T1.[TOTALVENTA], 0) AS TOTALVENTA FROM (SELECT COALESCE( T4.[GXC3], 0) + COALESCE( T3.[IMPUESTOVENTA], 0) - T2.[DESCUENTOVENTA] AS TOTALVENTA, T2.[IDVENTA] FROM (([Ventas_inventario] T2 LEFT JOIN (SELECT COALESCE( T6.[GXC3], 0) * CAST(0.15 AS decimal( 22, 10)) AS IMPUESTOVENTA, T5.[IDVENTA] FROM ([Ventas_inventario] T5 LEFT JOIN (SELECT SUM(COALESCE( T8.[SUBTOTALVENTAPRODUCTO], 0)) AS GXC3, T7.[IDVENTA] FROM ([Ventas_inventarioDetalle_venta] T7 LEFT JOIN (SELECT COALESCE( T10.[GXC5], 0) AS SUBTOTALVENTAPRODUCTO, T9.[IDVENTA], T9.[IDDETALLEVENTAPRODUCTO] FROM ([Ventas_inventarioDetalle_venta] T9 LEFT JOIN (SELECT SUM(T12.[CANTIDADPRODUCTO] * CAST(T12.[PRECIOVENTAPRODUCTO] AS decimal( 22, 10))) AS GXC5, T11.[IDVENTA], T11.[IDDETALLEVENTAPRODUCTO] FROM ([Ventas_inventarioDetalle_venta] T11 INNER JOIN [Inventario] T12 ON T12.[IDPRODUCTO] = T11.[IDPRODUCTO]) GROUP BY T11.[IDVENTA], T11.[IDDETALLEVENTAPRODUCTO] ) T10 ON T10.[IDVENTA] = T9.[IDVENTA] AND T10.[IDDETALLEVENTAPRODUCTO] = T9.[IDDETALLEVENTAPRODUCTO]) ) T8 ON T8.[IDVENTA] = T7.[IDVENTA] AND T8.[IDDETALLEVENTAPRODUCTO] = T7.[IDDETALLEVENTAPRODUCTO]) GROUP BY T7.[IDVENTA] ) T6 ON T6.[IDVENTA] = T5.[IDVENTA]) ) T3 ON T3.[IDVENTA] = T2.[IDVENTA]) LEFT JOIN (SELECT SUM(COALESCE( T6.[SUBTOTALVENTAPRODUCTO], 0)) AS GXC3, T5.[IDVENTA] FROM ([Ventas_inventarioDetalle_venta] T5 LEFT JOIN (SELECT COALESCE( T8.[GXC5], 0) AS SUBTOTALVENTAPRODUCTO, T7.[IDVENTA], T7.[IDDETALLEVENTAPRODUCTO] FROM ([Ventas_inventarioDetalle_venta] T7 LEFT JOIN (SELECT SUM(T10.[CANTIDADPRODUCTO] * CAST(T10.[PRECIOVENTAPRODUCTO] AS decimal( 22, 10))) AS GXC5, T9.[IDVENTA], T9.[IDDETALLEVENTAPRODUCTO] FROM ([Ventas_inventarioDetalle_venta] T9 INNER JOIN [Inventario] T10 ON T10.[IDPRODUCTO] = T9.[IDPRODUCTO]) GROUP BY T9.[IDVENTA], T9.[IDDETALLEVENTAPRODUCTO] "
+          + " ) T8 ON T8.[IDVENTA] = T7.[IDVENTA] AND T8.[IDDETALLEVENTAPRODUCTO] = T7.[IDDETALLEVENTAPRODUCTO]) ) T6 ON T6.[IDVENTA] = T5.[IDVENTA] AND T6.[IDDETALLEVENTAPRODUCTO] = T5.[IDDETALLEVENTAPRODUCTO]) GROUP BY T5.[IDVENTA] ) T4 ON T4.[IDVENTA] = T2.[IDVENTA]) ) T1 WHERE T1.[IDVENTA] = @IDVENTA" ;
+          Object[] prmH002X15;
+          prmH002X15 = new Object[] {
           new ParDef("@IDVENTA",GXType.Decimal,12,0)
           };
-          Object[] prmH001N22;
-          prmH001N22 = new Object[] {
+          Object[] prmH002X28;
+          prmH002X28 = new Object[] {
           new ParDef("@IDVENTA",GXType.Decimal,12,0)
           };
-          string cmdBufferH001N22;
-          cmdBufferH001N22=" SELECT T1.[IDVENTA], T2.[NOMBRECOMPLETOEMPLEADO], T1.[IDEMPLEADO], T1.[DESCUENTOVENTA], T3.[NOMBRECOMPLETOCLIENTE], T1.[IDCLIENTE], T1.[DESCRIPCIONVENTA], T1.[FECHAVENTA], COALESCE( T4.[TOTALVENTA], 0) AS TOTALVENTA, COALESCE( T5.[IMPUESTOVENTA], 0) AS IMPUESTOVENTA FROM (((([Ventas_inventario] T1 INNER JOIN [Empleados] T2 ON T2.[IDEMPLEADO] = T1.[IDEMPLEADO]) INNER JOIN [Clientes] T3 ON T3.[IDCLIENTE] = T1.[IDCLIENTE]) INNER JOIN (SELECT COALESCE( T8.[GXC3], 0) + COALESCE( T7.[IMPUESTOVENTA], 0) - T6.[DESCUENTOVENTA] AS TOTALVENTA, T6.[IDVENTA] FROM (([Ventas_inventario] T6 LEFT JOIN (SELECT COALESCE( T10.[GXC3], 0) * CAST(0.15 AS decimal( 22, 10)) AS IMPUESTOVENTA, T9.[IDVENTA] FROM ([Ventas_inventario] T9 LEFT JOIN (SELECT SUM(COALESCE( T12.[SUBTOTALVENTAPRODUCTO], 0)) AS GXC3, T11.[IDVENTA] FROM ([Ventas_inventarioDetalle_venta] T11 INNER JOIN (SELECT COALESCE( [GXC5], 0) AS SUBTOTALVENTAPRODUCTO, [IDPRODUCTO] FROM [Inventario] ) T12 ON T12.[IDPRODUCTO] = T11.[IDPRODUCTO]) GROUP BY T11.[IDVENTA] ) T10 ON T10.[IDVENTA] = T9.[IDVENTA]) ) T7 ON T7.[IDVENTA] = T6.[IDVENTA]) LEFT JOIN (SELECT SUM(COALESCE( T10.[SUBTOTALVENTAPRODUCTO], 0)) AS GXC3, T9.[IDVENTA] FROM ([Ventas_inventarioDetalle_venta] T9 INNER JOIN (SELECT COALESCE( [GXC5], 0) AS SUBTOTALVENTAPRODUCTO, [IDPRODUCTO] FROM [Inventario] ) T10 ON T10.[IDPRODUCTO] = T9.[IDPRODUCTO]) GROUP BY T9.[IDVENTA] ) T8 ON T8.[IDVENTA] = T6.[IDVENTA]) ) T4 ON T4.[IDVENTA] = T1.[IDVENTA]) LEFT JOIN (SELECT COALESCE( T7.[GXC3], 0) * CAST(0.15 AS decimal( 22, 10)) AS IMPUESTOVENTA, T6.[IDVENTA] FROM ([Ventas_inventario] T6 LEFT JOIN (SELECT SUM(COALESCE( T9.[SUBTOTALVENTAPRODUCTO], 0)) AS GXC3, T8.[IDVENTA] FROM ([Ventas_inventarioDetalle_venta] T8 INNER JOIN (SELECT COALESCE( [GXC5], 0) AS SUBTOTALVENTAPRODUCTO, [IDPRODUCTO] FROM "
-          + " [Inventario] ) T9 ON T9.[IDPRODUCTO] = T8.[IDPRODUCTO]) GROUP BY T8.[IDVENTA] ) T7 ON T7.[IDVENTA] = T6.[IDVENTA]) ) T5 ON T5.[IDVENTA] = T1.[IDVENTA]) WHERE T1.[IDVENTA] = @IDVENTA ORDER BY T1.[IDVENTA]" ;
-          Object[] prmH001N29;
-          prmH001N29 = new Object[] {
+          string cmdBufferH002X28;
+          cmdBufferH002X28=" SELECT T1.[IDVENTA], T1.[DESCUENTOVENTA], T2.[NOMBRECOMPLETOCLIENTE], T1.[IDCLIENTE], T3.[NOMBRECOMPLETOEMPLEADO], T1.[IDEMPLEADO], T1.[DESCRIPCIONVENTA], T1.[FECHAVENTA], COALESCE( T4.[TOTALVENTA], 0) AS TOTALVENTA, COALESCE( T5.[IMPUESTOVENTA], 0) AS IMPUESTOVENTA FROM (((([Ventas_inventario] T1 INNER JOIN [Clientes] T2 ON T2.[IDCLIENTE] = T1.[IDCLIENTE]) INNER JOIN [Empleados] T3 ON T3.[IDEMPLEADO] = T1.[IDEMPLEADO]) INNER JOIN (SELECT COALESCE( T8.[GXC3], 0) + COALESCE( T7.[IMPUESTOVENTA], 0) - T6.[DESCUENTOVENTA] AS TOTALVENTA, T6.[IDVENTA] FROM (([Ventas_inventario] T6 LEFT JOIN (SELECT COALESCE( T10.[GXC3], 0) * CAST(0.15 AS decimal( 22, 10)) AS IMPUESTOVENTA, T9.[IDVENTA] FROM ([Ventas_inventario] T9 LEFT JOIN (SELECT SUM(COALESCE( T12.[SUBTOTALVENTAPRODUCTO], 0)) AS GXC3, T11.[IDVENTA] FROM ([Ventas_inventarioDetalle_venta] T11 LEFT JOIN (SELECT COALESCE( T14.[GXC5], 0) AS SUBTOTALVENTAPRODUCTO, T13.[IDVENTA], T13.[IDDETALLEVENTAPRODUCTO] FROM ([Ventas_inventarioDetalle_venta] T13 LEFT JOIN (SELECT SUM(T16.[CANTIDADPRODUCTO] * CAST(T16.[PRECIOVENTAPRODUCTO] AS decimal( 22, 10))) AS GXC5, T15.[IDVENTA], T15.[IDDETALLEVENTAPRODUCTO] FROM ([Ventas_inventarioDetalle_venta] T15 INNER JOIN [Inventario] T16 ON T16.[IDPRODUCTO] = T15.[IDPRODUCTO]) GROUP BY T15.[IDVENTA], T15.[IDDETALLEVENTAPRODUCTO] ) T14 ON T14.[IDVENTA] = T13.[IDVENTA] AND T14.[IDDETALLEVENTAPRODUCTO] = T13.[IDDETALLEVENTAPRODUCTO]) ) T12 ON T12.[IDVENTA] = T11.[IDVENTA] AND T12.[IDDETALLEVENTAPRODUCTO] = T11.[IDDETALLEVENTAPRODUCTO]) GROUP BY T11.[IDVENTA] ) T10 ON T10.[IDVENTA] = T9.[IDVENTA]) ) T7 ON T7.[IDVENTA] = T6.[IDVENTA]) LEFT JOIN (SELECT SUM(COALESCE( T10.[SUBTOTALVENTAPRODUCTO], 0)) AS GXC3, T9.[IDVENTA] FROM ([Ventas_inventarioDetalle_venta] T9 LEFT JOIN (SELECT COALESCE( T12.[GXC5], 0) "
+          + " AS SUBTOTALVENTAPRODUCTO, T11.[IDVENTA], T11.[IDDETALLEVENTAPRODUCTO] FROM ([Ventas_inventarioDetalle_venta] T11 LEFT JOIN (SELECT SUM(T14.[CANTIDADPRODUCTO] * CAST(T14.[PRECIOVENTAPRODUCTO] AS decimal( 22, 10))) AS GXC5, T13.[IDVENTA], T13.[IDDETALLEVENTAPRODUCTO] FROM ([Ventas_inventarioDetalle_venta] T13 INNER JOIN [Inventario] T14 ON T14.[IDPRODUCTO] = T13.[IDPRODUCTO]) GROUP BY T13.[IDVENTA], T13.[IDDETALLEVENTAPRODUCTO] ) T12 ON T12.[IDVENTA] = T11.[IDVENTA] AND T12.[IDDETALLEVENTAPRODUCTO] = T11.[IDDETALLEVENTAPRODUCTO]) ) T10 ON T10.[IDVENTA] = T9.[IDVENTA] AND T10.[IDDETALLEVENTAPRODUCTO] = T9.[IDDETALLEVENTAPRODUCTO]) GROUP BY T9.[IDVENTA] ) T8 ON T8.[IDVENTA] = T6.[IDVENTA]) ) T4 ON T4.[IDVENTA] = T1.[IDVENTA]) LEFT JOIN (SELECT COALESCE( T7.[GXC3], 0) * CAST(0.15 AS decimal( 22, 10)) AS IMPUESTOVENTA, T6.[IDVENTA] FROM ([Ventas_inventario] T6 LEFT JOIN (SELECT SUM(COALESCE( T9.[SUBTOTALVENTAPRODUCTO], 0)) AS GXC3, T8.[IDVENTA] FROM ([Ventas_inventarioDetalle_venta] T8 LEFT JOIN (SELECT COALESCE( T11.[GXC5], 0) AS SUBTOTALVENTAPRODUCTO, T10.[IDVENTA], T10.[IDDETALLEVENTAPRODUCTO] FROM ([Ventas_inventarioDetalle_venta] T10 LEFT JOIN (SELECT SUM(T13.[CANTIDADPRODUCTO] * CAST(T13.[PRECIOVENTAPRODUCTO] AS decimal( 22, 10))) AS GXC5, T12.[IDVENTA], T12.[IDDETALLEVENTAPRODUCTO] FROM ([Ventas_inventarioDetalle_venta] T12 INNER JOIN [Inventario] T13 ON T13.[IDPRODUCTO] = T12.[IDPRODUCTO]) GROUP BY T12.[IDVENTA], T12.[IDDETALLEVENTAPRODUCTO] ) T11 ON T11.[IDVENTA] = T10.[IDVENTA] AND T11.[IDDETALLEVENTAPRODUCTO] = T10.[IDDETALLEVENTAPRODUCTO]) ) T9 ON T9.[IDVENTA] = T8.[IDVENTA] AND T9.[IDDETALLEVENTAPRODUCTO] = T8.[IDDETALLEVENTAPRODUCTO]) GROUP BY T8.[IDVENTA] ) T7 ON T7.[IDVENTA] = T6.[IDVENTA]) ) T5 ON T5.[IDVENTA] = T1.[IDVENTA]) WHERE T1.[IDVENTA] = @IDVENTA ORDER"
+          + " BY T1.[IDVENTA]" ;
+          Object[] prmH002X37;
+          prmH002X37 = new Object[] {
           new ParDef("@IDVENTA",GXType.Decimal,12,0)
           };
-          Object[] prmH001N33;
-          prmH001N33 = new Object[] {
+          string cmdBufferH002X37;
+          cmdBufferH002X37=" SELECT COALESCE( T1.[TOTALVENTA], 0) AS TOTALVENTA FROM (SELECT COALESCE( T4.[GXC3], 0) + COALESCE( T3.[IMPUESTOVENTA], 0) - T2.[DESCUENTOVENTA] AS TOTALVENTA, T2.[IDVENTA] FROM (([Ventas_inventario] T2 LEFT JOIN (SELECT COALESCE( T6.[GXC3], 0) * CAST(0.15 AS decimal( 22, 10)) AS IMPUESTOVENTA, T5.[IDVENTA] FROM ([Ventas_inventario] T5 LEFT JOIN (SELECT SUM(COALESCE( T8.[SUBTOTALVENTAPRODUCTO], 0)) AS GXC3, T7.[IDVENTA] FROM ([Ventas_inventarioDetalle_venta] T7 LEFT JOIN (SELECT COALESCE( T10.[GXC5], 0) AS SUBTOTALVENTAPRODUCTO, T9.[IDVENTA], T9.[IDDETALLEVENTAPRODUCTO] FROM ([Ventas_inventarioDetalle_venta] T9 LEFT JOIN (SELECT SUM(T12.[CANTIDADPRODUCTO] * CAST(T12.[PRECIOVENTAPRODUCTO] AS decimal( 22, 10))) AS GXC5, T11.[IDVENTA], T11.[IDDETALLEVENTAPRODUCTO] FROM ([Ventas_inventarioDetalle_venta] T11 INNER JOIN [Inventario] T12 ON T12.[IDPRODUCTO] = T11.[IDPRODUCTO]) GROUP BY T11.[IDVENTA], T11.[IDDETALLEVENTAPRODUCTO] ) T10 ON T10.[IDVENTA] = T9.[IDVENTA] AND T10.[IDDETALLEVENTAPRODUCTO] = T9.[IDDETALLEVENTAPRODUCTO]) ) T8 ON T8.[IDVENTA] = T7.[IDVENTA] AND T8.[IDDETALLEVENTAPRODUCTO] = T7.[IDDETALLEVENTAPRODUCTO]) GROUP BY T7.[IDVENTA] ) T6 ON T6.[IDVENTA] = T5.[IDVENTA]) ) T3 ON T3.[IDVENTA] = T2.[IDVENTA]) LEFT JOIN (SELECT SUM(COALESCE( T6.[SUBTOTALVENTAPRODUCTO], 0)) AS GXC3, T5.[IDVENTA] FROM ([Ventas_inventarioDetalle_venta] T5 LEFT JOIN (SELECT COALESCE( T8.[GXC5], 0) AS SUBTOTALVENTAPRODUCTO, T7.[IDVENTA], T7.[IDDETALLEVENTAPRODUCTO] FROM ([Ventas_inventarioDetalle_venta] T7 LEFT JOIN (SELECT SUM(T10.[CANTIDADPRODUCTO] * CAST(T10.[PRECIOVENTAPRODUCTO] AS decimal( 22, 10))) AS GXC5, T9.[IDVENTA], T9.[IDDETALLEVENTAPRODUCTO] FROM ([Ventas_inventarioDetalle_venta] T9 INNER JOIN [Inventario] T10 ON T10.[IDPRODUCTO] = T9.[IDPRODUCTO]) GROUP BY T9.[IDVENTA], T9.[IDDETALLEVENTAPRODUCTO] "
+          + " ) T8 ON T8.[IDVENTA] = T7.[IDVENTA] AND T8.[IDDETALLEVENTAPRODUCTO] = T7.[IDDETALLEVENTAPRODUCTO]) ) T6 ON T6.[IDVENTA] = T5.[IDVENTA] AND T6.[IDDETALLEVENTAPRODUCTO] = T5.[IDDETALLEVENTAPRODUCTO]) GROUP BY T5.[IDVENTA] ) T4 ON T4.[IDVENTA] = T2.[IDVENTA]) ) T1 WHERE T1.[IDVENTA] = @IDVENTA" ;
+          Object[] prmH002X42;
+          prmH002X42 = new Object[] {
           new ParDef("@IDVENTA",GXType.Decimal,12,0)
           };
           def= new CursorDef[] {
-              new CursorDef("H001N8", "SELECT COALESCE( T1.[TOTALVENTA], 0) AS TOTALVENTA FROM (SELECT COALESCE( T4.[GXC3], 0) + COALESCE( T3.[IMPUESTOVENTA], 0) - T2.[DESCUENTOVENTA] AS TOTALVENTA, T2.[IDVENTA] FROM (([Ventas_inventario] T2 LEFT JOIN (SELECT COALESCE( T6.[GXC3], 0) * CAST(0.15 AS decimal( 22, 10)) AS IMPUESTOVENTA, T5.[IDVENTA] FROM ([Ventas_inventario] T5 LEFT JOIN (SELECT SUM(COALESCE( T8.[SUBTOTALVENTAPRODUCTO], 0)) AS GXC3, T7.[IDVENTA] FROM ([Ventas_inventarioDetalle_venta] T7 INNER JOIN (SELECT COALESCE( [GXC5], 0) AS SUBTOTALVENTAPRODUCTO, [IDPRODUCTO] FROM [Inventario] ) T8 ON T8.[IDPRODUCTO] = T7.[IDPRODUCTO]) GROUP BY T7.[IDVENTA] ) T6 ON T6.[IDVENTA] = T5.[IDVENTA]) ) T3 ON T3.[IDVENTA] = T2.[IDVENTA]) LEFT JOIN (SELECT SUM(COALESCE( T6.[SUBTOTALVENTAPRODUCTO], 0)) AS GXC3, T5.[IDVENTA] FROM ([Ventas_inventarioDetalle_venta] T5 INNER JOIN (SELECT COALESCE( [GXC5], 0) AS SUBTOTALVENTAPRODUCTO, [IDPRODUCTO] FROM [Inventario] ) T6 ON T6.[IDPRODUCTO] = T5.[IDPRODUCTO]) GROUP BY T5.[IDVENTA] ) T4 ON T4.[IDVENTA] = T2.[IDVENTA]) ) T1 WHERE T1.[IDVENTA] = @IDVENTA ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH001N8,1, GxCacheFrequency.OFF ,true,true )
-             ,new CursorDef("H001N12", "SELECT COALESCE( T1.[IMPUESTOVENTA], 0) AS IMPUESTOVENTA FROM (SELECT COALESCE( T3.[GXC3], 0) * CAST(0.15 AS decimal( 22, 10)) AS IMPUESTOVENTA, T2.[IDVENTA] FROM ([Ventas_inventario] T2 LEFT JOIN (SELECT SUM(COALESCE( T5.[SUBTOTALVENTAPRODUCTO], 0)) AS GXC3, T4.[IDVENTA] FROM ([Ventas_inventarioDetalle_venta] T4 INNER JOIN (SELECT COALESCE( [GXC5], 0) AS SUBTOTALVENTAPRODUCTO, [IDPRODUCTO] FROM [Inventario] ) T5 ON T5.[IDPRODUCTO] = T4.[IDPRODUCTO]) GROUP BY T4.[IDVENTA] ) T3 ON T3.[IDVENTA] = T2.[IDVENTA]) ) T1 WHERE T1.[IDVENTA] = @IDVENTA ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH001N12,1, GxCacheFrequency.OFF ,true,true )
-             ,new CursorDef("H001N22", cmdBufferH001N22,false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH001N22,1, GxCacheFrequency.OFF ,true,true )
-             ,new CursorDef("H001N29", "SELECT COALESCE( T1.[TOTALVENTA], 0) AS TOTALVENTA FROM (SELECT COALESCE( T4.[GXC3], 0) + COALESCE( T3.[IMPUESTOVENTA], 0) - T2.[DESCUENTOVENTA] AS TOTALVENTA, T2.[IDVENTA] FROM (([Ventas_inventario] T2 LEFT JOIN (SELECT COALESCE( T6.[GXC3], 0) * CAST(0.15 AS decimal( 22, 10)) AS IMPUESTOVENTA, T5.[IDVENTA] FROM ([Ventas_inventario] T5 LEFT JOIN (SELECT SUM(COALESCE( T8.[SUBTOTALVENTAPRODUCTO], 0)) AS GXC3, T7.[IDVENTA] FROM ([Ventas_inventarioDetalle_venta] T7 INNER JOIN (SELECT COALESCE( [GXC5], 0) AS SUBTOTALVENTAPRODUCTO, [IDPRODUCTO] FROM [Inventario] ) T8 ON T8.[IDPRODUCTO] = T7.[IDPRODUCTO]) GROUP BY T7.[IDVENTA] ) T6 ON T6.[IDVENTA] = T5.[IDVENTA]) ) T3 ON T3.[IDVENTA] = T2.[IDVENTA]) LEFT JOIN (SELECT SUM(COALESCE( T6.[SUBTOTALVENTAPRODUCTO], 0)) AS GXC3, T5.[IDVENTA] FROM ([Ventas_inventarioDetalle_venta] T5 INNER JOIN (SELECT COALESCE( [GXC5], 0) AS SUBTOTALVENTAPRODUCTO, [IDPRODUCTO] FROM [Inventario] ) T6 ON T6.[IDPRODUCTO] = T5.[IDPRODUCTO]) GROUP BY T5.[IDVENTA] ) T4 ON T4.[IDVENTA] = T2.[IDVENTA]) ) T1 WHERE T1.[IDVENTA] = @IDVENTA ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH001N29,1, GxCacheFrequency.OFF ,true,true )
-             ,new CursorDef("H001N33", "SELECT COALESCE( T1.[IMPUESTOVENTA], 0) AS IMPUESTOVENTA FROM (SELECT COALESCE( T3.[GXC3], 0) * CAST(0.15 AS decimal( 22, 10)) AS IMPUESTOVENTA, T2.[IDVENTA] FROM ([Ventas_inventario] T2 LEFT JOIN (SELECT SUM(COALESCE( T5.[SUBTOTALVENTAPRODUCTO], 0)) AS GXC3, T4.[IDVENTA] FROM ([Ventas_inventarioDetalle_venta] T4 INNER JOIN (SELECT COALESCE( [GXC5], 0) AS SUBTOTALVENTAPRODUCTO, [IDPRODUCTO] FROM [Inventario] ) T5 ON T5.[IDPRODUCTO] = T4.[IDPRODUCTO]) GROUP BY T4.[IDVENTA] ) T3 ON T3.[IDVENTA] = T2.[IDVENTA]) ) T1 WHERE T1.[IDVENTA] = @IDVENTA ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH001N33,1, GxCacheFrequency.OFF ,true,true )
+              new CursorDef("H002X10", cmdBufferH002X10,false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH002X10,1, GxCacheFrequency.OFF ,true,true )
+             ,new CursorDef("H002X15", "SELECT COALESCE( T1.[IMPUESTOVENTA], 0) AS IMPUESTOVENTA FROM (SELECT COALESCE( T3.[GXC3], 0) * CAST(0.15 AS decimal( 22, 10)) AS IMPUESTOVENTA, T2.[IDVENTA] FROM ([Ventas_inventario] T2 LEFT JOIN (SELECT SUM(COALESCE( T5.[SUBTOTALVENTAPRODUCTO], 0)) AS GXC3, T4.[IDVENTA] FROM ([Ventas_inventarioDetalle_venta] T4 LEFT JOIN (SELECT COALESCE( T7.[GXC5], 0) AS SUBTOTALVENTAPRODUCTO, T6.[IDVENTA], T6.[IDDETALLEVENTAPRODUCTO] FROM ([Ventas_inventarioDetalle_venta] T6 LEFT JOIN (SELECT SUM(T9.[CANTIDADPRODUCTO] * CAST(T9.[PRECIOVENTAPRODUCTO] AS decimal( 22, 10))) AS GXC5, T8.[IDVENTA], T8.[IDDETALLEVENTAPRODUCTO] FROM ([Ventas_inventarioDetalle_venta] T8 INNER JOIN [Inventario] T9 ON T9.[IDPRODUCTO] = T8.[IDPRODUCTO]) GROUP BY T8.[IDVENTA], T8.[IDDETALLEVENTAPRODUCTO] ) T7 ON T7.[IDVENTA] = T6.[IDVENTA] AND T7.[IDDETALLEVENTAPRODUCTO] = T6.[IDDETALLEVENTAPRODUCTO]) ) T5 ON T5.[IDVENTA] = T4.[IDVENTA] AND T5.[IDDETALLEVENTAPRODUCTO] = T4.[IDDETALLEVENTAPRODUCTO]) GROUP BY T4.[IDVENTA] ) T3 ON T3.[IDVENTA] = T2.[IDVENTA]) ) T1 WHERE T1.[IDVENTA] = @IDVENTA ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH002X15,1, GxCacheFrequency.OFF ,true,true )
+             ,new CursorDef("H002X28", cmdBufferH002X28,false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH002X28,1, GxCacheFrequency.OFF ,true,true )
+             ,new CursorDef("H002X37", cmdBufferH002X37,false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH002X37,1, GxCacheFrequency.OFF ,true,true )
+             ,new CursorDef("H002X42", "SELECT COALESCE( T1.[IMPUESTOVENTA], 0) AS IMPUESTOVENTA FROM (SELECT COALESCE( T3.[GXC3], 0) * CAST(0.15 AS decimal( 22, 10)) AS IMPUESTOVENTA, T2.[IDVENTA] FROM ([Ventas_inventario] T2 LEFT JOIN (SELECT SUM(COALESCE( T5.[SUBTOTALVENTAPRODUCTO], 0)) AS GXC3, T4.[IDVENTA] FROM ([Ventas_inventarioDetalle_venta] T4 LEFT JOIN (SELECT COALESCE( T7.[GXC5], 0) AS SUBTOTALVENTAPRODUCTO, T6.[IDVENTA], T6.[IDDETALLEVENTAPRODUCTO] FROM ([Ventas_inventarioDetalle_venta] T6 LEFT JOIN (SELECT SUM(T9.[CANTIDADPRODUCTO] * CAST(T9.[PRECIOVENTAPRODUCTO] AS decimal( 22, 10))) AS GXC5, T8.[IDVENTA], T8.[IDDETALLEVENTAPRODUCTO] FROM ([Ventas_inventarioDetalle_venta] T8 INNER JOIN [Inventario] T9 ON T9.[IDPRODUCTO] = T8.[IDPRODUCTO]) GROUP BY T8.[IDVENTA], T8.[IDDETALLEVENTAPRODUCTO] ) T7 ON T7.[IDVENTA] = T6.[IDVENTA] AND T7.[IDDETALLEVENTAPRODUCTO] = T6.[IDDETALLEVENTAPRODUCTO]) ) T5 ON T5.[IDVENTA] = T4.[IDVENTA] AND T5.[IDDETALLEVENTAPRODUCTO] = T4.[IDDETALLEVENTAPRODUCTO]) GROUP BY T4.[IDVENTA] ) T3 ON T3.[IDVENTA] = T2.[IDVENTA]) ) T1 WHERE T1.[IDVENTA] = @IDVENTA ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH002X42,1, GxCacheFrequency.OFF ,true,true )
           };
        }
     }
@@ -1735,9 +1742,9 @@ namespace GeneXus.Programs {
                 return;
              case 2 :
                 ((long[]) buf[0])[0] = rslt.getLong(1);
-                ((string[]) buf[1])[0] = rslt.getVarchar(2);
-                ((long[]) buf[2])[0] = rslt.getLong(3);
-                ((decimal[]) buf[3])[0] = rslt.getDecimal(4);
+                ((decimal[]) buf[1])[0] = rslt.getDecimal(2);
+                ((string[]) buf[2])[0] = rslt.getVarchar(3);
+                ((long[]) buf[3])[0] = rslt.getLong(4);
                 ((string[]) buf[4])[0] = rslt.getVarchar(5);
                 ((long[]) buf[5])[0] = rslt.getLong(6);
                 ((string[]) buf[6])[0] = rslt.getVarchar(7);

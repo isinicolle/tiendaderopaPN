@@ -1,23 +1,78 @@
 <Objects>
   <Object>
     <Type>84a12160-f59b-4ad7-a683-ea4481ac23e9</Type>
-    <Id>18</Id>
-    <Part>c414ed00-8cc4-4f44-8820-4baf93547173</Part>
-  </Object>
-  <Object>
-    <Type>84a12160-f59b-4ad7-a683-ea4481ac23e9</Type>
     <Id>16</Id>
     <Part>528d1c06-a9c2-420d-bd35-21dca83f12ff</Part>
   </Object>
   <Object>
+    <Type>84a12160-f59b-4ad7-a683-ea4481ac23e9</Type>
+    <Id>14</Id>
+    <Part>c414ed00-8cc4-4f44-8820-4baf93547173</Part>
+  </Object>
+  <Object>
     <Type>1db606f2-af09-4cf9-a3b5-b481519d28f6</Type>
-    <Id>3</Id>
-    <Part>264be5fb-1b28-4b25-a598-6ca900dd059f</Part>
+    <Id>15</Id>
+    <Part>9b0a32a3-de6d-4be1-a4dd-1b85d3741534</Part>
+  </Object>
+  <Object>
+    <Type>1db606f2-af09-4cf9-a3b5-b481519d28f6</Type>
+    <Id>16</Id>
+    <Part>9b0a32a3-de6d-4be1-a4dd-1b85d3741534</Part>
+  </Object>
+  <Object>
+    <Type>84a12160-f59b-4ad7-a683-ea4481ac23e9</Type>
+    <Id>18</Id>
+    <Part>9b0a32a3-de6d-4be1-a4dd-1b85d3741534</Part>
+  </Object>
+  <Object>
+    <Type>84a12160-f59b-4ad7-a683-ea4481ac23e9</Type>
+    <Id>17</Id>
+    <Part>9b0a32a3-de6d-4be1-a4dd-1b85d3741534</Part>
   </Object>
   <Recent>
     <RecentKBObjectsList>
       <MaximumItems>10</MaximumItems>
       <RecentKBObjects>
+        <RecentKBObject>
+          <Key>84a12160-f59b-4ad7-a683-ea4481ac23e9-17</Key>
+          <Name>Reporte_Inventario</Name>
+          <LastAccess>2021-11-30T14:05:54.9115041-06:00</LastAccess>
+        </RecentKBObject>
+        <RecentKBObject>
+          <Key>84a12160-f59b-4ad7-a683-ea4481ac23e9-18</Key>
+          <Name>ReporteDeVenta</Name>
+          <LastAccess>2021-11-30T14:04:05.0817736-06:00</LastAccess>
+        </RecentKBObject>
+        <RecentKBObject>
+          <Key>1db606f2-af09-4cf9-a3b5-b481519d28f6-16</Key>
+          <Name>Ventas_inventario</Name>
+          <LastAccess>2021-11-30T13:55:19.0844793-06:00</LastAccess>
+        </RecentKBObject>
+        <RecentKBObject>
+          <Key>1db606f2-af09-4cf9-a3b5-b481519d28f6-15</Key>
+          <Name>Compra_inventario</Name>
+          <LastAccess>2021-11-30T13:50:17.4982575-06:00</LastAccess>
+        </RecentKBObject>
+        <RecentKBObject>
+          <Key>1db606f2-af09-4cf9-a3b5-b481519d28f6-14</Key>
+          <Name>Compra_inventario</Name>
+          <LastAccess>2021-11-30T12:44:18.4502895-06:00</LastAccess>
+        </RecentKBObject>
+        <RecentKBObject>
+          <Key>857ca50e-7905-0000-0007-c5d9ff2975ec-17</Key>
+          <Name>Compra_inventario</Name>
+          <LastAccess>2021-11-30T12:15:29.8400328-06:00</LastAccess>
+        </RecentKBObject>
+        <RecentKBObject>
+          <Key>1db606f2-af09-4cf9-a3b5-b481519d28f6-2</Key>
+          <Name>Compra_inventario</Name>
+          <LastAccess>2021-11-30T10:38:27.8942025-06:00</LastAccess>
+        </RecentKBObject>
+        <RecentKBObject>
+          <Key>84a12160-f59b-4ad7-a683-ea4481ac23e9-14</Key>
+          <Name>Procedure_Compra</Name>
+          <LastAccess>2021-11-30T10:36:01.9819016-06:00</LastAccess>
+        </RecentKBObject>
         <RecentKBObject>
           <Key>1db606f2-af09-4cf9-a3b5-b481519d28f6-3</Key>
           <Name>Ventas_inventario</Name>
@@ -27,26 +82,6 @@
           <Key>84a12160-f59b-4ad7-a683-ea4481ac23e9-16</Key>
           <Name>Reporte_Empleados</Name>
           <LastAccess>2021-11-27T21:39:42.6164287-06:00</LastAccess>
-        </RecentKBObject>
-        <RecentKBObject>
-          <Key>84a12160-f59b-4ad7-a683-ea4481ac23e9-15</Key>
-          <Name>Procedure_Proveedores</Name>
-          <LastAccess>2021-11-27T21:37:03.4976868-06:00</LastAccess>
-        </RecentKBObject>
-        <RecentKBObject>
-          <Key>84a12160-f59b-4ad7-a683-ea4481ac23e9-14</Key>
-          <Name>Procedure_Compra</Name>
-          <LastAccess>2021-11-26T20:39:48.3640172-06:00</LastAccess>
-        </RecentKBObject>
-        <RecentKBObject>
-          <Key>1db606f2-af09-4cf9-a3b5-b481519d28f6-11</Key>
-          <Name>Proveedores</Name>
-          <LastAccess>2021-11-26T20:28:29.024642-06:00</LastAccess>
-        </RecentKBObject>
-        <RecentKBObject>
-          <Key>1db606f2-af09-4cf9-a3b5-b481519d28f6-2</Key>
-          <Name>Compra_inventario</Name>
-          <LastAccess>2021-11-26T20:26:21.3647167-06:00</LastAccess>
         </RecentKBObject>
       </RecentKBObjects>
     </RecentKBObjectsList>

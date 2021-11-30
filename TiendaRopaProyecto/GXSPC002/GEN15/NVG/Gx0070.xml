@@ -9,7 +9,7 @@
 <ObjDesc>Selection List Estado_empleado</ObjDesc>
 <ObjPgmName>Gx0070</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>

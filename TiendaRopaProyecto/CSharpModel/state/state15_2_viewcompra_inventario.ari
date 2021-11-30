@@ -1,11 +1,9 @@
-current_obj_i(2,web,32).
+current_obj_i(2,web,94).
  
-current_guid('23a6ece9-ca65-4e5e-8b8f-4adbce7e8cde').
- 
- 
-called_tree_i(13,32,1,12).
+current_guid('990998e0-3cac-4471-8aff-0fe0f59b8601').
  
  
+called_tree_i(13,94,1,12).
  
  
  
@@ -22,7 +20,9 @@ called_tree_i(13,32,1,12).
  
  
  
-ij_object_dependency(viewcompra_inventario,[],[],[],32).
+ 
+ 
+ij_object_dependency(viewcompra_inventario,[],[],[],94).
  
  
 obj_parms_i([ 'long aP0_IDCOMPRA','string aP1_TabCode' ],[ [ 'Idcompra',in ],[ 'Tabcode',in ] ]).

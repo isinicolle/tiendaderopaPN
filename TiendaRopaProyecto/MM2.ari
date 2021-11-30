@@ -2,37 +2,14 @@
  
  
 pgm_main_i(proc,14,'PROCEDURE_COMPRA',[ 15,'APROCEDURE_COMPRA','Procedure_Compra','','','','HTTP' ]).
-pgm_main_i(proc,16,'REPORTE_EMPLEADOS',[ 15,'AREPORTE_EMPLEADOS','Reporte_Empleados','','','','HTTP' ]).
-pgm_main_i(proc,17,'REPORTE_INVENTARIO',[ 15,'AREPORTE_INVENTARIO','Reporte_Inventario','','','','HTTP' ]).
 pgm_main_i(web,8,'HOME',[ 15,'HOME','Home','','','','' ]).
+pgm_main_i(proc,17,'REPORTE_INVENTARIO',[ 15,'AREPORTE_INVENTARIO','Reporte_Inventario','','','','HTTP' ]).
+pgm_main_i(proc,16,'REPORTE_EMPLEADOS',[ 15,'AREPORTE_EMPLEADOS','Reporte_Empleados','','','','HTTP' ]).
  
-pgm_prop_i(proc,14,'APROCEDURE_COMPRA','CALL_PROTOCOL','HTTP').
-pgm_prop_i(proc,14,'PROCEDURE_COMPRA','CALL_PROTOCOL','HTTP').
-pgm_prop_i(proc,15,'PROCEDURE_PROVEEDORES','CALL_PROTOCOL','HTTP').
-pgm_prop_i(web,9,'TABBEDVIEW','WEB_COMP','Yes').
-pgm_prop_i(web,9,'TABBEDVIEW','URLAccess','No').
-pgm_prop_i(proc,16,'AREPORTE_EMPLEADOS','CALL_PROTOCOL','HTTP').
-pgm_prop_i(proc,16,'REPORTE_EMPLEADOS','CALL_PROTOCOL','HTTP').
-pgm_prop_i(web,5,'RWDRECENTLINKS','WEB_COMP','Yes').
-pgm_prop_i(web,5,'RWDRECENTLINKS','URLAccess','No').
-pgm_prop_i(proc,17,'AREPORTE_INVENTARIO','CALL_PROTOCOL','HTTP').
-pgm_prop_i(proc,17,'REPORTE_INVENTARIO','CALL_PROTOCOL','HTTP').
-pgm_prop_i(web,2,'RECENTLINKS','WEB_COMP','Yes').
-pgm_prop_i(web,2,'RECENTLINKS','URLAccess','No').
 pgm_prop_i(web,60,'VENTAS_INVENTARIODETALLE_VENTA_PRODUCTOWC','WEB_COMP','Yes').
 pgm_prop_i(web,60,'VENTAS_INVENTARIODETALLE_VENTA_PRODUCTOWC','URLAccess','No').
-pgm_prop_i(web,53,'PROVEEDORESTIPO_PROVEEDORWC','WEB_COMP','Yes').
-pgm_prop_i(web,53,'PROVEEDORESTIPO_PROVEEDORWC','URLAccess','No').
 pgm_prop_i(web,58,'COMPRA_INVENTARIODETALLE_COMPRA_PRODUCTOWC','WEB_COMP','Yes').
 pgm_prop_i(web,58,'COMPRA_INVENTARIODETALLE_COMPRA_PRODUCTOWC','URLAccess','No').
-pgm_prop_i(web,34,'EMPLEADOSGENERAL','WEB_COMP','Yes').
-pgm_prop_i(web,34,'EMPLEADOSGENERAL','URLAccess','No').
-pgm_prop_i(web,40,'ESTADO_EMPLEADOEMPLEADOSWC','WEB_COMP','Yes').
-pgm_prop_i(web,40,'ESTADO_EMPLEADOEMPLEADOSWC','URLAccess','No').
-pgm_prop_i(web,38,'TIPO_EMPLEADOEMPLEADOSWC','WEB_COMP','Yes').
-pgm_prop_i(web,38,'TIPO_EMPLEADOEMPLEADOSWC','URLAccess','No').
-pgm_prop_i(web,35,'EMPLEADOSCOMPRA_INVENTARIOWC','WEB_COMP','Yes').
-pgm_prop_i(web,35,'EMPLEADOSCOMPRA_INVENTARIOWC','URLAccess','No').
 pgm_prop_i(web,54,'PROVEEDORESCOMPRA_INVENTARIOWC','WEB_COMP','Yes').
 pgm_prop_i(web,54,'PROVEEDORESCOMPRA_INVENTARIOWC','URLAccess','No').
 pgm_prop_i(web,57,'COMPRA_INVENTARIOGENERAL','WEB_COMP','Yes').
@@ -45,24 +22,69 @@ pgm_prop_i(web,42,'CLIENTESVENTAS_INVENTARIOWC','WEB_COMP','Yes').
 pgm_prop_i(web,42,'CLIENTESVENTAS_INVENTARIOWC','URLAccess','No').
 pgm_prop_i(web,44,'INVENTARIODETALLE_VENTA_PRODUCTOWC','WEB_COMP','Yes').
 pgm_prop_i(web,44,'INVENTARIODETALLE_VENTA_PRODUCTOWC','URLAccess','No').
+pgm_prop_i(web,35,'EMPLEADOSCOMPRA_INVENTARIOWC','WEB_COMP','Yes').
+pgm_prop_i(web,35,'EMPLEADOSCOMPRA_INVENTARIOWC','URLAccess','No').
 pgm_prop_i(web,45,'INVENTARIODETALLE_COMPRA_PRODUCTOWC','WEB_COMP','Yes').
 pgm_prop_i(web,45,'INVENTARIODETALLE_COMPRA_PRODUCTOWC','URLAccess','No').
+pgm_prop_i(web,80,'COMPRA_INVENTARIODETALLE_COMPRA_PRODUCTOWC','WEB_COMP','Yes').
+pgm_prop_i(web,80,'COMPRA_INVENTARIODETALLE_COMPRA_PRODUCTOWC','URLAccess','No').
+pgm_prop_i(web,79,'COMPRA_INVENTARIOGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,79,'COMPRA_INVENTARIOGENERAL','URLAccess','No').
+pgm_prop_i(web,89,'COMPRA_INVENTARIODETALLE_COMPRA_PRODUCTOWC','WEB_COMP','Yes').
+pgm_prop_i(web,89,'COMPRA_INVENTARIODETALLE_COMPRA_PRODUCTOWC','URLAccess','No').
+pgm_prop_i(web,88,'COMPRA_INVENTARIOGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,88,'COMPRA_INVENTARIOGENERAL','URLAccess','No').
+pgm_prop_i(proc,14,'APROCEDURE_COMPRA','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,14,'PROCEDURE_COMPRA','CALL_PROTOCOL','HTTP').
+pgm_prop_i(web,5,'RWDRECENTLINKS','WEB_COMP','Yes').
+pgm_prop_i(web,5,'RWDRECENTLINKS','URLAccess','No').
+pgm_prop_i(web,2,'RECENTLINKS','WEB_COMP','Yes').
+pgm_prop_i(web,2,'RECENTLINKS','URLAccess','No').
+pgm_prop_i(web,9,'TABBEDVIEW','WEB_COMP','Yes').
+pgm_prop_i(web,9,'TABBEDVIEW','URLAccess','No').
+pgm_prop_i(web,1,'APPMASTERPAGE','WEB_COMP','Master').
+pgm_prop_i(web,3,'PROMPTMASTERPAGE','WEB_COMP','Master').
+pgm_prop_i(web,4,'RWDMASTERPAGE','WEB_COMP','Master').
+pgm_prop_i(web,6,'RWDPROMPTMASTERPAGE','WEB_COMP','Master').
+pgm_prop_i(web,82,'EMPLEADOSCOMPRA_INVENTARIOWC','WEB_COMP','Yes').
+pgm_prop_i(web,82,'EMPLEADOSCOMPRA_INVENTARIOWC','URLAccess','No').
+pgm_prop_i(web,83,'PROVEEDORESCOMPRA_INVENTARIOWC','WEB_COMP','Yes').
+pgm_prop_i(web,83,'PROVEEDORESCOMPRA_INVENTARIOWC','URLAccess','No').
+pgm_prop_i(web,81,'INVENTARIODETALLE_COMPRA_PRODUCTOWC','WEB_COMP','Yes').
+pgm_prop_i(web,81,'INVENTARIODETALLE_COMPRA_PRODUCTOWC','URLAccess','No').
+pgm_prop_i(web,97,'COMPRA_INVENTARIOLEVEL1WC','WEB_COMP','Yes').
+pgm_prop_i(web,97,'COMPRA_INVENTARIOLEVEL1WC','URLAccess','No').
+pgm_prop_i(web,99,'INVENTARIOLEVEL1WC','WEB_COMP','Yes').
+pgm_prop_i(web,99,'INVENTARIOLEVEL1WC','URLAccess','No').
+pgm_prop_i(proc,15,'PROCEDURE_PROVEEDORES','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,17,'AREPORTE_INVENTARIO','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,17,'REPORTE_INVENTARIO','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,16,'AREPORTE_EMPLEADOS','CALL_PROTOCOL','HTTP').
+pgm_prop_i(proc,16,'REPORTE_EMPLEADOS','CALL_PROTOCOL','HTTP').
+pgm_prop_i(web,53,'PROVEEDORESTIPO_PROVEEDORWC','WEB_COMP','Yes').
+pgm_prop_i(web,53,'PROVEEDORESTIPO_PROVEEDORWC','URLAccess','No').
+pgm_prop_i(web,38,'TIPO_EMPLEADOEMPLEADOSWC','WEB_COMP','Yes').
+pgm_prop_i(web,38,'TIPO_EMPLEADOEMPLEADOSWC','URLAccess','No').
+pgm_prop_i(web,40,'ESTADO_EMPLEADOEMPLEADOSWC','WEB_COMP','Yes').
+pgm_prop_i(web,40,'ESTADO_EMPLEADOEMPLEADOSWC','URLAccess','No').
+pgm_prop_i(web,106,'VENTAS_INVENTARIODETALLE_VENTA_PRODUCTOWC','WEB_COMP','Yes').
+pgm_prop_i(web,106,'VENTAS_INVENTARIODETALLE_VENTA_PRODUCTOWC','URLAccess','No').
+pgm_prop_i(web,102,'COMPRA_INVENTARIODETALLE_COMPRA_PRODUCTOWC','WEB_COMP','Yes').
+pgm_prop_i(web,102,'COMPRA_INVENTARIODETALLE_COMPRA_PRODUCTOWC','URLAccess','No').
 pgm_prop_i(web,39,'ESTADO_EMPLEADOGENERAL','WEB_COMP','Yes').
 pgm_prop_i(web,39,'ESTADO_EMPLEADOGENERAL','URLAccess','No').
-pgm_prop_i(web,37,'TIPO_EMPLEADOGENERAL','WEB_COMP','Yes').
-pgm_prop_i(web,37,'TIPO_EMPLEADOGENERAL','URLAccess','No').
+pgm_prop_i(web,34,'EMPLEADOSGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,34,'EMPLEADOSGENERAL','URLAccess','No').
 pgm_prop_i(web,41,'CLIENTESGENERAL','WEB_COMP','Yes').
 pgm_prop_i(web,41,'CLIENTESGENERAL','URLAccess','No').
-pgm_prop_i(web,51,'MARCA_PRODUCTOINVENTARIOWC','WEB_COMP','Yes').
-pgm_prop_i(web,51,'MARCA_PRODUCTOINVENTARIOWC','URLAccess','No').
 pgm_prop_i(web,47,'ESTADO_PRODUCTOINVENTARIOWC','WEB_COMP','Yes').
 pgm_prop_i(web,47,'ESTADO_PRODUCTOINVENTARIOWC','URLAccess','No').
-pgm_prop_i(web,49,'CATEGORIA_PRODUCTOINVENTARIOWC','WEB_COMP','Yes').
-pgm_prop_i(web,49,'CATEGORIA_PRODUCTOINVENTARIOWC','URLAccess','No').
 pgm_prop_i(web,43,'INVENTARIOGENERAL','WEB_COMP','Yes').
 pgm_prop_i(web,43,'INVENTARIOGENERAL','URLAccess','No').
 pgm_prop_i(web,46,'ESTADO_PRODUCTOGENERAL','WEB_COMP','Yes').
 pgm_prop_i(web,46,'ESTADO_PRODUCTOGENERAL','URLAccess','No').
+pgm_prop_i(web,37,'TIPO_EMPLEADOGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,37,'TIPO_EMPLEADOGENERAL','URLAccess','No').
 pgm_prop_i(web,48,'CATEGORIA_PRODUCTOGENERAL','WEB_COMP','Yes').
 pgm_prop_i(web,48,'CATEGORIA_PRODUCTOGENERAL','URLAccess','No').
 pgm_prop_i(web,50,'MARCA_PRODUCTOGENERAL','WEB_COMP','Yes').
@@ -71,12 +93,28 @@ pgm_prop_i(web,52,'PROVEEDORESGENERAL','WEB_COMP','Yes').
 pgm_prop_i(web,52,'PROVEEDORESGENERAL','URLAccess','No').
 pgm_prop_i(web,56,'TIPO_PROVEEDORTIPO_PROVEEDORWC','WEB_COMP','Yes').
 pgm_prop_i(web,56,'TIPO_PROVEEDORTIPO_PROVEEDORWC','URLAccess','No').
-pgm_prop_i(web,3,'PROMPTMASTERPAGE','WEB_COMP','Master').
+pgm_prop_i(web,49,'CATEGORIA_PRODUCTOINVENTARIOWC','WEB_COMP','Yes').
+pgm_prop_i(web,49,'CATEGORIA_PRODUCTOINVENTARIOWC','URLAccess','No').
+pgm_prop_i(web,108,'INVENTARIODETALLE_COMPRA_PRODUCTOWC','WEB_COMP','Yes').
+pgm_prop_i(web,108,'INVENTARIODETALLE_COMPRA_PRODUCTOWC','URLAccess','No').
+pgm_prop_i(web,100,'PROVEEDORESCOMPRA_INVENTARIOWC','WEB_COMP','Yes').
+pgm_prop_i(web,100,'PROVEEDORESCOMPRA_INVENTARIOWC','URLAccess','No').
+pgm_prop_i(web,98,'EMPLEADOSCOMPRA_INVENTARIOWC','WEB_COMP','Yes').
+pgm_prop_i(web,98,'EMPLEADOSCOMPRA_INVENTARIOWC','URLAccess','No').
+pgm_prop_i(web,96,'COMPRA_INVENTARIOGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,96,'COMPRA_INVENTARIOGENERAL','URLAccess','No').
 pgm_prop_i(web,55,'TIPO_PROVEEDORGENERAL','WEB_COMP','Yes').
 pgm_prop_i(web,55,'TIPO_PROVEEDORGENERAL','URLAccess','No').
-pgm_prop_i(web,4,'RWDMASTERPAGE','WEB_COMP','Master').
-pgm_prop_i(web,6,'RWDPROMPTMASTERPAGE','WEB_COMP','Master').
-pgm_prop_i(web,1,'APPMASTERPAGE','WEB_COMP','Master').
+pgm_prop_i(web,51,'MARCA_PRODUCTOINVENTARIOWC','WEB_COMP','Yes').
+pgm_prop_i(web,51,'MARCA_PRODUCTOINVENTARIOWC','URLAccess','No').
+pgm_prop_i(web,110,'EMPLEADOSVENTAS_INVENTARIOWC','WEB_COMP','Yes').
+pgm_prop_i(web,110,'EMPLEADOSVENTAS_INVENTARIOWC','URLAccess','No').
+pgm_prop_i(web,109,'INVENTARIODETALLE_VENTA_PRODUCTOWC','WEB_COMP','Yes').
+pgm_prop_i(web,109,'INVENTARIODETALLE_VENTA_PRODUCTOWC','URLAccess','No').
+pgm_prop_i(web,107,'CLIENTESVENTAS_INVENTARIOWC','WEB_COMP','Yes').
+pgm_prop_i(web,107,'CLIENTESVENTAS_INVENTARIOWC','URLAccess','No').
+pgm_prop_i(web,105,'VENTAS_INVENTARIOGENERAL','WEB_COMP','Yes').
+pgm_prop_i(web,105,'VENTAS_INVENTARIOGENERAL','URLAccess','No').
  
 model_wrkinfo_i([ '.Net Environment','CSharpModel' ]).
  
@@ -152,7 +190,7 @@ lng_prop_i(1,'LangTimeFormat','12',v).
 lng_prop_i(1,'LangDecimalPoint','.',v).
 lng_prop_i(1,'FullyQualifiedName','English',d).
  
-ver_stamp('20211128.061556').
+ver_stamp('20211130.200358').
  
-ver_stamp(date(2021,11,28),time(0,16,4,68)).
+ver_stamp(date(2021,11,30),time(14,4,27,62)).
  

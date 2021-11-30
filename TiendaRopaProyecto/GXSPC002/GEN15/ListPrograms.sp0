@@ -374,7 +374,7 @@ struct_dt_elem_i([ 26,54,81 ],3,pic,'99/99/99').
  
  
 pgm_parm_i(proc,12,'ISAUTHORIZED',[ [ svchar,256,0,0 ],[ boolean,4,0,0 ] ],[ [ 'GxObject',in,[] ],[ 'Authorized',out,[] ] ]).
-pgm_parm_i(web,12,'WWVENTAS_INVENTARIO',[],[]).
+pgm_parm_i(web,104,'WWVENTAS_INVENTARIO',[],[]).
 pgm_parm_i(web,21,'WWTIPO_PROVEEDOR',[],[]).
 pgm_parm_i(web,13,'WWTIPO_EMPLEADO',[],[]).
 pgm_parm_i(web,20,'WWPROVEEDORES',[],[]).
@@ -383,13 +383,13 @@ pgm_parm_i(web,16,'WWINVENTARIO',[],[]).
 pgm_parm_i(web,17,'WWESTADO_PRODUCTO',[],[]).
 pgm_parm_i(web,14,'WWESTADO_EMPLEADO',[],[]).
 pgm_parm_i(web,10,'WWEMPLEADOS',[],[]).
-pgm_parm_i(web,11,'WWCOMPRA_INVENTARIO',[],[]).
+pgm_parm_i(web,95,'WWCOMPRA_INVENTARIO',[],[]).
 pgm_parm_i(web,15,'WWCLIENTES',[],[]).
 pgm_parm_i(web,18,'WWCATEGORIA_PRODUCTO',[],[]).
  
 pgm_callprotocol_i(proc,13,'LISTPROGRAMS','INTERNAL','Secure').
 pgm_callprotocol_i(proc,12,'ISAUTHORIZED','INTERNAL','Secure').
-pgm_callprotocol_i(web,12,'WWVENTAS_INVENTARIO','INTERNAL','Secure').
+pgm_callprotocol_i(web,104,'WWVENTAS_INVENTARIO','INTERNAL','Secure').
 pgm_callprotocol_i(web,21,'WWTIPO_PROVEEDOR','INTERNAL','Secure').
 pgm_callprotocol_i(web,13,'WWTIPO_EMPLEADO','INTERNAL','Secure').
 pgm_callprotocol_i(web,20,'WWPROVEEDORES','INTERNAL','Secure').
@@ -398,7 +398,7 @@ pgm_callprotocol_i(web,16,'WWINVENTARIO','INTERNAL','Secure').
 pgm_callprotocol_i(web,17,'WWESTADO_PRODUCTO','INTERNAL','Secure').
 pgm_callprotocol_i(web,14,'WWESTADO_EMPLEADO','INTERNAL','Secure').
 pgm_callprotocol_i(web,10,'WWEMPLEADOS','INTERNAL','Secure').
-pgm_callprotocol_i(web,11,'WWCOMPRA_INVENTARIO','INTERNAL','Secure').
+pgm_callprotocol_i(web,95,'WWCOMPRA_INVENTARIO','INTERNAL','Secure').
 pgm_callprotocol_i(web,15,'WWCLIENTES','INTERNAL','Secure').
 pgm_callprotocol_i(web,18,'WWCATEGORIA_PRODUCTO','INTERNAL','Secure').
  

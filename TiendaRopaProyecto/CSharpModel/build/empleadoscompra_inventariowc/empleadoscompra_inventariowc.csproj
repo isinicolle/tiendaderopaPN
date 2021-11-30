@@ -4,7 +4,7 @@
 
 	<PropertyGroup>
 		<AssemblyName>empleadoscompra_inventariowc</AssemblyName>
-		<ProjectGuid>{8aaa6a8a-e8cd-472d-8dfc-115b7e789bc4}</ProjectGuid>
+		<ProjectGuid>{af3fb1e4-3d4d-4e9c-bed8-64ed44602597}</ProjectGuid>
 		<OutputType>Library</OutputType>
 		<PostgresqlSupport>false</PostgresqlSupport>
 	</PropertyGroup>

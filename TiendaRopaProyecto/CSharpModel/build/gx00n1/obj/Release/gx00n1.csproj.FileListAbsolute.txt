@@ -1,0 +1,3 @@
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\web\bin\gx00n1.dll
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\build\gx00n1\obj\Release\gx00n1.csprojResolveAssemblyReference.cache
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\build\gx00n1\obj\Release\gx00n1.dll

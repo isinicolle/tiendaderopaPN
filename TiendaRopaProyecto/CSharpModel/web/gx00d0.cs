@@ -107,9 +107,9 @@ namespace GeneXus.Programs {
             }
             else if ( StringUtil.StrCmp(gxfirstwebparm, "gxajaxNewRow_"+"Grid1") == 0 )
             {
-               nRC_GXsfl_44 = (int)(NumberUtil.Val( GetPar( "nRC_GXsfl_44"), "."));
-               nGXsfl_44_idx = (int)(NumberUtil.Val( GetPar( "nGXsfl_44_idx"), "."));
-               sGXsfl_44_idx = GetPar( "sGXsfl_44_idx");
+               nRC_GXsfl_34 = (int)(NumberUtil.Val( GetPar( "nRC_GXsfl_34"), "."));
+               nGXsfl_34_idx = (int)(NumberUtil.Val( GetPar( "nGXsfl_34_idx"), "."));
+               sGXsfl_34_idx = GetPar( "sGXsfl_34_idx");
                setAjaxCallMode();
                if ( ! IsValidAjaxCall( true) )
                {
@@ -124,19 +124,17 @@ namespace GeneXus.Programs {
                subGrid1_Rows = (int)(NumberUtil.Val( GetPar( "subGrid1_Rows"), "."));
                AV6cIDPROVEEDOR = (long)(NumberUtil.Val( GetPar( "cIDPROVEEDOR"), "."));
                AV8cTELEFONOPROVEEDOR = GetPar( "cTELEFONOPROVEEDOR");
-               AV9cCORREOPROVEEDOR = GetPar( "cCORREOPROVEEDOR");
                setAjaxCallMode();
                if ( ! IsValidAjaxCall( true) )
                {
                   GxWebError = 1;
                   return  ;
                }
-               gxgrGrid1_refresh( subGrid1_Rows, AV6cIDPROVEEDOR, AV8cTELEFONOPROVEEDOR, AV9cCORREOPROVEEDOR) ;
+               gxgrGrid1_refresh( subGrid1_Rows, AV6cIDPROVEEDOR, AV8cTELEFONOPROVEEDOR) ;
                GxWebStd.gx_hidden_field( context, "ADVANCEDCONTAINER_Class", StringUtil.RTrim( divAdvancedcontainer_Class));
                GxWebStd.gx_hidden_field( context, "BTNTOGGLE_Class", StringUtil.RTrim( bttBtntoggle_Class));
                GxWebStd.gx_hidden_field( context, "IDPROVEEDORFILTERCONTAINER_Class", StringUtil.RTrim( divIdproveedorfiltercontainer_Class));
                GxWebStd.gx_hidden_field( context, "TELEFONOPROVEEDORFILTERCONTAINER_Class", StringUtil.RTrim( divTelefonoproveedorfiltercontainer_Class));
-               GxWebStd.gx_hidden_field( context, "CORREOPROVEEDORFILTERCONTAINER_Class", StringUtil.RTrim( divCorreoproveedorfiltercontainer_Class));
                AddString( context.getJSONResponse( )) ;
                return  ;
             }
@@ -252,7 +250,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 1152180), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 1152180), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?20211128010560", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?2021113014131422", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -300,10 +298,9 @@ namespace GeneXus.Programs {
          /* Send hidden variables. */
          GxWebStd.gx_hidden_field( context, "GXH_vCIDPROVEEDOR", StringUtil.LTrim( StringUtil.NToC( (decimal)(AV6cIDPROVEEDOR), 12, 0, ".", "")));
          GxWebStd.gx_hidden_field( context, "GXH_vCTELEFONOPROVEEDOR", StringUtil.RTrim( AV8cTELEFONOPROVEEDOR));
-         GxWebStd.gx_hidden_field( context, "GXH_vCCORREOPROVEEDOR", AV9cCORREOPROVEEDOR);
          /* Send saved values. */
          send_integrity_footer_hashes( ) ;
-         GxWebStd.gx_hidden_field( context, "nRC_GXsfl_44", StringUtil.LTrim( StringUtil.NToC( (decimal)(nRC_GXsfl_44), 8, 0, ".", "")));
+         GxWebStd.gx_hidden_field( context, "nRC_GXsfl_34", StringUtil.LTrim( StringUtil.NToC( (decimal)(nRC_GXsfl_34), 8, 0, ".", "")));
          GxWebStd.gx_hidden_field( context, "vPIDPROVEEDOR", StringUtil.LTrim( StringUtil.NToC( (decimal)(AV10pIDPROVEEDOR), 12, 0, ".", "")));
          GxWebStd.gx_hidden_field( context, "GRID1_nFirstRecordOnPage", StringUtil.LTrim( StringUtil.NToC( (decimal)(GRID1_nFirstRecordOnPage), 15, 0, ".", "")));
          GxWebStd.gx_hidden_field( context, "GRID1_nEOF", StringUtil.LTrim( StringUtil.NToC( (decimal)(GRID1_nEOF), 1, 0, ".", "")));
@@ -311,7 +308,6 @@ namespace GeneXus.Programs {
          GxWebStd.gx_hidden_field( context, "BTNTOGGLE_Class", StringUtil.RTrim( bttBtntoggle_Class));
          GxWebStd.gx_hidden_field( context, "IDPROVEEDORFILTERCONTAINER_Class", StringUtil.RTrim( divIdproveedorfiltercontainer_Class));
          GxWebStd.gx_hidden_field( context, "TELEFONOPROVEEDORFILTERCONTAINER_Class", StringUtil.RTrim( divTelefonoproveedorfiltercontainer_Class));
-         GxWebStd.gx_hidden_field( context, "CORREOPROVEEDORFILTERCONTAINER_Class", StringUtil.RTrim( divCorreoproveedorfiltercontainer_Class));
       }
 
       public override void RenderHtmlCloseForm( )
@@ -425,7 +421,7 @@ namespace GeneXus.Programs {
             /* Attribute/Variable Label */
             GxWebStd.gx_label_element( context, edtavCidproveedor_Internalname, "IDPROVEEDOR", "col-sm-3 AttributeLabel", 0, true, "");
             /* Single line edit */
-            TempTags = "  onfocus=\"gx.evt.onfocus(this, 16,'',false,'" + sGXsfl_44_idx + "',0)\"";
+            TempTags = "  onfocus=\"gx.evt.onfocus(this, 16,'',false,'" + sGXsfl_34_idx + "',0)\"";
             GxWebStd.gx_single_line_edit( context, edtavCidproveedor_Internalname, StringUtil.LTrim( StringUtil.NToC( (decimal)(AV6cIDPROVEEDOR), 12, 0, ".", "")), ((edtavCidproveedor_Enabled!=0) ? StringUtil.LTrim( context.localUtil.Format( (decimal)(AV6cIDPROVEEDOR), "ZZZZZZZZZZZ9")) : context.localUtil.Format( (decimal)(AV6cIDPROVEEDOR), "ZZZZZZZZZZZ9")), TempTags+" onchange=\""+"gx.num.valid_integer( this,',');"+";gx.evt.onchange(this, event)\" "+" onblur=\""+"gx.num.valid_integer( this,',');"+";gx.evt.onblur(this,16);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtavCidproveedor_Jsonclick, 0, "Attribute", "", "", "", "", edtavCidproveedor_Visible, edtavCidproveedor_Enabled, 0, "number", "1", 12, "chr", 1, "row", 12, 0, 0, 0, 1, -1, 0, true, "", "right", false, "", "HLP_Gx00D0.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -456,39 +452,8 @@ namespace GeneXus.Programs {
             /* Attribute/Variable Label */
             GxWebStd.gx_label_element( context, edtavCtelefonoproveedor_Internalname, "TELEFONOPROVEEDOR", "col-sm-3 AttributeLabel", 0, true, "");
             /* Single line edit */
-            TempTags = "  onfocus=\"gx.evt.onfocus(this, 26,'',false,'" + sGXsfl_44_idx + "',0)\"";
+            TempTags = "  onfocus=\"gx.evt.onfocus(this, 26,'',false,'" + sGXsfl_34_idx + "',0)\"";
             GxWebStd.gx_single_line_edit( context, edtavCtelefonoproveedor_Internalname, StringUtil.RTrim( AV8cTELEFONOPROVEEDOR), StringUtil.RTrim( context.localUtil.Format( AV8cTELEFONOPROVEEDOR, "")), TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,26);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtavCtelefonoproveedor_Jsonclick, 0, "Attribute", "", "", "", "", edtavCtelefonoproveedor_Visible, edtavCtelefonoproveedor_Enabled, 0, "text", "", 20, "chr", 1, "row", 20, 0, 0, 0, 1, -1, 0, true, "", "left", true, "", "HLP_Gx00D0.htm");
-            GxWebStd.gx_div_end( context, "left", "top", "div");
-            GxWebStd.gx_div_end( context, "left", "top", "div");
-            GxWebStd.gx_div_end( context, "left", "top", "div");
-            GxWebStd.gx_div_end( context, "left", "top", "div");
-            GxWebStd.gx_div_end( context, "left", "top", "div");
-            GxWebStd.gx_div_end( context, "left", "top", "div");
-            /* Div Control */
-            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
-            /* Div Control */
-            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "left", "top", "", "", "div");
-            /* Div Control */
-            GxWebStd.gx_div_start( context, divCorreoproveedorfiltercontainer_Internalname, 1, 0, "px", 0, "px", divCorreoproveedorfiltercontainer_Class, "left", "top", "", "", "div");
-            /* Div Control */
-            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
-            /* Div Control */
-            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "left", "top", "", "", "div");
-            /* Text block */
-            GxWebStd.gx_label_ctrl( context, lblLblcorreoproveedorfilter_Internalname, "CORREOPROVEEDOR", "", "", lblLblcorreoproveedorfilter_Jsonclick, "'"+""+"'"+",false,"+"'"+"e131z1_client"+"'", "", "WWAdvancedLabel WWFilterLabel", 7, "", 1, 1, 0, 1, "HLP_Gx00D0.htm");
-            GxWebStd.gx_div_end( context, "left", "top", "div");
-            GxWebStd.gx_div_end( context, "left", "top", "div");
-            /* Div Control */
-            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
-            /* Div Control */
-            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 WWFiltersCell", "left", "top", "", "", "div");
-            /* Div Control */
-            GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", " gx-attribute", "left", "top", "", "", "div");
-            /* Attribute/Variable Label */
-            GxWebStd.gx_label_element( context, edtavCcorreoproveedor_Internalname, "CORREOPROVEEDOR", "col-sm-3 AttributeLabel", 0, true, "");
-            /* Single line edit */
-            TempTags = "  onfocus=\"gx.evt.onfocus(this, 36,'',false,'" + sGXsfl_44_idx + "',0)\"";
-            GxWebStd.gx_single_line_edit( context, edtavCcorreoproveedor_Internalname, AV9cCORREOPROVEEDOR, StringUtil.RTrim( context.localUtil.Format( AV9cCORREOPROVEEDOR, "")), TempTags+" onchange=\""+""+";gx.evt.onchange(this, event)\" "+" onblur=\""+""+";gx.evt.onblur(this,36);\"", "'"+""+"'"+",false,"+"'"+""+"'", "", "", "", "", edtavCcorreoproveedor_Jsonclick, 0, "Attribute", "", "", "", "", edtavCcorreoproveedor_Visible, edtavCcorreoproveedor_Enabled, 0, "text", "", 80, "chr", 1, "row", 100, 0, 0, 0, 1, -1, 0, true, "", "left", true, "", "HLP_Gx00D0.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -505,10 +470,10 @@ namespace GeneXus.Programs {
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12 hidden-sm hidden-md hidden-lg ToggleCell", "left", "top", "", "", "div");
-            TempTags = "  onfocus=\"gx.evt.onfocus(this, 41,'',false,'',0)\"";
+            TempTags = "  onfocus=\"gx.evt.onfocus(this, 31,'',false,'',0)\"";
             ClassString = bttBtntoggle_Class;
             StyleString = "";
-            GxWebStd.gx_button_ctrl( context, bttBtntoggle_Internalname, "gx.evt.setGridEvt("+StringUtil.Str( (decimal)(44), 2, 0)+","+"null"+");", "|||", bttBtntoggle_Jsonclick, 7, "|||", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",false,"+"'"+"e141z1_client"+"'", TempTags, "", 2, "HLP_Gx00D0.htm");
+            GxWebStd.gx_button_ctrl( context, bttBtntoggle_Internalname, "gx.evt.setGridEvt("+StringUtil.Str( (decimal)(34), 2, 0)+","+"null"+");", "|||", bttBtntoggle_Jsonclick, 7, "|||", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",false,"+"'"+"e131z1_client"+"'", TempTags, "", 2, "HLP_Gx00D0.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             /* Div Control */
@@ -519,7 +484,7 @@ namespace GeneXus.Programs {
             Grid1Container.SetWrapped(nGXWrapped);
             if ( Grid1Container.GetWrapped() == 1 )
             {
-               context.WriteHtmlText( "<div id=\""+"Grid1Container"+"DivS\" data-gxgridid=\"44\">") ;
+               context.WriteHtmlText( "<div id=\""+"Grid1Container"+"DivS\" data-gxgridid=\"34\">") ;
                sStyleString = "";
                GxWebStd.gx_table_start( context, subGrid1_Internalname, subGrid1_Internalname, "", "PromptGrid", 0, "", "", 1, 2, sStyleString, "", "", 0);
                /* Subfile titles */
@@ -602,10 +567,10 @@ namespace GeneXus.Programs {
                Grid1Container.AddObjectProperty("Collapsed", StringUtil.LTrim( StringUtil.NToC( (decimal)(subGrid1_Collapsed), 1, 0, ".", "")));
             }
          }
-         if ( wbEnd == 44 )
+         if ( wbEnd == 34 )
          {
             wbEnd = 0;
-            nRC_GXsfl_44 = (int)(nGXsfl_44_idx-1);
+            nRC_GXsfl_34 = (int)(nGXsfl_34_idx-1);
             if ( Grid1Container.GetWrapped() == 1 )
             {
                context.WriteHtmlText( "</table>") ;
@@ -637,10 +602,10 @@ namespace GeneXus.Programs {
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "col-xs-12", "left", "top", "", "", "div");
-            TempTags = "  onfocus=\"gx.evt.onfocus(this, 50,'',false,'',0)\"";
+            TempTags = "  onfocus=\"gx.evt.onfocus(this, 40,'',false,'',0)\"";
             ClassString = "BtnCancel";
             StyleString = "";
-            GxWebStd.gx_button_ctrl( context, bttBtn_cancel_Internalname, "gx.evt.setGridEvt("+StringUtil.Str( (decimal)(44), 2, 0)+","+"null"+");", "Cancel", bttBtn_cancel_Jsonclick, 1, "Cancel", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",false,"+"'"+"ECANCEL."+"'", TempTags, "", context.GetButtonType( ), "HLP_Gx00D0.htm");
+            GxWebStd.gx_button_ctrl( context, bttBtn_cancel_Internalname, "gx.evt.setGridEvt("+StringUtil.Str( (decimal)(34), 2, 0)+","+"null"+");", "Cancel", bttBtn_cancel_Jsonclick, 1, "Cancel", "", StyleString, ClassString, 1, 1, "standard", "'"+""+"'"+",false,"+"'"+"ECANCEL."+"'", TempTags, "", context.GetButtonType( ), "HLP_Gx00D0.htm");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
@@ -649,7 +614,7 @@ namespace GeneXus.Programs {
             GxWebStd.gx_div_end( context, "left", "top", "div");
             GxWebStd.gx_div_end( context, "left", "top", "div");
          }
-         if ( wbEnd == 44 )
+         if ( wbEnd == 34 )
          {
             wbEnd = 0;
             if ( isFullAjaxMode( ) )
@@ -775,11 +740,11 @@ namespace GeneXus.Programs {
                            sEvt = StringUtil.Left( sEvt, (short)(StringUtil.Len( sEvt)-4));
                            if ( ( StringUtil.StrCmp(StringUtil.Left( sEvt, 5), "START") == 0 ) || ( StringUtil.StrCmp(StringUtil.Left( sEvt, 4), "LOAD") == 0 ) || ( StringUtil.StrCmp(StringUtil.Left( sEvt, 5), "ENTER") == 0 ) )
                            {
-                              nGXsfl_44_idx = (int)(NumberUtil.Val( sEvtType, "."));
-                              sGXsfl_44_idx = StringUtil.PadL( StringUtil.LTrimStr( (decimal)(nGXsfl_44_idx), 4, 0), 4, "0");
-                              SubsflControlProps_442( ) ;
+                              nGXsfl_34_idx = (int)(NumberUtil.Val( sEvtType, "."));
+                              sGXsfl_34_idx = StringUtil.PadL( StringUtil.LTrimStr( (decimal)(nGXsfl_34_idx), 4, 0), 4, "0");
+                              SubsflControlProps_342( ) ;
                               AV5LinkSelection = cgiGet( edtavLinkselection_Internalname);
-                              AssignProp("", false, edtavLinkselection_Internalname, "Bitmap", (String.IsNullOrEmpty(StringUtil.RTrim( AV5LinkSelection)) ? AV14Linkselection_GXI : context.convertURL( context.PathToRelativeUrl( AV5LinkSelection))), !bGXsfl_44_Refreshing);
+                              AssignProp("", false, edtavLinkselection_Internalname, "Bitmap", (String.IsNullOrEmpty(StringUtil.RTrim( AV5LinkSelection)) ? AV14Linkselection_GXI : context.convertURL( context.PathToRelativeUrl( AV5LinkSelection))), !bGXsfl_34_Refreshing);
                               AssignProp("", false, edtavLinkselection_Internalname, "SrcSet", context.GetImageSrcSet( AV5LinkSelection), true);
                               A10IDPROVEEDOR = (long)(context.localUtil.CToN( cgiGet( edtIDPROVEEDOR_Internalname), ".", ","));
                               A47TELEFONOPROVEEDOR = cgiGet( edtTELEFONOPROVEEDOR_Internalname);
@@ -792,14 +757,14 @@ namespace GeneXus.Programs {
                                     context.wbHandled = 1;
                                     dynload_actions( ) ;
                                     /* Execute user event: Start */
-                                    E151Z2 ();
+                                    E141Z2 ();
                                  }
                                  else if ( StringUtil.StrCmp(sEvt, "LOAD") == 0 )
                                  {
                                     context.wbHandled = 1;
                                     dynload_actions( ) ;
                                     /* Execute user event: Load */
-                                    E161Z2 ();
+                                    E151Z2 ();
                                  }
                                  else if ( StringUtil.StrCmp(sEvt, "ENTER") == 0 )
                                  {
@@ -817,15 +782,10 @@ namespace GeneXus.Programs {
                                        {
                                           Rfr0gs = true;
                                        }
-                                       /* Set Refresh If Ccorreoproveedor Changed */
-                                       if ( StringUtil.StrCmp(cgiGet( "GXH_vCCORREOPROVEEDOR"), AV9cCORREOPROVEEDOR) != 0 )
-                                       {
-                                          Rfr0gs = true;
-                                       }
                                        if ( ! Rfr0gs )
                                        {
                                           /* Execute user event: Enter */
-                                          E171Z2 ();
+                                          E161Z2 ();
                                        }
                                        dynload_actions( ) ;
                                     }
@@ -899,13 +859,13 @@ namespace GeneXus.Programs {
       protected void gxnrGrid1_newrow( )
       {
          GxWebStd.set_html_headers( context, 0, "", "");
-         SubsflControlProps_442( ) ;
-         while ( nGXsfl_44_idx <= nRC_GXsfl_44 )
+         SubsflControlProps_342( ) ;
+         while ( nGXsfl_34_idx <= nRC_GXsfl_34 )
          {
-            sendrow_442( ) ;
-            nGXsfl_44_idx = ((subGrid1_Islastpage==1)&&(nGXsfl_44_idx+1>subGrid1_fnc_Recordsperpage( )) ? 1 : nGXsfl_44_idx+1);
-            sGXsfl_44_idx = StringUtil.PadL( StringUtil.LTrimStr( (decimal)(nGXsfl_44_idx), 4, 0), 4, "0");
-            SubsflControlProps_442( ) ;
+            sendrow_342( ) ;
+            nGXsfl_34_idx = ((subGrid1_Islastpage==1)&&(nGXsfl_34_idx+1>subGrid1_fnc_Recordsperpage( )) ? 1 : nGXsfl_34_idx+1);
+            sGXsfl_34_idx = StringUtil.PadL( StringUtil.LTrimStr( (decimal)(nGXsfl_34_idx), 4, 0), 4, "0");
+            SubsflControlProps_342( ) ;
          }
          AddString( context.httpAjaxContext.getJSONContainerResponse( Grid1Container)) ;
          /* End function gxnrGrid1_newrow */
@@ -913,8 +873,7 @@ namespace GeneXus.Programs {
 
       protected void gxgrGrid1_refresh( int subGrid1_Rows ,
                                         long AV6cIDPROVEEDOR ,
-                                        string AV8cTELEFONOPROVEEDOR ,
-                                        string AV9cCORREOPROVEEDOR )
+                                        string AV8cTELEFONOPROVEEDOR )
       {
          initialize_formulas( ) ;
          GxWebStd.set_html_headers( context, 0, "", "");
@@ -969,11 +928,11 @@ namespace GeneXus.Programs {
          {
             Grid1Container.ClearRows();
          }
-         wbStart = 44;
-         nGXsfl_44_idx = 1;
-         sGXsfl_44_idx = StringUtil.PadL( StringUtil.LTrimStr( (decimal)(nGXsfl_44_idx), 4, 0), 4, "0");
-         SubsflControlProps_442( ) ;
-         bGXsfl_44_Refreshing = true;
+         wbStart = 34;
+         nGXsfl_34_idx = 1;
+         sGXsfl_34_idx = StringUtil.PadL( StringUtil.LTrimStr( (decimal)(nGXsfl_34_idx), 4, 0), 4, "0");
+         SubsflControlProps_342( ) ;
+         bGXsfl_34_Refreshing = true;
          Grid1Container.AddObjectProperty("GridName", "Grid1");
          Grid1Container.AddObjectProperty("CmpContext", "");
          Grid1Container.AddObjectProperty("InMasterPage", "false");
@@ -987,47 +946,43 @@ namespace GeneXus.Programs {
          gxdyncontrolsrefreshing = false;
          if ( ! context.WillRedirect( ) && ( context.nUserReturn != 1 ) )
          {
-            SubsflControlProps_442( ) ;
+            SubsflControlProps_342( ) ;
             GXPagingFrom2 = (int)(GRID1_nFirstRecordOnPage);
             GXPagingTo2 = (int)(subGrid1_fnc_Recordsperpage( )+1);
             pr_default.dynParam(0, new Object[]{ new Object[]{
                                                  AV8cTELEFONOPROVEEDOR ,
-                                                 AV9cCORREOPROVEEDOR ,
                                                  A47TELEFONOPROVEEDOR ,
-                                                 A48CORREOPROVEEDOR ,
                                                  AV6cIDPROVEEDOR } ,
                                                  new int[]{
                                                  TypeConstants.LONG
                                                  }
             });
             lV8cTELEFONOPROVEEDOR = StringUtil.PadR( StringUtil.RTrim( AV8cTELEFONOPROVEEDOR), 20, "%");
-            lV9cCORREOPROVEEDOR = StringUtil.Concat( StringUtil.RTrim( AV9cCORREOPROVEEDOR), "%", "");
             /* Using cursor H001Z2 */
-            pr_default.execute(0, new Object[] {AV6cIDPROVEEDOR, lV8cTELEFONOPROVEEDOR, lV9cCORREOPROVEEDOR, GXPagingFrom2, GXPagingTo2, GXPagingTo2});
-            nGXsfl_44_idx = 1;
-            sGXsfl_44_idx = StringUtil.PadL( StringUtil.LTrimStr( (decimal)(nGXsfl_44_idx), 4, 0), 4, "0");
-            SubsflControlProps_442( ) ;
+            pr_default.execute(0, new Object[] {AV6cIDPROVEEDOR, lV8cTELEFONOPROVEEDOR, GXPagingFrom2, GXPagingTo2, GXPagingTo2});
+            nGXsfl_34_idx = 1;
+            sGXsfl_34_idx = StringUtil.PadL( StringUtil.LTrimStr( (decimal)(nGXsfl_34_idx), 4, 0), 4, "0");
+            SubsflControlProps_342( ) ;
             while ( ( (pr_default.getStatus(0) != 101) ) && ( ( GRID1_nCurrentRecord < subGrid1_fnc_Recordsperpage( ) ) ) )
             {
-               A48CORREOPROVEEDOR = H001Z2_A48CORREOPROVEEDOR[0];
                A47TELEFONOPROVEEDOR = H001Z2_A47TELEFONOPROVEEDOR[0];
                A10IDPROVEEDOR = H001Z2_A10IDPROVEEDOR[0];
                /* Execute user event: Load */
-               E161Z2 ();
+               E151Z2 ();
                pr_default.readNext(0);
             }
             GRID1_nEOF = (short)(((pr_default.getStatus(0) == 101) ? 1 : 0));
             GxWebStd.gx_hidden_field( context, "GRID1_nEOF", StringUtil.LTrim( StringUtil.NToC( (decimal)(GRID1_nEOF), 1, 0, ".", "")));
             pr_default.close(0);
-            wbEnd = 44;
+            wbEnd = 34;
             WB1Z0( ) ;
          }
-         bGXsfl_44_Refreshing = true;
+         bGXsfl_34_Refreshing = true;
       }
 
       protected void send_integrity_lvl_hashes1Z2( )
       {
-         GxWebStd.gx_hidden_field( context, "gxhash_IDPROVEEDOR"+"_"+sGXsfl_44_idx, GetSecureSignedToken( sGXsfl_44_idx, context.localUtil.Format( (decimal)(A10IDPROVEEDOR), "ZZZZZZZZZZZ9"), context));
+         GxWebStd.gx_hidden_field( context, "gxhash_IDPROVEEDOR"+"_"+sGXsfl_34_idx, GetSecureSignedToken( sGXsfl_34_idx, context.localUtil.Format( (decimal)(A10IDPROVEEDOR), "ZZZZZZZZZZZ9"), context));
       }
 
       protected int subGrid1_fnc_Pagecount( )
@@ -1044,18 +999,15 @@ namespace GeneXus.Programs {
       {
          pr_default.dynParam(1, new Object[]{ new Object[]{
                                               AV8cTELEFONOPROVEEDOR ,
-                                              AV9cCORREOPROVEEDOR ,
                                               A47TELEFONOPROVEEDOR ,
-                                              A48CORREOPROVEEDOR ,
                                               AV6cIDPROVEEDOR } ,
                                               new int[]{
                                               TypeConstants.LONG
                                               }
          });
          lV8cTELEFONOPROVEEDOR = StringUtil.PadR( StringUtil.RTrim( AV8cTELEFONOPROVEEDOR), 20, "%");
-         lV9cCORREOPROVEEDOR = StringUtil.Concat( StringUtil.RTrim( AV9cCORREOPROVEEDOR), "%", "");
          /* Using cursor H001Z3 */
-         pr_default.execute(1, new Object[] {AV6cIDPROVEEDOR, lV8cTELEFONOPROVEEDOR, lV9cCORREOPROVEEDOR});
+         pr_default.execute(1, new Object[] {AV6cIDPROVEEDOR, lV8cTELEFONOPROVEEDOR});
          GRID1_nRecordCount = H001Z3_AGRID1_nRecordCount[0];
          pr_default.close(1);
          return (int)(GRID1_nRecordCount) ;
@@ -1077,7 +1029,7 @@ namespace GeneXus.Programs {
          GxWebStd.gx_hidden_field( context, "GRID1_nFirstRecordOnPage", StringUtil.LTrim( StringUtil.NToC( (decimal)(GRID1_nFirstRecordOnPage), 15, 0, ".", "")));
          if ( isFullAjaxMode( ) )
          {
-            gxgrGrid1_refresh( subGrid1_Rows, AV6cIDPROVEEDOR, AV8cTELEFONOPROVEEDOR, AV9cCORREOPROVEEDOR) ;
+            gxgrGrid1_refresh( subGrid1_Rows, AV6cIDPROVEEDOR, AV8cTELEFONOPROVEEDOR) ;
          }
          send_integrity_footer_hashes( ) ;
          return 0 ;
@@ -1098,7 +1050,7 @@ namespace GeneXus.Programs {
          Grid1Container.AddObjectProperty("GRID1_nFirstRecordOnPage", GRID1_nFirstRecordOnPage);
          if ( isFullAjaxMode( ) )
          {
-            gxgrGrid1_refresh( subGrid1_Rows, AV6cIDPROVEEDOR, AV8cTELEFONOPROVEEDOR, AV9cCORREOPROVEEDOR) ;
+            gxgrGrid1_refresh( subGrid1_Rows, AV6cIDPROVEEDOR, AV8cTELEFONOPROVEEDOR) ;
          }
          send_integrity_footer_hashes( ) ;
          return (short)(((GRID1_nEOF==0) ? 0 : 2)) ;
@@ -1117,7 +1069,7 @@ namespace GeneXus.Programs {
          GxWebStd.gx_hidden_field( context, "GRID1_nFirstRecordOnPage", StringUtil.LTrim( StringUtil.NToC( (decimal)(GRID1_nFirstRecordOnPage), 15, 0, ".", "")));
          if ( isFullAjaxMode( ) )
          {
-            gxgrGrid1_refresh( subGrid1_Rows, AV6cIDPROVEEDOR, AV8cTELEFONOPROVEEDOR, AV9cCORREOPROVEEDOR) ;
+            gxgrGrid1_refresh( subGrid1_Rows, AV6cIDPROVEEDOR, AV8cTELEFONOPROVEEDOR) ;
          }
          send_integrity_footer_hashes( ) ;
          return 0 ;
@@ -1144,7 +1096,7 @@ namespace GeneXus.Programs {
          GxWebStd.gx_hidden_field( context, "GRID1_nFirstRecordOnPage", StringUtil.LTrim( StringUtil.NToC( (decimal)(GRID1_nFirstRecordOnPage), 15, 0, ".", "")));
          if ( isFullAjaxMode( ) )
          {
-            gxgrGrid1_refresh( subGrid1_Rows, AV6cIDPROVEEDOR, AV8cTELEFONOPROVEEDOR, AV9cCORREOPROVEEDOR) ;
+            gxgrGrid1_refresh( subGrid1_Rows, AV6cIDPROVEEDOR, AV8cTELEFONOPROVEEDOR) ;
          }
          send_integrity_footer_hashes( ) ;
          return 0 ;
@@ -1163,7 +1115,7 @@ namespace GeneXus.Programs {
          GxWebStd.gx_hidden_field( context, "GRID1_nFirstRecordOnPage", StringUtil.LTrim( StringUtil.NToC( (decimal)(GRID1_nFirstRecordOnPage), 15, 0, ".", "")));
          if ( isFullAjaxMode( ) )
          {
-            gxgrGrid1_refresh( subGrid1_Rows, AV6cIDPROVEEDOR, AV8cTELEFONOPROVEEDOR, AV9cCORREOPROVEEDOR) ;
+            gxgrGrid1_refresh( subGrid1_Rows, AV6cIDPROVEEDOR, AV8cTELEFONOPROVEEDOR) ;
          }
          send_integrity_footer_hashes( ) ;
          return (int)(0) ;
@@ -1182,14 +1134,14 @@ namespace GeneXus.Programs {
          /* Execute Start event if defined. */
          context.wbGlbDoneStart = 0;
          /* Execute user event: Start */
-         E151Z2 ();
+         E141Z2 ();
          context.wbGlbDoneStart = 1;
          /* After Start, stand alone formulas. */
          if ( StringUtil.StrCmp(context.GetRequestMethod( ), "POST") == 0 )
          {
             /* Read saved SDTs. */
             /* Read saved values. */
-            nRC_GXsfl_44 = (int)(context.localUtil.CToN( cgiGet( "nRC_GXsfl_44"), ".", ","));
+            nRC_GXsfl_34 = (int)(context.localUtil.CToN( cgiGet( "nRC_GXsfl_34"), ".", ","));
             GRID1_nFirstRecordOnPage = (long)(context.localUtil.CToN( cgiGet( "GRID1_nFirstRecordOnPage"), ".", ","));
             GRID1_nEOF = (short)(context.localUtil.CToN( cgiGet( "GRID1_nEOF"), ".", ","));
             /* Read variables values. */
@@ -1209,8 +1161,6 @@ namespace GeneXus.Programs {
             }
             AV8cTELEFONOPROVEEDOR = cgiGet( edtavCtelefonoproveedor_Internalname);
             AssignAttri("", false, "AV8cTELEFONOPROVEEDOR", AV8cTELEFONOPROVEEDOR);
-            AV9cCORREOPROVEEDOR = cgiGet( edtavCcorreoproveedor_Internalname);
-            AssignAttri("", false, "AV9cCORREOPROVEEDOR", AV9cCORREOPROVEEDOR);
             /* Read subfile selected row values. */
             /* Read hidden variables. */
             GXKey = Decrypt64( context.GetCookie( "GX_SESSION_ID"), Crypto.GetServerKey( ));
@@ -1220,10 +1170,6 @@ namespace GeneXus.Programs {
                GRID1_nFirstRecordOnPage = 0;
             }
             if ( StringUtil.StrCmp(cgiGet( "GXH_vCTELEFONOPROVEEDOR"), AV8cTELEFONOPROVEEDOR) != 0 )
-            {
-               GRID1_nFirstRecordOnPage = 0;
-            }
-            if ( StringUtil.StrCmp(cgiGet( "GXH_vCCORREOPROVEEDOR"), AV9cCORREOPROVEEDOR) != 0 )
             {
                GRID1_nFirstRecordOnPage = 0;
             }
@@ -1237,7 +1183,7 @@ namespace GeneXus.Programs {
       protected void GXStart( )
       {
          /* Execute user event: Start */
-         E151Z2 ();
+         E141Z2 ();
          if ( returnInSub )
          {
             returnInSub = true;
@@ -1245,7 +1191,7 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void E151Z2( )
+      protected void E141Z2( )
       {
          /* Start Routine */
          returnInSub = false;
@@ -1254,25 +1200,25 @@ namespace GeneXus.Programs {
          AV11ADVANCED_LABEL_TEMPLATE = "%1 <strong>%2</strong>";
       }
 
-      private void E161Z2( )
+      private void E151Z2( )
       {
          /* Load Routine */
          returnInSub = false;
          AV5LinkSelection = context.GetImagePath( "3914535b-0c03-44c5-9538-906a99cdd2bc", "", context.GetTheme( ));
          AssignAttri("", false, edtavLinkselection_Internalname, AV5LinkSelection);
          AV14Linkselection_GXI = GXDbFile.PathToUrl( context.GetImagePath( "3914535b-0c03-44c5-9538-906a99cdd2bc", "", context.GetTheme( )));
-         sendrow_442( ) ;
+         sendrow_342( ) ;
          GRID1_nCurrentRecord = (long)(GRID1_nCurrentRecord+1);
-         if ( isFullAjaxMode( ) && ! bGXsfl_44_Refreshing )
+         if ( isFullAjaxMode( ) && ! bGXsfl_34_Refreshing )
          {
-            context.DoAjaxLoad(44, Grid1Row);
+            context.DoAjaxLoad(34, Grid1Row);
          }
       }
 
       public void GXEnter( )
       {
          /* Execute user event: Enter */
-         E171Z2 ();
+         E161Z2 ();
          if ( returnInSub )
          {
             returnInSub = true;
@@ -1280,7 +1226,7 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void E171Z2( )
+      protected void E161Z2( )
       {
          /* Enter Routine */
          returnInSub = false;
@@ -1336,7 +1282,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202111280105624", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?2021113014131441", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1352,29 +1298,29 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("gx00d0.js", "?202111280105625", false, true);
+         context.AddJavascriptSource("gx00d0.js", "?2021113014131441", false, true);
          /* End function include_jscripts */
       }
 
-      protected void SubsflControlProps_442( )
+      protected void SubsflControlProps_342( )
       {
-         edtavLinkselection_Internalname = "vLINKSELECTION_"+sGXsfl_44_idx;
-         edtIDPROVEEDOR_Internalname = "IDPROVEEDOR_"+sGXsfl_44_idx;
-         edtTELEFONOPROVEEDOR_Internalname = "TELEFONOPROVEEDOR_"+sGXsfl_44_idx;
+         edtavLinkselection_Internalname = "vLINKSELECTION_"+sGXsfl_34_idx;
+         edtIDPROVEEDOR_Internalname = "IDPROVEEDOR_"+sGXsfl_34_idx;
+         edtTELEFONOPROVEEDOR_Internalname = "TELEFONOPROVEEDOR_"+sGXsfl_34_idx;
       }
 
-      protected void SubsflControlProps_fel_442( )
+      protected void SubsflControlProps_fel_342( )
       {
-         edtavLinkselection_Internalname = "vLINKSELECTION_"+sGXsfl_44_fel_idx;
-         edtIDPROVEEDOR_Internalname = "IDPROVEEDOR_"+sGXsfl_44_fel_idx;
-         edtTELEFONOPROVEEDOR_Internalname = "TELEFONOPROVEEDOR_"+sGXsfl_44_fel_idx;
+         edtavLinkselection_Internalname = "vLINKSELECTION_"+sGXsfl_34_fel_idx;
+         edtIDPROVEEDOR_Internalname = "IDPROVEEDOR_"+sGXsfl_34_fel_idx;
+         edtTELEFONOPROVEEDOR_Internalname = "TELEFONOPROVEEDOR_"+sGXsfl_34_fel_idx;
       }
 
-      protected void sendrow_442( )
+      protected void sendrow_342( )
       {
-         SubsflControlProps_442( ) ;
+         SubsflControlProps_342( ) ;
          WB1Z0( ) ;
-         if ( ( 10 * 1 == 0 ) || ( nGXsfl_44_idx <= subGrid1_fnc_Recordsperpage( ) * 1 ) )
+         if ( ( 10 * 1 == 0 ) || ( nGXsfl_34_idx <= subGrid1_fnc_Recordsperpage( ) * 1 ) )
          {
             Grid1Row = GXWebRow.GetNew(context,Grid1Container);
             if ( subGrid1_Backcolorstyle == 0 )
@@ -1410,7 +1356,7 @@ namespace GeneXus.Programs {
             {
                /* Report style subfile background logic. */
                subGrid1_Backstyle = 1;
-               if ( ((int)((nGXsfl_44_idx) % (2))) == 0 )
+               if ( ((int)((nGXsfl_34_idx) % (2))) == 0 )
                {
                   subGrid1_Backcolor = (int)(0x0);
                   if ( StringUtil.StrCmp(subGrid1_Class, "") != 0 )
@@ -1431,7 +1377,7 @@ namespace GeneXus.Programs {
             {
                context.WriteHtmlText( "<tr ") ;
                context.WriteHtmlText( " class=\""+"PromptGrid"+"\" style=\""+""+"\"") ;
-               context.WriteHtmlText( " gxrow=\""+sGXsfl_44_idx+"\">") ;
+               context.WriteHtmlText( " gxrow=\""+sGXsfl_34_idx+"\">") ;
             }
             /* Subfile cell */
             if ( Grid1Container.GetWrapped() == 1 )
@@ -1440,7 +1386,7 @@ namespace GeneXus.Programs {
             }
             /* Static Bitmap Variable */
             edtavLinkselection_Link = "javascript:gx.popup.gxReturn(["+"'"+GXUtil.EncodeJSConstant( StringUtil.LTrim( StringUtil.NToC( (decimal)(A10IDPROVEEDOR), 12, 0, ".", "")))+"'"+"]);";
-            AssignProp("", false, edtavLinkselection_Internalname, "Link", edtavLinkselection_Link, !bGXsfl_44_Refreshing);
+            AssignProp("", false, edtavLinkselection_Internalname, "Link", edtavLinkselection_Link, !bGXsfl_34_Refreshing);
             ClassString = "SelectionAttribute";
             StyleString = "";
             AV5LinkSelection_IsBlob = (bool)((String.IsNullOrEmpty(StringUtil.RTrim( AV5LinkSelection))&&String.IsNullOrEmpty(StringUtil.RTrim( AV14Linkselection_GXI)))||!String.IsNullOrEmpty(StringUtil.RTrim( AV5LinkSelection)));
@@ -1453,7 +1399,7 @@ namespace GeneXus.Programs {
             }
             /* Single line edit */
             ROClassString = "Attribute";
-            Grid1Row.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(string)edtIDPROVEEDOR_Internalname,StringUtil.LTrim( StringUtil.NToC( (decimal)(A10IDPROVEEDOR), 12, 0, ".", "")),context.localUtil.Format( (decimal)(A10IDPROVEEDOR), "ZZZZZZZZZZZ9"),(string)"",(string)"'"+""+"'"+",false,"+"'"+""+"'",(string)"",(string)"",(string)"",(string)"",(string)edtIDPROVEEDOR_Jsonclick,(short)0,(string)"Attribute",(string)"",(string)ROClassString,(string)"WWColumn",(string)"",(short)-1,(short)0,(short)0,(string)"number",(string)"1",(short)0,(string)"px",(short)17,(string)"px",(short)12,(short)0,(short)0,(short)44,(short)1,(short)-1,(short)0,(bool)true,(string)"Codigo",(string)"right",(bool)false,(string)""});
+            Grid1Row.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(string)edtIDPROVEEDOR_Internalname,StringUtil.LTrim( StringUtil.NToC( (decimal)(A10IDPROVEEDOR), 12, 0, ".", "")),context.localUtil.Format( (decimal)(A10IDPROVEEDOR), "ZZZZZZZZZZZ9"),(string)"",(string)"'"+""+"'"+",false,"+"'"+""+"'",(string)"",(string)"",(string)"",(string)"",(string)edtIDPROVEEDOR_Jsonclick,(short)0,(string)"Attribute",(string)"",(string)ROClassString,(string)"WWColumn",(string)"",(short)-1,(short)0,(short)0,(string)"number",(string)"1",(short)0,(string)"px",(short)17,(string)"px",(short)12,(short)0,(short)0,(short)34,(short)1,(short)-1,(short)0,(bool)true,(string)"Codigo",(string)"right",(bool)false,(string)""});
             /* Subfile cell */
             if ( Grid1Container.GetWrapped() == 1 )
             {
@@ -1465,14 +1411,14 @@ namespace GeneXus.Programs {
                gxphoneLink = "tel:" + StringUtil.RTrim( A47TELEFONOPROVEEDOR);
             }
             ROClassString = "Attribute";
-            Grid1Row.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(string)edtTELEFONOPROVEEDOR_Internalname,StringUtil.RTrim( A47TELEFONOPROVEEDOR),(string)"",(string)"",(string)"'"+""+"'"+",false,"+"'"+""+"'",(string)gxphoneLink,(string)"",(string)"",(string)"",(string)edtTELEFONOPROVEEDOR_Jsonclick,(short)0,(string)"Attribute",(string)"",(string)ROClassString,(string)"WWColumn OptionalColumn",(string)"",(short)-1,(short)0,(short)0,(string)"tel",(string)"",(short)0,(string)"px",(short)17,(string)"px",(short)20,(short)0,(short)0,(short)44,(short)1,(short)-1,(short)0,(bool)true,(string)"GeneXus\\Phone",(string)"left",(bool)true,(string)""});
+            Grid1Row.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(string)edtTELEFONOPROVEEDOR_Internalname,StringUtil.RTrim( A47TELEFONOPROVEEDOR),(string)"",(string)"",(string)"'"+""+"'"+",false,"+"'"+""+"'",(string)gxphoneLink,(string)"",(string)"",(string)"",(string)edtTELEFONOPROVEEDOR_Jsonclick,(short)0,(string)"Attribute",(string)"",(string)ROClassString,(string)"WWColumn OptionalColumn",(string)"",(short)-1,(short)0,(short)0,(string)"tel",(string)"",(short)0,(string)"px",(short)17,(string)"px",(short)20,(short)0,(short)0,(short)34,(short)1,(short)-1,(short)0,(bool)true,(string)"GeneXus\\Phone",(string)"left",(bool)true,(string)""});
             send_integrity_lvl_hashes1Z2( ) ;
             Grid1Container.AddRow(Grid1Row);
-            nGXsfl_44_idx = ((subGrid1_Islastpage==1)&&(nGXsfl_44_idx+1>subGrid1_fnc_Recordsperpage( )) ? 1 : nGXsfl_44_idx+1);
-            sGXsfl_44_idx = StringUtil.PadL( StringUtil.LTrimStr( (decimal)(nGXsfl_44_idx), 4, 0), 4, "0");
-            SubsflControlProps_442( ) ;
+            nGXsfl_34_idx = ((subGrid1_Islastpage==1)&&(nGXsfl_34_idx+1>subGrid1_fnc_Recordsperpage( )) ? 1 : nGXsfl_34_idx+1);
+            sGXsfl_34_idx = StringUtil.PadL( StringUtil.LTrimStr( (decimal)(nGXsfl_34_idx), 4, 0), 4, "0");
+            SubsflControlProps_342( ) ;
          }
-         /* End function sendrow_442 */
+         /* End function sendrow_342 */
       }
 
       protected void init_web_controls( )
@@ -1488,9 +1434,6 @@ namespace GeneXus.Programs {
          lblLbltelefonoproveedorfilter_Internalname = "LBLTELEFONOPROVEEDORFILTER";
          edtavCtelefonoproveedor_Internalname = "vCTELEFONOPROVEEDOR";
          divTelefonoproveedorfiltercontainer_Internalname = "TELEFONOPROVEEDORFILTERCONTAINER";
-         lblLblcorreoproveedorfilter_Internalname = "LBLCORREOPROVEEDORFILTER";
-         edtavCcorreoproveedor_Internalname = "vCCORREOPROVEEDOR";
-         divCorreoproveedorfiltercontainer_Internalname = "CORREOPROVEEDORFILTERCONTAINER";
          divAdvancedcontainer_Internalname = "ADVANCEDCONTAINER";
          bttBtntoggle_Internalname = "BTNTOGGLE";
          edtavLinkselection_Internalname = "vLINKSELECTION";
@@ -1519,9 +1462,6 @@ namespace GeneXus.Programs {
          subGrid1_Header = "";
          subGrid1_Class = "PromptGrid";
          subGrid1_Backcolorstyle = 0;
-         edtavCcorreoproveedor_Jsonclick = "";
-         edtavCcorreoproveedor_Enabled = 1;
-         edtavCcorreoproveedor_Visible = 1;
          edtavCtelefonoproveedor_Jsonclick = "";
          edtavCtelefonoproveedor_Enabled = 1;
          edtavCtelefonoproveedor_Visible = 1;
@@ -1533,7 +1473,6 @@ namespace GeneXus.Programs {
          Form.Textcolor = 0;
          Form.Backcolor = (int)(0xFFFFFF);
          Form.Caption = "Selection List Proveedores";
-         divCorreoproveedorfiltercontainer_Class = "AdvancedContainerItem";
          divTelefonoproveedorfiltercontainer_Class = "AdvancedContainerItem";
          divIdproveedorfiltercontainer_Class = "AdvancedContainerItem";
          bttBtntoggle_Class = "BtnToggle";
@@ -1552,28 +1491,24 @@ namespace GeneXus.Programs {
 
       public override void InitializeDynEvents( )
       {
-         setEventMetadata("REFRESH","{handler:'Refresh',iparms:[{av:'GRID1_nFirstRecordOnPage'},{av:'GRID1_nEOF'},{av:'subGrid1_Rows',ctrl:'GRID1',prop:'Rows'},{av:'AV6cIDPROVEEDOR',fld:'vCIDPROVEEDOR',pic:'ZZZZZZZZZZZ9'},{av:'AV8cTELEFONOPROVEEDOR',fld:'vCTELEFONOPROVEEDOR',pic:''},{av:'AV9cCORREOPROVEEDOR',fld:'vCCORREOPROVEEDOR',pic:''}]");
+         setEventMetadata("REFRESH","{handler:'Refresh',iparms:[{av:'GRID1_nFirstRecordOnPage'},{av:'GRID1_nEOF'},{av:'subGrid1_Rows',ctrl:'GRID1',prop:'Rows'},{av:'AV6cIDPROVEEDOR',fld:'vCIDPROVEEDOR',pic:'ZZZZZZZZZZZ9'},{av:'AV8cTELEFONOPROVEEDOR',fld:'vCTELEFONOPROVEEDOR',pic:''}]");
          setEventMetadata("REFRESH",",oparms:[]}");
-         setEventMetadata("'TOGGLE'","{handler:'E141Z1',iparms:[{av:'divAdvancedcontainer_Class',ctrl:'ADVANCEDCONTAINER',prop:'Class'},{ctrl:'BTNTOGGLE',prop:'Class'}]");
+         setEventMetadata("'TOGGLE'","{handler:'E131Z1',iparms:[{av:'divAdvancedcontainer_Class',ctrl:'ADVANCEDCONTAINER',prop:'Class'},{ctrl:'BTNTOGGLE',prop:'Class'}]");
          setEventMetadata("'TOGGLE'",",oparms:[{av:'divAdvancedcontainer_Class',ctrl:'ADVANCEDCONTAINER',prop:'Class'},{ctrl:'BTNTOGGLE',prop:'Class'}]}");
          setEventMetadata("LBLIDPROVEEDORFILTER.CLICK","{handler:'E111Z1',iparms:[{av:'divIdproveedorfiltercontainer_Class',ctrl:'IDPROVEEDORFILTERCONTAINER',prop:'Class'}]");
          setEventMetadata("LBLIDPROVEEDORFILTER.CLICK",",oparms:[{av:'divIdproveedorfiltercontainer_Class',ctrl:'IDPROVEEDORFILTERCONTAINER',prop:'Class'},{av:'edtavCidproveedor_Visible',ctrl:'vCIDPROVEEDOR',prop:'Visible'}]}");
          setEventMetadata("LBLTELEFONOPROVEEDORFILTER.CLICK","{handler:'E121Z1',iparms:[{av:'divTelefonoproveedorfiltercontainer_Class',ctrl:'TELEFONOPROVEEDORFILTERCONTAINER',prop:'Class'}]");
          setEventMetadata("LBLTELEFONOPROVEEDORFILTER.CLICK",",oparms:[{av:'divTelefonoproveedorfiltercontainer_Class',ctrl:'TELEFONOPROVEEDORFILTERCONTAINER',prop:'Class'},{av:'edtavCtelefonoproveedor_Visible',ctrl:'vCTELEFONOPROVEEDOR',prop:'Visible'}]}");
-         setEventMetadata("LBLCORREOPROVEEDORFILTER.CLICK","{handler:'E131Z1',iparms:[{av:'divCorreoproveedorfiltercontainer_Class',ctrl:'CORREOPROVEEDORFILTERCONTAINER',prop:'Class'}]");
-         setEventMetadata("LBLCORREOPROVEEDORFILTER.CLICK",",oparms:[{av:'divCorreoproveedorfiltercontainer_Class',ctrl:'CORREOPROVEEDORFILTERCONTAINER',prop:'Class'},{av:'edtavCcorreoproveedor_Visible',ctrl:'vCCORREOPROVEEDOR',prop:'Visible'}]}");
-         setEventMetadata("ENTER","{handler:'E171Z2',iparms:[{av:'A10IDPROVEEDOR',fld:'IDPROVEEDOR',pic:'ZZZZZZZZZZZ9',hsh:true}]");
+         setEventMetadata("ENTER","{handler:'E161Z2',iparms:[{av:'A10IDPROVEEDOR',fld:'IDPROVEEDOR',pic:'ZZZZZZZZZZZ9',hsh:true}]");
          setEventMetadata("ENTER",",oparms:[{av:'AV10pIDPROVEEDOR',fld:'vPIDPROVEEDOR',pic:'ZZZZZZZZZZZ9'}]}");
-         setEventMetadata("GRID1_FIRSTPAGE","{handler:'subgrid1_firstpage',iparms:[{av:'GRID1_nFirstRecordOnPage'},{av:'GRID1_nEOF'},{av:'subGrid1_Rows',ctrl:'GRID1',prop:'Rows'},{av:'AV6cIDPROVEEDOR',fld:'vCIDPROVEEDOR',pic:'ZZZZZZZZZZZ9'},{av:'AV8cTELEFONOPROVEEDOR',fld:'vCTELEFONOPROVEEDOR',pic:''},{av:'AV9cCORREOPROVEEDOR',fld:'vCCORREOPROVEEDOR',pic:''}]");
+         setEventMetadata("GRID1_FIRSTPAGE","{handler:'subgrid1_firstpage',iparms:[{av:'GRID1_nFirstRecordOnPage'},{av:'GRID1_nEOF'},{av:'subGrid1_Rows',ctrl:'GRID1',prop:'Rows'},{av:'AV6cIDPROVEEDOR',fld:'vCIDPROVEEDOR',pic:'ZZZZZZZZZZZ9'},{av:'AV8cTELEFONOPROVEEDOR',fld:'vCTELEFONOPROVEEDOR',pic:''}]");
          setEventMetadata("GRID1_FIRSTPAGE",",oparms:[]}");
-         setEventMetadata("GRID1_PREVPAGE","{handler:'subgrid1_previouspage',iparms:[{av:'GRID1_nFirstRecordOnPage'},{av:'GRID1_nEOF'},{av:'subGrid1_Rows',ctrl:'GRID1',prop:'Rows'},{av:'AV6cIDPROVEEDOR',fld:'vCIDPROVEEDOR',pic:'ZZZZZZZZZZZ9'},{av:'AV8cTELEFONOPROVEEDOR',fld:'vCTELEFONOPROVEEDOR',pic:''},{av:'AV9cCORREOPROVEEDOR',fld:'vCCORREOPROVEEDOR',pic:''}]");
+         setEventMetadata("GRID1_PREVPAGE","{handler:'subgrid1_previouspage',iparms:[{av:'GRID1_nFirstRecordOnPage'},{av:'GRID1_nEOF'},{av:'subGrid1_Rows',ctrl:'GRID1',prop:'Rows'},{av:'AV6cIDPROVEEDOR',fld:'vCIDPROVEEDOR',pic:'ZZZZZZZZZZZ9'},{av:'AV8cTELEFONOPROVEEDOR',fld:'vCTELEFONOPROVEEDOR',pic:''}]");
          setEventMetadata("GRID1_PREVPAGE",",oparms:[]}");
-         setEventMetadata("GRID1_NEXTPAGE","{handler:'subgrid1_nextpage',iparms:[{av:'GRID1_nFirstRecordOnPage'},{av:'GRID1_nEOF'},{av:'subGrid1_Rows',ctrl:'GRID1',prop:'Rows'},{av:'AV6cIDPROVEEDOR',fld:'vCIDPROVEEDOR',pic:'ZZZZZZZZZZZ9'},{av:'AV8cTELEFONOPROVEEDOR',fld:'vCTELEFONOPROVEEDOR',pic:''},{av:'AV9cCORREOPROVEEDOR',fld:'vCCORREOPROVEEDOR',pic:''}]");
+         setEventMetadata("GRID1_NEXTPAGE","{handler:'subgrid1_nextpage',iparms:[{av:'GRID1_nFirstRecordOnPage'},{av:'GRID1_nEOF'},{av:'subGrid1_Rows',ctrl:'GRID1',prop:'Rows'},{av:'AV6cIDPROVEEDOR',fld:'vCIDPROVEEDOR',pic:'ZZZZZZZZZZZ9'},{av:'AV8cTELEFONOPROVEEDOR',fld:'vCTELEFONOPROVEEDOR',pic:''}]");
          setEventMetadata("GRID1_NEXTPAGE",",oparms:[]}");
-         setEventMetadata("GRID1_LASTPAGE","{handler:'subgrid1_lastpage',iparms:[{av:'GRID1_nFirstRecordOnPage'},{av:'GRID1_nEOF'},{av:'subGrid1_Rows',ctrl:'GRID1',prop:'Rows'},{av:'AV6cIDPROVEEDOR',fld:'vCIDPROVEEDOR',pic:'ZZZZZZZZZZZ9'},{av:'AV8cTELEFONOPROVEEDOR',fld:'vCTELEFONOPROVEEDOR',pic:''},{av:'AV9cCORREOPROVEEDOR',fld:'vCCORREOPROVEEDOR',pic:''}]");
+         setEventMetadata("GRID1_LASTPAGE","{handler:'subgrid1_lastpage',iparms:[{av:'GRID1_nFirstRecordOnPage'},{av:'GRID1_nEOF'},{av:'subGrid1_Rows',ctrl:'GRID1',prop:'Rows'},{av:'AV6cIDPROVEEDOR',fld:'vCIDPROVEEDOR',pic:'ZZZZZZZZZZZ9'},{av:'AV8cTELEFONOPROVEEDOR',fld:'vCTELEFONOPROVEEDOR',pic:''}]");
          setEventMetadata("GRID1_LASTPAGE",",oparms:[]}");
-         setEventMetadata("VALIDV_CCORREOPROVEEDOR","{handler:'Validv_Ccorreoproveedor',iparms:[]");
-         setEventMetadata("VALIDV_CCORREOPROVEEDOR",",oparms:[]}");
          setEventMetadata("NULL","{handler:'Valid_Telefonoproveedor',iparms:[]");
          setEventMetadata("NULL",",oparms:[]}");
          return  ;
@@ -1598,7 +1533,6 @@ namespace GeneXus.Programs {
          gxfirstwebparm = "";
          gxfirstwebparm_bkp = "";
          AV8cTELEFONOPROVEEDOR = "";
-         AV9cCORREOPROVEEDOR = "";
          sDynURL = "";
          FormProcess = "";
          bodyStyle = "";
@@ -1609,7 +1543,6 @@ namespace GeneXus.Programs {
          lblLblidproveedorfilter_Jsonclick = "";
          TempTags = "";
          lblLbltelefonoproveedorfilter_Jsonclick = "";
-         lblLblcorreoproveedorfilter_Jsonclick = "";
          ClassString = "";
          StyleString = "";
          bttBtntoggle_Jsonclick = "";
@@ -1627,9 +1560,6 @@ namespace GeneXus.Programs {
          AV14Linkselection_GXI = "";
          scmdbuf = "";
          lV8cTELEFONOPROVEEDOR = "";
-         lV9cCORREOPROVEEDOR = "";
-         A48CORREOPROVEEDOR = "";
-         H001Z2_A48CORREOPROVEEDOR = new string[] {""} ;
          H001Z2_A47TELEFONOPROVEEDOR = new string[] {""} ;
          H001Z2_A10IDPROVEEDOR = new long[1] ;
          H001Z3_AGRID1_nRecordCount = new long[1] ;
@@ -1643,7 +1573,7 @@ namespace GeneXus.Programs {
          pr_default = new DataStoreProvider(context, new GeneXus.Programs.gx00d0__default(),
             new Object[][] {
                 new Object[] {
-               H001Z2_A48CORREOPROVEEDOR, H001Z2_A47TELEFONOPROVEEDOR, H001Z2_A10IDPROVEEDOR
+               H001Z2_A47TELEFONOPROVEEDOR, H001Z2_A10IDPROVEEDOR
                }
                , new Object[] {
                H001Z3_AGRID1_nRecordCount
@@ -1671,15 +1601,13 @@ namespace GeneXus.Programs {
       private short gxcookieaux ;
       private short nGXWrapped ;
       private short subGrid1_Backstyle ;
-      private int nRC_GXsfl_44 ;
-      private int nGXsfl_44_idx=1 ;
+      private int nRC_GXsfl_34 ;
+      private int nGXsfl_34_idx=1 ;
       private int subGrid1_Rows ;
       private int edtavCidproveedor_Enabled ;
       private int edtavCidproveedor_Visible ;
       private int edtavCtelefonoproveedor_Visible ;
       private int edtavCtelefonoproveedor_Enabled ;
-      private int edtavCcorreoproveedor_Visible ;
-      private int edtavCcorreoproveedor_Enabled ;
       private int subGrid1_Titlebackcolor ;
       private int subGrid1_Allbackcolor ;
       private int subGrid1_Selectedindex ;
@@ -1700,10 +1628,9 @@ namespace GeneXus.Programs {
       private string bttBtntoggle_Class ;
       private string divIdproveedorfiltercontainer_Class ;
       private string divTelefonoproveedorfiltercontainer_Class ;
-      private string divCorreoproveedorfiltercontainer_Class ;
       private string gxfirstwebparm ;
       private string gxfirstwebparm_bkp ;
-      private string sGXsfl_44_idx="0001" ;
+      private string sGXsfl_34_idx="0001" ;
       private string AV8cTELEFONOPROVEEDOR ;
       private string sDynURL ;
       private string FormProcess ;
@@ -1724,11 +1651,6 @@ namespace GeneXus.Programs {
       private string lblLbltelefonoproveedorfilter_Jsonclick ;
       private string edtavCtelefonoproveedor_Internalname ;
       private string edtavCtelefonoproveedor_Jsonclick ;
-      private string divCorreoproveedorfiltercontainer_Internalname ;
-      private string lblLblcorreoproveedorfilter_Internalname ;
-      private string lblLblcorreoproveedorfilter_Jsonclick ;
-      private string edtavCcorreoproveedor_Internalname ;
-      private string edtavCcorreoproveedor_Jsonclick ;
       private string divGridtable_Internalname ;
       private string ClassString ;
       private string StyleString ;
@@ -1753,7 +1675,7 @@ namespace GeneXus.Programs {
       private string scmdbuf ;
       private string lV8cTELEFONOPROVEEDOR ;
       private string AV11ADVANCED_LABEL_TEMPLATE ;
-      private string sGXsfl_44_fel_idx="0001" ;
+      private string sGXsfl_34_fel_idx="0001" ;
       private string sImgUrl ;
       private string ROClassString ;
       private string edtIDPROVEEDOR_Jsonclick ;
@@ -1764,21 +1686,17 @@ namespace GeneXus.Programs {
       private bool wbLoad ;
       private bool Rfr0gs ;
       private bool wbErr ;
-      private bool bGXsfl_44_Refreshing=false ;
+      private bool bGXsfl_34_Refreshing=false ;
       private bool gxdyncontrolsrefreshing ;
       private bool returnInSub ;
       private bool AV5LinkSelection_IsBlob ;
-      private string AV9cCORREOPROVEEDOR ;
       private string AV14Linkselection_GXI ;
-      private string lV9cCORREOPROVEEDOR ;
-      private string A48CORREOPROVEEDOR ;
       private string AV5LinkSelection ;
       private GXWebGrid Grid1Container ;
       private GXWebRow Grid1Row ;
       private GXWebColumn Grid1Column ;
       private IGxDataStore dsDefault ;
       private IDataStoreProvider pr_default ;
-      private string[] H001Z2_A48CORREOPROVEEDOR ;
       private string[] H001Z2_A47TELEFONOPROVEEDOR ;
       private long[] H001Z2_A10IDPROVEEDOR ;
       private long[] H001Z3_AGRID1_nRecordCount ;
@@ -1792,19 +1710,17 @@ namespace GeneXus.Programs {
    {
       protected Object[] conditional_H001Z2( IGxContext context ,
                                              string AV8cTELEFONOPROVEEDOR ,
-                                             string AV9cCORREOPROVEEDOR ,
                                              string A47TELEFONOPROVEEDOR ,
-                                             string A48CORREOPROVEEDOR ,
                                              long AV6cIDPROVEEDOR )
       {
          System.Text.StringBuilder sWhereString = new System.Text.StringBuilder();
          string scmdbuf;
-         short[] GXv_int1 = new short[6];
+         short[] GXv_int1 = new short[5];
          Object[] GXv_Object2 = new Object[2];
          string sSelectString;
          string sFromString;
          string sOrderString;
-         sSelectString = " [CORREOPROVEEDOR], [TELEFONOPROVEEDOR], [IDPROVEEDOR]";
+         sSelectString = " [TELEFONOPROVEEDOR], [IDPROVEEDOR]";
          sFromString = " FROM [Proveedores]";
          sOrderString = "";
          AddWhere(sWhereString, "([IDPROVEEDOR] >= @AV6cIDPROVEEDOR)");
@@ -1816,14 +1732,6 @@ namespace GeneXus.Programs {
          {
             GXv_int1[1] = 1;
          }
-         if ( ! String.IsNullOrEmpty(StringUtil.RTrim( AV9cCORREOPROVEEDOR)) )
-         {
-            AddWhere(sWhereString, "([CORREOPROVEEDOR] like @lV9cCORREOPROVEEDOR)");
-         }
-         else
-         {
-            GXv_int1[2] = 1;
-         }
          sOrderString += " ORDER BY [IDPROVEEDOR]";
          scmdbuf = "SELECT " + sSelectString + sFromString + sWhereString + sOrderString + "" + " OFFSET " + "@GXPagingFrom2" + " ROWS FETCH NEXT CAST((SELECT CASE WHEN " + "@GXPagingTo2" + " > 0 THEN " + "@GXPagingTo2" + " ELSE 1e9 END) AS INTEGER) ROWS ONLY";
          GXv_Object2[0] = scmdbuf;
@@ -1833,14 +1741,12 @@ namespace GeneXus.Programs {
 
       protected Object[] conditional_H001Z3( IGxContext context ,
                                              string AV8cTELEFONOPROVEEDOR ,
-                                             string AV9cCORREOPROVEEDOR ,
                                              string A47TELEFONOPROVEEDOR ,
-                                             string A48CORREOPROVEEDOR ,
                                              long AV6cIDPROVEEDOR )
       {
          System.Text.StringBuilder sWhereString = new System.Text.StringBuilder();
          string scmdbuf;
-         short[] GXv_int3 = new short[3];
+         short[] GXv_int3 = new short[2];
          Object[] GXv_Object4 = new Object[2];
          scmdbuf = "SELECT COUNT(*) FROM [Proveedores]";
          AddWhere(sWhereString, "([IDPROVEEDOR] >= @AV6cIDPROVEEDOR)");
@@ -1851,14 +1757,6 @@ namespace GeneXus.Programs {
          else
          {
             GXv_int3[1] = 1;
-         }
-         if ( ! String.IsNullOrEmpty(StringUtil.RTrim( AV9cCORREOPROVEEDOR)) )
-         {
-            AddWhere(sWhereString, "([CORREOPROVEEDOR] like @lV9cCORREOPROVEEDOR)");
-         }
-         else
-         {
-            GXv_int3[2] = 1;
          }
          scmdbuf += sWhereString;
          GXv_Object4[0] = scmdbuf;
@@ -1873,9 +1771,9 @@ namespace GeneXus.Programs {
          switch ( cursor )
          {
                case 0 :
-                     return conditional_H001Z2(context, (string)dynConstraints[0] , (string)dynConstraints[1] , (string)dynConstraints[2] , (string)dynConstraints[3] , (long)dynConstraints[4] );
+                     return conditional_H001Z2(context, (string)dynConstraints[0] , (string)dynConstraints[1] , (long)dynConstraints[2] );
                case 1 :
-                     return conditional_H001Z3(context, (string)dynConstraints[0] , (string)dynConstraints[1] , (string)dynConstraints[2] , (string)dynConstraints[3] , (long)dynConstraints[4] );
+                     return conditional_H001Z3(context, (string)dynConstraints[0] , (string)dynConstraints[1] , (long)dynConstraints[2] );
          }
          return base.getDynamicStatement(cursor, context, dynConstraints);
       }
@@ -1898,7 +1796,6 @@ namespace GeneXus.Programs {
           prmH001Z2 = new Object[] {
           new ParDef("@AV6cIDPROVEEDOR",GXType.Decimal,12,0) ,
           new ParDef("@lV8cTELEFONOPROVEEDOR",GXType.NChar,20,0) ,
-          new ParDef("@lV9cCORREOPROVEEDOR",GXType.NVarChar,100,0) ,
           new ParDef("@GXPagingFrom2",GXType.Int32,9,0) ,
           new ParDef("@GXPagingTo2",GXType.Int32,9,0) ,
           new ParDef("@GXPagingTo2",GXType.Int32,9,0)
@@ -1906,8 +1803,7 @@ namespace GeneXus.Programs {
           Object[] prmH001Z3;
           prmH001Z3 = new Object[] {
           new ParDef("@AV6cIDPROVEEDOR",GXType.Decimal,12,0) ,
-          new ParDef("@lV8cTELEFONOPROVEEDOR",GXType.NChar,20,0) ,
-          new ParDef("@lV9cCORREOPROVEEDOR",GXType.NVarChar,100,0)
+          new ParDef("@lV8cTELEFONOPROVEEDOR",GXType.NChar,20,0)
           };
           def= new CursorDef[] {
               new CursorDef("H001Z2", "scmdbuf",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH001Z2,11, GxCacheFrequency.OFF ,false,false )
@@ -1923,9 +1819,8 @@ namespace GeneXus.Programs {
        switch ( cursor )
        {
              case 0 :
-                ((string[]) buf[0])[0] = rslt.getVarchar(1);
-                ((string[]) buf[1])[0] = rslt.getString(2, 20);
-                ((long[]) buf[2])[0] = rslt.getLong(3);
+                ((string[]) buf[0])[0] = rslt.getString(1, 20);
+                ((long[]) buf[1])[0] = rslt.getLong(2);
                 return;
              case 1 :
                 ((long[]) buf[0])[0] = rslt.getLong(1);

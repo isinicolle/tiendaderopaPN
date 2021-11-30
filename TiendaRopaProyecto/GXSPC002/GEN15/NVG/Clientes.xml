@@ -9,7 +9,7 @@
 <ObjDesc>Clientes</ObjDesc>
 <ObjPgmName>Clientes</ObjPgmName>
 <ObjClsName>Transaction</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>
@@ -163,7 +163,7 @@
 <AfterDeleteRules></AfterDeleteRules>
 <TablesToControlOnDelete>
 <Table>
-<TableId>4</TableId>
+<TableId>22</TableId>
 <TableName>Ventas_inventario</TableName>
 <Description>Ventas_inventario</Description>
 <RecordsToRead>one</RecordsToRead>

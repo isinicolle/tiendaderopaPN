@@ -1,11 +1,9 @@
-current_obj_i(2,web,36).
+current_obj_i(2,web,110).
  
-current_guid('f7a0a56c-8f67-4220-ada8-8cf7e6eea849').
- 
- 
-called_tree_i(13,36,1,12).
+current_guid('63d83e2f-f138-448c-b9a4-c69f02d3dac1').
  
  
+called_tree_i(13,110,1,12).
  
  
  
@@ -22,7 +20,9 @@ called_tree_i(13,36,1,12).
  
  
  
-ij_object_dependency(empleadosventas_inventariowc,[],[],[],36).
+ 
+ 
+ij_object_dependency(empleadosventas_inventariowc,[],[],[],110).
  
  
 obj_parms_i([ 'long aP0_IDEMPLEADO' ],[ [ 'Idempleado',in ] ]).

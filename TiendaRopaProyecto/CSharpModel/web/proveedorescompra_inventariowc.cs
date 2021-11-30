@@ -213,7 +213,7 @@ namespace GeneXus.Programs {
             {
                ValidateSpaRequest();
             }
-            PA1I2( ) ;
+            PA2S2( ) ;
             if ( ( GxWebError == 0 ) && ! isAjaxCallMode( ) )
             {
                /* GeneXus formulas. */
@@ -223,7 +223,7 @@ namespace GeneXus.Programs {
                AssignProp(sPrefix, false, edtavUpdate_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(edtavUpdate_Enabled), 5, 0), !bGXsfl_20_Refreshing);
                edtavDelete_Enabled = 0;
                AssignProp(sPrefix, false, edtavDelete_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(edtavDelete_Enabled), 5, 0), !bGXsfl_20_Refreshing);
-               WS1I2( ) ;
+               WS2S2( ) ;
                if ( ! isAjaxCallMode( ) )
                {
                   if ( nDynComponent == 0 )
@@ -290,7 +290,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 1152180), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 1152180), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?202111280104636", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?2021113013582510", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -381,7 +381,7 @@ namespace GeneXus.Programs {
          GxWebStd.gx_hidden_field( context, sPrefix+"GRID_Rows", StringUtil.LTrim( StringUtil.NToC( (decimal)(subGrid_Rows), 6, 0, ".", "")));
       }
 
-      protected void RenderHtmlCloseForm1I2( )
+      protected void RenderHtmlCloseForm2S2( )
       {
          SendCloseFormHiddens( ) ;
          if ( ( StringUtil.Len( sPrefix) != 0 ) && ( context.isAjaxRequest( ) || context.isSpaRequest( ) ) )
@@ -441,7 +441,7 @@ namespace GeneXus.Programs {
          return "Proveedores Compra_inventario WC" ;
       }
 
-      protected void WB1I0( )
+      protected void WB2S0( )
       {
          if ( context.isAjaxRequest( ) )
          {
@@ -713,7 +713,7 @@ namespace GeneXus.Programs {
          wbLoad = true;
       }
 
-      protected void START1I2( )
+      protected void START2S2( )
       {
          wbLoad = false;
          wbEnd = 0;
@@ -744,18 +744,18 @@ namespace GeneXus.Programs {
          {
             if ( nDoneStart == 0 )
             {
-               STRUP1I0( ) ;
+               STRUP2S0( ) ;
             }
          }
       }
 
-      protected void WS1I2( )
+      protected void WS2S2( )
       {
-         START1I2( ) ;
-         EVT1I2( ) ;
+         START2S2( ) ;
+         EVT2S2( ) ;
       }
 
-      protected void EVT1I2( )
+      protected void EVT2S2( )
       {
          sXEvt = cgiGet( "_EventName");
          if ( ( ( ( StringUtil.Len( sPrefix) == 0 ) ) || ( StringUtil.StringSearch( sXEvt, sPrefix, 1) > 0 ) ) && ! GetJustCreated( ) && ( StringUtil.StrCmp(context.GetRequestMethod( ), "POST") == 0 ) )
@@ -785,7 +785,7 @@ namespace GeneXus.Programs {
                            {
                               if ( ( StringUtil.Len( sPrefix) != 0 ) && ( nDoneStart == 0 ) )
                               {
-                                 STRUP1I0( ) ;
+                                 STRUP2S0( ) ;
                               }
                               if ( ! context.WillRedirect( ) && ( context.nUserReturn != 1 ) )
                               {
@@ -800,7 +800,7 @@ namespace GeneXus.Programs {
                            {
                               if ( ( StringUtil.Len( sPrefix) != 0 ) && ( nDoneStart == 0 ) )
                               {
-                                 STRUP1I0( ) ;
+                                 STRUP2S0( ) ;
                               }
                               if ( ! context.WillRedirect( ) && ( context.nUserReturn != 1 ) )
                               {
@@ -809,7 +809,7 @@ namespace GeneXus.Programs {
                                  {
                                     dynload_actions( ) ;
                                     /* Execute user event: 'DoInsert' */
-                                    E111I2 ();
+                                    E112S2 ();
                                  }
                               }
                            }
@@ -817,7 +817,7 @@ namespace GeneXus.Programs {
                            {
                               if ( ( StringUtil.Len( sPrefix) != 0 ) && ( nDoneStart == 0 ) )
                               {
-                                 STRUP1I0( ) ;
+                                 STRUP2S0( ) ;
                               }
                               if ( ! context.WillRedirect( ) && ( context.nUserReturn != 1 ) )
                               {
@@ -833,7 +833,7 @@ namespace GeneXus.Programs {
                               context.wbHandled = 1;
                               if ( ( StringUtil.Len( sPrefix) != 0 ) && ( nDoneStart == 0 ) )
                               {
-                                 STRUP1I0( ) ;
+                                 STRUP2S0( ) ;
                               }
                               sEvt = cgiGet( sPrefix+"GRIDPAGING");
                               if ( StringUtil.StrCmp(sEvt, "FIRST") == 0 )
@@ -863,7 +863,7 @@ namespace GeneXus.Programs {
                            {
                               if ( ( StringUtil.Len( sPrefix) != 0 ) && ( nDoneStart == 0 ) )
                               {
-                                 STRUP1I0( ) ;
+                                 STRUP2S0( ) ;
                               }
                               nGXsfl_20_idx = (int)(NumberUtil.Val( sEvtType, "."));
                               sGXsfl_20_idx = StringUtil.PadL( StringUtil.LTrimStr( (decimal)(nGXsfl_20_idx), 4, 0), 4, "0");
@@ -892,7 +892,7 @@ namespace GeneXus.Programs {
                                        {
                                           dynload_actions( ) ;
                                           /* Execute user event: Start */
-                                          E121I2 ();
+                                          E122S2 ();
                                        }
                                     }
                                  }
@@ -904,7 +904,7 @@ namespace GeneXus.Programs {
                                        if ( ! wbErr )
                                        {
                                           dynload_actions( ) ;
-                                          E131I2 ();
+                                          E132S2 ();
                                        }
                                     }
                                  }
@@ -931,7 +931,7 @@ namespace GeneXus.Programs {
                                  {
                                     if ( ( StringUtil.Len( sPrefix) != 0 ) && ( nDoneStart == 0 ) )
                                     {
-                                       STRUP1I0( ) ;
+                                       STRUP2S0( ) ;
                                     }
                                     if ( ! context.WillRedirect( ) && ( context.nUserReturn != 1 ) )
                                     {
@@ -956,7 +956,7 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void WE1I2( )
+      protected void WE2S2( )
       {
          if ( ! GxWebStd.gx_redirect( context) )
          {
@@ -964,12 +964,12 @@ namespace GeneXus.Programs {
             Refresh( ) ;
             if ( ! GxWebStd.gx_redirect( context) )
             {
-               RenderHtmlCloseForm1I2( ) ;
+               RenderHtmlCloseForm2S2( ) ;
             }
          }
       }
 
-      protected void PA1I2( )
+      protected void PA2S2( )
       {
          if ( nDonePA == 0 )
          {
@@ -1040,7 +1040,7 @@ namespace GeneXus.Programs {
          initialize_formulas( ) ;
          GxWebStd.set_html_headers( context, 0, "", "");
          GRID_nCurrentRecord = 0;
-         RF1I2( ) ;
+         RF2S2( ) ;
          GXKey = Decrypt64( context.GetCookie( "GX_SESSION_ID"), Crypto.GetServerKey( ));
          send_integrity_footer_hashes( ) ;
          GXKey = Decrypt64( context.GetCookie( "GX_SESSION_ID"), Crypto.GetServerKey( ));
@@ -1069,7 +1069,7 @@ namespace GeneXus.Programs {
       public void Refresh( )
       {
          send_integrity_hashes( ) ;
-         RF1I2( ) ;
+         RF2S2( ) ;
          if ( isFullAjaxMode( ) )
          {
             send_integrity_footer_hashes( ) ;
@@ -1087,7 +1087,7 @@ namespace GeneXus.Programs {
          AssignProp(sPrefix, false, edtavDelete_Internalname, "Enabled", StringUtil.LTrimStr( (decimal)(edtavDelete_Enabled), 5, 0), !bGXsfl_20_Refreshing);
       }
 
-      protected void RF1I2( )
+      protected void RF2S2( )
       {
          initialize_formulas( ) ;
          clear_multi_value_controls( ) ;
@@ -1116,38 +1116,38 @@ namespace GeneXus.Programs {
             SubsflControlProps_202( ) ;
             GXPagingFrom2 = (int)(((subGrid_Rows==0) ? 0 : GRID_nFirstRecordOnPage));
             GXPagingTo2 = ((subGrid_Rows==0) ? 10000 : subGrid_fnc_Recordsperpage( )+1);
-            /* Using cursor H001I4 */
+            /* Using cursor H002S5 */
             pr_default.execute(0, new Object[] {AV6IDPROVEEDOR, GXPagingFrom2, GXPagingTo2});
             nGXsfl_20_idx = 1;
             sGXsfl_20_idx = StringUtil.PadL( StringUtil.LTrimStr( (decimal)(nGXsfl_20_idx), 4, 0), 4, "0");
             SubsflControlProps_202( ) ;
             while ( ( (pr_default.getStatus(0) != 101) ) && ( ( ( subGrid_Rows == 0 ) || ( GRID_nCurrentRecord < subGrid_fnc_Recordsperpage( ) ) ) ) )
             {
-               A10IDPROVEEDOR = H001I4_A10IDPROVEEDOR[0];
+               A10IDPROVEEDOR = H002S5_A10IDPROVEEDOR[0];
                AssignAttri(sPrefix, false, "A10IDPROVEEDOR", StringUtil.LTrimStr( (decimal)(A10IDPROVEEDOR), 12, 0));
-               A23NOMBRECOMPLETOEMPLEADO = H001I4_A23NOMBRECOMPLETOEMPLEADO[0];
-               A1IDEMPLEADO = H001I4_A1IDEMPLEADO[0];
-               A51DESCRIPCIONCOMPRA = H001I4_A51DESCRIPCIONCOMPRA[0];
-               A50FECHACOMPRA = H001I4_A50FECHACOMPRA[0];
-               A11IDCOMPRA = H001I4_A11IDCOMPRA[0];
-               A61TOTALCOMPRAPRODUCTO = H001I4_A61TOTALCOMPRAPRODUCTO[0];
-               n61TOTALCOMPRAPRODUCTO = H001I4_n61TOTALCOMPRAPRODUCTO[0];
-               A23NOMBRECOMPLETOEMPLEADO = H001I4_A23NOMBRECOMPLETOEMPLEADO[0];
-               A61TOTALCOMPRAPRODUCTO = H001I4_A61TOTALCOMPRAPRODUCTO[0];
-               n61TOTALCOMPRAPRODUCTO = H001I4_n61TOTALCOMPRAPRODUCTO[0];
-               E131I2 ();
+               A23NOMBRECOMPLETOEMPLEADO = H002S5_A23NOMBRECOMPLETOEMPLEADO[0];
+               A1IDEMPLEADO = H002S5_A1IDEMPLEADO[0];
+               A51DESCRIPCIONCOMPRA = H002S5_A51DESCRIPCIONCOMPRA[0];
+               A50FECHACOMPRA = H002S5_A50FECHACOMPRA[0];
+               A11IDCOMPRA = H002S5_A11IDCOMPRA[0];
+               A61TOTALCOMPRAPRODUCTO = H002S5_A61TOTALCOMPRAPRODUCTO[0];
+               n61TOTALCOMPRAPRODUCTO = H002S5_n61TOTALCOMPRAPRODUCTO[0];
+               A23NOMBRECOMPLETOEMPLEADO = H002S5_A23NOMBRECOMPLETOEMPLEADO[0];
+               A61TOTALCOMPRAPRODUCTO = H002S5_A61TOTALCOMPRAPRODUCTO[0];
+               n61TOTALCOMPRAPRODUCTO = H002S5_n61TOTALCOMPRAPRODUCTO[0];
+               E132S2 ();
                pr_default.readNext(0);
             }
             GRID_nEOF = (short)(((pr_default.getStatus(0) == 101) ? 1 : 0));
             GxWebStd.gx_hidden_field( context, sPrefix+"GRID_nEOF", StringUtil.LTrim( StringUtil.NToC( (decimal)(GRID_nEOF), 1, 0, ".", "")));
             pr_default.close(0);
             wbEnd = 20;
-            WB1I0( ) ;
+            WB2S0( ) ;
          }
          bGXsfl_20_Refreshing = true;
       }
 
-      protected void send_integrity_lvl_hashes1I2( )
+      protected void send_integrity_lvl_hashes2S2( )
       {
          GxWebStd.gx_hidden_field( context, sPrefix+"gxhash_IDCOMPRA"+"_"+sGXsfl_20_idx, GetSecureSignedToken( sPrefix+sGXsfl_20_idx, context.localUtil.Format( (decimal)(A11IDCOMPRA), "ZZZZZZZZZZZ9"), context));
       }
@@ -1164,9 +1164,9 @@ namespace GeneXus.Programs {
 
       protected int subGrid_fnc_Recordcount( )
       {
-         /* Using cursor H001I7 */
+         /* Using cursor H002S9 */
          pr_default.execute(1, new Object[] {AV6IDPROVEEDOR});
-         GRID_nRecordCount = H001I7_AGRID_nRecordCount[0];
+         GRID_nRecordCount = H002S9_AGRID_nRecordCount[0];
          pr_default.close(1);
          return (int)(GRID_nRecordCount) ;
       }
@@ -1297,14 +1297,14 @@ namespace GeneXus.Programs {
          fix_multi_value_controls( ) ;
       }
 
-      protected void STRUP1I0( )
+      protected void STRUP2S0( )
       {
          /* Before Start, stand alone formulas. */
          before_start_formulas( ) ;
          /* Execute Start event if defined. */
          context.wbGlbDoneStart = 0;
          /* Execute user event: Start */
-         E121I2 ();
+         E122S2 ();
          context.wbGlbDoneStart = 1;
          nDoneStart = 1;
          /* After Start, stand alone formulas. */
@@ -1336,7 +1336,7 @@ namespace GeneXus.Programs {
       protected void GXStart( )
       {
          /* Execute user event: Start */
-         E121I2 ();
+         E122S2 ();
          if ( returnInSub )
          {
             returnInSub = true;
@@ -1344,7 +1344,7 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void E121I2( )
+      protected void E122S2( )
       {
          /* Start Routine */
          returnInSub = false;
@@ -1370,7 +1370,7 @@ namespace GeneXus.Programs {
          }
       }
 
-      private void E131I2( )
+      private void E132S2( )
       {
          /* Grid_Load Routine */
          returnInSub = false;
@@ -1392,7 +1392,7 @@ namespace GeneXus.Programs {
          /*  Sending Event outputs  */
       }
 
-      protected void E111I2( )
+      protected void E112S2( )
       {
          /* 'DoInsert' Routine */
          returnInSub = false;
@@ -1433,9 +1433,9 @@ namespace GeneXus.Programs {
          nGotPars = (short)(1);
          nGXWrapped = (short)(1);
          context.SetWrapped(true);
-         PA1I2( ) ;
-         WS1I2( ) ;
-         WE1I2( ) ;
+         PA2S2( ) ;
+         WS2S2( ) ;
+         WE2S2( ) ;
          this.cleanup();
          context.SetWrapped(false);
          SaveComponentMsgList(sPrefix);
@@ -1460,7 +1460,7 @@ namespace GeneXus.Programs {
                                                   string sPSFPrefix )
       {
          sPrefix = sPPrefix + sPSFPrefix;
-         PA1I2( ) ;
+         PA2S2( ) ;
          WCParametersGet( ) ;
       }
 
@@ -1480,7 +1480,7 @@ namespace GeneXus.Programs {
             init_default_properties( ) ;
             init_web_controls( ) ;
          }
-         PA1I2( ) ;
+         PA2S2( ) ;
          if ( ! GetJustCreated( ) && ( StringUtil.StrCmp(context.GetRequestMethod( ), "POST") == 0 ) && ( context.wbGlbDoneStart == 0 ) )
          {
             WCParametersGet( ) ;
@@ -1524,10 +1524,10 @@ namespace GeneXus.Programs {
          context.GX_msglist = LclMsgLst;
          INITWEB( ) ;
          nDraw = 0;
-         PA1I2( ) ;
+         PA2S2( ) ;
          sEvt = sCompEvt;
          WCParametersGet( ) ;
-         WS1I2( ) ;
+         WS2S2( ) ;
          if ( isFullAjaxMode( ) )
          {
             componentdraw();
@@ -1549,7 +1549,7 @@ namespace GeneXus.Programs {
          nDraw = 1;
          BackMsgLst = context.GX_msglist;
          context.GX_msglist = LclMsgLst;
-         WS1I2( ) ;
+         WS2S2( ) ;
          SaveComponentMsgList(sPrefix);
          context.GX_msglist = BackMsgLst;
       }
@@ -1572,7 +1572,7 @@ namespace GeneXus.Programs {
          BackMsgLst = context.GX_msglist;
          context.GX_msglist = LclMsgLst;
          WCParametersSet( ) ;
-         WE1I2( ) ;
+         WE2S2( ) ;
          SaveComponentMsgList(sPrefix);
          context.GX_msglist = BackMsgLst;
       }
@@ -1613,7 +1613,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202111280104679", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?2021113013582557", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1630,7 +1630,7 @@ namespace GeneXus.Programs {
       {
          if ( nGXWrapped != 1 )
          {
-            context.AddJavascriptSource("proveedorescompra_inventariowc.js", "?202111280104679", false, true);
+            context.AddJavascriptSource("proveedorescompra_inventariowc.js", "?2021113013582557", false, true);
          }
          /* End function include_jscripts */
       }
@@ -1662,7 +1662,7 @@ namespace GeneXus.Programs {
       protected void sendrow_202( )
       {
          SubsflControlProps_202( ) ;
-         WB1I0( ) ;
+         WB2S0( ) ;
          if ( ( subGrid_Rows * 1 == 0 ) || ( nGXsfl_20_idx <= subGrid_fnc_Recordsperpage( ) * 1 ) )
          {
             GridRow = GXWebRow.GetNew(context,GridContainer);
@@ -1786,7 +1786,7 @@ namespace GeneXus.Programs {
             /* Single line edit */
             ROClassString = "TextActionAttribute";
             GridRow.AddColumnProperties("edit", 1, isAjaxCallMode( ), new Object[] {(string)edtavDelete_Internalname,StringUtil.RTrim( AV13Delete),(string)"",(string)"",(string)"'"+sPrefix+"'"+",false,"+"'"+""+"'",(string)edtavDelete_Link,(string)"",(string)"",(string)"",(string)edtavDelete_Jsonclick,(short)0,(string)"TextActionAttribute",(string)"",(string)ROClassString,(string)"WWTextActionColumn",(string)"",(short)-1,(int)edtavDelete_Enabled,(short)0,(string)"text",(string)"",(short)0,(string)"px",(short)17,(string)"px",(short)20,(short)0,(short)0,(short)20,(short)1,(short)-1,(short)-1,(bool)true,(string)"",(string)"left",(bool)true,(string)""});
-            send_integrity_lvl_hashes1I2( ) ;
+            send_integrity_lvl_hashes2S2( ) ;
             GridContainer.AddRow(GridRow);
             nGXsfl_20_idx = ((subGrid_Islastpage==1)&&(nGXsfl_20_idx+1>subGrid_fnc_Recordsperpage( )) ? 1 : nGXsfl_20_idx+1);
             sGXsfl_20_idx = StringUtil.PadL( StringUtil.LTrimStr( (decimal)(nGXsfl_20_idx), 4, 0), 4, "0");
@@ -1876,9 +1876,9 @@ namespace GeneXus.Programs {
       {
          setEventMetadata("REFRESH","{handler:'Refresh',iparms:[{av:'GRID_nFirstRecordOnPage'},{av:'GRID_nEOF'},{av:'subGrid_Rows',ctrl:'GRID',prop:'Rows'},{av:'AV6IDPROVEEDOR',fld:'vIDPROVEEDOR',pic:'ZZZZZZZZZZZ9'},{av:'AV12Update',fld:'vUPDATE',pic:''},{av:'AV13Delete',fld:'vDELETE',pic:''},{av:'sPrefix'}]");
          setEventMetadata("REFRESH",",oparms:[]}");
-         setEventMetadata("GRID.LOAD","{handler:'E131I2',iparms:[{av:'A11IDCOMPRA',fld:'IDCOMPRA',pic:'ZZZZZZZZZZZ9',hsh:true},{av:'A1IDEMPLEADO',fld:'IDEMPLEADO',pic:'ZZZZZZZZZZZ9'}]");
+         setEventMetadata("GRID.LOAD","{handler:'E132S2',iparms:[{av:'A11IDCOMPRA',fld:'IDCOMPRA',pic:'ZZZZZZZZZZZ9',hsh:true},{av:'A1IDEMPLEADO',fld:'IDEMPLEADO',pic:'ZZZZZZZZZZZ9'}]");
          setEventMetadata("GRID.LOAD",",oparms:[{av:'edtavUpdate_Link',ctrl:'vUPDATE',prop:'Link'},{av:'edtavDelete_Link',ctrl:'vDELETE',prop:'Link'},{av:'edtFECHACOMPRA_Link',ctrl:'FECHACOMPRA',prop:'Link'},{av:'edtNOMBRECOMPLETOEMPLEADO_Link',ctrl:'NOMBRECOMPLETOEMPLEADO',prop:'Link'}]}");
-         setEventMetadata("'DOINSERT'","{handler:'E111I2',iparms:[{av:'A11IDCOMPRA',fld:'IDCOMPRA',pic:'ZZZZZZZZZZZ9',hsh:true}]");
+         setEventMetadata("'DOINSERT'","{handler:'E112S2',iparms:[{av:'A11IDCOMPRA',fld:'IDCOMPRA',pic:'ZZZZZZZZZZZ9',hsh:true}]");
          setEventMetadata("'DOINSERT'",",oparms:[]}");
          setEventMetadata("GRID_FIRSTPAGE","{handler:'subgrid_firstpage',iparms:[{av:'GRID_nFirstRecordOnPage'},{av:'GRID_nEOF'},{av:'subGrid_Rows',ctrl:'GRID',prop:'Rows'},{av:'AV6IDPROVEEDOR',fld:'vIDPROVEEDOR',pic:'ZZZZZZZZZZZ9'},{av:'AV12Update',fld:'vUPDATE',pic:''},{av:'AV13Delete',fld:'vDELETE',pic:''},{av:'sPrefix'}]");
          setEventMetadata("GRID_FIRSTPAGE",",oparms:[]}");
@@ -1942,15 +1942,15 @@ namespace GeneXus.Programs {
          EvtRowId = "";
          sEvtType = "";
          scmdbuf = "";
-         H001I4_A10IDPROVEEDOR = new long[1] ;
-         H001I4_A23NOMBRECOMPLETOEMPLEADO = new string[] {""} ;
-         H001I4_A1IDEMPLEADO = new long[1] ;
-         H001I4_A51DESCRIPCIONCOMPRA = new string[] {""} ;
-         H001I4_A50FECHACOMPRA = new DateTime[] {DateTime.MinValue} ;
-         H001I4_A11IDCOMPRA = new long[1] ;
-         H001I4_A61TOTALCOMPRAPRODUCTO = new decimal[1] ;
-         H001I4_n61TOTALCOMPRAPRODUCTO = new bool[] {false} ;
-         H001I7_AGRID_nRecordCount = new long[1] ;
+         H002S5_A10IDPROVEEDOR = new long[1] ;
+         H002S5_A23NOMBRECOMPLETOEMPLEADO = new string[] {""} ;
+         H002S5_A1IDEMPLEADO = new long[1] ;
+         H002S5_A51DESCRIPCIONCOMPRA = new string[] {""} ;
+         H002S5_A50FECHACOMPRA = new DateTime[] {DateTime.MinValue} ;
+         H002S5_A11IDCOMPRA = new long[1] ;
+         H002S5_A61TOTALCOMPRAPRODUCTO = new decimal[1] ;
+         H002S5_n61TOTALCOMPRAPRODUCTO = new bool[] {false} ;
+         H002S9_AGRID_nRecordCount = new long[1] ;
          GridRow = new GXWebRow();
          AV10TrnContext = new SdtTransactionContext(context);
          AV8HTTPRequest = new GxHttpRequest( context);
@@ -1963,10 +1963,10 @@ namespace GeneXus.Programs {
          pr_default = new DataStoreProvider(context, new GeneXus.Programs.proveedorescompra_inventariowc__default(),
             new Object[][] {
                 new Object[] {
-               H001I4_A10IDPROVEEDOR, H001I4_A23NOMBRECOMPLETOEMPLEADO, H001I4_A1IDEMPLEADO, H001I4_A51DESCRIPCIONCOMPRA, H001I4_A50FECHACOMPRA, H001I4_A11IDCOMPRA, H001I4_A61TOTALCOMPRAPRODUCTO, H001I4_n61TOTALCOMPRAPRODUCTO
+               H002S5_A10IDPROVEEDOR, H002S5_A23NOMBRECOMPLETOEMPLEADO, H002S5_A1IDEMPLEADO, H002S5_A51DESCRIPCIONCOMPRA, H002S5_A50FECHACOMPRA, H002S5_A11IDCOMPRA, H002S5_A61TOTALCOMPRAPRODUCTO, H002S5_n61TOTALCOMPRAPRODUCTO
                }
                , new Object[] {
-               H001I7_AGRID_nRecordCount
+               H002S9_AGRID_nRecordCount
                }
             }
          );
@@ -2100,15 +2100,15 @@ namespace GeneXus.Programs {
       private GXWebForm Form ;
       private IGxDataStore dsDefault ;
       private IDataStoreProvider pr_default ;
-      private long[] H001I4_A10IDPROVEEDOR ;
-      private string[] H001I4_A23NOMBRECOMPLETOEMPLEADO ;
-      private long[] H001I4_A1IDEMPLEADO ;
-      private string[] H001I4_A51DESCRIPCIONCOMPRA ;
-      private DateTime[] H001I4_A50FECHACOMPRA ;
-      private long[] H001I4_A11IDCOMPRA ;
-      private decimal[] H001I4_A61TOTALCOMPRAPRODUCTO ;
-      private bool[] H001I4_n61TOTALCOMPRAPRODUCTO ;
-      private long[] H001I7_AGRID_nRecordCount ;
+      private long[] H002S5_A10IDPROVEEDOR ;
+      private string[] H002S5_A23NOMBRECOMPLETOEMPLEADO ;
+      private long[] H002S5_A1IDEMPLEADO ;
+      private string[] H002S5_A51DESCRIPCIONCOMPRA ;
+      private DateTime[] H002S5_A50FECHACOMPRA ;
+      private long[] H002S5_A11IDCOMPRA ;
+      private decimal[] H002S5_A61TOTALCOMPRAPRODUCTO ;
+      private bool[] H002S5_n61TOTALCOMPRAPRODUCTO ;
+      private long[] H002S9_AGRID_nRecordCount ;
       private msglist BackMsgLst ;
       private msglist LclMsgLst ;
       private GxHttpRequest AV8HTTPRequest ;
@@ -2133,19 +2133,19 @@ namespace GeneXus.Programs {
     {
        if ( def == null )
        {
-          Object[] prmH001I4;
-          prmH001I4 = new Object[] {
+          Object[] prmH002S5;
+          prmH002S5 = new Object[] {
           new ParDef("@AV6IDPROVEEDOR",GXType.Decimal,12,0) ,
           new ParDef("@GXPagingFrom2",GXType.Int32,9,0) ,
           new ParDef("@GXPagingTo2",GXType.Int32,9,0)
           };
-          Object[] prmH001I7;
-          prmH001I7 = new Object[] {
+          Object[] prmH002S9;
+          prmH002S9 = new Object[] {
           new ParDef("@AV6IDPROVEEDOR",GXType.Decimal,12,0)
           };
           def= new CursorDef[] {
-              new CursorDef("H001I4", "SELECT T1.[IDPROVEEDOR], T2.[NOMBRECOMPLETOEMPLEADO], T1.[IDEMPLEADO], T1.[DESCRIPCIONCOMPRA], T1.[FECHACOMPRA], T1.[IDCOMPRA], COALESCE( T3.[TOTALCOMPRAPRODUCTO], 0) AS TOTALCOMPRAPRODUCTO FROM (([Compra_inventario] T1 INNER JOIN [Empleados] T2 ON T2.[IDEMPLEADO] = T1.[IDEMPLEADO]) LEFT JOIN (SELECT SUM(COALESCE( T5.[SUBTOTALCOMPRAPRODUCTO], 0)) AS TOTALCOMPRAPRODUCTO, T4.[IDCOMPRA] FROM ([Compra_inventarioCompra_produc] T4 INNER JOIN (SELECT COALESCE( [GXC2], 0) AS SUBTOTALCOMPRAPRODUCTO, [IDPRODUCTO] FROM [Inventario] ) T5 ON T5.[IDPRODUCTO] = T4.[IDPRODUCTO]) GROUP BY T4.[IDCOMPRA] ) T3 ON T3.[IDCOMPRA] = T1.[IDCOMPRA]) WHERE T1.[IDPROVEEDOR] = @AV6IDPROVEEDOR ORDER BY T1.[IDPROVEEDOR]  OFFSET @GXPagingFrom2 ROWS FETCH NEXT CAST((SELECT CASE WHEN @GXPagingTo2 > 0 THEN @GXPagingTo2 ELSE 1e9 END) AS INTEGER) ROWS ONLY",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH001I4,11, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("H001I7", "SELECT COUNT(*) FROM (([Compra_inventario] T1 INNER JOIN [Empleados] T2 ON T2.[IDEMPLEADO] = T1.[IDEMPLEADO]) LEFT JOIN (SELECT SUM(COALESCE( T5.[SUBTOTALCOMPRAPRODUCTO], 0)) AS TOTALCOMPRAPRODUCTO, T4.[IDCOMPRA] FROM ([Compra_inventarioCompra_produc] T4 INNER JOIN (SELECT COALESCE( [GXC2], 0) AS SUBTOTALCOMPRAPRODUCTO, [IDPRODUCTO] FROM [Inventario] ) T5 ON T5.[IDPRODUCTO] = T4.[IDPRODUCTO]) GROUP BY T4.[IDCOMPRA] ) T3 ON T3.[IDCOMPRA] = T1.[IDCOMPRA]) WHERE T1.[IDPROVEEDOR] = @AV6IDPROVEEDOR ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH001I7,1, GxCacheFrequency.OFF ,true,false )
+              new CursorDef("H002S5", "SELECT T1.[IDPROVEEDOR], T2.[NOMBRECOMPLETOEMPLEADO], T1.[IDEMPLEADO], T1.[DESCRIPCIONCOMPRA], T1.[FECHACOMPRA], T1.[IDCOMPRA], COALESCE( T3.[TOTALCOMPRAPRODUCTO], 0) AS TOTALCOMPRAPRODUCTO FROM (([Compra_inventario] T1 INNER JOIN [Empleados] T2 ON T2.[IDEMPLEADO] = T1.[IDEMPLEADO]) LEFT JOIN (SELECT SUM(COALESCE( T5.[SUBTOTALCOMPRAPRODUCTO], 0)) AS TOTALCOMPRAPRODUCTO, T4.[IDCOMPRA] FROM ([Compra_inventarioDetalle_compr] T4 LEFT JOIN (SELECT COALESCE( T7.[GXC2], 0) AS SUBTOTALCOMPRAPRODUCTO, T6.[IDCOMPRA], T6.[IDETALLECOMPRAPRODUCTO] FROM ([Compra_inventarioDetalle_compr] T6 LEFT JOIN (SELECT SUM(T9.[CANTIDADPRODUCTO] * CAST(T9.[PRECIOCOMPRAPRODUCTO] AS decimal( 22, 10))) AS GXC2, T8.[IDCOMPRA], T8.[IDETALLECOMPRAPRODUCTO] FROM ([Compra_inventarioDetalle_compr] T8 INNER JOIN [Inventario] T9 ON T9.[IDPRODUCTO] = T8.[IDPRODUCTO]) GROUP BY T8.[IDCOMPRA], T8.[IDETALLECOMPRAPRODUCTO] ) T7 ON T7.[IDCOMPRA] = T6.[IDCOMPRA] AND T7.[IDETALLECOMPRAPRODUCTO] = T6.[IDETALLECOMPRAPRODUCTO]) ) T5 ON T5.[IDCOMPRA] = T4.[IDCOMPRA] AND T5.[IDETALLECOMPRAPRODUCTO] = T4.[IDETALLECOMPRAPRODUCTO]) GROUP BY T4.[IDCOMPRA] ) T3 ON T3.[IDCOMPRA] = T1.[IDCOMPRA]) WHERE T1.[IDPROVEEDOR] = @AV6IDPROVEEDOR ORDER BY T1.[IDPROVEEDOR]  OFFSET @GXPagingFrom2 ROWS FETCH NEXT CAST((SELECT CASE WHEN @GXPagingTo2 > 0 THEN @GXPagingTo2 ELSE 1e9 END) AS INTEGER) ROWS ONLY",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH002S5,11, GxCacheFrequency.OFF ,true,false )
+             ,new CursorDef("H002S9", "SELECT COUNT(*) FROM (([Compra_inventario] T1 INNER JOIN [Empleados] T2 ON T2.[IDEMPLEADO] = T1.[IDEMPLEADO]) LEFT JOIN (SELECT SUM(COALESCE( T5.[SUBTOTALCOMPRAPRODUCTO], 0)) AS TOTALCOMPRAPRODUCTO, T4.[IDCOMPRA] FROM ([Compra_inventarioDetalle_compr] T4 LEFT JOIN (SELECT COALESCE( T7.[GXC2], 0) AS SUBTOTALCOMPRAPRODUCTO, T6.[IDCOMPRA], T6.[IDETALLECOMPRAPRODUCTO] FROM ([Compra_inventarioDetalle_compr] T6 LEFT JOIN (SELECT SUM(T9.[CANTIDADPRODUCTO] * CAST(T9.[PRECIOCOMPRAPRODUCTO] AS decimal( 22, 10))) AS GXC2, T8.[IDCOMPRA], T8.[IDETALLECOMPRAPRODUCTO] FROM ([Compra_inventarioDetalle_compr] T8 INNER JOIN [Inventario] T9 ON T9.[IDPRODUCTO] = T8.[IDPRODUCTO]) GROUP BY T8.[IDCOMPRA], T8.[IDETALLECOMPRAPRODUCTO] ) T7 ON T7.[IDCOMPRA] = T6.[IDCOMPRA] AND T7.[IDETALLECOMPRAPRODUCTO] = T6.[IDETALLECOMPRAPRODUCTO]) ) T5 ON T5.[IDCOMPRA] = T4.[IDCOMPRA] AND T5.[IDETALLECOMPRAPRODUCTO] = T4.[IDETALLECOMPRAPRODUCTO]) GROUP BY T4.[IDCOMPRA] ) T3 ON T3.[IDCOMPRA] = T1.[IDCOMPRA]) WHERE T1.[IDPROVEEDOR] = @AV6IDPROVEEDOR ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH002S9,1, GxCacheFrequency.OFF ,true,false )
           };
        }
     }

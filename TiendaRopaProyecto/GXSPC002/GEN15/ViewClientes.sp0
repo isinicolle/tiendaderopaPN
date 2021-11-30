@@ -824,14 +824,14 @@ sub_info_i(146,'Start',1,24,[ [ 'Pgmname',4,'Idcliente',30,'Tabcode','Loadalltab
 sub_info_i(146,[ t('Tab',3,26,7),t('Tabchanged',3,26,11) ],26,30,[ [ [ t('Tab',3),t('Activepagecontrolname',3) ],'Loadalltabs','Selectedtabcode','Idcliente' ],[ 'Selectedtabcode','Loadalltabs',[ t('Generalwc',3),t('Object',3) ],[ t('Ventas_inventariowc',3),t('Object',3) ] ] ]).
  
 pgm_parm_i(web,7,'NOTAUTHORIZED',[ [ svchar,256,0,0 ] ],[ [ 'GxObject',in,[] ] ]).
-pgm_parm_i(web,42,'CLIENTESVENTAS_INVENTARIOWC',[ [ int,12,0,0 ] ],[ [ 'IDCLIENTE',in,[] ] ]).
+pgm_parm_i(web,107,'CLIENTESVENTAS_INVENTARIOWC',[ [ int,12,0,0 ] ],[ [ 'IDCLIENTE',in,[] ] ]).
 pgm_parm_i(web,41,'CLIENTESGENERAL',[ [ int,12,0,0 ] ],[ [ 'IDCLIENTE',in,[] ] ]).
 pgm_parm_i(web,15,'WWCLIENTES',[],[]).
 pgm_parm_i(proc,12,'ISAUTHORIZED',[ [ svchar,256,0,0 ],[ boolean,4,0,0 ] ],[ [ 'GxObject',in,[] ],[ 'Authorized',out,[] ] ]).
  
 pgm_callprotocol_i(web,25,'VIEWCLIENTES','INTERNAL','Secure').
 pgm_callprotocol_i(web,7,'NOTAUTHORIZED','INTERNAL','Secure').
-pgm_callprotocol_i(web,42,'CLIENTESVENTAS_INVENTARIOWC','INTERNAL','Secure').
+pgm_callprotocol_i(web,107,'CLIENTESVENTAS_INVENTARIOWC','INTERNAL','Secure').
 pgm_callprotocol_i(web,41,'CLIENTESGENERAL','INTERNAL','Secure').
 pgm_callprotocol_i(web,15,'WWCLIENTES','INTERNAL','Secure').
 pgm_callprotocol_i(proc,12,'ISAUTHORIZED','INTERNAL','Secure').

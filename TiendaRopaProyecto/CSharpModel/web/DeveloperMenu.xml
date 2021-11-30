@@ -5,9 +5,9 @@
    <Path>file:///C:/Program Files (x86)/GeneXus/GeneXus17Trial/</Path>
    <Object>
       <ObjCls>0</ObjCls>
-      <ObjName>TransaccionDePrueba</ObjName>
-      <ObjDesc>Transaccion De Prueba</ObjDesc>
-      <ObjLink>transacciondeprueba.aspx</ObjLink>
+      <ObjName>Compra_inventario</ObjName>
+      <ObjDesc>Compra_inventario</ObjDesc>
+      <ObjLink>compra_inventario.aspx</ObjLink>
    </Object>
    <Object>
       <ObjCls>13</ObjCls>
@@ -20,18 +20,6 @@
       <ObjName>WWEmpleados</ObjName>
       <ObjDesc>Empleadoss</ObjDesc>
       <ObjLink>wwempleados.aspx</ObjLink>
-   </Object>
-   <Object>
-      <ObjCls>13</ObjCls>
-      <ObjName>WWCompra_inventario</ObjName>
-      <ObjDesc>Compra_inventarios</ObjDesc>
-      <ObjLink>wwcompra_inventario.aspx</ObjLink>
-   </Object>
-   <Object>
-      <ObjCls>13</ObjCls>
-      <ObjName>WWVentas_inventario</ObjName>
-      <ObjDesc>Ventas_inventarios</ObjDesc>
-      <ObjLink>wwventas_inventario.aspx</ObjLink>
    </Object>
    <Object>
       <ObjCls>13</ObjCls>
@@ -92,6 +80,18 @@
       <ObjName>Login</ObjName>
       <ObjDesc>Login</ObjDesc>
       <ObjLink>login.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WWCompra_inventario</ObjName>
+      <ObjDesc>Compra_inventarios</ObjDesc>
+      <ObjLink>wwcompra_inventario.aspx</ObjLink>
+   </Object>
+   <Object>
+      <ObjCls>13</ObjCls>
+      <ObjName>WWVentas_inventario</ObjName>
+      <ObjDesc>Ventas_inventarios</ObjDesc>
+      <ObjLink>wwventas_inventario.aspx</ObjLink>
    </Object>
    <Object>
       <ObjCls>1</ObjCls>

@@ -1,10 +1,10 @@
-spec_i([ web,54,'Proveedores Compra_inventario WC','ProveedoresCompra_inventarioWC',0,eng,'17_0_5-152925' ]).
+spec_i([ web,100,'Proveedores Compra_inventario WC','ProveedoresCompra_inventarioWC',0,eng,'17_0_5-152925' ]).
  
 struct_i(2,1,[ 'Pgmname','Update','Delete' ],[]).
  
-level_i(2,[ 2,[ [ 2,many ],[ 1,one ],[ 2001,one ] ],[],[],[ [ [ 2,1,2001 ],[ 10,23,1,51,50,11,61 ] ] ],[ [ [ 2,1,2001 ],[] ] ],[ 10 ],'ICOMPRA_INVENTARIO1',[ 2,[ [ [],'Idproveedor',10 ] ] ],[] ]).
+level_i(2,[ 19,[ [ 19,many ],[ 1,one ],[ 2002,one ] ],[],[],[ [ [ 19,1,2002 ],[ 10,23,1,51,50,11,61 ] ] ],[ [ [ 19,1,2002 ],[] ] ],[ 10 ],'ICOMPRA_INVENTARIO1',[ 19,[ [ [],'Idproveedor',10 ] ] ],[] ]).
  
-tw_i(2,[ [ 1,[ [ 2,1,1 ] ] ],[ 2001,[ [ 2,oe([ t(11,2) ]),11 ] ] ] ]).
+tw_i(2,[ [ 1,[ [ 19,1,1 ] ] ],[ 2002,[ [ 19,oe([ t(11,2) ]),11 ] ] ] ]).
  
 lwi_i(2,[ [] ]).
  
@@ -12,7 +12,7 @@ lwi_i(2,[ [] ]).
  
 level_option_i(2,server_paging,[ y,[] ]).
  
-ta_i(2,[ [ [ 2,10 ],[ 1,23 ],[ 2,1 ],[ 2,51 ],[ 2,50 ],[ 2,11 ],[ 2001,se(61,[ [ 2001,61 ] ],[ t('coalesce(',1),t(61,2),t(',',7),t('0',3),t(')',4) ]) ] ] ]).
+ta_i(2,[ [ [ 19,10 ],[ 1,23 ],[ 19,1 ],[ 19,51 ],[ 19,50 ],[ 19,11 ],[ 2002,se(61,[ [ 2002,61 ] ],[ t('coalesce(',1),t(61,2),t(',',7),t('0',3),t(')',4) ]) ] ] ]).
  
 las_i(2,[ [ 'Idproveedor','Update','Delete',10,23,1,51,50,11,61 ] ]).
  
@@ -135,9 +135,9 @@ rule_i(0,rule([ a(22,[ '''DoInsert''','''DoInsert''','' ]) ],[],[],[])).
  
 a_i(1,1,f,'Pgmname',[],[ [],[ t('"ProveedoresCompra_inventarioWC"',3) ] ]).
 a_i(2,1,f,'Err',[],[ [],[ t('0',3) ] ]).
-a_i(3,2,t,2,[],[ [ [ [],'Idproveedor',10 ] ],'ICOMPRA_INVENTARIO1',[] ]).
-a_i(4,2,r,1,[],[ [ [ 2,1,1 ] ],'IEMPLEADOS',[] ]).
-a_i(5,2,r,2001,[],[ [ [ 2,oe([ t(11,2) ]),11 ] ],'ICOMPRA_INVENTARIO',[] ]).
+a_i(3,2,t,19,[],[ [ [ [],'Idproveedor',10 ] ],'ICOMPRA_INVENTARIO1',[] ]).
+a_i(4,2,r,1,[],[ [ [ 19,1,1 ] ],'IEMPLEADOS',[] ]).
+a_i(5,2,r,2002,[],[ [ [ 19,oe([ t(11,2) ]),11 ] ],'ICOMPRA_INVENTARIO',[] ]).
 a_i(6,1,f,[ t('&Update',23),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
 a_i(7,1,f,[ t('&Delete',23),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
  
@@ -167,7 +167,10 @@ v_i(f,o,7,[ t('&Delete',23),t('Enabled',3) ]).
  
 attri_i(60,[ 'SUBTOTALCOMPRAPRODUCTO',int,12,2,'ZZZZZZZZ9.99',0,'SUBTOTALCOMPRAPRODUCTO','',0 ]).
 attri_i(7,[ 'IDPRODUCTO',int,12,0,'ZZZZZZZZZZZ9',0,'IDPRODUCTO','',0 ]).
+attri_i(65,[ 'IDETALLECOMPRAPRODUCTO',int,12,0,'ZZZZZZZZZZZ9',0,'IDETALLECOMPRAPRODUCTO','',0 ]).
 attri_i(40001,[ 'GXC2',int,20,0,'',0,'',[],0 ]).
+attri_i(42,[ 'PRECIOCOMPRAPRODUCTO',int,12,2,'ZZZZZZZZ9.99',0,'PRECIOCOMPRAPRODUCTO','',0 ]).
+attri_i(41,[ 'CANTIDADPRODUCTO',int,12,0,'ZZZZZZZZZZZ9',0,'CANTIDADPRODUCTO','',0 ]).
 attri_i(10,[ 'IDPROVEEDOR',int,12,0,'ZZZZZZZZZZZ9',0,'IDPROVEEDOR','',0 ]).
 attri_i(61,[ 'TOTALCOMPRAPRODUCTO',int,12,2,'ZZZZZZZZ9.99',0,'TOTALCOMPRAPRODUCTO','',0 ]).
 attri_i(23,[ 'NOMBRECOMPLETOEMPLEADO',svchar,255,0,'',0,'NOMBRECOMPLETOEMPLEADO','',0 ]).
@@ -189,29 +192,33 @@ attri_i('Session',[ 'Session',o(websession),4,0,'',0,'Session','',7 ]).
 attri_i('Idproveedor',[ 'IDPROVEEDOR',int,12,0,'ZZZZZZZZZZZ9',0,'IDPROVEEDOR','',6 ]).
 attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,'Is Authorized','',5 ]).
  
-table_i(2000,[ 'Inventario',[ 60,7 ],'Inventario','Inventario' ]).
-table_i(3,[ 'Compra_inventarioCompra_produc',[ 11,7 ],'Compra_producto','Compra_inventarioCompra_producto' ]).
-table_i(9,[ 'Inventario',[ 7 ],'Inventario','Inventario' ]).
-table_i(2001,[ 'Compra_inventario',[ 61,11 ],'Compra_inventario','Compra_inventario' ]).
+table_i(2001,[ 'Compra_inventarioDetalle_compr',[ 60,11,65 ],'Detalle_compra_producto','Compra_inventarioDetalle_compra_producto' ]).
+table_i(2000,[ 'Compra_inventarioDetalle_compr',[ 40001,11,65 ],'Detalle_compra_producto','Compra_inventarioDetalle_compra_producto' ]).
+table_i(9,[ 'Inventario',[ 7,41,42 ],'Inventario','Inventario' ]).
+table_i(21,[ 'Compra_inventarioDetalle_compr',[ 11,65,7 ],'Detalle_compra_producto','Compra_inventarioDetalle_compra_producto' ]).
+table_i(2002,[ 'Compra_inventario',[ 61,11 ],'Compra_inventario','Compra_inventario' ]).
 table_i(1,[ 'Empleados',[ 1,23 ],'Empleados','Empleados' ]).
-table_i(2,[ 'Compra_inventario',[ 11,50,51,10,1 ],'Compra_inventario','Compra_inventario' ]).
+table_i(19,[ 'Compra_inventario',[ 11,50,51,10,1 ],'Compra_inventario','Compra_inventario' ]).
  
+index_i(21,[ 'ICOMPRA_INVENTARIODETALLE_COMP',u,[ 11,65 ],'ICompra_inventarioDetalle_compra_producto' ]).
 index_i(9,[ 'IINVENTARIO',u,[ 7 ],'IInventario' ]).
-index_i(3,[ 'ICOMPRA_INVENTARIOCOMPRA_PRODU',u,[ 11,7 ],'ICompra_inventarioCompra_producto' ]).
-index_i(2000,[ 'IINVENTARIO',u,[ 7 ],'IInventario' ]).
-index_i(2,[ 'ICOMPRA_INVENTARIO',u,[ 11 ],'ICompra_inventario' ]).
-index_i(2,[ 'ICOMPRA_INVENTARIO1',d,[ 10 ],'ICompra_inventario1' ]).
+index_i(2000,[ 'ICOMPRA_INVENTARIODETALLE_COMP',u,[ 11,65 ],'ICompra_inventarioDetalle_compra_producto' ]).
+index_i(2001,[ 'ICOMPRA_INVENTARIODETALLE_COMP',u,[ 11,65 ],'ICompra_inventarioDetalle_compra_producto' ]).
+index_i(19,[ 'ICOMPRA_INVENTARIO',u,[ 11 ],'ICompra_inventario' ]).
+index_i(19,[ 'ICOMPRA_INVENTARIO1',d,[ 10 ],'ICompra_inventario1' ]).
 index_i(1,[ 'IEMPLEADOS',u,[ 1 ],'IEmpleados' ]).
-index_i(2001,[ 'ICOMPRA_INVENTARIO',u,[ 11 ],'ICompra_inventario' ]).
+index_i(2002,[ 'ICOMPRA_INVENTARIO',u,[ 11 ],'ICompra_inventario' ]).
  
-lv_i(2,2000,9).
-lv_i(2,2001,2).
+lv_i(2,2000,21).
+lv_i(2,2001,21).
+lv_i(2,2002,19).
  
  
  
  
-nav_view_i(2000,[ 60 ],[ 7 ],[ 7 ],[ [ 2000,[ [ 3,7,7 ] ] ] ],[ [ [ 9,se(60,[ [ 9,40001 ] ],[ t('coalesce(',1),t(40001,2),t(',',7),t('0',3),t(')',4) ]) ],[ 9,7 ] ],n,[ [ 9,many ] ],[],[],[ none ],[],[],[] ]).
-nav_view_i(2001,[ 61 ],[ 11 ],[ 11 ],[ [ 2001,[ [ 2,oe([ t(11,2) ]),11 ] ] ] ],[ [ [ 2000,[ 'sum(',se(60,[ [ 2000,60 ] ],[ t('coalesce(',1),t(60,2),t(',',7),t('0',3),t(')',4) ]) ] ],[ 3,11 ] ],n,[ [ 3,many ],[ 2000,one ] ],[ [ 2000,[ [ 3,7,7 ] ] ] ],[],[ none ],[],[ 11 ],[] ]).
+nav_view_i(2000,[ 40001 ],[ 11,65 ],[ 11,65 ],[ [ 2000,[ [ 21,oe([ t(11,2) ]),11 ],[ 21,oe([ t(65,2) ]),65 ] ] ] ],[ [ [ 21,[ 'sum(',se(40001,[ [ 9,41 ],[ 9,42 ] ],[ t(41,2),t(*,6),t(42,2) ]) ] ],[ 21,11 ],[ 21,65 ] ],n,[ [ 21,one ],[ 9,one ] ],[ [ 9,[ [ 21,7,7 ] ] ] ],[],[ none ],[],[ 11,65 ],[] ]).
+nav_view_i(2001,[ 60 ],[ 11,65 ],[ 11,65 ],[ [ 2001,[ [ 21,oe([ t(11,2) ]),11 ],[ 21,oe([ t(65,2) ]),65 ] ] ] ],[ [ [ 2000,se(60,[ [ 2000,40001 ] ],[ t('coalesce(',1),t(40001,2),t(',',7),t('0',3),t(')',4) ]) ],[ 21,11 ],[ 21,65 ] ],n,[ [ 21,many ],[ 2000,one ] ],[ [ 2000,[ [ 21,oe([ t(11,2) ]),11 ],[ 21,oe([ t(65,2) ]),65 ] ] ] ],[],[ none ],[],[],[] ]).
+nav_view_i(2002,[ 61 ],[ 11 ],[ 11 ],[ [ 2002,[ [ 19,oe([ t(11,2) ]),11 ] ] ] ],[ [ [ 2001,[ 'sum(',se(60,[ [ 2001,60 ] ],[ t('coalesce(',1),t(60,2),t(',',7),t('0',3),t(')',4) ]) ] ],[ 21,11 ] ],n,[ [ 21,many ],[ 2001,one ] ],[ [ 2001,[ [ 21,oe([ t(11,2) ]),11 ],[ 21,oe([ t(65,2) ]),65 ] ] ] ],[],[ none ],[],[ 11 ],[] ]).
  
  
 agg_def_i(61,[ t('0',3) ]).
@@ -939,6 +946,42 @@ att_prop_i(2,10,'AttValidationFailedMsg','',d).
 att_prop_i(2,10,'DownloadOffline','0',d).
 att_prop_i(2,10,'VarServiceExtName','',d).
 att_prop_i(2,10,'FullName','IDPROVEEDOR',v).
+att_prop_i(2,41,'ExternalName','CANTIDADPRODUCTO',d).
+att_prop_i(2,41,'ExternalNamespace','TiendaRopaProyecto',d).
+att_prop_i(2,41,'EmptyAsNull','Yes',d).
+att_prop_i(2,41,idBasedOn,87,v).
+att_prop_i(2,41,'AUTONUMBER','0',d).
+att_prop_i(2,41,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,41,'AttRegEx','',d).
+att_prop_i(2,41,'AttValidationFailedMsg','',d).
+att_prop_i(2,41,'DownloadOffline','0',d).
+att_prop_i(2,41,'VarServiceExtName','',d).
+att_prop_i(2,41,'FullName','CANTIDADPRODUCTO',v).
+att_prop_i(2,42,'ExternalName','PRECIOCOMPRAPRODUCTO',d).
+att_prop_i(2,42,'ExternalNamespace','TiendaRopaProyecto',d).
+att_prop_i(2,42,'EmptyAsNull','Yes',d).
+att_prop_i(2,42,idBasedOn,86,v).
+att_prop_i(2,42,'AUTONUMBER','0',d).
+att_prop_i(2,42,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,42,'AttRegEx','',d).
+att_prop_i(2,42,'AttValidationFailedMsg','',d).
+att_prop_i(2,42,'DownloadOffline','0',d).
+att_prop_i(2,42,'VarServiceExtName','',d).
+att_prop_i(2,42,'FullName','PRECIOCOMPRAPRODUCTO',v).
+att_prop_i(2,65,'ExternalName','IDETALLECOMPRAPRODUCTO',d).
+att_prop_i(2,65,'ExternalNamespace','TiendaRopaProyecto',d).
+att_prop_i(2,65,'EmptyAsNull','Yes',d).
+att_prop_i(2,65,idBasedOn,84,v).
+att_prop_i(2,65,'AUTONUMBER','-1',d).
+att_prop_i(2,65,'AUTONUMBER_START','1',d).
+att_prop_i(2,65,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,65,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,65,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,65,'AttRegEx','',d).
+att_prop_i(2,65,'AttValidationFailedMsg','',d).
+att_prop_i(2,65,'DownloadOffline','0',d).
+att_prop_i(2,65,'VarServiceExtName','',d).
+att_prop_i(2,65,'FullName','IDETALLECOMPRAPRODUCTO',v).
 att_prop_i(2,7,'ExternalName','IDPRODUCTO',d).
 att_prop_i(2,7,'ExternalNamespace','TiendaRopaProyecto',d).
 att_prop_i(2,7,'EmptyAsNull','Yes',d).
@@ -969,43 +1012,53 @@ att_prop_i(2,40001,'AttRegEx','',d).
 att_prop_i(2,40001,'AttValidationFailedMsg','',d).
 att_prop_i(2,40001,'FullName','',v).
  
-tbl_prop_i(2,3,'AllDirSuper',[ [ 9,[ 7 ] ],[ 2,[ 11 ] ] ],v).
-tbl_prop_i(2,2,'AllDirSuper',[ [ 1,[ 1 ] ] ],v).
-tbl_prop_i(2,2001,'DirSubor',[ [ 3,[ 11 ] ] ],v).
-tbl_prop_i(2,1,'DirSubor',[ [ 2,[ 1 ] ] ],v).
-tbl_prop_i(2,2000,'DirSubor',[ [ 3,[ 7 ] ] ],v).
-tbl_prop_i(2,9,'DirSubor',[ [ 3,[ 7 ] ] ],v).
-tbl_prop_i(2,2,'DirSubor',[ [ 3,[ 11 ] ] ],v).
-tbl_prop_i(2,2001,'DirSuper',[ [ 1,[ 1 ] ] ],v).
-tbl_prop_i(2,3,'DirSuper',[ [ 9,[ 7 ] ],[ 2,[ 11 ] ] ],v).
-tbl_prop_i(2,2,'DirSuper',[ [ 1,[ 1 ] ] ],v).
+tbl_prop_i(2,2001,'AllDirSuper',[ [ 19,[ 11 ] ] ],v).
+tbl_prop_i(2,2000,'AllDirSuper',[ [ 19,[ 11 ] ] ],v).
+tbl_prop_i(2,21,'AllDirSuper',[ [ 9,[ 7 ] ],[ 19,[ 11 ] ] ],v).
+tbl_prop_i(2,19,'AllDirSuper',[ [ 1,[ 1 ] ] ],v).
+tbl_prop_i(2,2002,'DirSubor',[ [ 21,[ 11 ] ] ],v).
+tbl_prop_i(2,1,'DirSubor',[ [ 19,[ 1 ] ] ],v).
+tbl_prop_i(2,9,'DirSubor',[ [ 21,[ 7 ] ] ],v).
+tbl_prop_i(2,19,'DirSubor',[ [ 21,[ 11 ] ] ],v).
+tbl_prop_i(2,2002,'DirSuper',[ [ 1,[ 1 ] ] ],v).
+tbl_prop_i(2,2001,'DirSuper',[ [ 9,[ 7 ] ],[ 19,[ 11 ] ] ],v).
+tbl_prop_i(2,2000,'DirSuper',[ [ 9,[ 7 ] ],[ 19,[ 11 ] ] ],v).
+tbl_prop_i(2,21,'DirSuper',[ [ 9,[ 7 ] ],[ 19,[ 11 ] ] ],v).
+tbl_prop_i(2,19,'DirSuper',[ [ 1,[ 1 ] ] ],v).
  
+tbl_att_prop_i(2,21,11,'AllowNulls',n).
+tbl_att_prop_i(2,21,65,'AllowNulls',n).
+tbl_att_prop_i(2,21,7,'AllowNulls',n).
 tbl_att_prop_i(2,9,7,'AllowNulls',n).
 tbl_att_prop_i(2,9,7,'AUTONUMBER',y).
-tbl_att_prop_i(2,3,11,'AllowNulls',n).
-tbl_att_prop_i(2,3,7,'AllowNulls',n).
-tbl_att_prop_i(2,2000,7,'AllowNulls',n).
-tbl_att_prop_i(2,2000,7,'AUTONUMBER',y).
-tbl_att_prop_i(2,2,11,'AllowNulls',n).
-tbl_att_prop_i(2,2,11,'AUTONUMBER',y).
-tbl_att_prop_i(2,2,50,'AllowNulls',n).
-tbl_att_prop_i(2,2,51,'AllowNulls',n).
-tbl_att_prop_i(2,2,10,'AllowNulls',n).
-tbl_att_prop_i(2,2,1,'AllowNulls',n).
+tbl_att_prop_i(2,9,41,'AllowNulls',n).
+tbl_att_prop_i(2,9,42,'AllowNulls',n).
+tbl_att_prop_i(2,2000,11,'AllowNulls',n).
+tbl_att_prop_i(2,2000,65,'AllowNulls',n).
+tbl_att_prop_i(2,2001,11,'AllowNulls',n).
+tbl_att_prop_i(2,2001,65,'AllowNulls',n).
+tbl_att_prop_i(2,19,11,'AllowNulls',n).
+tbl_att_prop_i(2,19,11,'AUTONUMBER',y).
+tbl_att_prop_i(2,19,50,'AllowNulls',n).
+tbl_att_prop_i(2,19,51,'AllowNulls',n).
+tbl_att_prop_i(2,19,10,'AllowNulls',n).
+tbl_att_prop_i(2,19,1,'AllowNulls',n).
 tbl_att_prop_i(2,1,1,'AllowNulls',n).
 tbl_att_prop_i(2,1,1,'AUTONUMBER',y).
 tbl_att_prop_i(2,1,23,'AllowNulls',n).
-tbl_att_prop_i(2,2001,11,'AllowNulls',n).
-tbl_att_prop_i(2,2001,11,'AUTONUMBER',y).
+tbl_att_prop_i(2,2002,11,'AllowNulls',n).
+tbl_att_prop_i(2,2002,11,'AUTONUMBER',y).
  
 var_prop_i(2,'Idproveedor',idBasedOn,'',v).
  
  
  
-a_alias_i(se(60,[ [ 9,40001 ] ],[ t('coalesce(',1),t(40001,2),t(',',7),t('0',3),t(')',4) ]),'SUBTOTALCOMPRAPRODUCTO').
-a_alias_i(se(60,[ [ 2000,60 ] ],[ t('coalesce(',1),t(60,2),t(',',7),t('0',3),t(')',4) ]),'SUBTOTALCOMPRAPRODUCTO').
-a_alias_i([ 'sum(',se(60,[ [ 2000,60 ] ],[ t('coalesce(',1),t(60,2),t(',',7),t('0',3),t(')',4) ]) ],'TOTALCOMPRAPRODUCTO').
-a_alias_i(se(61,[ [ 2001,61 ] ],[ t('coalesce(',1),t(61,2),t(',',7),t('0',3),t(')',4) ]),'TOTALCOMPRAPRODUCTO').
+a_alias_i([ 'sum(',se(40001,[ [ 9,41 ],[ 9,42 ] ],[ t(41,2),t(*,6),t(42,2) ]) ],'GXC2').
+a_alias_i(se(40001,[ [ 2000,40001 ] ],[ t('coalesce(',1),t(40001,2),t(',',7),t('0',3),t(')',4) ]),'GXC2').
+a_alias_i(se(60,[ [ 2000,40001 ] ],[ t('coalesce(',1),t(40001,2),t(',',7),t('0',3),t(')',4) ]),'SUBTOTALCOMPRAPRODUCTO').
+a_alias_i(se(60,[ [ 2001,60 ] ],[ t('coalesce(',1),t(60,2),t(',',7),t('0',3),t(')',4) ]),'SUBTOTALCOMPRAPRODUCTO').
+a_alias_i([ 'sum(',se(60,[ [ 2001,60 ] ],[ t('coalesce(',1),t(60,2),t(',',7),t('0',3),t(')',4) ]) ],'TOTALCOMPRAPRODUCTO').
+a_alias_i(se(61,[ [ 2002,61 ] ],[ t('coalesce(',1),t(61,2),t(',',7),t('0',3),t(')',4) ]),'TOTALCOMPRAPRODUCTO').
  
  
 struct_dt_i([ 26,20,0 ],name,'GeneXus\Common\GridState').
@@ -1241,15 +1294,15 @@ sub_info_i(146,'''DoInsert''',21,23,[ [ 11 ],[] ]).
  
 pgm_parm_i(web,7,'NOTAUTHORIZED',[ [ svchar,256,0,0 ] ],[ [ 'GxObject',in,[] ] ]).
 pgm_parm_i(web,22,'VIEWEMPLEADOS',[ [ int,12,0,0 ],[ char,50,0,0 ] ],[ [ 'IDEMPLEADO',in,[] ],[ 'TabCode',in,[] ] ]).
-pgm_parm_i(web,32,'VIEWCOMPRA_INVENTARIO',[ [ int,12,0,0 ],[ char,50,0,0 ] ],[ [ 'IDCOMPRA',in,[] ],[ 'TabCode',in,[] ] ]).
-pgm_parm_i(trn,2,'COMPRA_INVENTARIO',[ [ char,3,0,0 ],[ int,12,0,0 ] ],[ [ 'Mode',in,[] ],[ 'IDCOMPRA',in,[] ] ]).
+pgm_parm_i(web,94,'VIEWCOMPRA_INVENTARIO',[ [ int,12,0,0 ],[ char,50,0,0 ] ],[ [ 'IDCOMPRA',in,[] ],[ 'TabCode',in,[] ] ]).
+pgm_parm_i(trn,15,'COMPRA_INVENTARIO',[ [ char,3,0,0 ],[ int,12,0,0 ] ],[ [ 'Mode',in,[] ],[ 'IDCOMPRA',in,[] ] ]).
 pgm_parm_i(proc,12,'ISAUTHORIZED',[ [ svchar,256,0,0 ],[ boolean,4,0,0 ] ],[ [ 'GxObject',in,[] ],[ 'Authorized',out,[] ] ]).
  
-pgm_callprotocol_i(web,54,'PROVEEDORESCOMPRA_INVENTARIOWC','INTERNAL','Secure').
+pgm_callprotocol_i(web,100,'PROVEEDORESCOMPRA_INVENTARIOWC','INTERNAL','Secure').
 pgm_callprotocol_i(web,7,'NOTAUTHORIZED','INTERNAL','Secure').
 pgm_callprotocol_i(web,22,'VIEWEMPLEADOS','INTERNAL','Secure').
-pgm_callprotocol_i(web,32,'VIEWCOMPRA_INVENTARIO','INTERNAL','Secure').
-pgm_callprotocol_i(trn,2,'COMPRA_INVENTARIO','INTERNAL','Secure').
+pgm_callprotocol_i(web,94,'VIEWCOMPRA_INVENTARIO','INTERNAL','Secure').
+pgm_callprotocol_i(trn,15,'COMPRA_INVENTARIO','INTERNAL','Secure').
 pgm_callprotocol_i(proc,12,'ISAUTHORIZED','INTERNAL','Secure').
  
  

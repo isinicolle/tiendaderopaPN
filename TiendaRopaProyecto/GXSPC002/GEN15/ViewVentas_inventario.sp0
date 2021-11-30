@@ -1,10 +1,10 @@
-spec_i([ web,33,'View Ventas_inventario','ViewVentas_inventario',0,eng,'17_0_5-152925' ]).
+spec_i([ web,103,'View Ventas_inventario','ViewVentas_inventario',0,eng,'17_0_5-152925' ]).
  
 struct_i(2,1,[ 'Pgmname','Exists','GXLvl6' ],[]).
 struct_i(3,1,[],[]).
  
-level_i(2,[ 4,[ [ 4,many ] ],[],[],[ [ [ 4 ],[ 12,54 ] ] ],[ [ [ 4 ],[] ] ],[ 12 ],'IVENTAS_INVENTARIO',[ 4,[ [ [],'Idventa',12 ] ] ],[] ]).
-level_i(3,[ 4,[ [ 4,many ] ],[],[],[ [ [ 4 ],[ 12,54 ] ] ],[ [ [ 4 ],[] ] ],[ 12 ],'IVENTAS_INVENTARIO',[ 4,[ [ [],'Idventa',12 ] ] ],[] ]).
+level_i(2,[ 22,[ [ 22,many ] ],[],[],[ [ [ 22 ],[ 12,54 ] ] ],[ [ [ 22 ],[] ] ],[ 12 ],'IVENTAS_INVENTARIO',[ 22,[ [ [],'Idventa',12 ] ] ],[] ]).
+level_i(3,[ 22,[ [ 22,many ] ],[],[],[ [ [ 22 ],[ 12,54 ] ] ],[ [ [ 22 ],[] ] ],[ 12 ],'IVENTAS_INVENTARIO',[ 22,[ [ [],'Idventa',12 ] ] ],[] ]).
  
 tw_i(2,[]).
 tw_i(3,[]).
@@ -16,8 +16,8 @@ lwi_i(3,[ [] ]).
  
 level_option_i(3,when_none,'GXLvl6').
  
-ta_i(2,[ [ [ 4,12 ],[ 4,54 ] ] ]).
-ta_i(3,[ [ [ 4,12 ],[ 4,54 ] ] ]).
+ta_i(2,[ [ [ 22,12 ],[ 22,54 ] ] ]).
+ta_i(3,[ [ [ 22,12 ],[ 22,54 ] ] ]).
  
 las_i(2,[ [ 'Idventa','Tabcode',12,54 ] ]).
 las_i(3,[ [ 'Idventa','Tabcode',12,54 ] ]).
@@ -136,8 +136,8 @@ rule_i(0,parmio([ [ 'Idventa',in ],[ 'Tabcode',in ] ])).
  
 a_i(1,1,f,'Pgmname',[],[ [],[ t('"ViewVentas_inventario"',3) ] ]).
 a_i(2,1,f,'Err',[],[ [],[ t('0',3) ] ]).
-a_i(3,3,t,4,[],[ [ [ [],'Idventa',12 ] ],'IVENTAS_INVENTARIO',[] ]).
-a_i(4,2,t,4,[],[ [ [ [],'Idventa',12 ] ],'IVENTAS_INVENTARIO',[] ]).
+a_i(3,3,t,22,[],[ [ [ [],'Idventa',12 ] ],'IVENTAS_INVENTARIO',[] ]).
+a_i(4,2,t,22,[],[ [ [ [],'Idventa',12 ] ],'IVENTAS_INVENTARIO',[] ]).
  
 v_i(f,i,1,[]).
 v_i(f,o,1,'Pgmname').
@@ -170,9 +170,9 @@ attri_i('Selectedtabcode',[ 'SelectedTabCode',char,50,0,'',0,'Selected Tab Code'
 attri_i('Tabcode',[ 'TabCode',char,50,0,'',0,'Tab Code','',6 ]).
 attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,'Is Authorized','',5 ]).
  
-table_i(4,[ 'Ventas_inventario',[ 12,54 ],'Ventas_inventario','Ventas_inventario' ]).
+table_i(22,[ 'Ventas_inventario',[ 12,54 ],'Ventas_inventario','Ventas_inventario' ]).
  
-index_i(4,[ 'IVENTAS_INVENTARIO',u,[ 12 ],'IVentas_inventario' ]).
+index_i(22,[ 'IVENTAS_INVENTARIO',u,[ 12 ],'IVentas_inventario' ]).
  
  
  
@@ -709,9 +709,9 @@ att_prop_i(2,12,'VarServiceExtName','',d).
 att_prop_i(2,12,'FullName','IDVENTA',v).
  
  
-tbl_att_prop_i(2,4,12,'AllowNulls',n).
-tbl_att_prop_i(2,4,12,'AUTONUMBER',y).
-tbl_att_prop_i(2,4,54,'AllowNulls',n).
+tbl_att_prop_i(2,22,12,'AllowNulls',n).
+tbl_att_prop_i(2,22,12,'AUTONUMBER',y).
+tbl_att_prop_i(2,22,54,'AllowNulls',n).
  
 var_prop_i(2,'Tabcode',idBasedOn,83,v).
 var_prop_i(2,'Selectedtabcode',idBasedOn,83,v).
@@ -821,16 +821,16 @@ sub_info_i(146,'Start',1,24,[ [ 'Pgmname',12,'Idventa',54,'Tabcode','Loadalltabs
 sub_info_i(146,[ t('Tab',3,26,7),t('Tabchanged',3,26,11) ],26,30,[ [ [ t('Tab',3),t('Activepagecontrolname',3) ],'Loadalltabs','Selectedtabcode','Idventa' ],[ 'Selectedtabcode','Loadalltabs',[ t('Generalwc',3),t('Object',3) ],[ t('Detalle_venta_productowc',3),t('Object',3) ] ] ]).
  
 pgm_parm_i(web,7,'NOTAUTHORIZED',[ [ svchar,256,0,0 ] ],[ [ 'GxObject',in,[] ] ]).
-pgm_parm_i(web,60,'VENTAS_INVENTARIODETALLE_VENTA_PRODUCTOWC',[ [ int,12,0,0 ] ],[ [ 'IDVENTA',in,[] ] ]).
-pgm_parm_i(web,59,'VENTAS_INVENTARIOGENERAL',[ [ int,12,0,0 ] ],[ [ 'IDVENTA',in,[] ] ]).
-pgm_parm_i(web,12,'WWVENTAS_INVENTARIO',[],[]).
+pgm_parm_i(web,106,'VENTAS_INVENTARIODETALLE_VENTA_PRODUCTOWC',[ [ int,12,0,0 ] ],[ [ 'IDVENTA',in,[] ] ]).
+pgm_parm_i(web,105,'VENTAS_INVENTARIOGENERAL',[ [ int,12,0,0 ] ],[ [ 'IDVENTA',in,[] ] ]).
+pgm_parm_i(web,104,'WWVENTAS_INVENTARIO',[],[]).
 pgm_parm_i(proc,12,'ISAUTHORIZED',[ [ svchar,256,0,0 ],[ boolean,4,0,0 ] ],[ [ 'GxObject',in,[] ],[ 'Authorized',out,[] ] ]).
  
-pgm_callprotocol_i(web,33,'VIEWVENTAS_INVENTARIO','INTERNAL','Secure').
+pgm_callprotocol_i(web,103,'VIEWVENTAS_INVENTARIO','INTERNAL','Secure').
 pgm_callprotocol_i(web,7,'NOTAUTHORIZED','INTERNAL','Secure').
-pgm_callprotocol_i(web,60,'VENTAS_INVENTARIODETALLE_VENTA_PRODUCTOWC','INTERNAL','Secure').
-pgm_callprotocol_i(web,59,'VENTAS_INVENTARIOGENERAL','INTERNAL','Secure').
-pgm_callprotocol_i(web,12,'WWVENTAS_INVENTARIO','INTERNAL','Secure').
+pgm_callprotocol_i(web,106,'VENTAS_INVENTARIODETALLE_VENTA_PRODUCTOWC','INTERNAL','Secure').
+pgm_callprotocol_i(web,105,'VENTAS_INVENTARIOGENERAL','INTERNAL','Secure').
+pgm_callprotocol_i(web,104,'WWVENTAS_INVENTARIO','INTERNAL','Secure').
 pgm_callprotocol_i(proc,12,'ISAUTHORIZED','INTERNAL','Secure').
  
  

@@ -893,16 +893,16 @@ sub_info_i(146,'Start',1,24,[ [ 'Pgmname',1,'Idempleado',23,'Tabcode','Loadallta
 sub_info_i(146,[ t('Tab',3,26,7),t('Tabchanged',3,26,11) ],26,30,[ [ [ t('Tab',3),t('Activepagecontrolname',3) ],'Loadalltabs','Selectedtabcode','Idempleado' ],[ 'Selectedtabcode','Loadalltabs',[ t('Generalwc',3),t('Object',3) ],[ t('Compra_inventariowc',3),t('Object',3) ],[ t('Ventas_inventariowc',3),t('Object',3) ] ] ]).
  
 pgm_parm_i(web,7,'NOTAUTHORIZED',[ [ svchar,256,0,0 ] ],[ [ 'GxObject',in,[] ] ]).
-pgm_parm_i(web,36,'EMPLEADOSVENTAS_INVENTARIOWC',[ [ int,12,0,0 ] ],[ [ 'IDEMPLEADO',in,[] ] ]).
-pgm_parm_i(web,35,'EMPLEADOSCOMPRA_INVENTARIOWC',[ [ int,12,0,0 ] ],[ [ 'IDEMPLEADO',in,[] ] ]).
+pgm_parm_i(web,110,'EMPLEADOSVENTAS_INVENTARIOWC',[ [ int,12,0,0 ] ],[ [ 'IDEMPLEADO',in,[] ] ]).
+pgm_parm_i(web,98,'EMPLEADOSCOMPRA_INVENTARIOWC',[ [ int,12,0,0 ] ],[ [ 'IDEMPLEADO',in,[] ] ]).
 pgm_parm_i(web,34,'EMPLEADOSGENERAL',[ [ int,12,0,0 ] ],[ [ 'IDEMPLEADO',in,[] ] ]).
 pgm_parm_i(web,10,'WWEMPLEADOS',[],[]).
 pgm_parm_i(proc,12,'ISAUTHORIZED',[ [ svchar,256,0,0 ],[ boolean,4,0,0 ] ],[ [ 'GxObject',in,[] ],[ 'Authorized',out,[] ] ]).
  
 pgm_callprotocol_i(web,22,'VIEWEMPLEADOS','INTERNAL','Secure').
 pgm_callprotocol_i(web,7,'NOTAUTHORIZED','INTERNAL','Secure').
-pgm_callprotocol_i(web,36,'EMPLEADOSVENTAS_INVENTARIOWC','INTERNAL','Secure').
-pgm_callprotocol_i(web,35,'EMPLEADOSCOMPRA_INVENTARIOWC','INTERNAL','Secure').
+pgm_callprotocol_i(web,110,'EMPLEADOSVENTAS_INVENTARIOWC','INTERNAL','Secure').
+pgm_callprotocol_i(web,98,'EMPLEADOSCOMPRA_INVENTARIOWC','INTERNAL','Secure').
 pgm_callprotocol_i(web,34,'EMPLEADOSGENERAL','INTERNAL','Secure').
 pgm_callprotocol_i(web,10,'WWEMPLEADOS','INTERNAL','Secure').
 pgm_callprotocol_i(proc,12,'ISAUTHORIZED','INTERNAL','Secure').

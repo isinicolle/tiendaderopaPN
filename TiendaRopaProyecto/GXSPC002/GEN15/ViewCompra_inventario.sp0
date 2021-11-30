@@ -1,10 +1,10 @@
-spec_i([ web,32,'View Compra_inventario','ViewCompra_inventario',0,eng,'17_0_5-152925' ]).
+spec_i([ web,94,'View Compra_inventario','ViewCompra_inventario',0,eng,'17_0_5-152925' ]).
  
 struct_i(2,1,[ 'Pgmname','Exists','GXLvl6' ],[]).
 struct_i(3,1,[],[]).
  
-level_i(2,[ 2,[ [ 2,many ] ],[],[],[ [ [ 2 ],[ 11,50 ] ] ],[ [ [ 2 ],[] ] ],[ 11 ],'ICOMPRA_INVENTARIO',[ 2,[ [ [],'Idcompra',11 ] ] ],[] ]).
-level_i(3,[ 2,[ [ 2,many ] ],[],[],[ [ [ 2 ],[ 11,50 ] ] ],[ [ [ 2 ],[] ] ],[ 11 ],'ICOMPRA_INVENTARIO',[ 2,[ [ [],'Idcompra',11 ] ] ],[] ]).
+level_i(2,[ 19,[ [ 19,many ] ],[],[],[ [ [ 19 ],[ 11,50 ] ] ],[ [ [ 19 ],[] ] ],[ 11 ],'ICOMPRA_INVENTARIO',[ 19,[ [ [],'Idcompra',11 ] ] ],[] ]).
+level_i(3,[ 19,[ [ 19,many ] ],[],[],[ [ [ 19 ],[ 11,50 ] ] ],[ [ [ 19 ],[] ] ],[ 11 ],'ICOMPRA_INVENTARIO',[ 19,[ [ [],'Idcompra',11 ] ] ],[] ]).
  
 tw_i(2,[]).
 tw_i(3,[]).
@@ -16,8 +16,8 @@ lwi_i(3,[ [] ]).
  
 level_option_i(3,when_none,'GXLvl6').
  
-ta_i(2,[ [ [ 2,11 ],[ 2,50 ] ] ]).
-ta_i(3,[ [ [ 2,11 ],[ 2,50 ] ] ]).
+ta_i(2,[ [ [ 19,11 ],[ 19,50 ] ] ]).
+ta_i(3,[ [ [ 19,11 ],[ 19,50 ] ] ]).
  
 las_i(2,[ [ 'Idcompra','Tabcode',11,50 ] ]).
 las_i(3,[ [ 'Idcompra','Tabcode',11,50 ] ]).
@@ -136,8 +136,8 @@ rule_i(0,parmio([ [ 'Idcompra',in ],[ 'Tabcode',in ] ])).
  
 a_i(1,1,f,'Pgmname',[],[ [],[ t('"ViewCompra_inventario"',3) ] ]).
 a_i(2,1,f,'Err',[],[ [],[ t('0',3) ] ]).
-a_i(3,3,t,2,[],[ [ [ [],'Idcompra',11 ] ],'ICOMPRA_INVENTARIO',[] ]).
-a_i(4,2,t,2,[],[ [ [ [],'Idcompra',11 ] ],'ICOMPRA_INVENTARIO',[] ]).
+a_i(3,3,t,19,[],[ [ [ [],'Idcompra',11 ] ],'ICOMPRA_INVENTARIO',[] ]).
+a_i(4,2,t,19,[],[ [ [ [],'Idcompra',11 ] ],'ICOMPRA_INVENTARIO',[] ]).
  
 v_i(f,i,1,[]).
 v_i(f,o,1,'Pgmname').
@@ -170,9 +170,9 @@ attri_i('Selectedtabcode',[ 'SelectedTabCode',char,50,0,'',0,'Selected Tab Code'
 attri_i('Tabcode',[ 'TabCode',char,50,0,'',0,'Tab Code','',6 ]).
 attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,'Is Authorized','',5 ]).
  
-table_i(2,[ 'Compra_inventario',[ 11,50 ],'Compra_inventario','Compra_inventario' ]).
+table_i(19,[ 'Compra_inventario',[ 11,50 ],'Compra_inventario','Compra_inventario' ]).
  
-index_i(2,[ 'ICOMPRA_INVENTARIO',u,[ 11 ],'ICompra_inventario' ]).
+index_i(19,[ 'ICOMPRA_INVENTARIO',u,[ 11 ],'ICompra_inventario' ]).
  
  
  
@@ -707,9 +707,9 @@ att_prop_i(2,11,'VarServiceExtName','',d).
 att_prop_i(2,11,'FullName','IDCOMPRA',v).
  
  
-tbl_att_prop_i(2,2,11,'AllowNulls',n).
-tbl_att_prop_i(2,2,11,'AUTONUMBER',y).
-tbl_att_prop_i(2,2,50,'AllowNulls',n).
+tbl_att_prop_i(2,19,11,'AllowNulls',n).
+tbl_att_prop_i(2,19,11,'AUTONUMBER',y).
+tbl_att_prop_i(2,19,50,'AllowNulls',n).
  
 var_prop_i(2,'Tabcode',idBasedOn,83,v).
 var_prop_i(2,'Selectedtabcode',idBasedOn,83,v).
@@ -819,16 +819,16 @@ sub_info_i(146,'Start',1,24,[ [ 'Pgmname',11,'Idcompra',50,'Tabcode','Loadalltab
 sub_info_i(146,[ t('Tab',3,26,7),t('Tabchanged',3,26,11) ],26,30,[ [ [ t('Tab',3),t('Activepagecontrolname',3) ],'Loadalltabs','Selectedtabcode','Idcompra' ],[ 'Selectedtabcode','Loadalltabs',[ t('Generalwc',3),t('Object',3) ],[ t('Detalle_compra_productowc',3),t('Object',3) ] ] ]).
  
 pgm_parm_i(web,7,'NOTAUTHORIZED',[ [ svchar,256,0,0 ] ],[ [ 'GxObject',in,[] ] ]).
-pgm_parm_i(web,58,'COMPRA_INVENTARIODETALLE_COMPRA_PRODUCTOWC',[ [ int,12,0,0 ] ],[ [ 'IDCOMPRA',in,[] ] ]).
-pgm_parm_i(web,57,'COMPRA_INVENTARIOGENERAL',[ [ int,12,0,0 ] ],[ [ 'IDCOMPRA',in,[] ] ]).
-pgm_parm_i(web,11,'WWCOMPRA_INVENTARIO',[],[]).
+pgm_parm_i(web,102,'COMPRA_INVENTARIODETALLE_COMPRA_PRODUCTOWC',[ [ int,12,0,0 ] ],[ [ 'IDCOMPRA',in,[] ] ]).
+pgm_parm_i(web,96,'COMPRA_INVENTARIOGENERAL',[ [ int,12,0,0 ] ],[ [ 'IDCOMPRA',in,[] ] ]).
+pgm_parm_i(web,95,'WWCOMPRA_INVENTARIO',[],[]).
 pgm_parm_i(proc,12,'ISAUTHORIZED',[ [ svchar,256,0,0 ],[ boolean,4,0,0 ] ],[ [ 'GxObject',in,[] ],[ 'Authorized',out,[] ] ]).
  
-pgm_callprotocol_i(web,32,'VIEWCOMPRA_INVENTARIO','INTERNAL','Secure').
+pgm_callprotocol_i(web,94,'VIEWCOMPRA_INVENTARIO','INTERNAL','Secure').
 pgm_callprotocol_i(web,7,'NOTAUTHORIZED','INTERNAL','Secure').
-pgm_callprotocol_i(web,58,'COMPRA_INVENTARIODETALLE_COMPRA_PRODUCTOWC','INTERNAL','Secure').
-pgm_callprotocol_i(web,57,'COMPRA_INVENTARIOGENERAL','INTERNAL','Secure').
-pgm_callprotocol_i(web,11,'WWCOMPRA_INVENTARIO','INTERNAL','Secure').
+pgm_callprotocol_i(web,102,'COMPRA_INVENTARIODETALLE_COMPRA_PRODUCTOWC','INTERNAL','Secure').
+pgm_callprotocol_i(web,96,'COMPRA_INVENTARIOGENERAL','INTERNAL','Secure').
+pgm_callprotocol_i(web,95,'WWCOMPRA_INVENTARIO','INTERNAL','Secure').
 pgm_callprotocol_i(proc,12,'ISAUTHORIZED','INTERNAL','Secure').
  
  

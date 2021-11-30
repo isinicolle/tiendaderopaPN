@@ -893,7 +893,7 @@ sub_info_i(146,'Start',1,24,[ [ 'Pgmname',10,'Idproveedor',46,'Tabcode','Loadall
 sub_info_i(146,[ t('Tab',3,26,7),t('Tabchanged',3,26,11) ],26,30,[ [ [ t('Tab',3),t('Activepagecontrolname',3) ],'Loadalltabs','Selectedtabcode','Idproveedor' ],[ 'Selectedtabcode','Loadalltabs',[ t('Generalwc',3),t('Object',3) ],[ t('Tipo_proveedorwc',3),t('Object',3) ],[ t('Compra_inventariowc',3),t('Object',3) ] ] ]).
  
 pgm_parm_i(web,7,'NOTAUTHORIZED',[ [ svchar,256,0,0 ] ],[ [ 'GxObject',in,[] ] ]).
-pgm_parm_i(web,54,'PROVEEDORESCOMPRA_INVENTARIOWC',[ [ int,12,0,0 ] ],[ [ 'IDPROVEEDOR',in,[] ] ]).
+pgm_parm_i(web,100,'PROVEEDORESCOMPRA_INVENTARIOWC',[ [ int,12,0,0 ] ],[ [ 'IDPROVEEDOR',in,[] ] ]).
 pgm_parm_i(web,53,'PROVEEDORESTIPO_PROVEEDORWC',[ [ int,12,0,0 ] ],[ [ 'IDPROVEEDOR',in,[] ] ]).
 pgm_parm_i(web,52,'PROVEEDORESGENERAL',[ [ int,12,0,0 ] ],[ [ 'IDPROVEEDOR',in,[] ] ]).
 pgm_parm_i(web,20,'WWPROVEEDORES',[],[]).
@@ -901,7 +901,7 @@ pgm_parm_i(proc,12,'ISAUTHORIZED',[ [ svchar,256,0,0 ],[ boolean,4,0,0 ] ],[ [ '
  
 pgm_callprotocol_i(web,31,'VIEWPROVEEDORES','INTERNAL','Secure').
 pgm_callprotocol_i(web,7,'NOTAUTHORIZED','INTERNAL','Secure').
-pgm_callprotocol_i(web,54,'PROVEEDORESCOMPRA_INVENTARIOWC','INTERNAL','Secure').
+pgm_callprotocol_i(web,100,'PROVEEDORESCOMPRA_INVENTARIOWC','INTERNAL','Secure').
 pgm_callprotocol_i(web,53,'PROVEEDORESTIPO_PROVEEDORWC','INTERNAL','Secure').
 pgm_callprotocol_i(web,52,'PROVEEDORESGENERAL','INTERNAL','Secure').
 pgm_callprotocol_i(web,20,'WWPROVEEDORES','INTERNAL','Secure').

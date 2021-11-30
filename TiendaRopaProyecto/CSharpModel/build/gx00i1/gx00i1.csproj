@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	
+
+	<PropertyGroup>
+		<AssemblyName>gx00i1</AssemblyName>
+		<ProjectGuid>{8a572a75-a39d-4409-97e6-0868e38c12c1}</ProjectGuid>
+		<OutputType>Library</OutputType>
+		<PostgresqlSupport>false</PostgresqlSupport>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include=".\..\GeneXus.Programs.Common\GeneXus.Programs.Common.csproj" />
+
+	</ItemGroup>
+
+	<ItemGroup>
+
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include = "$(WebDirectory)\gx00i1.cs" />
+
+	</ItemGroup>
+	
+	<Import Project="..\DotNetBaseProject.targets"/>
+</Project>

@@ -4,12 +4,12 @@
 <Object>
 <ObjClsGuid>c9584656-94b6-4ccd-890f-332d11fc2c25</ObjClsGuid>
 <ObjCls>13</ObjCls>
-<ObjId>32</ObjId>
+<ObjId>94</ObjId>
 <ObjName>ViewCompra_inventario</ObjName>
 <ObjDesc>View Compra_inventario</ObjDesc>
 <ObjPgmName>ViewCompra_inventario</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>
@@ -49,7 +49,7 @@
 <LevelBeginRow>6</LevelBeginRow>
 <BaseTable>
 <Table>
-<TableId>2</TableId>
+<TableId>19</TableId>
 <TableName>Compra_inventario</TableName>
 <Description>Compra_inventario</Description></Table></BaseTable>
 <Order>
@@ -88,7 +88,7 @@
 <NonOptimizedWhere></NonOptimizedWhere>
 <NavigationTree>
 <Table>
-<TableId>2</TableId>
+<TableId>19</TableId>
 <TableName>Compra_inventario</TableName>
 <Description>Compra_inventario</Description>
 <RecordsToRead>many</RecordsToRead>
@@ -114,7 +114,7 @@
 <LevelBeginRow>0</LevelBeginRow>
 <BaseTable>
 <Table>
-<TableId>2</TableId>
+<TableId>19</TableId>
 <TableName>Compra_inventario</TableName>
 <Description>Compra_inventario</Description></Table></BaseTable>
 <Order>
@@ -153,7 +153,7 @@
 <NonOptimizedWhere></NonOptimizedWhere>
 <NavigationTree>
 <Table>
-<TableId>2</TableId>
+<TableId>19</TableId>
 <TableName>Compra_inventario</TableName>
 <Description>Compra_inventario</Description>
 <RecordsToRead>many</RecordsToRead>

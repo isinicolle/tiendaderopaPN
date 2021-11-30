@@ -9,7 +9,7 @@
 <ObjDesc>Estado_empleadoes</ObjDesc>
 <ObjPgmName>WWEstado_empleado</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings>
 <Warning>
 <MsgCode>spc0038</MsgCode>

@@ -225,7 +225,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 1152180), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 1152180), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?202111280105513", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?2021113012542693", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -1168,7 +1168,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202111280105533", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?2021113012542710", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1184,7 +1184,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("viewproveedores.js", "?202111280105533", false, true);
+         context.AddJavascriptSource("viewproveedores.js", "?2021113012542710", false, true);
          context.AddJavascriptSource("Shared/HistoryManager/HistoryManager.js", "", false, true);
          context.AddJavascriptSource("Shared/HistoryManager/rsh/json2005.js", "", false, true);
          context.AddJavascriptSource("Shared/HistoryManager/rsh/rsh.js", "", false, true);

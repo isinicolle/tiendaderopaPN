@@ -9,7 +9,7 @@
 <ObjDesc>Proveedores</ObjDesc>
 <ObjPgmName>Proveedores</ObjPgmName>
 <ObjClsName>Transaction</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>
@@ -115,7 +115,7 @@
 <AfterDeleteRules></AfterDeleteRules>
 <TablesToControlOnDelete>
 <Table>
-<TableId>2</TableId>
+<TableId>19</TableId>
 <TableName>Compra_inventario</TableName>
 <Description>Compra_inventario</Description>
 <RecordsToRead>one</RecordsToRead>

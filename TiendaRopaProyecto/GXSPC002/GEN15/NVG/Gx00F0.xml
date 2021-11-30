@@ -9,7 +9,7 @@
 <ObjDesc>Selection List Tipo_proveedor</ObjDesc>
 <ObjPgmName>Gx00F0</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>

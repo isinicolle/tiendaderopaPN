@@ -9,7 +9,7 @@
 <ObjDesc>Estado_empleado</ObjDesc>
 <ObjPgmName>Estado_empleado</ObjPgmName>
 <ObjClsName>Transaction</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>

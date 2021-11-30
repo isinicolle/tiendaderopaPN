@@ -1,11 +1,9 @@
-current_obj_i(2,web,12).
+current_obj_i(2,web,104).
  
-current_guid('9ae9b96f-f7b3-4a62-b452-ff136912f8a5').
- 
- 
-called_tree_i(13,12,1,12).
+current_guid('fc232e4b-e80e-4be0-94ad-309ce33a0414').
  
  
+called_tree_i(13,104,1,12).
  
  
  
@@ -22,7 +20,9 @@ called_tree_i(13,12,1,12).
  
  
  
-ij_object_dependency(wwventas_inventario,[],[],[],12).
+ 
+ 
+ij_object_dependency(wwventas_inventario,[],[],[],104).
  
  
 obj_parms_i([],[]).

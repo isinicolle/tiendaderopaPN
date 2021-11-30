@@ -1,0 +1,3 @@
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\web\bin\inventariolevel1wc.dll
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\build\inventariolevel1wc\obj\Release\inventariolevel1wc.csprojResolveAssemblyReference.cache
+C:\Users\bryan\Documents\GitHub\tiendaderopaPN\TiendaRopaProyecto\CSharpModel\build\inventariolevel1wc\obj\Release\inventariolevel1wc.dll

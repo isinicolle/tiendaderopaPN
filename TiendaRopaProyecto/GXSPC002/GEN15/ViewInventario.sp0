@@ -29,8 +29,8 @@ lac_i(3,[ [] ]).
 lits_i('Inventario Information',5,10).
 lits_i('Inventarios',5,10).
 lits_i('General',5,10).
-lits_i('Ventas_inventario',5,10).
 lits_i('Compra_inventario',5,10).
+lits_i('Ventas_inventario',5,10).
  
 cls_i([ 0,0 ],[ 5,254 ]).
  
@@ -253,11 +253,11 @@ b_line_i(32,2,5,cmd,8,[ t('',143,32,0),t('''LOAD TAB''',3,32,5) ]).
 b_line_i(33,2,6,cmd,8,[ t('',109,33,0),t('Loadalltabs',23,8,5),t('.OR.',9,8,18),t('Selectedtabcode',23,8,23),t(=,10,8,40),t('''''',3,33,42),t('.OR.',9,8,45),t('Selectedtabcode',23,8,49),t(=,10,8,66),t('"General"',3,33,68) ]).
 b_line_i(34,2,6,cmd,8,[ t('',107,34,0),t([ t('Generalwc',3,8,0),t('Object',3,8,0) ],29,8,0),t(=,10,8,0),t('create(',1,8,0),t(o(13,'InventarioGeneral'),28,8,0),t(',',7,8,0),t('Idproducto',23,8,0),t(')',4,8,0) ]).
 b_line_i(35,2,6,cmd,8,[ t('',111,35,0) ]).
-b_line_i(36,2,6,cmd,8,[ t('',109,36,0),t('Loadalltabs',23,8,5),t('.OR.',9,8,18),t('Selectedtabcode',23,8,23),t(=,10,8,40),t('"Detalle_venta_producto"',3,36,42) ]).
-b_line_i(37,2,6,cmd,8,[ t('',107,37,0),t([ t('Detalle_venta_productowc',3,8,0),t('Object',3,8,0) ],29,8,0),t(=,10,8,0),t('create(',1,8,0),t(o(13,'InventarioDetalle_venta_productoWC'),28,8,0),t(',',7,8,0),t('Idproducto',23,8,0),t(')',4,8,0) ]).
+b_line_i(36,2,6,cmd,8,[ t('',109,36,0),t('Loadalltabs',23,8,5),t('.OR.',9,8,18),t('Selectedtabcode',23,8,23),t(=,10,8,40),t('"Detalle_compra_producto"',3,36,42) ]).
+b_line_i(37,2,6,cmd,8,[ t('',107,37,0),t([ t('Detalle_compra_productowc',3,8,0),t('Object',3,8,0) ],29,8,0),t(=,10,8,0),t('create(',1,8,0),t(o(13,'InventarioDetalle_compra_productoWC'),28,8,0),t(',',7,8,0),t('Idproducto',23,8,0),t(')',4,8,0) ]).
 b_line_i(38,2,6,cmd,8,[ t('',111,38,0) ]).
-b_line_i(39,2,6,cmd,8,[ t('',109,39,0),t('Loadalltabs',23,8,5),t('.OR.',9,8,18),t('Selectedtabcode',23,8,23),t(=,10,8,40),t('"Detalle_compra_producto"',3,39,42) ]).
-b_line_i(40,2,6,cmd,8,[ t('',107,40,0),t([ t('Detalle_compra_productowc',3,8,0),t('Object',3,8,0) ],29,8,0),t(=,10,8,0),t('create(',1,8,0),t(o(13,'InventarioDetalle_compra_productoWC'),28,8,0),t(',',7,8,0),t('Idproducto',23,8,0),t(')',4,8,0) ]).
+b_line_i(39,2,6,cmd,8,[ t('',109,39,0),t('Loadalltabs',23,8,5),t('.OR.',9,8,18),t('Selectedtabcode',23,8,23),t(=,10,8,40),t('"Detalle_venta_producto"',3,39,42) ]).
+b_line_i(40,2,6,cmd,8,[ t('',107,40,0),t([ t('Detalle_venta_productowc',3,8,0),t('Object',3,8,0) ],29,8,0),t(=,10,8,0),t('create(',1,8,0),t(o(13,'InventarioDetalle_venta_productoWC'),28,8,0),t(',',7,8,0),t('Idproducto',23,8,0),t(')',4,8,0) ]).
 b_line_i(41,2,6,cmd,8,[ t('',111,41,0) ]).
 b_line_i(42,2,6,cmd,8,[ t('',144,42,0) ]).
 b_line_i(1000,2,6,cmd,0,[ t('',146,0,0),t('Load',3,0,0) ]).
@@ -309,18 +309,18 @@ html_sub_i(27,28,html_i(0,div(28))).
 html_sub_i(28,29,html_i(0,div(29))).
 html_sub_i(29,30,html_i(0,comp(webcomp))).
 html_sub_i(22,31,html_i(2,container(31))).
-html_sub_i(31,32,html_i(0,t('Ventas_inventario',3))).
+html_sub_i(31,32,html_i(0,t('Compra_inventario',3))).
 html_sub_i(31,33,html_i(1,div(33))).
-html_sub_i(33,0,html_i(0,html('Detalle_venta_producto'))).
+html_sub_i(33,0,html_i(0,html('Detalle_compra_producto'))).
 html_sub_i(22,34,html_i(3,container(34))).
 html_sub_i(34,35,html_i(0,div(35))).
 html_sub_i(35,36,html_i(0,div(36))).
 html_sub_i(36,37,html_i(0,div(37))).
 html_sub_i(37,38,html_i(0,comp(webcomp))).
 html_sub_i(22,39,html_i(4,container(39))).
-html_sub_i(39,40,html_i(0,t('Compra_inventario',3))).
+html_sub_i(39,40,html_i(0,t('Ventas_inventario',3))).
 html_sub_i(39,41,html_i(1,div(41))).
-html_sub_i(41,0,html_i(0,html('Detalle_compra_producto'))).
+html_sub_i(41,0,html_i(0,html('Detalle_venta_producto'))).
 html_sub_i(22,42,html_i(5,container(42))).
 html_sub_i(42,43,html_i(0,div(43))).
 html_sub_i(43,44,html_i(0,div(44))).
@@ -599,8 +599,8 @@ html_comp_i(30,'Controlname','Generalwc',v,[ str ]).
 html_comp_i(30,'Params',[],v,[ params ]).
 html_comp_i(31,'Containerid',title2,v,[ str ]).
 html_comp_i(32,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(32,'Caption','Ventas_inventario',d,[ str ]).
-html_comp_i(32,'Id','Detalle_venta_producto_title',v,[ str ]).
+html_comp_i(32,'Caption','Compra_inventario',d,[ str ]).
+html_comp_i(32,'Id','Detalle_compra_producto_title',v,[ str ]).
 html_comp_i(32,'Class','TextBlock',d,[ str ]).
 html_comp_i(32,'Event','',d,[ str ]).
 html_comp_i(32,'Returnonclick',0,d,[ bool ]).
@@ -621,7 +621,7 @@ html_comp_i(33,'Valign',top,d,[ str ]).
 html_comp_i(34,'Containerid',panel2,v,[ str ]).
 html_comp_i(35,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(35,'Class','TabsFormContainer',v,[ str ]).
-html_comp_i(35,'Id','Tabledetalle_venta_producto',v,[ str ]).
+html_comp_i(35,'Id','Tabledetalle_compra_producto',v,[ str ]).
 html_comp_i(35,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(35,'Width',measure(0,px),d,[ measure ]).
 html_comp_i(35,'Semanticcontent',div,d,[ str ]).
@@ -644,12 +644,12 @@ html_comp_i(37,'Semanticcontent',div,d,[ str ]).
 html_comp_i(37,'Align',left,d,[ str ]).
 html_comp_i(37,'Valign',top,d,[ str ]).
 html_comp_i(38,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(38,'Controlname','Detalle_venta_productowc',v,[ str ]).
+html_comp_i(38,'Controlname','Detalle_compra_productowc',v,[ str ]).
 html_comp_i(38,'Params',[],v,[ params ]).
 html_comp_i(39,'Containerid',title3,v,[ str ]).
 html_comp_i(40,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(40,'Caption','Compra_inventario',d,[ str ]).
-html_comp_i(40,'Id','Detalle_compra_producto_title',v,[ str ]).
+html_comp_i(40,'Caption','Ventas_inventario',d,[ str ]).
+html_comp_i(40,'Id','Detalle_venta_producto_title',v,[ str ]).
 html_comp_i(40,'Class','TextBlock',d,[ str ]).
 html_comp_i(40,'Event','',d,[ str ]).
 html_comp_i(40,'Returnonclick',0,d,[ bool ]).
@@ -670,7 +670,7 @@ html_comp_i(41,'Valign',top,d,[ str ]).
 html_comp_i(42,'Containerid',panel3,v,[ str ]).
 html_comp_i(43,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(43,'Class','TabsFormContainer',v,[ str ]).
-html_comp_i(43,'Id','Tabledetalle_compra_producto',v,[ str ]).
+html_comp_i(43,'Id','Tabledetalle_venta_producto',v,[ str ]).
 html_comp_i(43,'Height',measure(0,px),d,[ measure ]).
 html_comp_i(43,'Width',measure(0,px),d,[ measure ]).
 html_comp_i(43,'Semanticcontent',div,d,[ str ]).
@@ -693,7 +693,7 @@ html_comp_i(45,'Semanticcontent',div,d,[ str ]).
 html_comp_i(45,'Align',left,d,[ str ]).
 html_comp_i(45,'Valign',top,d,[ str ]).
 html_comp_i(46,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(46,'Controlname','Detalle_compra_productowc',v,[ str ]).
+html_comp_i(46,'Controlname','Detalle_venta_productowc',v,[ str ]).
 html_comp_i(46,'Params',[],v,[ params ]).
  
  
@@ -726,18 +726,18 @@ lit_i(30,1,comp(webcomp),[ ctlname('Generalwc'),width(0),rect(0,0,10,10),title('
 lit_i(29,1,div(29),[ ctlname('') ]).
 lit_i(28,1,div(28),[ ctlname('') ]).
 lit_i(27,1,div(27),[ ctlname('Tablegeneral') ]).
-lit_i(32,1,t('Ventas_inventario',3),[ ctlname('Detalle_venta_producto_title') ]).
+lit_i(32,1,t('Compra_inventario',3),[ ctlname('Detalle_compra_producto_title') ]).
 lit_i(33,1,div(33),[ ctlname('') ]).
-lit_i(38,1,comp(webcomp),[ ctlname('Detalle_venta_productowc'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(38,1,comp(webcomp),[ ctlname('Detalle_compra_productowc'),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(37,1,div(37),[ ctlname('') ]).
 lit_i(36,1,div(36),[ ctlname('') ]).
-lit_i(35,1,div(35),[ ctlname('Tabledetalle_venta_producto') ]).
-lit_i(40,1,t('Compra_inventario',3),[ ctlname('Detalle_compra_producto_title') ]).
+lit_i(35,1,div(35),[ ctlname('Tabledetalle_compra_producto') ]).
+lit_i(40,1,t('Ventas_inventario',3),[ ctlname('Detalle_venta_producto_title') ]).
 lit_i(41,1,div(41),[ ctlname('') ]).
-lit_i(46,1,comp(webcomp),[ ctlname('Detalle_compra_productowc'),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(46,1,comp(webcomp),[ ctlname('Detalle_venta_productowc'),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(45,1,div(45),[ ctlname('') ]).
 lit_i(44,1,div(44),[ ctlname('') ]).
-lit_i(43,1,div(43),[ ctlname('Tabledetalle_compra_producto') ]).
+lit_i(43,1,div(43),[ ctlname('Tabledetalle_venta_producto') ]).
 lit_i(22,1,usercontrol(22),[ ctlname('Tab'),ctrltype(tab),el([]),containers([ container(23),container(26),container(31),container(34),container(39),container(42) ]) ]).
 lit_i(21,1,div(21),[ ctlname('') ]).
 lit_i(20,1,div(20),[ ctlname('') ]).
@@ -888,20 +888,20 @@ struct_dt_elem_i([ 26,55,82 ],4,pic,'99/99/99').
  
  
  
-sub_info_i(146,'Start',1,24,[ [ 'Pgmname',7,'Idproducto',40,'Tabcode','Loadalltabs','Selectedtabcode' ],[ [ t('Form',3),t('Caption',3) ],[ t('Viewall',3),t('Link',3) ],[ t('Viewall',3),t('Visible',3) ],'Loadalltabs','Selectedtabcode',[ t('Tab',3),t('Activepagecontrolname',3) ],[ t('Generalwc',3),t('Object',3) ],[ t('Detalle_venta_productowc',3),t('Object',3) ],[ t('Detalle_compra_productowc',3),t('Object',3) ] ] ]).
-sub_info_i(146,[ t('Tab',3,26,7),t('Tabchanged',3,26,11) ],26,30,[ [ [ t('Tab',3),t('Activepagecontrolname',3) ],'Loadalltabs','Selectedtabcode','Idproducto' ],[ 'Selectedtabcode','Loadalltabs',[ t('Generalwc',3),t('Object',3) ],[ t('Detalle_venta_productowc',3),t('Object',3) ],[ t('Detalle_compra_productowc',3),t('Object',3) ] ] ]).
+sub_info_i(146,'Start',1,24,[ [ 'Pgmname',7,'Idproducto',40,'Tabcode','Loadalltabs','Selectedtabcode' ],[ [ t('Form',3),t('Caption',3) ],[ t('Viewall',3),t('Link',3) ],[ t('Viewall',3),t('Visible',3) ],'Loadalltabs','Selectedtabcode',[ t('Tab',3),t('Activepagecontrolname',3) ],[ t('Generalwc',3),t('Object',3) ],[ t('Detalle_compra_productowc',3),t('Object',3) ],[ t('Detalle_venta_productowc',3),t('Object',3) ] ] ]).
+sub_info_i(146,[ t('Tab',3,26,7),t('Tabchanged',3,26,11) ],26,30,[ [ [ t('Tab',3),t('Activepagecontrolname',3) ],'Loadalltabs','Selectedtabcode','Idproducto' ],[ 'Selectedtabcode','Loadalltabs',[ t('Generalwc',3),t('Object',3) ],[ t('Detalle_compra_productowc',3),t('Object',3) ],[ t('Detalle_venta_productowc',3),t('Object',3) ] ] ]).
  
 pgm_parm_i(web,7,'NOTAUTHORIZED',[ [ svchar,256,0,0 ] ],[ [ 'GxObject',in,[] ] ]).
-pgm_parm_i(web,45,'INVENTARIODETALLE_COMPRA_PRODUCTOWC',[ [ int,12,0,0 ] ],[ [ 'IDPRODUCTO',in,[] ] ]).
-pgm_parm_i(web,44,'INVENTARIODETALLE_VENTA_PRODUCTOWC',[ [ int,12,0,0 ] ],[ [ 'IDPRODUCTO',in,[] ] ]).
+pgm_parm_i(web,109,'INVENTARIODETALLE_VENTA_PRODUCTOWC',[ [ int,12,0,0 ] ],[ [ 'IDPRODUCTO',in,[] ] ]).
+pgm_parm_i(web,108,'INVENTARIODETALLE_COMPRA_PRODUCTOWC',[ [ int,12,0,0 ] ],[ [ 'IDPRODUCTO',in,[] ] ]).
 pgm_parm_i(web,43,'INVENTARIOGENERAL',[ [ int,12,0,0 ] ],[ [ 'IDPRODUCTO',in,[] ] ]).
 pgm_parm_i(web,16,'WWINVENTARIO',[],[]).
 pgm_parm_i(proc,12,'ISAUTHORIZED',[ [ svchar,256,0,0 ],[ boolean,4,0,0 ] ],[ [ 'GxObject',in,[] ],[ 'Authorized',out,[] ] ]).
  
 pgm_callprotocol_i(web,28,'VIEWINVENTARIO','INTERNAL','Secure').
 pgm_callprotocol_i(web,7,'NOTAUTHORIZED','INTERNAL','Secure').
-pgm_callprotocol_i(web,45,'INVENTARIODETALLE_COMPRA_PRODUCTOWC','INTERNAL','Secure').
-pgm_callprotocol_i(web,44,'INVENTARIODETALLE_VENTA_PRODUCTOWC','INTERNAL','Secure').
+pgm_callprotocol_i(web,109,'INVENTARIODETALLE_VENTA_PRODUCTOWC','INTERNAL','Secure').
+pgm_callprotocol_i(web,108,'INVENTARIODETALLE_COMPRA_PRODUCTOWC','INTERNAL','Secure').
 pgm_callprotocol_i(web,43,'INVENTARIOGENERAL','INTERNAL','Secure').
 pgm_callprotocol_i(web,16,'WWINVENTARIO','INTERNAL','Secure').
 pgm_callprotocol_i(proc,12,'ISAUTHORIZED','INTERNAL','Secure').

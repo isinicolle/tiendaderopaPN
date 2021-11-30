@@ -1,11 +1,9 @@
-current_obj_i(2,web,59).
+current_obj_i(2,web,105).
  
-current_guid('a3d7468c-e5d3-46ad-84db-15397bac3fcc').
- 
- 
-called_tree_i(13,59,1,12).
+current_guid('f4f2020a-f24a-40fa-9ade-b4261281e601').
  
  
+called_tree_i(13,105,1,12).
  
  
  
@@ -22,7 +20,9 @@ called_tree_i(13,59,1,12).
  
  
  
-ij_object_dependency(ventas_inventariogeneral,[],[],[],59).
+ 
+ 
+ij_object_dependency(ventas_inventariogeneral,[],[],[],105).
  
  
 obj_parms_i([ 'long aP0_IDVENTA' ],[ [ 12,in ] ]).

@@ -1,11 +1,9 @@
-current_obj_i(2,web,42).
+current_obj_i(2,web,107).
  
-current_guid('52ede52c-6057-44d8-8863-5cad8b1fd1f9').
- 
- 
-called_tree_i(13,42,1,12).
+current_guid('05efff48-f0b6-48a6-b69c-247939be92cd').
  
  
+called_tree_i(13,107,1,12).
  
  
  
@@ -22,7 +20,9 @@ called_tree_i(13,42,1,12).
  
  
  
-ij_object_dependency(clientesventas_inventariowc,[],[],[],42).
+ 
+ 
+ij_object_dependency(clientesventas_inventariowc,[],[],[],107).
  
  
 obj_parms_i([ 'long aP0_IDCLIENTE' ],[ [ 'Idcliente',in ] ]).

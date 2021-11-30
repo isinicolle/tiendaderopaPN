@@ -9,7 +9,7 @@
 <ObjDesc>Categoria_producto General</ObjDesc>
 <ObjPgmName>Categoria_productoGeneral</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>

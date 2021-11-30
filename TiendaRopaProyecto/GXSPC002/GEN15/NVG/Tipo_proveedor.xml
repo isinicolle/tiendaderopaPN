@@ -9,7 +9,7 @@
 <ObjDesc>Tipo_proveedor</ObjDesc>
 <ObjPgmName>Tipo_proveedor</ObjPgmName>
 <ObjClsName>Transaction</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>

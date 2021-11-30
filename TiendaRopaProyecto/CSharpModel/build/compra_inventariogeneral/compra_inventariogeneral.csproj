@@ -4,7 +4,7 @@
 
 	<PropertyGroup>
 		<AssemblyName>compra_inventariogeneral</AssemblyName>
-		<ProjectGuid>{1d66a8e5-e98f-4a71-9598-47b142ad8c08}</ProjectGuid>
+		<ProjectGuid>{323eaa8d-a571-42c2-97c1-a29bc55a4ca2}</ProjectGuid>
 		<OutputType>Library</OutputType>
 		<PostgresqlSupport>false</PostgresqlSupport>
 	</PropertyGroup>

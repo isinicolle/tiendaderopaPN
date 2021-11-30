@@ -243,7 +243,7 @@ act_info_i(6,[ [ 37 ] ]).
  
 ca_i(6,37).
  
-tbl_to_delete_i(8,[ 4,[ [ 8,4,4 ] ],c,'IVENTAS_INVENTARIO1',0,[ 12 ],'' ]).
+tbl_to_delete_i(8,[ 22,[ [ 8,4,4 ] ],c,'IVENTAS_INVENTARIO1',0,[ 12 ],'' ]).
  
  
  
@@ -269,12 +269,12 @@ attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,'Is Authorized','',8 ])
 attri_i('Idcliente',[ 'IDCLIENTE',int,12,0,'ZZZZZZZZZZZ9',0,'IDCLIENTE','',7 ]).
 attri_i('Mode',[ 'Gx_mode',char,3,0,'@!',1,'','',2 ]).
  
-table_i(4,[ 'Ventas_inventario',[ 12,4 ],'Ventas_inventario','Ventas_inventario' ]).
+table_i(22,[ 'Ventas_inventario',[ 12,4 ],'Ventas_inventario','Ventas_inventario' ]).
 table_i(8,[ 'Clientes',[ 4,30,31,32,33,34,35,36,37,53,40000 ],'Clientes','Clientes' ]).
  
 index_i(8,[ 'ICLIENTES',u,[ 4 ],'IClientes' ]).
-index_i(4,[ 'IVENTAS_INVENTARIO',u,[ 12 ],'IVentas_inventario' ]).
-index_i(4,[ 'IVENTAS_INVENTARIO1',d,[ 4 ],'IVentas_inventario1' ]).
+index_i(22,[ 'IVENTAS_INVENTARIO',u,[ 12 ],'IVentas_inventario' ]).
+index_i(22,[ 'IVENTAS_INVENTARIO1',d,[ 4 ],'IVentas_inventario1' ]).
  
  
  
@@ -1694,9 +1694,9 @@ att_prop_i(2,40000,'AttRegEx','',d).
 att_prop_i(2,40000,'AttValidationFailedMsg','',d).
 att_prop_i(2,40000,'FullName','',v).
  
-tbl_prop_i(2,4,'AllDirSuper',[ [ 8,[ 4 ] ] ],v).
-tbl_prop_i(2,8,'DirSubor',[ [ 4,[ 4 ] ] ],v).
-tbl_prop_i(2,4,'DirSuper',[ [ 8,[ 4 ] ] ],v).
+tbl_prop_i(2,22,'AllDirSuper',[ [ 8,[ 4 ] ] ],v).
+tbl_prop_i(2,8,'DirSubor',[ [ 22,[ 4 ] ] ],v).
+tbl_prop_i(2,22,'DirSuper',[ [ 8,[ 4 ] ] ],v).
  
 tbl_att_prop_i(2,8,34,'AllowNulls',n).
 tbl_att_prop_i(2,8,4,'AllowNulls',n).
@@ -1710,9 +1710,9 @@ tbl_att_prop_i(2,8,36,'AllowNulls',n).
 tbl_att_prop_i(2,8,37,'AllowNulls',n).
 tbl_att_prop_i(2,8,53,'AllowNulls',n).
 tbl_att_prop_i(2,8,40000,'AllowNulls',n).
-tbl_att_prop_i(2,4,12,'AllowNulls',n).
-tbl_att_prop_i(2,4,12,'AUTONUMBER',y).
-tbl_att_prop_i(2,4,4,'AllowNulls',n).
+tbl_att_prop_i(2,22,12,'AllowNulls',n).
+tbl_att_prop_i(2,22,12,'AUTONUMBER',y).
+tbl_att_prop_i(2,22,4,'AllowNulls',n).
  
 var_prop_i(2,'Idcliente',idBasedOn,'',v).
  

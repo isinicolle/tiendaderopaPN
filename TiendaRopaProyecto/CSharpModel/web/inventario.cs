@@ -1942,7 +1942,7 @@ namespace GeneXus.Programs {
             pr_default.execute(19, new Object[] {A7IDPRODUCTO});
             if ( (pr_default.getStatus(19) != 101) )
             {
-               GX_msglist.addItem(context.GetMessage( "GXM_del", new   object[]  {"Compra_producto"}), "CannotDeleteReferencedRecord", 1, "");
+               GX_msglist.addItem(context.GetMessage( "GXM_del", new   object[]  {"Detalle_compra_producto"}), "CannotDeleteReferencedRecord", 1, "");
                AnyError = 1;
             }
             pr_default.close(19);
@@ -2121,7 +2121,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 1152180), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 1152180), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?202111280105281", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?2021113013582772", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -2326,7 +2326,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202111280105290", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?2021113013582780", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -2342,7 +2342,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("inventario.js", "?202111280105290", false, true);
+         context.AddJavascriptSource("inventario.js", "?2021113013582780", false, true);
          /* End function include_jscripts */
       }
 
@@ -2668,9 +2668,9 @@ namespace GeneXus.Programs {
          T000718_A39DESCRIPCIONCATEGORIAPRODUCTO = new string[] {""} ;
          T000719_A44DESCRIPCIONMARCAPRODUCTO = new string[] {""} ;
          T000720_A12IDVENTA = new long[1] ;
-         T000720_A7IDPRODUCTO = new long[1] ;
+         T000720_A66IDDETALLEVENTAPRODUCTO = new long[1] ;
          T000721_A11IDCOMPRA = new long[1] ;
-         T000721_A7IDPRODUCTO = new long[1] ;
+         T000721_A65IDETALLECOMPRAPRODUCTO = new long[1] ;
          T000722_A7IDPRODUCTO = new long[1] ;
          sDynURL = "";
          FormProcess = "";
@@ -2731,10 +2731,10 @@ namespace GeneXus.Programs {
                T000719_A44DESCRIPCIONMARCAPRODUCTO
                }
                , new Object[] {
-               T000720_A12IDVENTA, T000720_A7IDPRODUCTO
+               T000720_A12IDVENTA, T000720_A66IDDETALLEVENTAPRODUCTO
                }
                , new Object[] {
-               T000721_A11IDCOMPRA, T000721_A7IDPRODUCTO
+               T000721_A11IDCOMPRA, T000721_A65IDETALLECOMPRAPRODUCTO
                }
                , new Object[] {
                T000722_A7IDPRODUCTO
@@ -2935,9 +2935,9 @@ namespace GeneXus.Programs {
       private string[] T000718_A39DESCRIPCIONCATEGORIAPRODUCTO ;
       private string[] T000719_A44DESCRIPCIONMARCAPRODUCTO ;
       private long[] T000720_A12IDVENTA ;
-      private long[] T000720_A7IDPRODUCTO ;
+      private long[] T000720_A66IDDETALLEVENTAPRODUCTO ;
       private long[] T000721_A11IDCOMPRA ;
-      private long[] T000721_A7IDPRODUCTO ;
+      private long[] T000721_A65IDETALLECOMPRAPRODUCTO ;
       private long[] T000722_A7IDPRODUCTO ;
       private GXWebForm Form ;
       private SdtTransactionContext AV9TrnContext ;
@@ -3094,8 +3094,8 @@ namespace GeneXus.Programs {
              ,new CursorDef("T000717", "SELECT [DESCRIPCIONESTADOPRODUCTO] FROM [Estado_producto] WHERE [IDESTADOPRODUCTO] = @IDESTADOPRODUCTO ",true, GxErrorMask.GX_NOMASK, false, this,prmT000717,1, GxCacheFrequency.OFF ,true,false )
              ,new CursorDef("T000718", "SELECT [DESCRIPCIONCATEGORIAPRODUCTO] FROM [Categoria_producto] WHERE [IDCATEGORIAPRODUCTO] = @IDCATEGORIAPRODUCTO ",true, GxErrorMask.GX_NOMASK, false, this,prmT000718,1, GxCacheFrequency.OFF ,true,false )
              ,new CursorDef("T000719", "SELECT [DESCRIPCIONMARCAPRODUCTO] FROM [Marca_producto] WHERE [IDMARCAPRODUCTO] = @IDMARCAPRODUCTO ",true, GxErrorMask.GX_NOMASK, false, this,prmT000719,1, GxCacheFrequency.OFF ,true,false )
-             ,new CursorDef("T000720", "SELECT TOP 1 [IDVENTA], [IDPRODUCTO] FROM [Ventas_inventarioDetalle_venta] WHERE [IDPRODUCTO] = @IDPRODUCTO ",true, GxErrorMask.GX_NOMASK, false, this,prmT000720,1, GxCacheFrequency.OFF ,true,true )
-             ,new CursorDef("T000721", "SELECT TOP 1 [IDCOMPRA], [IDPRODUCTO] FROM [Compra_inventarioCompra_produc] WHERE [IDPRODUCTO] = @IDPRODUCTO ",true, GxErrorMask.GX_NOMASK, false, this,prmT000721,1, GxCacheFrequency.OFF ,true,true )
+             ,new CursorDef("T000720", "SELECT TOP 1 [IDVENTA], [IDDETALLEVENTAPRODUCTO] FROM [Ventas_inventarioDetalle_venta] WHERE [IDPRODUCTO] = @IDPRODUCTO ",true, GxErrorMask.GX_NOMASK, false, this,prmT000720,1, GxCacheFrequency.OFF ,true,true )
+             ,new CursorDef("T000721", "SELECT TOP 1 [IDCOMPRA], [IDETALLECOMPRAPRODUCTO] FROM [Compra_inventarioDetalle_compr] WHERE [IDPRODUCTO] = @IDPRODUCTO ",true, GxErrorMask.GX_NOMASK, false, this,prmT000721,1, GxCacheFrequency.OFF ,true,true )
              ,new CursorDef("T000722", "SELECT [IDPRODUCTO] FROM [Inventario] ORDER BY [IDPRODUCTO]  OPTION (FAST 100)",true, GxErrorMask.GX_NOMASK, false, this,prmT000722,100, GxCacheFrequency.OFF ,true,false )
           };
        }

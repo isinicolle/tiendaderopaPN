@@ -1,11 +1,9 @@
-current_obj_i(2,web,60).
+current_obj_i(2,web,106).
  
-current_guid('45240cb3-19a7-4166-9b81-49b05b8037f9').
- 
- 
-called_tree_i(13,60,1,12).
+current_guid('9f43b29b-b7cf-4a9e-9f6e-a08aea6a5c3e').
  
  
+called_tree_i(13,106,1,12).
  
  
  
@@ -22,7 +20,9 @@ called_tree_i(13,60,1,12).
  
  
  
-ij_object_dependency(ventas_inventariodetalle_venta_productowc,[],[],[],60).
+ 
+ 
+ij_object_dependency(ventas_inventariodetalle_venta_productowc,[],[],[],106).
  
  
 obj_parms_i([ 'long aP0_IDVENTA' ],[ [ 'Idventa',in ] ]).

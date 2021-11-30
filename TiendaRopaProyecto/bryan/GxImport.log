@@ -4,6 +4,15 @@
 		<Status>Ok</Status>
 		<Type>00972a17-9975-449e-aab1-d26165d51393</Type>
 		<TypeName>Domain</TypeName>
+		<Name>Codigo</Name>
+		<Errors />
+		<Warnings />
+		<Info />
+	</RowImport>
+	<RowImport>
+		<Status>Ok</Status>
+		<Type>00972a17-9975-449e-aab1-d26165d51393</Type>
+		<TypeName>Domain</TypeName>
 		<Name>Nombre</Name>
 		<Errors />
 		<Warnings />
@@ -11,9 +20,18 @@
 	</RowImport>
 	<RowImport>
 		<Status>Ok</Status>
-		<Type>adbb33c9-0906-4971-833c-998de27e0676</Type>
-		<TypeName>Attribute</TypeName>
-		<Name>USUARIOEMPLEADO</Name>
+		<Type>00972a17-9975-449e-aab1-d26165d51393</Type>
+		<TypeName>Domain</TypeName>
+		<Name>Cantidad</Name>
+		<Errors />
+		<Warnings />
+		<Info />
+	</RowImport>
+	<RowImport>
+		<Status>Ok</Status>
+		<Type>00972a17-9975-449e-aab1-d26165d51393</Type>
+		<TypeName>Domain</TypeName>
+		<Name>Money</Name>
 		<Errors />
 		<Warnings />
 		<Info />
@@ -22,16 +40,142 @@
 		<Status>Ok</Status>
 		<Type>adbb33c9-0906-4971-833c-998de27e0676</Type>
 		<TypeName>Attribute</TypeName>
-		<Name>CONTRASENAEMPLEADO</Name>
+		<Name>IDEMPLEADO</Name>
 		<Errors />
 		<Warnings />
 		<Info />
 	</RowImport>
 	<RowImport>
 		<Status>Ok</Status>
-		<Type>c9584656-94b6-4ccd-890f-332d11fc2c25</Type>
-		<TypeName>WebPanel</TypeName>
-		<Name>Login</Name>
+		<Type>adbb33c9-0906-4971-833c-998de27e0676</Type>
+		<TypeName>Attribute</TypeName>
+		<Name>IDCLIENTE</Name>
+		<Errors />
+		<Warnings />
+		<Info />
+	</RowImport>
+	<RowImport>
+		<Status>Ok</Status>
+		<Type>adbb33c9-0906-4971-833c-998de27e0676</Type>
+		<TypeName>Attribute</TypeName>
+		<Name>IDPRODUCTO</Name>
+		<Errors />
+		<Warnings />
+		<Info />
+	</RowImport>
+	<RowImport>
+		<Status>Ok</Status>
+		<Type>adbb33c9-0906-4971-833c-998de27e0676</Type>
+		<TypeName>Attribute</TypeName>
+		<Name>IDVENTA</Name>
+		<Errors />
+		<Warnings />
+		<Info />
+	</RowImport>
+	<RowImport>
+		<Status>Ok</Status>
+		<Type>adbb33c9-0906-4971-833c-998de27e0676</Type>
+		<TypeName>Attribute</TypeName>
+		<Name>NOMBRECOMPLETOEMPLEADO</Name>
+		<Errors />
+		<Warnings />
+		<Info />
+	</RowImport>
+	<RowImport>
+		<Status>Ok</Status>
+		<Type>adbb33c9-0906-4971-833c-998de27e0676</Type>
+		<TypeName>Attribute</TypeName>
+		<Name>NOMBRECOMPLETOCLIENTE</Name>
+		<Errors />
+		<Warnings />
+		<Info />
+	</RowImport>
+	<RowImport>
+		<Status>Ok</Status>
+		<Type>adbb33c9-0906-4971-833c-998de27e0676</Type>
+		<TypeName>Attribute</TypeName>
+		<Name>DESCRIPCIONPRODUCTO</Name>
+		<Errors />
+		<Warnings />
+		<Info />
+	</RowImport>
+	<RowImport>
+		<Status>Ok</Status>
+		<Type>adbb33c9-0906-4971-833c-998de27e0676</Type>
+		<TypeName>Attribute</TypeName>
+		<Name>CANTIDADPRODUCTO</Name>
+		<Errors />
+		<Warnings />
+		<Info />
+	</RowImport>
+	<RowImport>
+		<Status>Ok</Status>
+		<Type>adbb33c9-0906-4971-833c-998de27e0676</Type>
+		<TypeName>Attribute</TypeName>
+		<Name>FECHAVENTA</Name>
+		<Errors />
+		<Warnings />
+		<Info />
+	</RowImport>
+	<RowImport>
+		<Status>Ok</Status>
+		<Type>adbb33c9-0906-4971-833c-998de27e0676</Type>
+		<TypeName>Attribute</TypeName>
+		<Name>DESCRIPCIONVENTA</Name>
+		<Errors />
+		<Warnings />
+		<Info />
+	</RowImport>
+	<RowImport>
+		<Status>Ok</Status>
+		<Type>adbb33c9-0906-4971-833c-998de27e0676</Type>
+		<TypeName>Attribute</TypeName>
+		<Name>SUBTOTALVENTAPRODUCTO</Name>
+		<Errors />
+		<Warnings />
+		<Info />
+	</RowImport>
+	<RowImport>
+		<Status>Ok</Status>
+		<Type>adbb33c9-0906-4971-833c-998de27e0676</Type>
+		<TypeName>Attribute</TypeName>
+		<Name>PRECIOVENTAPRODUCTO</Name>
+		<Errors />
+		<Warnings />
+		<Info />
+	</RowImport>
+	<RowImport>
+		<Status>Ok</Status>
+		<Type>adbb33c9-0906-4971-833c-998de27e0676</Type>
+		<TypeName>Attribute</TypeName>
+		<Name>TOTALVENTA</Name>
+		<Errors />
+		<Warnings />
+		<Info />
+	</RowImport>
+	<RowImport>
+		<Status>Ok</Status>
+		<Type>adbb33c9-0906-4971-833c-998de27e0676</Type>
+		<TypeName>Attribute</TypeName>
+		<Name>IMPUESTOVENTA</Name>
+		<Errors />
+		<Warnings />
+		<Info />
+	</RowImport>
+	<RowImport>
+		<Status>Ok</Status>
+		<Type>adbb33c9-0906-4971-833c-998de27e0676</Type>
+		<TypeName>Attribute</TypeName>
+		<Name>DESCUENTOVENTA</Name>
+		<Errors />
+		<Warnings />
+		<Info />
+	</RowImport>
+	<RowImport>
+		<Status>Ok</Status>
+		<Type>84a12160-f59b-4ad7-a683-ea4481ac23e9</Type>
+		<TypeName>Procedure</TypeName>
+		<Name>ReporteDeVenta</Name>
 		<Errors />
 		<Warnings />
 		<Info />

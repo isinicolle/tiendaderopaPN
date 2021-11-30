@@ -9,7 +9,7 @@
 <ObjDesc>Tipo_proveedor Tipo_proveedor WC</ObjDesc>
 <ObjPgmName>Tipo_proveedorTipo_proveedorWC</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>

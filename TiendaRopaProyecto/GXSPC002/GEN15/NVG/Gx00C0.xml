@@ -9,7 +9,7 @@
 <ObjDesc>Selection List Marca_producto</ObjDesc>
 <ObjPgmName>Gx00C0</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>

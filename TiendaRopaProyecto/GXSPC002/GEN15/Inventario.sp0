@@ -264,12 +264,14 @@ ca_i(9,8).
 ca_i(7,6).
 ca_i(5,5).
  
-tbl_to_delete_i(9,[ 5,[ [ 9,7,7 ] ],c,'IVENTAS_INVENTARIODETALLE_VEN1',0,[ 12,7 ],'' ]).
-tbl_to_delete_i(9,[ 3,[ [ 9,7,7 ] ],c,'ICOMPRA_INVENTARIOCOMPRA_PROD1',0,[ 11,7 ],'' ]).
+tbl_to_delete_i(9,[ 23,[ [ 9,7,7 ] ],c,'IVENTAS_INVENTARIODETALLE_VEN1',0,[ 12,66 ],'' ]).
+tbl_to_delete_i(9,[ 21,[ [ 9,7,7 ] ],c,'ICOMPRA_INVENTARIODETALLE_COM1',0,[ 11,65 ],'' ]).
  
  
  
+attri_i(66,[ 'IDDETALLEVENTAPRODUCTO',int,12,0,'ZZZZZZZZZZZ9',0,'IDDETALLEVENTAPRODUCTO','',0 ]).
 attri_i(12,[ 'IDVENTA',int,12,0,'ZZZZZZZZZZZ9',0,'IDVENTA','',0 ]).
+attri_i(65,[ 'IDETALLECOMPRAPRODUCTO',int,12,0,'ZZZZZZZZZZZ9',0,'IDETALLECOMPRAPRODUCTO','',0 ]).
 attri_i(11,[ 'IDCOMPRA',int,12,0,'ZZZZZZZZZZZ9',0,'IDCOMPRA','',0 ]).
 attri_i(44,[ 'DESCRIPCIONMARCAPRODUCTO',svchar,255,0,'',0,'DESCRIPCIONMARCAPRODUCTO','',0 ]).
 attri_i(39,[ 'DESCRIPCIONCATEGORIAPRODUCTO',svchar,255,0,'',0,'DESCRIPCIONCATEGORIAPRODUCTO','',0 ]).
@@ -295,8 +297,8 @@ attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,'Is Authorized','',8 ])
 attri_i('Idproducto',[ 'IDPRODUCTO',int,12,0,'ZZZZZZZZZZZ9',0,'IDPRODUCTO','',7 ]).
 attri_i('Mode',[ 'Gx_mode',char,3,0,'@!',1,'','',2 ]).
  
-table_i(5,[ 'Ventas_inventarioDetalle_venta',[ 12,7 ],'Detalle_venta_producto','Ventas_inventarioDetalle_venta_producto' ]).
-table_i(3,[ 'Compra_inventarioCompra_produc',[ 11,7 ],'Compra_producto','Compra_inventarioCompra_producto' ]).
+table_i(23,[ 'Ventas_inventarioDetalle_venta',[ 12,66,7 ],'Detalle_venta_producto','Ventas_inventarioDetalle_venta_producto' ]).
+table_i(21,[ 'Compra_inventarioDetalle_compr',[ 11,65,7 ],'Detalle_compra_producto','Compra_inventarioDetalle_compra_producto' ]).
 table_i(12,[ 'Marca_producto',[ 8,44 ],'Marca_producto','Marca_producto' ]).
 table_i(11,[ 'Categoria_producto',[ 6,39 ],'Categoria_producto','Categoria_producto' ]).
 table_i(10,[ 'Estado_producto',[ 5,38 ],'Estado_producto','Estado_producto' ]).
@@ -306,10 +308,10 @@ index_i(9,[ 'IINVENTARIO',u,[ 7 ],'IInventario' ]).
 index_i(10,[ 'IESTADO_PRODUCTO',u,[ 5 ],'IEstado_producto' ]).
 index_i(11,[ 'ICATEGORIA_PRODUCTO',u,[ 6 ],'ICategoria_producto' ]).
 index_i(12,[ 'IMARCA_PRODUCTO',u,[ 8 ],'IMarca_producto' ]).
-index_i(3,[ 'ICOMPRA_INVENTARIOCOMPRA_PRODU',u,[ 11,7 ],'ICompra_inventarioCompra_producto' ]).
-index_i(3,[ 'ICOMPRA_INVENTARIOCOMPRA_PROD1',d,[ 7 ],'ICompra_inventarioCompra_prod1' ]).
-index_i(5,[ 'IVENTAS_INVENTARIODETALLE_VENT',u,[ 12,7 ],'IVentas_inventarioDetalle_venta_producto' ]).
-index_i(5,[ 'IVENTAS_INVENTARIODETALLE_VEN1',d,[ 7 ],'IVentas_inventarioDetalle_ven1' ]).
+index_i(21,[ 'ICOMPRA_INVENTARIODETALLE_COMP',u,[ 11,65 ],'ICompra_inventarioDetalle_compra_producto' ]).
+index_i(21,[ 'ICOMPRA_INVENTARIODETALLE_COM1',d,[ 7 ],'ICompra_inventarioDetalle_com1' ]).
+index_i(23,[ 'IVENTAS_INVENTARIODETALLE_VENT',u,[ 12,66 ],'IVentas_inventarioDetalle_venta_producto' ]).
+index_i(23,[ 'IVENTAS_INVENTARIODETALLE_VEN1',d,[ 7 ],'IVentas_inventarioDetalle_ven1' ]).
  
  
  
@@ -1826,6 +1828,20 @@ att_prop_i(2,11,'AttValidationFailedMsg','',d).
 att_prop_i(2,11,'DownloadOffline','0',d).
 att_prop_i(2,11,'VarServiceExtName','',d).
 att_prop_i(2,11,'FullName','IDCOMPRA',v).
+att_prop_i(2,65,'ExternalName','IDETALLECOMPRAPRODUCTO',d).
+att_prop_i(2,65,'ExternalNamespace','TiendaRopaProyecto',d).
+att_prop_i(2,65,'EmptyAsNull','Yes',d).
+att_prop_i(2,65,idBasedOn,84,v).
+att_prop_i(2,65,'AUTONUMBER','-1',d).
+att_prop_i(2,65,'AUTONUMBER_START','1',d).
+att_prop_i(2,65,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,65,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,65,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,65,'AttRegEx','',d).
+att_prop_i(2,65,'AttValidationFailedMsg','',d).
+att_prop_i(2,65,'DownloadOffline','0',d).
+att_prop_i(2,65,'VarServiceExtName','',d).
+att_prop_i(2,65,'FullName','IDETALLECOMPRAPRODUCTO',v).
 att_prop_i(2,12,'ExternalName','IDVENTA',d).
 att_prop_i(2,12,'ExternalNamespace','TiendaRopaProyecto',d).
 att_prop_i(2,12,'EmptyAsNull','Yes',d).
@@ -1840,16 +1856,30 @@ att_prop_i(2,12,'AttValidationFailedMsg','',d).
 att_prop_i(2,12,'DownloadOffline','0',d).
 att_prop_i(2,12,'VarServiceExtName','',d).
 att_prop_i(2,12,'FullName','IDVENTA',v).
+att_prop_i(2,66,'ExternalName','IDDETALLEVENTAPRODUCTO',d).
+att_prop_i(2,66,'ExternalNamespace','TiendaRopaProyecto',d).
+att_prop_i(2,66,'EmptyAsNull','Yes',d).
+att_prop_i(2,66,idBasedOn,84,v).
+att_prop_i(2,66,'AUTONUMBER','-1',d).
+att_prop_i(2,66,'AUTONUMBER_START','1',d).
+att_prop_i(2,66,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,66,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,66,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,66,'AttRegEx','',d).
+att_prop_i(2,66,'AttValidationFailedMsg','',d).
+att_prop_i(2,66,'DownloadOffline','0',d).
+att_prop_i(2,66,'VarServiceExtName','',d).
+att_prop_i(2,66,'FullName','IDDETALLEVENTAPRODUCTO',v).
  
-tbl_prop_i(2,5,'AllDirSuper',[ [ 9,[ 7 ] ] ],v).
-tbl_prop_i(2,3,'AllDirSuper',[ [ 9,[ 7 ] ] ],v).
+tbl_prop_i(2,23,'AllDirSuper',[ [ 9,[ 7 ] ] ],v).
+tbl_prop_i(2,21,'AllDirSuper',[ [ 9,[ 7 ] ] ],v).
 tbl_prop_i(2,9,'AllDirSuper',[ [ 12,[ 8 ] ],[ 11,[ 6 ] ],[ 10,[ 5 ] ] ],v).
 tbl_prop_i(2,12,'DirSubor',[ [ 9,[ 8 ] ] ],v).
 tbl_prop_i(2,11,'DirSubor',[ [ 9,[ 6 ] ] ],v).
 tbl_prop_i(2,10,'DirSubor',[ [ 9,[ 5 ] ] ],v).
-tbl_prop_i(2,9,'DirSubor',[ [ 3,[ 7 ] ],[ 5,[ 7 ] ] ],v).
-tbl_prop_i(2,5,'DirSuper',[ [ 9,[ 7 ] ] ],v).
-tbl_prop_i(2,3,'DirSuper',[ [ 9,[ 7 ] ] ],v).
+tbl_prop_i(2,9,'DirSubor',[ [ 21,[ 7 ] ],[ 23,[ 7 ] ] ],v).
+tbl_prop_i(2,23,'DirSuper',[ [ 9,[ 7 ] ] ],v).
+tbl_prop_i(2,21,'DirSuper',[ [ 9,[ 7 ] ] ],v).
 tbl_prop_i(2,9,'DirSuper',[ [ 12,[ 8 ] ],[ 11,[ 6 ] ],[ 10,[ 5 ] ] ],v).
  
 tbl_att_prop_i(2,9,7,'AllowNulls',n).
@@ -1870,10 +1900,12 @@ tbl_att_prop_i(2,11,39,'AllowNulls',n).
 tbl_att_prop_i(2,12,8,'AllowNulls',n).
 tbl_att_prop_i(2,12,8,'AUTONUMBER',y).
 tbl_att_prop_i(2,12,44,'AllowNulls',n).
-tbl_att_prop_i(2,3,11,'AllowNulls',n).
-tbl_att_prop_i(2,3,7,'AllowNulls',n).
-tbl_att_prop_i(2,5,12,'AllowNulls',n).
-tbl_att_prop_i(2,5,7,'AllowNulls',n).
+tbl_att_prop_i(2,21,11,'AllowNulls',n).
+tbl_att_prop_i(2,21,65,'AllowNulls',n).
+tbl_att_prop_i(2,21,7,'AllowNulls',n).
+tbl_att_prop_i(2,23,12,'AllowNulls',n).
+tbl_att_prop_i(2,23,66,'AllowNulls',n).
+tbl_att_prop_i(2,23,7,'AllowNulls',n).
  
 var_prop_i(2,'Idproducto',idBasedOn,'',v).
 var_prop_i(2,'Insert_idestadoproducto',idBasedOn,'',v).

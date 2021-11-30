@@ -183,11 +183,11 @@ namespace GeneXus.Programs {
 
       public override short ExecuteStartEvent( )
       {
-         PA0W2( ) ;
+         PA2M2( ) ;
          gxajaxcallmode = (short)((isAjaxCallMode( ) ? 1 : 0));
          if ( ( gxajaxcallmode == 0 ) && ( GxWebError == 0 ) )
          {
-            START0W2( ) ;
+            START2M2( ) ;
          }
          return gxajaxcallmode ;
       }
@@ -225,7 +225,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 1152180), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 1152180), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?202111280105511", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?2021113013582733", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -338,14 +338,14 @@ namespace GeneXus.Programs {
             context.WriteHtmlText( "<div") ;
             GxWebStd.ClassAttribute( context, "gx-ct-body"+" "+(String.IsNullOrEmpty(StringUtil.RTrim( Form.Class)) ? "form-horizontal Form" : Form.Class)+"-fx");
             context.WriteHtmlText( ">") ;
-            WE0W2( ) ;
+            WE2M2( ) ;
             context.WriteHtmlText( "</div>") ;
          }
       }
 
       public override void DispatchEvents( )
       {
-         EVT0W2( ) ;
+         EVT2M2( ) ;
       }
 
       public override bool HasEnterEvent( )
@@ -373,7 +373,7 @@ namespace GeneXus.Programs {
          return "View Compra_inventario" ;
       }
 
-      protected void WB0W0( )
+      protected void WB2M0( )
       {
          if ( context.isAjaxRequest( ) )
          {
@@ -540,7 +540,7 @@ namespace GeneXus.Programs {
          wbLoad = true;
       }
 
-      protected void START0W2( )
+      protected void START2M2( )
       {
          wbLoad = false;
          wbEnd = 0;
@@ -560,16 +560,16 @@ namespace GeneXus.Programs {
          {
          }
          wbErr = false;
-         STRUP0W0( ) ;
+         STRUP2M0( ) ;
       }
 
-      protected void WS0W2( )
+      protected void WS2M2( )
       {
-         START0W2( ) ;
-         EVT0W2( ) ;
+         START2M2( ) ;
+         EVT2M2( ) ;
       }
 
-      protected void EVT0W2( )
+      protected void EVT2M2( )
       {
          if ( StringUtil.StrCmp(context.GetRequestMethod( ), "POST") == 0 )
          {
@@ -601,14 +601,14 @@ namespace GeneXus.Programs {
                               context.wbHandled = 1;
                               dynload_actions( ) ;
                               /* Execute user event: Start */
-                              E110W2 ();
+                              E112M2 ();
                            }
                            else if ( StringUtil.StrCmp(sEvt, "LOAD") == 0 )
                            {
                               context.wbHandled = 1;
                               dynload_actions( ) ;
                               /* Execute user event: Load */
-                              E120W2 ();
+                              E122M2 ();
                            }
                            else if ( StringUtil.StrCmp(sEvt, "ENTER") == 0 )
                            {
@@ -679,7 +679,7 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void WE0W2( )
+      protected void WE2M2( )
       {
          if ( ! GxWebStd.gx_redirect( context) )
          {
@@ -695,7 +695,7 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void PA0W2( )
+      protected void PA2M2( )
       {
          if ( nDonePA == 0 )
          {
@@ -749,7 +749,7 @@ namespace GeneXus.Programs {
       public void Refresh( )
       {
          send_integrity_hashes( ) ;
-         RF0W2( ) ;
+         RF2M2( ) ;
          if ( isFullAjaxMode( ) )
          {
             send_integrity_footer_hashes( ) ;
@@ -763,7 +763,7 @@ namespace GeneXus.Programs {
          context.Gx_err = 0;
       }
 
-      protected void RF0W2( )
+      protected void RF2M2( )
       {
          initialize_formulas( ) ;
          clear_multi_value_controls( ) ;
@@ -792,24 +792,24 @@ namespace GeneXus.Programs {
          gxdyncontrolsrefreshing = false;
          if ( ! context.WillRedirect( ) && ( context.nUserReturn != 1 ) )
          {
-            /* Using cursor H000W2 */
+            /* Using cursor H002M2 */
             pr_default.execute(0, new Object[] {AV12IDCOMPRA});
             while ( (pr_default.getStatus(0) != 101) )
             {
-               A11IDCOMPRA = H000W2_A11IDCOMPRA[0];
-               A50FECHACOMPRA = H000W2_A50FECHACOMPRA[0];
+               A11IDCOMPRA = H002M2_A11IDCOMPRA[0];
+               A50FECHACOMPRA = H002M2_A50FECHACOMPRA[0];
                AssignAttri("", false, "A50FECHACOMPRA", context.localUtil.Format(A50FECHACOMPRA, "99/99/99"));
                /* Execute user event: Load */
-               E120W2 ();
+               E122M2 ();
                /* Exiting from a For First loop. */
                if (true) break;
             }
             pr_default.close(0);
-            WB0W0( ) ;
+            WB2M0( ) ;
          }
       }
 
-      protected void send_integrity_lvl_hashes0W2( )
+      protected void send_integrity_lvl_hashes2M2( )
       {
       }
 
@@ -820,14 +820,14 @@ namespace GeneXus.Programs {
          fix_multi_value_controls( ) ;
       }
 
-      protected void STRUP0W0( )
+      protected void STRUP2M0( )
       {
          /* Before Start, stand alone formulas. */
          before_start_formulas( ) ;
          /* Execute Start event if defined. */
          context.wbGlbDoneStart = 0;
          /* Execute user event: Start */
-         E110W2 ();
+         E112M2 ();
          context.wbGlbDoneStart = 1;
          /* After Start, stand alone formulas. */
          if ( StringUtil.StrCmp(context.GetRequestMethod( ), "POST") == 0 )
@@ -875,7 +875,7 @@ namespace GeneXus.Programs {
       protected void GXStart( )
       {
          /* Execute user event: Start */
-         E110W2 ();
+         E112M2 ();
          if ( returnInSub )
          {
             returnInSub = true;
@@ -883,7 +883,7 @@ namespace GeneXus.Programs {
          }
       }
 
-      protected void E110W2( )
+      protected void E112M2( )
       {
          /* Start Routine */
          returnInSub = false;
@@ -893,12 +893,12 @@ namespace GeneXus.Programs {
             context.wjLocDisableFrm = 1;
          }
          AV16GXLvl6 = 0;
-         /* Using cursor H000W3 */
+         /* Using cursor H002M3 */
          pr_default.execute(1, new Object[] {AV12IDCOMPRA});
          while ( (pr_default.getStatus(1) != 101) )
          {
-            A11IDCOMPRA = H000W3_A11IDCOMPRA[0];
-            A50FECHACOMPRA = H000W3_A50FECHACOMPRA[0];
+            A11IDCOMPRA = H002M3_A11IDCOMPRA[0];
+            A50FECHACOMPRA = H002M3_A50FECHACOMPRA[0];
             AssignAttri("", false, "A50FECHACOMPRA", context.localUtil.Format(A50FECHACOMPRA, "99/99/99"));
             AV16GXLvl6 = 1;
             Form.Caption = context.localUtil.DToC( A50FECHACOMPRA, 1, "/");
@@ -1000,7 +1000,7 @@ namespace GeneXus.Programs {
       {
       }
 
-      protected void E120W2( )
+      protected void E122M2( )
       {
          /* Load Routine */
          returnInSub = false;
@@ -1027,9 +1027,9 @@ namespace GeneXus.Programs {
          nGotPars = (short)(1);
          nGXWrapped = (short)(1);
          context.SetWrapped(true);
-         PA0W2( ) ;
-         WS0W2( ) ;
-         WE0W2( ) ;
+         PA2M2( ) ;
+         WS2M2( ) ;
+         WE2M2( ) ;
          this.cleanup();
          context.SetWrapped(false);
          context.GX_msglist = BackMsgLst;
@@ -1066,7 +1066,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202111280105528", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?2021113013582753", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1082,7 +1082,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("viewcompra_inventario.js", "?202111280105528", false, true);
+         context.AddJavascriptSource("viewcompra_inventario.js", "?2021113013582753", false, true);
          context.AddJavascriptSource("Shared/HistoryManager/HistoryManager.js", "", false, true);
          context.AddJavascriptSource("Shared/HistoryManager/rsh/json2005.js", "", false, true);
          context.AddJavascriptSource("Shared/HistoryManager/rsh/rsh.js", "", false, true);
@@ -1195,20 +1195,20 @@ namespace GeneXus.Programs {
          sEvtType = "";
          AV15Pgmname = "";
          scmdbuf = "";
-         H000W2_A11IDCOMPRA = new long[1] ;
-         H000W2_A50FECHACOMPRA = new DateTime[] {DateTime.MinValue} ;
+         H002M2_A11IDCOMPRA = new long[1] ;
+         H002M2_A50FECHACOMPRA = new DateTime[] {DateTime.MinValue} ;
          hsh = "";
-         H000W3_A11IDCOMPRA = new long[1] ;
-         H000W3_A50FECHACOMPRA = new DateTime[] {DateTime.MinValue} ;
+         H002M3_A11IDCOMPRA = new long[1] ;
+         H002M3_A50FECHACOMPRA = new DateTime[] {DateTime.MinValue} ;
          BackMsgLst = new msglist();
          LclMsgLst = new msglist();
          pr_default = new DataStoreProvider(context, new GeneXus.Programs.viewcompra_inventario__default(),
             new Object[][] {
                 new Object[] {
-               H000W2_A11IDCOMPRA, H000W2_A50FECHACOMPRA
+               H002M2_A11IDCOMPRA, H002M2_A50FECHACOMPRA
                }
                , new Object[] {
-               H000W3_A11IDCOMPRA, H000W3_A50FECHACOMPRA
+               H002M3_A11IDCOMPRA, H002M3_A50FECHACOMPRA
                }
             }
          );
@@ -1300,10 +1300,10 @@ namespace GeneXus.Programs {
       private GXUserControl ucTab ;
       private IGxDataStore dsDefault ;
       private IDataStoreProvider pr_default ;
-      private long[] H000W2_A11IDCOMPRA ;
-      private DateTime[] H000W2_A50FECHACOMPRA ;
-      private long[] H000W3_A11IDCOMPRA ;
-      private DateTime[] H000W3_A50FECHACOMPRA ;
+      private long[] H002M2_A11IDCOMPRA ;
+      private DateTime[] H002M2_A50FECHACOMPRA ;
+      private long[] H002M3_A11IDCOMPRA ;
+      private DateTime[] H002M3_A50FECHACOMPRA ;
       private msglist BackMsgLst ;
       private msglist LclMsgLst ;
       private GXWebForm Form ;
@@ -1325,17 +1325,17 @@ namespace GeneXus.Programs {
     {
        if ( def == null )
        {
-          Object[] prmH000W2;
-          prmH000W2 = new Object[] {
+          Object[] prmH002M2;
+          prmH002M2 = new Object[] {
           new ParDef("@AV12IDCOMPRA",GXType.Decimal,12,0)
           };
-          Object[] prmH000W3;
-          prmH000W3 = new Object[] {
+          Object[] prmH002M3;
+          prmH002M3 = new Object[] {
           new ParDef("@AV12IDCOMPRA",GXType.Decimal,12,0)
           };
           def= new CursorDef[] {
-              new CursorDef("H000W2", "SELECT [IDCOMPRA], [FECHACOMPRA] FROM [Compra_inventario] WHERE [IDCOMPRA] = @AV12IDCOMPRA ORDER BY [IDCOMPRA] ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH000W2,1, GxCacheFrequency.OFF ,true,true )
-             ,new CursorDef("H000W3", "SELECT [IDCOMPRA], [FECHACOMPRA] FROM [Compra_inventario] WHERE [IDCOMPRA] = @AV12IDCOMPRA ORDER BY [IDCOMPRA] ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH000W3,1, GxCacheFrequency.OFF ,false,true )
+              new CursorDef("H002M2", "SELECT [IDCOMPRA], [FECHACOMPRA] FROM [Compra_inventario] WHERE [IDCOMPRA] = @AV12IDCOMPRA ORDER BY [IDCOMPRA] ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH002M2,1, GxCacheFrequency.OFF ,true,true )
+             ,new CursorDef("H002M3", "SELECT [IDCOMPRA], [FECHACOMPRA] FROM [Compra_inventario] WHERE [IDCOMPRA] = @AV12IDCOMPRA ORDER BY [IDCOMPRA] ",false, GxErrorMask.GX_NOMASK | GxErrorMask.GX_MASKLOOPLOCK, false, this,prmH002M3,1, GxCacheFrequency.OFF ,false,true )
           };
        }
     }

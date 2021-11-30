@@ -9,7 +9,7 @@
 <ObjDesc>Selection List Tipo_empleado</ObjDesc>
 <ObjPgmName>Gx0060</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>

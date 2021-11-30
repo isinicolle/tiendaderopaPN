@@ -225,7 +225,7 @@ namespace GeneXus.Programs {
          }
          context.AddJavascriptSource("jquery.js", "?"+context.GetBuildNumber( 1152180), false, true);
          context.AddJavascriptSource("gxgral.js", "?"+context.GetBuildNumber( 1152180), false, true);
-         context.AddJavascriptSource("gxcfg.js", "?202111280105491", false, true);
+         context.AddJavascriptSource("gxcfg.js", "?2021113013582725", false, true);
          if ( context.isSpaRequest( ) )
          {
             enableOutput();
@@ -321,13 +321,13 @@ namespace GeneXus.Programs {
          {
             WebComp_Generalwc.componentjscripts();
          }
-         if ( ! ( WebComp_Detalle_venta_productowc == null ) )
-         {
-            WebComp_Detalle_venta_productowc.componentjscripts();
-         }
          if ( ! ( WebComp_Detalle_compra_productowc == null ) )
          {
             WebComp_Detalle_compra_productowc.componentjscripts();
+         }
+         if ( ! ( WebComp_Detalle_venta_productowc == null ) )
+         {
+            WebComp_Detalle_venta_productowc.componentjscripts();
          }
       }
 
@@ -495,15 +495,15 @@ namespace GeneXus.Programs {
             context.WriteHtmlText( "</div>") ;
             context.WriteHtmlText( "<div class=\"gx_usercontrol_child\" id=\""+"TABContainer"+"title2"+"\" style=\"display:none;\">") ;
             /* Text block */
-            GxWebStd.gx_label_ctrl( context, lblDetalle_venta_producto_title_Internalname, "Ventas_inventario", "", "", lblDetalle_venta_producto_title_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "TextBlock", 0, "", 1, 1, 0, 0, "HLP_ViewInventario.htm");
+            GxWebStd.gx_label_ctrl( context, lblDetalle_compra_producto_title_Internalname, "Compra_inventario", "", "", lblDetalle_compra_producto_title_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "TextBlock", 0, "", 1, 1, 0, 0, "HLP_ViewInventario.htm");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "Section", "left", "top", "", "display:none;", "div");
-            context.WriteHtmlText( "Detalle_venta_producto") ;
+            context.WriteHtmlText( "Detalle_compra_producto") ;
             GxWebStd.gx_div_end( context, "left", "top", "div");
             context.WriteHtmlText( "</div>") ;
             context.WriteHtmlText( "<div class=\"gx_usercontrol_child\" id=\""+"TABContainer"+"panel2"+"\" style=\"display:none;\">") ;
             /* Div Control */
-            GxWebStd.gx_div_start( context, divTabledetalle_venta_producto_Internalname, 1, 0, "px", 0, "px", "TabsFormContainer", "left", "top", "", "", "div");
+            GxWebStd.gx_div_start( context, divTabledetalle_compra_producto_Internalname, 1, 0, "px", 0, "px", "TabsFormContainer", "left", "top", "", "", "div");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
             /* Div Control */
@@ -511,19 +511,19 @@ namespace GeneXus.Programs {
             if ( ! isFullAjaxMode( ) )
             {
                /* WebComponent */
-               GxWebStd.gx_hidden_field( context, "W0038"+"", StringUtil.RTrim( WebComp_Detalle_venta_productowc_Component));
+               GxWebStd.gx_hidden_field( context, "W0038"+"", StringUtil.RTrim( WebComp_Detalle_compra_productowc_Component));
                context.WriteHtmlText( "<div") ;
                GxWebStd.ClassAttribute( context, "gxwebcomponent");
                context.WriteHtmlText( " id=\""+"gxHTMLWrpW0038"+""+"\""+"") ;
                context.WriteHtmlText( ">") ;
-               if ( StringUtil.Len( WebComp_Detalle_venta_productowc_Component) != 0 )
+               if ( StringUtil.Len( WebComp_Detalle_compra_productowc_Component) != 0 )
                {
-                  if ( StringUtil.StrCmp(StringUtil.Lower( OldDetalle_venta_productowc), StringUtil.Lower( WebComp_Detalle_venta_productowc_Component)) != 0 )
+                  if ( StringUtil.StrCmp(StringUtil.Lower( OldDetalle_compra_productowc), StringUtil.Lower( WebComp_Detalle_compra_productowc_Component)) != 0 )
                   {
                      context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0038"+"");
                   }
-                  WebComp_Detalle_venta_productowc.componentdraw();
-                  if ( StringUtil.StrCmp(StringUtil.Lower( OldDetalle_venta_productowc), StringUtil.Lower( WebComp_Detalle_venta_productowc_Component)) != 0 )
+                  WebComp_Detalle_compra_productowc.componentdraw();
+                  if ( StringUtil.StrCmp(StringUtil.Lower( OldDetalle_compra_productowc), StringUtil.Lower( WebComp_Detalle_compra_productowc_Component)) != 0 )
                   {
                      context.httpAjaxContext.ajax_rspEndCmp();
                   }
@@ -536,15 +536,15 @@ namespace GeneXus.Programs {
             context.WriteHtmlText( "</div>") ;
             context.WriteHtmlText( "<div class=\"gx_usercontrol_child\" id=\""+"TABContainer"+"title3"+"\" style=\"display:none;\">") ;
             /* Text block */
-            GxWebStd.gx_label_ctrl( context, lblDetalle_compra_producto_title_Internalname, "Compra_inventario", "", "", lblDetalle_compra_producto_title_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "TextBlock", 0, "", 1, 1, 0, 0, "HLP_ViewInventario.htm");
+            GxWebStd.gx_label_ctrl( context, lblDetalle_venta_producto_title_Internalname, "Ventas_inventario", "", "", lblDetalle_venta_producto_title_Jsonclick, "'"+""+"'"+",false,"+"'"+""+"'", "", "TextBlock", 0, "", 1, 1, 0, 0, "HLP_ViewInventario.htm");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "Section", "left", "top", "", "display:none;", "div");
-            context.WriteHtmlText( "Detalle_compra_producto") ;
+            context.WriteHtmlText( "Detalle_venta_producto") ;
             GxWebStd.gx_div_end( context, "left", "top", "div");
             context.WriteHtmlText( "</div>") ;
             context.WriteHtmlText( "<div class=\"gx_usercontrol_child\" id=\""+"TABContainer"+"panel3"+"\" style=\"display:none;\">") ;
             /* Div Control */
-            GxWebStd.gx_div_start( context, divTabledetalle_compra_producto_Internalname, 1, 0, "px", 0, "px", "TabsFormContainer", "left", "top", "", "", "div");
+            GxWebStd.gx_div_start( context, divTabledetalle_venta_producto_Internalname, 1, 0, "px", 0, "px", "TabsFormContainer", "left", "top", "", "", "div");
             /* Div Control */
             GxWebStd.gx_div_start( context, "", 1, 0, "px", 0, "px", "row", "left", "top", "", "", "div");
             /* Div Control */
@@ -552,19 +552,19 @@ namespace GeneXus.Programs {
             if ( ! isFullAjaxMode( ) )
             {
                /* WebComponent */
-               GxWebStd.gx_hidden_field( context, "W0046"+"", StringUtil.RTrim( WebComp_Detalle_compra_productowc_Component));
+               GxWebStd.gx_hidden_field( context, "W0046"+"", StringUtil.RTrim( WebComp_Detalle_venta_productowc_Component));
                context.WriteHtmlText( "<div") ;
                GxWebStd.ClassAttribute( context, "gxwebcomponent");
                context.WriteHtmlText( " id=\""+"gxHTMLWrpW0046"+""+"\""+"") ;
                context.WriteHtmlText( ">") ;
-               if ( StringUtil.Len( WebComp_Detalle_compra_productowc_Component) != 0 )
+               if ( StringUtil.Len( WebComp_Detalle_venta_productowc_Component) != 0 )
                {
-                  if ( StringUtil.StrCmp(StringUtil.Lower( OldDetalle_compra_productowc), StringUtil.Lower( WebComp_Detalle_compra_productowc_Component)) != 0 )
+                  if ( StringUtil.StrCmp(StringUtil.Lower( OldDetalle_venta_productowc), StringUtil.Lower( WebComp_Detalle_venta_productowc_Component)) != 0 )
                   {
                      context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0046"+"");
                   }
-                  WebComp_Detalle_compra_productowc.componentdraw();
-                  if ( StringUtil.StrCmp(StringUtil.Lower( OldDetalle_compra_productowc), StringUtil.Lower( WebComp_Detalle_compra_productowc_Component)) != 0 )
+                  WebComp_Detalle_venta_productowc.componentdraw();
+                  if ( StringUtil.StrCmp(StringUtil.Lower( OldDetalle_venta_productowc), StringUtil.Lower( WebComp_Detalle_venta_productowc_Component)) != 0 )
                   {
                      context.httpAjaxContext.ajax_rspEndCmp();
                   }
@@ -700,23 +700,7 @@ namespace GeneXus.Programs {
                         }
                         else if ( nCmpId == 38 )
                         {
-                           OldDetalle_venta_productowc = cgiGet( "W0038");
-                           if ( ( StringUtil.Len( OldDetalle_venta_productowc) == 0 ) || ( StringUtil.StrCmp(OldDetalle_venta_productowc, WebComp_Detalle_venta_productowc_Component) != 0 ) )
-                           {
-                              WebComp_Detalle_venta_productowc = getWebComponent(GetType(), "GeneXus.Programs", OldDetalle_venta_productowc, new Object[] {context} );
-                              WebComp_Detalle_venta_productowc.ComponentInit();
-                              WebComp_Detalle_venta_productowc.Name = "OldDetalle_venta_productowc";
-                              WebComp_Detalle_venta_productowc_Component = OldDetalle_venta_productowc;
-                           }
-                           if ( StringUtil.Len( WebComp_Detalle_venta_productowc_Component) != 0 )
-                           {
-                              WebComp_Detalle_venta_productowc.componentprocess("W0038", "", sEvt);
-                           }
-                           WebComp_Detalle_venta_productowc_Component = OldDetalle_venta_productowc;
-                        }
-                        else if ( nCmpId == 46 )
-                        {
-                           OldDetalle_compra_productowc = cgiGet( "W0046");
+                           OldDetalle_compra_productowc = cgiGet( "W0038");
                            if ( ( StringUtil.Len( OldDetalle_compra_productowc) == 0 ) || ( StringUtil.StrCmp(OldDetalle_compra_productowc, WebComp_Detalle_compra_productowc_Component) != 0 ) )
                            {
                               WebComp_Detalle_compra_productowc = getWebComponent(GetType(), "GeneXus.Programs", OldDetalle_compra_productowc, new Object[] {context} );
@@ -726,9 +710,25 @@ namespace GeneXus.Programs {
                            }
                            if ( StringUtil.Len( WebComp_Detalle_compra_productowc_Component) != 0 )
                            {
-                              WebComp_Detalle_compra_productowc.componentprocess("W0046", "", sEvt);
+                              WebComp_Detalle_compra_productowc.componentprocess("W0038", "", sEvt);
                            }
                            WebComp_Detalle_compra_productowc_Component = OldDetalle_compra_productowc;
+                        }
+                        else if ( nCmpId == 46 )
+                        {
+                           OldDetalle_venta_productowc = cgiGet( "W0046");
+                           if ( ( StringUtil.Len( OldDetalle_venta_productowc) == 0 ) || ( StringUtil.StrCmp(OldDetalle_venta_productowc, WebComp_Detalle_venta_productowc_Component) != 0 ) )
+                           {
+                              WebComp_Detalle_venta_productowc = getWebComponent(GetType(), "GeneXus.Programs", OldDetalle_venta_productowc, new Object[] {context} );
+                              WebComp_Detalle_venta_productowc.ComponentInit();
+                              WebComp_Detalle_venta_productowc.Name = "OldDetalle_venta_productowc";
+                              WebComp_Detalle_venta_productowc_Component = OldDetalle_venta_productowc;
+                           }
+                           if ( StringUtil.Len( WebComp_Detalle_venta_productowc_Component) != 0 )
+                           {
+                              WebComp_Detalle_venta_productowc.componentprocess("W0046", "", sEvt);
+                           }
+                           WebComp_Detalle_venta_productowc_Component = OldDetalle_venta_productowc;
                         }
                      }
                      context.wbHandled = 1;
@@ -840,9 +840,9 @@ namespace GeneXus.Programs {
          {
             if ( 1 != 0 )
             {
-               if ( StringUtil.Len( WebComp_Detalle_venta_productowc_Component) != 0 )
+               if ( StringUtil.Len( WebComp_Detalle_compra_productowc_Component) != 0 )
                {
-                  WebComp_Detalle_venta_productowc.componentstart();
+                  WebComp_Detalle_compra_productowc.componentstart();
                }
             }
          }
@@ -850,9 +850,9 @@ namespace GeneXus.Programs {
          {
             if ( 1 != 0 )
             {
-               if ( StringUtil.Len( WebComp_Detalle_compra_productowc_Component) != 0 )
+               if ( StringUtil.Len( WebComp_Detalle_venta_productowc_Component) != 0 )
                {
-                  WebComp_Detalle_compra_productowc.componentstart();
+                  WebComp_Detalle_venta_productowc.componentstart();
                }
             }
          }
@@ -1036,33 +1036,6 @@ namespace GeneXus.Programs {
                context.httpAjaxContext.ajax_rspEndCmp();
             }
          }
-         if ( AV11LoadAllTabs || ( StringUtil.StrCmp(AV7SelectedTabCode, "Detalle_venta_producto") == 0 ) )
-         {
-            /* Object Property */
-            if ( true )
-            {
-               bDynCreated_Detalle_venta_productowc = true;
-            }
-            if ( StringUtil.StrCmp(StringUtil.Lower( WebComp_Detalle_venta_productowc_Component), StringUtil.Lower( "InventarioDetalle_venta_productoWC")) != 0 )
-            {
-               WebComp_Detalle_venta_productowc = getWebComponent(GetType(), "GeneXus.Programs", "inventariodetalle_venta_productowc", new Object[] {context} );
-               WebComp_Detalle_venta_productowc.ComponentInit();
-               WebComp_Detalle_venta_productowc.Name = "InventarioDetalle_venta_productoWC";
-               WebComp_Detalle_venta_productowc_Component = "InventarioDetalle_venta_productoWC";
-            }
-            if ( StringUtil.Len( WebComp_Detalle_venta_productowc_Component) != 0 )
-            {
-               WebComp_Detalle_venta_productowc.setjustcreated();
-               WebComp_Detalle_venta_productowc.componentprepare(new Object[] {(string)"W0038",(string)"",(long)AV12IDPRODUCTO});
-               WebComp_Detalle_venta_productowc.componentbind(new Object[] {(string)""});
-            }
-            if ( isFullAjaxMode( ) || isAjaxCallMode( ) && bDynCreated_Detalle_venta_productowc )
-            {
-               context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0038"+"");
-               WebComp_Detalle_venta_productowc.componentdraw();
-               context.httpAjaxContext.ajax_rspEndCmp();
-            }
-         }
          if ( AV11LoadAllTabs || ( StringUtil.StrCmp(AV7SelectedTabCode, "Detalle_compra_producto") == 0 ) )
          {
             /* Object Property */
@@ -1080,13 +1053,40 @@ namespace GeneXus.Programs {
             if ( StringUtil.Len( WebComp_Detalle_compra_productowc_Component) != 0 )
             {
                WebComp_Detalle_compra_productowc.setjustcreated();
-               WebComp_Detalle_compra_productowc.componentprepare(new Object[] {(string)"W0046",(string)"",(long)AV12IDPRODUCTO});
+               WebComp_Detalle_compra_productowc.componentprepare(new Object[] {(string)"W0038",(string)"",(long)AV12IDPRODUCTO});
                WebComp_Detalle_compra_productowc.componentbind(new Object[] {(string)""});
             }
             if ( isFullAjaxMode( ) || isAjaxCallMode( ) && bDynCreated_Detalle_compra_productowc )
             {
-               context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0046"+"");
+               context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0038"+"");
                WebComp_Detalle_compra_productowc.componentdraw();
+               context.httpAjaxContext.ajax_rspEndCmp();
+            }
+         }
+         if ( AV11LoadAllTabs || ( StringUtil.StrCmp(AV7SelectedTabCode, "Detalle_venta_producto") == 0 ) )
+         {
+            /* Object Property */
+            if ( true )
+            {
+               bDynCreated_Detalle_venta_productowc = true;
+            }
+            if ( StringUtil.StrCmp(StringUtil.Lower( WebComp_Detalle_venta_productowc_Component), StringUtil.Lower( "InventarioDetalle_venta_productoWC")) != 0 )
+            {
+               WebComp_Detalle_venta_productowc = getWebComponent(GetType(), "GeneXus.Programs", "inventariodetalle_venta_productowc", new Object[] {context} );
+               WebComp_Detalle_venta_productowc.ComponentInit();
+               WebComp_Detalle_venta_productowc.Name = "InventarioDetalle_venta_productoWC";
+               WebComp_Detalle_venta_productowc_Component = "InventarioDetalle_venta_productoWC";
+            }
+            if ( StringUtil.Len( WebComp_Detalle_venta_productowc_Component) != 0 )
+            {
+               WebComp_Detalle_venta_productowc.setjustcreated();
+               WebComp_Detalle_venta_productowc.componentprepare(new Object[] {(string)"W0046",(string)"",(long)AV12IDPRODUCTO});
+               WebComp_Detalle_venta_productowc.componentbind(new Object[] {(string)""});
+            }
+            if ( isFullAjaxMode( ) || isAjaxCallMode( ) && bDynCreated_Detalle_venta_productowc )
+            {
+               context.httpAjaxContext.ajax_rspStartCmp("gxHTMLWrpW0046"+"");
+               WebComp_Detalle_venta_productowc.componentdraw();
                context.httpAjaxContext.ajax_rspEndCmp();
             }
          }
@@ -1146,18 +1146,18 @@ namespace GeneXus.Programs {
                WebComp_Generalwc.componentthemes();
             }
          }
-         if ( ! ( WebComp_Detalle_venta_productowc == null ) )
-         {
-            if ( StringUtil.Len( WebComp_Detalle_venta_productowc_Component) != 0 )
-            {
-               WebComp_Detalle_venta_productowc.componentthemes();
-            }
-         }
          if ( ! ( WebComp_Detalle_compra_productowc == null ) )
          {
             if ( StringUtil.Len( WebComp_Detalle_compra_productowc_Component) != 0 )
             {
                WebComp_Detalle_compra_productowc.componentthemes();
+            }
+         }
+         if ( ! ( WebComp_Detalle_venta_productowc == null ) )
+         {
+            if ( StringUtil.Len( WebComp_Detalle_venta_productowc_Component) != 0 )
+            {
+               WebComp_Detalle_venta_productowc.componentthemes();
             }
          }
          bool outputEnabled = isOutputEnabled( );
@@ -1168,7 +1168,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= Form.Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?202111280105511", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)Form.Jscriptsrc.Item(idxLst))), "?2021113013582747", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -1184,7 +1184,7 @@ namespace GeneXus.Programs {
       protected void include_jscripts( )
       {
          context.AddJavascriptSource("messages.eng.js", "?"+GetCacheInvalidationToken( ), false, true);
-         context.AddJavascriptSource("viewinventario.js", "?202111280105511", false, true);
+         context.AddJavascriptSource("viewinventario.js", "?2021113013582747", false, true);
          context.AddJavascriptSource("Shared/HistoryManager/HistoryManager.js", "", false, true);
          context.AddJavascriptSource("Shared/HistoryManager/rsh/json2005.js", "", false, true);
          context.AddJavascriptSource("Shared/HistoryManager/rsh/rsh.js", "", false, true);
@@ -1207,10 +1207,10 @@ namespace GeneXus.Programs {
          divTabtable_1_Internalname = "TABTABLE_1";
          lblGeneral_title_Internalname = "GENERAL_TITLE";
          divTablegeneral_Internalname = "TABLEGENERAL";
-         lblDetalle_venta_producto_title_Internalname = "DETALLE_VENTA_PRODUCTO_TITLE";
-         divTabledetalle_venta_producto_Internalname = "TABLEDETALLE_VENTA_PRODUCTO";
          lblDetalle_compra_producto_title_Internalname = "DETALLE_COMPRA_PRODUCTO_TITLE";
          divTabledetalle_compra_producto_Internalname = "TABLEDETALLE_COMPRA_PRODUCTO";
+         lblDetalle_venta_producto_title_Internalname = "DETALLE_VENTA_PRODUCTO_TITLE";
+         divTabledetalle_venta_producto_Internalname = "TABLEDETALLE_VENTA_PRODUCTO";
          Tab_Internalname = "TAB";
          divMaintable_Internalname = "MAINTABLE";
          Form.Internalname = "FORM";
@@ -1291,12 +1291,12 @@ namespace GeneXus.Programs {
          lblGeneral_title_Jsonclick = "";
          WebComp_Generalwc_Component = "";
          OldGeneralwc = "";
-         lblDetalle_venta_producto_title_Jsonclick = "";
-         WebComp_Detalle_venta_productowc_Component = "";
-         OldDetalle_venta_productowc = "";
          lblDetalle_compra_producto_title_Jsonclick = "";
          WebComp_Detalle_compra_productowc_Component = "";
          OldDetalle_compra_productowc = "";
+         lblDetalle_venta_producto_title_Jsonclick = "";
+         WebComp_Detalle_venta_productowc_Component = "";
+         OldDetalle_venta_productowc = "";
          sEvt = "";
          EvtGridId = "";
          EvtRowId = "";
@@ -1321,8 +1321,8 @@ namespace GeneXus.Programs {
             }
          );
          WebComp_Generalwc = new GeneXus.Http.GXNullWebComponent();
-         WebComp_Detalle_venta_productowc = new GeneXus.Http.GXNullWebComponent();
          WebComp_Detalle_compra_productowc = new GeneXus.Http.GXNullWebComponent();
+         WebComp_Detalle_venta_productowc = new GeneXus.Http.GXNullWebComponent();
          AV15Pgmname = "ViewInventario";
          /* GeneXus formulas. */
          AV15Pgmname = "ViewInventario";
@@ -1379,16 +1379,16 @@ namespace GeneXus.Programs {
       private string divTablegeneral_Internalname ;
       private string WebComp_Generalwc_Component ;
       private string OldGeneralwc ;
-      private string lblDetalle_venta_producto_title_Internalname ;
-      private string lblDetalle_venta_producto_title_Jsonclick ;
-      private string divTabledetalle_venta_producto_Internalname ;
-      private string WebComp_Detalle_venta_productowc_Component ;
-      private string OldDetalle_venta_productowc ;
       private string lblDetalle_compra_producto_title_Internalname ;
       private string lblDetalle_compra_producto_title_Jsonclick ;
       private string divTabledetalle_compra_producto_Internalname ;
       private string WebComp_Detalle_compra_productowc_Component ;
       private string OldDetalle_compra_productowc ;
+      private string lblDetalle_venta_producto_title_Internalname ;
+      private string lblDetalle_venta_producto_title_Jsonclick ;
+      private string divTabledetalle_venta_producto_Internalname ;
+      private string WebComp_Detalle_venta_productowc_Component ;
+      private string OldDetalle_venta_productowc ;
       private string sEvt ;
       private string EvtGridId ;
       private string EvtRowId ;
@@ -1407,12 +1407,12 @@ namespace GeneXus.Programs {
       private bool returnInSub ;
       private bool AV10Exists ;
       private bool bDynCreated_Generalwc ;
-      private bool bDynCreated_Detalle_venta_productowc ;
       private bool bDynCreated_Detalle_compra_productowc ;
+      private bool bDynCreated_Detalle_venta_productowc ;
       private string A40DESCRIPCIONPRODUCTO ;
       private GXWebComponent WebComp_Generalwc ;
-      private GXWebComponent WebComp_Detalle_venta_productowc ;
       private GXWebComponent WebComp_Detalle_compra_productowc ;
+      private GXWebComponent WebComp_Detalle_venta_productowc ;
       private GXProperties forbiddenHiddens ;
       private GXUserControl ucTab ;
       private IGxDataStore dsDefault ;

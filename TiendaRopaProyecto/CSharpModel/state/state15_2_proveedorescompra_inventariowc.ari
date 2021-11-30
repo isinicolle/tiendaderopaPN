@@ -1,11 +1,9 @@
-current_obj_i(2,web,54).
+current_obj_i(2,web,100).
  
-current_guid('ba04f5b6-0dd4-4eb4-8166-97609a225c97').
- 
- 
-called_tree_i(13,54,1,12).
+current_guid('f1ceb209-591b-4d20-aff4-a41730a4d14b').
  
  
+called_tree_i(13,100,1,12).
  
  
  
@@ -22,7 +20,9 @@ called_tree_i(13,54,1,12).
  
  
  
-ij_object_dependency(proveedorescompra_inventariowc,[],[],[],54).
+ 
+ 
+ij_object_dependency(proveedorescompra_inventariowc,[],[],[],100).
  
  
 obj_parms_i([ 'long aP0_IDPROVEEDOR' ],[ [ 'Idproveedor',in ] ]).

@@ -9,7 +9,7 @@
 <ObjDesc>Categoria_productoes</ObjDesc>
 <ObjPgmName>WWCategoria_producto</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings>
 <Warning>
 <MsgCode>spc0038</MsgCode>

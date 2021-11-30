@@ -9,7 +9,7 @@
 <ObjDesc>Estado_empleado General</ObjDesc>
 <ObjPgmName>Estado_empleadoGeneral</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>

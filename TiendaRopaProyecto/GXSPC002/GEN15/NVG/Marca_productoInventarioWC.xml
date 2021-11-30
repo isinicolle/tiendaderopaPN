@@ -9,7 +9,7 @@
 <ObjDesc>Marca_producto Inventario WC</ObjDesc>
 <ObjPgmName>Marca_productoInventarioWC</ObjPgmName>
 <ObjClsName>Web Panel</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>

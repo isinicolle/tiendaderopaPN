@@ -1,10 +1,10 @@
-spec_i([ web,12,'Ventas_inventarios','WWVentas_inventario',0,eng,'17_0_5-152925' ]).
+spec_i([ web,104,'Ventas_inventarios','WWVentas_inventario',0,eng,'17_0_5-152925' ]).
  
 struct_i(2,1,[ 'Pgmname','Update','Delete' ],[]).
  
-level_i(2,[ 4,[ [ 4,many ],[ 1,one ],[ 8,one ],[ 2004,one ],[ 2003,one ] ],[],[],[ [ [ 4,1,8,2004,2003 ],[ 23,1,58,30,4,55,54,12,59,57 ] ] ],[ [ [ 4,1,8,2004,2003 ],[] ] ],[ 54 ],'',[],[] ]).
+level_i(2,[ 22,[ [ 22,many ],[ 1,one ],[ 8,one ],[ 2005,one ],[ 2004,one ] ],[],[],[ [ [ 22,1,8,2005,2004 ],[ 58,30,4,23,1,55,54,12,59,57 ] ] ],[ [ [ 22,1,8,2005,2004 ],[] ] ],[ 54 ],'',[],[] ]).
  
-tw_i(2,[ [ 1,[ [ 4,1,1 ] ] ],[ 8,[ [ 4,4,4 ] ] ],[ 2004,[ [ 4,12,12 ] ] ],[ 2003,[ [ 4,oe([ t(12,2) ]),12 ] ] ] ]).
+tw_i(2,[ [ 1,[ [ 22,1,1 ] ] ],[ 8,[ [ 22,4,4 ] ] ],[ 2005,[ [ 22,12,12 ] ] ],[ 2004,[ [ 22,oe([ t(12,2) ]),12 ] ] ] ]).
  
 lwi_i(2,[ [] ]).
  
@@ -13,9 +13,9 @@ cond_constraint_i(2,[ [ t(54,2),t(>=,10),t('Fechaventa',23) ],[ 54 ],[ t('.NOT.'
  
 level_option_i(2,server_paging,[ y,[] ]).
  
-ta_i(2,[ [ [ 1,23 ],[ 4,1 ],[ 4,58 ],[ 8,30 ],[ 4,4 ],[ 4,55 ],[ 4,54 ],[ 4,12 ],[ 2004,se(59,[ [ 2004,59 ] ],[ t('coalesce(',1),t(59,2),t(',',7),t('0',3),t(')',4) ]) ],[ 2003,se(57,[ [ 2003,57 ] ],[ t('coalesce(',1),t(57,2),t(',',7),t('0',3),t(')',4) ]) ] ] ]).
+ta_i(2,[ [ [ 22,58 ],[ 8,30 ],[ 22,4 ],[ 1,23 ],[ 22,1 ],[ 22,55 ],[ 22,54 ],[ 22,12 ],[ 2005,se(59,[ [ 2005,59 ] ],[ t('coalesce(',1),t(59,2),t(',',7),t('0',3),t(')',4) ]) ],[ 2004,se(57,[ [ 2004,57 ] ],[ t('coalesce(',1),t(57,2),t(',',7),t('0',3),t(')',4) ]) ] ] ]).
  
-las_i(2,[ [ 'Fechaventa','Update','Delete',23,1,58,30,4,55,54,12,59,57 ] ]).
+las_i(2,[ [ 'Fechaventa','Update','Delete',58,30,4,23,1,55,54,12,59,57 ] ]).
  
 lac_i(2,[ [ 'Fechaventa','Update','Delete' ] ]).
  
@@ -28,17 +28,17 @@ pos_i('Fechaventa',[ 0,0,0 ]).
 pos_i(12,[ 1,2,0 ]).
 pos_i(54,[ 1,2,13 ]).
 pos_i(55,[ 1,2,22 ]).
-pos_i(4,[ 1,2,278 ]).
-pos_i(30,[ 1,2,291 ]).
-pos_i(57,[ 1,2,547 ]).
-pos_i(58,[ 1,2,560 ]).
-pos_i(59,[ 1,2,573 ]).
-pos_i(1,[ 1,2,586 ]).
-pos_i(23,[ 1,2,599 ]).
+pos_i(1,[ 1,2,278 ]).
+pos_i(23,[ 1,2,291 ]).
+pos_i(4,[ 1,2,547 ]).
+pos_i(30,[ 1,2,560 ]).
+pos_i(57,[ 1,2,816 ]).
+pos_i(58,[ 1,2,829 ]).
+pos_i(59,[ 1,2,842 ]).
 pos_i('Update',[ 1,2,855 ]).
 pos_i('Delete',[ 1,2,876 ]).
  
-repeat_i(2,[ 1,2,[ 12,54,55,4,30,57,58,59,1,23,'Update','Delete' ],[ 'Update','Delete' ] ]).
+repeat_i(2,[ 1,2,[ 12,54,55,1,23,4,30,57,58,59,'Update','Delete' ],[ 'Update','Delete' ] ]).
  
 default_i(e('Pgmname',2,2,'"WWVentas_inventario"')).
  
@@ -140,11 +140,11 @@ rule_i(0,rule([ a(22,[ '''DoInsert''','''DoInsert''','' ]) ],[],[],[])).
  
 a_i(1,1,f,'Pgmname',[],[ [],[ t('"WWVentas_inventario"',3) ] ]).
 a_i(2,1,f,'Err',[],[ [],[ t('0',3) ] ]).
-a_i(3,2,t,4,[],[ [],'',[] ]).
-a_i(4,2,r,1,[],[ [ [ 4,1,1 ] ],'IEMPLEADOS',[] ]).
-a_i(5,2,r,8,[],[ [ [ 4,4,4 ] ],'ICLIENTES',[] ]).
-a_i(6,2,r,2004,[],[ [ [ 4,12,12 ] ],'IVENTAS_INVENTARIO',[] ]).
-a_i(7,2,r,2003,[],[ [ [ 4,oe([ t(12,2) ]),12 ] ],'IVENTAS_INVENTARIO',[] ]).
+a_i(3,2,t,22,[],[ [],'',[] ]).
+a_i(4,2,r,1,[],[ [ [ 22,1,1 ] ],'IEMPLEADOS',[] ]).
+a_i(5,2,r,8,[],[ [ [ 22,4,4 ] ],'ICLIENTES',[] ]).
+a_i(6,2,r,2005,[],[ [ [ 22,12,12 ] ],'IVENTAS_INVENTARIO',[] ]).
+a_i(7,2,r,2004,[],[ [ [ 22,oe([ t(12,2) ]),12 ] ],'IVENTAS_INVENTARIO',[] ]).
 a_i(8,2,b,0,[],[ [],[ a(1,msg([ t('"Field FECHAVENTA is out of range"',3) ],[ t('OutOfRange',3) ])) ],[ t('NOT',8),t('(',0),t('null(',1),t('Fechaventa',2),t(')',4),t('.OR.',9),t('Fechaventa',2),t(>=,10),t('ymdtod(',1),t('1753',3),t(',',7),t('01',3),t(',',7),t('01',3),t(')',4),t(')',4) ] ]).
 a_i(9,1,f,[ t('&Update',23),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
 a_i(10,1,f,[ t('&Delete',23),t('Enabled',3) ],[],[ [],[ t(0,3),t(';',18) ] ]).
@@ -154,9 +154,9 @@ v_i(f,o,1,'Pgmname').
 v_i(f,i,2,[]).
 v_i(f,o,2,'Err').
 v_i(t,i,3,[]).
-v_i(t,o,3,1).
 v_i(t,o,3,58).
 v_i(t,o,3,4).
+v_i(t,o,3,1).
 v_i(t,o,3,55).
 v_i(t,o,3,54).
 v_i(t,o,3,12).
@@ -181,16 +181,19 @@ v_i(f,o,10,[ t('&Delete',23),t('Enabled',3) ]).
  
  
 attri_i(7,[ 'IDPRODUCTO',int,12,0,'ZZZZZZZZZZZ9',0,'IDPRODUCTO','',0 ]).
+attri_i(66,[ 'IDDETALLEVENTAPRODUCTO',int,12,0,'ZZZZZZZZZZZ9',0,'IDDETALLEVENTAPRODUCTO','',0 ]).
 attri_i(40004,[ 'GXC5',int,20,0,'',0,'',[],0 ]).
+attri_i(43,[ 'PRECIOVENTAPRODUCTO',int,12,2,'ZZZZZZZZ9.99',0,'PRECIOVENTAPRODUCTO','',0 ]).
+attri_i(41,[ 'CANTIDADPRODUCTO',int,12,0,'ZZZZZZZZZZZ9',0,'CANTIDADPRODUCTO','',0 ]).
 attri_i(40002,[ 'GXC3',int,12,2,'',0,'',[],0 ]).
 attri_i(56,[ 'SUBTOTALVENTAPRODUCTO',int,12,2,'ZZZZZZZZ9.99',0,'SUBTOTALVENTAPRODUCTO','',0 ]).
-attri_i(23,[ 'NOMBRECOMPLETOEMPLEADO',svchar,255,0,'',0,'NOMBRECOMPLETOEMPLEADO','',0 ]).
-attri_i(1,[ 'IDEMPLEADO',int,12,0,'ZZZZZZZZZZZ9',0,'IDEMPLEADO','',0 ]).
 attri_i(59,[ 'TOTALVENTA',int,12,2,'ZZZZZZZZ9.99',0,'TOTALVENTA','',0 ]).
 attri_i(58,[ 'DESCUENTOVENTA',int,12,2,'ZZZZZZZZ9.99',0,'DESCUENTOVENTA','',0 ]).
 attri_i(57,[ 'IMPUESTOVENTA',int,12,2,'ZZZZZZZZ9.99',0,'IMPUESTOVENTA','',0 ]).
 attri_i(30,[ 'NOMBRECOMPLETOCLIENTE',svchar,255,0,'',0,'NOMBRECOMPLETOCLIENTE','',0 ]).
 attri_i(4,[ 'IDCLIENTE',int,12,0,'ZZZZZZZZZZZ9',0,'IDCLIENTE','',0 ]).
+attri_i(23,[ 'NOMBRECOMPLETOEMPLEADO',svchar,255,0,'',0,'NOMBRECOMPLETOEMPLEADO','',0 ]).
+attri_i(1,[ 'IDEMPLEADO',int,12,0,'ZZZZZZZZZZZ9',0,'IDEMPLEADO','',0 ]).
 attri_i(55,[ 'DESCRIPCIONVENTA',svchar,255,0,'',0,'DESCRIPCIONVENTA','',0 ]).
 attri_i(54,[ 'FECHAVENTA',date,8,0,'99/99/99',0,'FECHAVENTA','',0 ]).
 attri_i(12,[ 'IDVENTA',int,12,0,'ZZZZZZZZZZZ9',0,'IDVENTA','',0 ]).
@@ -208,43 +211,47 @@ attri_i('Httprequest',[ 'HTTPRequest',o(httprequest),4,0,'',0,'HTTPRequest','',7
 attri_i('Session',[ 'Session',o(websession),4,0,'',0,'Session','',6 ]).
 attri_i('Isauthorized',[ 'IsAuthorized',boolean,4,0,'',0,'Is Authorized','',5 ]).
  
-table_i(2001,[ 'Ventas_inventario',[ 40002,12 ],'Ventas_inventario','Ventas_inventario' ]).
 table_i(2002,[ 'Ventas_inventario',[ 40002,12 ],'Ventas_inventario','Ventas_inventario' ]).
-table_i(2000,[ 'Inventario',[ 56,7 ],'Inventario','Inventario' ]).
-table_i(5,[ 'Ventas_inventarioDetalle_venta',[ 12,7 ],'Detalle_venta_producto','Ventas_inventarioDetalle_venta_producto' ]).
-table_i(9,[ 'Inventario',[ 7 ],'Inventario','Inventario' ]).
-table_i(2003,[ 'Ventas_inventario',[ 57,12 ],'Ventas_inventario','Ventas_inventario' ]).
-table_i(2004,[ 'Ventas_inventario',[ 59,12 ],'Ventas_inventario','Ventas_inventario' ]).
-table_i(8,[ 'Clientes',[ 4,30 ],'Clientes','Clientes' ]).
-table_i(4,[ 'Ventas_inventario',[ 12,54,55,1,4,58 ],'Ventas_inventario','Ventas_inventario' ]).
+table_i(2003,[ 'Ventas_inventario',[ 40002,12 ],'Ventas_inventario','Ventas_inventario' ]).
+table_i(2001,[ 'Ventas_inventarioDetalle_venta',[ 56,12,66 ],'Detalle_venta_producto','Ventas_inventarioDetalle_venta_producto' ]).
+table_i(2000,[ 'Ventas_inventarioDetalle_venta',[ 40004,12,66 ],'Detalle_venta_producto','Ventas_inventarioDetalle_venta_producto' ]).
+table_i(9,[ 'Inventario',[ 7,41,43 ],'Inventario','Inventario' ]).
+table_i(23,[ 'Ventas_inventarioDetalle_venta',[ 12,66,7 ],'Detalle_venta_producto','Ventas_inventarioDetalle_venta_producto' ]).
+table_i(2004,[ 'Ventas_inventario',[ 57,12 ],'Ventas_inventario','Ventas_inventario' ]).
+table_i(2005,[ 'Ventas_inventario',[ 59,12 ],'Ventas_inventario','Ventas_inventario' ]).
 table_i(1,[ 'Empleados',[ 1,23 ],'Empleados','Empleados' ]).
+table_i(8,[ 'Clientes',[ 4,30 ],'Clientes','Clientes' ]).
+table_i(22,[ 'Ventas_inventario',[ 12,54,55,1,4,58 ],'Ventas_inventario','Ventas_inventario' ]).
  
-index_i(4,[ '',a,[ 54 ],'' ]).
+index_i(22,[ '',a,[ 54 ],'' ]).
+index_i(23,[ 'IVENTAS_INVENTARIODETALLE_VENT',u,[ 12,66 ],'IVentas_inventarioDetalle_venta_producto' ]).
 index_i(9,[ 'IINVENTARIO',u,[ 7 ],'IInventario' ]).
-index_i(5,[ 'IVENTAS_INVENTARIODETALLE_VENT',u,[ 12,7 ],'IVentas_inventarioDetalle_venta_producto' ]).
-index_i(2000,[ 'IINVENTARIO',u,[ 7 ],'IInventario' ]).
-index_i(4,[ 'IVENTAS_INVENTARIO',u,[ 12 ],'IVentas_inventario' ]).
-index_i(2002,[ 'IVENTAS_INVENTARIO',u,[ 12 ],'IVentas_inventario' ]).
+index_i(2000,[ 'IVENTAS_INVENTARIODETALLE_VENT',u,[ 12,66 ],'IVentas_inventarioDetalle_venta_producto' ]).
+index_i(2001,[ 'IVENTAS_INVENTARIODETALLE_VENT',u,[ 12,66 ],'IVentas_inventarioDetalle_venta_producto' ]).
+index_i(22,[ 'IVENTAS_INVENTARIO',u,[ 12 ],'IVentas_inventario' ]).
 index_i(2003,[ 'IVENTAS_INVENTARIO',u,[ 12 ],'IVentas_inventario' ]).
-index_i(2001,[ 'IVENTAS_INVENTARIO',u,[ 12 ],'IVentas_inventario' ]).
+index_i(2004,[ 'IVENTAS_INVENTARIO',u,[ 12 ],'IVentas_inventario' ]).
+index_i(2002,[ 'IVENTAS_INVENTARIO',u,[ 12 ],'IVentas_inventario' ]).
 index_i(1,[ 'IEMPLEADOS',u,[ 1 ],'IEmpleados' ]).
 index_i(8,[ 'ICLIENTES',u,[ 4 ],'IClientes' ]).
-index_i(2004,[ 'IVENTAS_INVENTARIO',u,[ 12 ],'IVentas_inventario' ]).
+index_i(2005,[ 'IVENTAS_INVENTARIO',u,[ 12 ],'IVentas_inventario' ]).
  
-lv_i(2,2000,9).
-lv_i(2,2001,4).
-lv_i(2,2002,4).
-lv_i(2,2003,4).
-lv_i(2,2004,4).
+lv_i(2,2000,23).
+lv_i(2,2001,23).
+lv_i(2,2002,22).
+lv_i(2,2003,22).
+lv_i(2,2004,22).
+lv_i(2,2005,22).
  
  
  
  
-nav_view_i(2000,[ 56 ],[ 7 ],[ 7 ],[ [ 2000,[ [ 5,7,7 ] ] ] ],[ [ [ 9,se(56,[ [ 9,40004 ] ],[ t('coalesce(',1),t(40004,2),t(',',7),t('0',3),t(')',4) ]) ],[ 9,7 ] ],n,[ [ 9,many ] ],[],[],[ none ],[],[],[] ]).
-nav_view_i(2001,[ 40002 ],[ 12 ],[ 12 ],[ [ 2001,[ [ 4,oe([ t(12,2) ]),12 ] ] ] ],[ [ [ 2000,[ 'sum(',se(56,[ [ 2000,56 ] ],[ t('coalesce(',1),t(56,2),t(',',7),t('0',3),t(')',4) ]) ] ],[ 5,12 ] ],n,[ [ 5,many ],[ 2000,one ] ],[ [ 2000,[ [ 5,7,7 ] ] ] ],[],[ none ],[],[ 12 ],[] ]).
-nav_view_i(2002,[ 40002 ],[ 12 ],[ 12 ],[ [ 2002,[ [ 4,oe([ t(12,2) ]),12 ] ] ] ],[ [ [ 2000,[ 'sum(',se(56,[ [ 2000,56 ] ],[ t('coalesce(',1),t(56,2),t(',',7),t('0',3),t(')',4) ]) ] ],[ 5,12 ] ],n,[ [ 5,many ],[ 2000,one ] ],[ [ 2000,[ [ 5,7,7 ] ] ] ],[],[ none ],[],[ 12 ],[] ]).
-nav_view_i(2003,[ 57 ],[ 12 ],[ 12 ],[ [ 2003,[ [ 4,oe([ t(12,2) ]),12 ] ] ] ],[ [ [ 2002,se(57,[ [ 2002,40002 ] ],[ t('coalesce(',1),t(40002,2),t(',',7),t('0',3),t(')',4),t(*,6),t('0.15',3) ]) ],[ 4,12 ] ],n,[ [ 4,many ],[ 2002,one ] ],[ [ 2002,[ [ 4,oe([ t(12,2) ]),12 ] ] ] ],[],[ none ],[],[],[] ]).
-nav_view_i(2004,[ 59 ],[ 12 ],[ 12 ],[ [ 2004,[ [ 4,12,12 ] ] ] ],[ [ [ 4,se(59,[ [ 2001,40002 ],[ 2003,se(57,[ [ 2003,57 ] ],[ t('coalesce(',1),t(57,2),t(',',7),t('0',3),t(')',4) ]) ],[ 4,58 ] ],[ t('coalesce(',1),t(40002,2),t(',',7),t('0',3),t(')',4),t(+,5),t(57,2),t(-,5),t(58,2) ]) ],[ 4,12 ] ],n,[ [ 4,many ],[ 2003,one ],[ 2001,one ] ],[ [ 2003,[ [ 4,oe([ t(12,2) ]),12 ] ] ],[ 2001,[ [ 4,oe([ t(12,2) ]),12 ] ] ] ],[],[ none ],[],[],[] ]).
+nav_view_i(2000,[ 40004 ],[ 12,66 ],[ 12,66 ],[ [ 2000,[ [ 23,oe([ t(12,2) ]),12 ],[ 23,oe([ t(66,2) ]),66 ] ] ] ],[ [ [ 23,[ 'sum(',se(40004,[ [ 9,41 ],[ 9,43 ] ],[ t(41,2),t(*,6),t(43,2) ]) ] ],[ 23,12 ],[ 23,66 ] ],n,[ [ 23,one ],[ 9,one ] ],[ [ 9,[ [ 23,7,7 ] ] ] ],[],[ none ],[],[ 12,66 ],[] ]).
+nav_view_i(2001,[ 56 ],[ 12,66 ],[ 12,66 ],[ [ 2001,[ [ 23,oe([ t(12,2) ]),12 ],[ 23,oe([ t(66,2) ]),66 ] ] ] ],[ [ [ 2000,se(56,[ [ 2000,40004 ] ],[ t('coalesce(',1),t(40004,2),t(',',7),t('0',3),t(')',4) ]) ],[ 23,12 ],[ 23,66 ] ],n,[ [ 23,many ],[ 2000,one ] ],[ [ 2000,[ [ 23,oe([ t(12,2) ]),12 ],[ 23,oe([ t(66,2) ]),66 ] ] ] ],[],[ none ],[],[],[] ]).
+nav_view_i(2002,[ 40002 ],[ 12 ],[ 12 ],[ [ 2002,[ [ 22,oe([ t(12,2) ]),12 ] ] ] ],[ [ [ 2001,[ 'sum(',se(56,[ [ 2001,56 ] ],[ t('coalesce(',1),t(56,2),t(',',7),t('0',3),t(')',4) ]) ] ],[ 23,12 ] ],n,[ [ 23,many ],[ 2001,one ] ],[ [ 2001,[ [ 23,oe([ t(12,2) ]),12 ],[ 23,oe([ t(66,2) ]),66 ] ] ] ],[],[ none ],[],[ 12 ],[] ]).
+nav_view_i(2003,[ 40002 ],[ 12 ],[ 12 ],[ [ 2003,[ [ 22,oe([ t(12,2) ]),12 ] ] ] ],[ [ [ 2001,[ 'sum(',se(56,[ [ 2001,56 ] ],[ t('coalesce(',1),t(56,2),t(',',7),t('0',3),t(')',4) ]) ] ],[ 23,12 ] ],n,[ [ 23,many ],[ 2001,one ] ],[ [ 2001,[ [ 23,oe([ t(12,2) ]),12 ],[ 23,oe([ t(66,2) ]),66 ] ] ] ],[],[ none ],[],[ 12 ],[] ]).
+nav_view_i(2004,[ 57 ],[ 12 ],[ 12 ],[ [ 2004,[ [ 22,oe([ t(12,2) ]),12 ] ] ] ],[ [ [ 2003,se(57,[ [ 2003,40002 ] ],[ t('coalesce(',1),t(40002,2),t(',',7),t('0',3),t(')',4),t(*,6),t('0.15',3) ]) ],[ 22,12 ] ],n,[ [ 22,many ],[ 2003,one ] ],[ [ 2003,[ [ 22,oe([ t(12,2) ]),12 ] ] ] ],[],[ none ],[],[],[] ]).
+nav_view_i(2005,[ 59 ],[ 12 ],[ 12 ],[ [ 2005,[ [ 22,12,12 ] ] ] ],[ [ [ 22,se(59,[ [ 2002,40002 ],[ 2004,se(57,[ [ 2004,57 ] ],[ t('coalesce(',1),t(57,2),t(',',7),t('0',3),t(')',4) ]) ],[ 22,58 ] ],[ t('coalesce(',1),t(40002,2),t(',',7),t('0',3),t(')',4),t(+,5),t(57,2),t(-,5),t(58,2) ]) ],[ 22,12 ] ],n,[ [ 22,many ],[ 2004,one ],[ 2002,one ] ],[ [ 2004,[ [ 22,oe([ t(12,2) ]),12 ] ] ],[ 2002,[ [ 22,oe([ t(12,2) ]),12 ] ] ] ],[],[ none ],[],[],[] ]).
  
  
 agg_def_i(59,[ t('0',3) ]).
@@ -284,7 +291,7 @@ dom_info_i(42,[ 'GeneXus\Email' ]).
 dom_info_i(88,[ 'Direccion' ]).
  
  
-break_i(2,nvg,1,[ 54 ],[ [ 12,54,55,4,30,57,58,59,1,23 ],[],[] ]).
+break_i(2,nvg,1,[ 54 ],[ [ 12,54,55,1,23,4,30,57,58,59 ],[],[] ]).
  
 b_group_i(2,1,lit,0,1,1).
 b_group_i(2,2,lit,0,2,15).
@@ -311,8 +318,8 @@ b_line_i(19,2,3,cmd,1,[ t('',146,19,0),t([ t('Grid',3,19,7),t('Load',3,19,12) ],
 b_line_i(20,2,4,cmd,1,[ t('',107,20,0),t([ t('Update',23,1,0),t('Link',3,1,0) ],29,1,0),t(=,10,1,0),t('link(',1,1,0),t(o(0,'Ventas_inventario'),28,1,0),t(',',7,1,0),t([ 39,'Update' ],44,1,0),t(',',7,1,0),t(12,2,1,0),t(')',4,1,0) ]).
 b_line_i(21,2,4,cmd,1,[ t('',107,21,0),t([ t('Delete',23,1,0),t('Link',3,1,0) ],29,1,0),t(=,10,1,0),t('link(',1,1,0),t(o(0,'Ventas_inventario'),28,1,0),t(',',7,1,0),t([ 39,'Delete' ],44,1,0),t(',',7,1,0),t(12,2,1,0),t(')',4,1,0) ]).
 b_line_i(22,2,4,cmd,1,[ t('',107,22,0),t([ t(54,2,1,0),t('Link',3,1,0) ],29,1,0),t(=,10,1,0),t('link(',1,1,0),t(o(13,'ViewVentas_inventario'),28,1,0),t(',',7,1,0),t(12,2,1,0),t(',',7,1,0),t('""',3,1,0),t(')',4,1,0) ]).
-b_line_i(23,2,4,cmd,1,[ t('',107,23,0),t([ t(30,2,1,0),t('Link',3,1,0) ],29,1,0),t(=,10,1,0),t('link(',1,1,0),t(o(13,'ViewClientes'),28,1,0),t(',',7,1,0),t(4,2,1,0),t(',',7,1,0),t('""',3,1,0),t(')',4,1,0) ]).
-b_line_i(24,2,4,cmd,1,[ t('',107,24,0),t([ t(23,2,1,0),t('Link',3,1,0) ],29,1,0),t(=,10,1,0),t('link(',1,1,0),t(o(13,'ViewEmpleados'),28,1,0),t(',',7,1,0),t(1,2,1,0),t(',',7,1,0),t('""',3,1,0),t(')',4,1,0) ]).
+b_line_i(23,2,4,cmd,1,[ t('',107,23,0),t([ t(23,2,1,0),t('Link',3,1,0) ],29,1,0),t(=,10,1,0),t('link(',1,1,0),t(o(13,'ViewEmpleados'),28,1,0),t(',',7,1,0),t(1,2,1,0),t(',',7,1,0),t('""',3,1,0),t(')',4,1,0) ]).
+b_line_i(24,2,4,cmd,1,[ t('',107,24,0),t([ t(30,2,1,0),t('Link',3,1,0) ],29,1,0),t(=,10,1,0),t('link(',1,1,0),t(o(13,'ViewClientes'),28,1,0),t(',',7,1,0),t(4,2,1,0),t(',',7,1,0),t('""',3,1,0),t(')',4,1,0) ]).
 b_line_i(25,2,4,cmd,1,[ t('',107,25,0),t([ t('Grid',3,0,0),t('load(',1,0,0) ],31,0,0),t(')',4,0,0) ]).
 b_line_i(25,2,4,cmd,1,[ t('',147,25,0) ]).
 b_line_i(27,2,4,cmd,1,[ t('',146,27,0),t('''DoInsert''',3,27,7) ]).
@@ -712,8 +719,8 @@ html_comp_i(28,'Title','',d,[ str ]).
 html_comp_i(28,'Invitemsg','',d,[ str ]).
 html_comp_i(29,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(29,'Colcount',12,d,[ num ]).
-html_comp_i(29,'Colattid',4,v,[ num ]).
-html_comp_i(29,'Controlname','Idcliente',d,[ str ]).
+html_comp_i(29,'Colattid',1,v,[ num ]).
+html_comp_i(29,'Controlname','Idempleado',d,[ str ]).
 html_comp_i(29,'Class','Attribute',v,[ str ]).
 html_comp_i(29,'Columnclass','WWColumn WWOptionalColumn',v,[ str ]).
 html_comp_i(29,'Returnonclick',0,d,[ bool ]).
@@ -730,7 +737,7 @@ html_comp_i(29,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(29,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(29,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(29,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(29,'Coltitle','IDCLIENTE',d,[ str ]).
+html_comp_i(29,'Coltitle','IDEMPLEADO',d,[ str ]).
 html_comp_i(29,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(29,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(29,'Horizontalalignment',right,d,[ str ]).
@@ -740,8 +747,8 @@ html_comp_i(29,'Title','',d,[ str ]).
 html_comp_i(29,'Invitemsg','',d,[ str ]).
 html_comp_i(30,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(30,'Colcount',80,d,[ num ]).
-html_comp_i(30,'Colattid',30,v,[ num ]).
-html_comp_i(30,'Controlname','Nombrecompletocliente',d,[ str ]).
+html_comp_i(30,'Colattid',23,v,[ num ]).
+html_comp_i(30,'Controlname','Nombrecompletoempleado',d,[ str ]).
 html_comp_i(30,'Class','Attribute',v,[ str ]).
 html_comp_i(30,'Columnclass','WWColumn WWOptionalColumn',v,[ str ]).
 html_comp_i(30,'Returnonclick',0,d,[ bool ]).
@@ -761,7 +768,7 @@ html_comp_i(30,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(30,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(30,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(30,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(30,'Coltitle','NOMBRECOMPLETOCLIENTE',d,[ str ]).
+html_comp_i(30,'Coltitle','NOMBRECOMPLETOEMPLEADO',d,[ str ]).
 html_comp_i(30,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(30,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(30,'Horizontalalignment',left,d,[ str ]).
@@ -771,8 +778,8 @@ html_comp_i(30,'Title','',d,[ str ]).
 html_comp_i(30,'Invitemsg','',d,[ str ]).
 html_comp_i(31,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(31,'Colcount',12,d,[ num ]).
-html_comp_i(31,'Colattid',57,v,[ num ]).
-html_comp_i(31,'Controlname','Impuestoventa',d,[ str ]).
+html_comp_i(31,'Colattid',4,v,[ num ]).
+html_comp_i(31,'Controlname','Idcliente',d,[ str ]).
 html_comp_i(31,'Class','Attribute',v,[ str ]).
 html_comp_i(31,'Columnclass','WWColumn WWOptionalColumn',v,[ str ]).
 html_comp_i(31,'Returnonclick',0,d,[ bool ]).
@@ -789,7 +796,7 @@ html_comp_i(31,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(31,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(31,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(31,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(31,'Coltitle','IMPUESTOVENTA',d,[ str ]).
+html_comp_i(31,'Coltitle','IDCLIENTE',d,[ str ]).
 html_comp_i(31,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(31,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(31,'Horizontalalignment',right,d,[ str ]).
@@ -798,15 +805,18 @@ html_comp_i(31,'Colvisible',-1,v,[ bool ]).
 html_comp_i(31,'Title','',d,[ str ]).
 html_comp_i(31,'Invitemsg','',d,[ str ]).
 html_comp_i(32,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(32,'Colcount',12,d,[ num ]).
-html_comp_i(32,'Colattid',58,v,[ num ]).
-html_comp_i(32,'Controlname','Descuentoventa',d,[ str ]).
+html_comp_i(32,'Colcount',80,d,[ num ]).
+html_comp_i(32,'Colattid',30,v,[ num ]).
+html_comp_i(32,'Controlname','Nombrecompletocliente',d,[ str ]).
 html_comp_i(32,'Class','Attribute',v,[ str ]).
 html_comp_i(32,'Columnclass','WWColumn WWOptionalColumn',v,[ str ]).
 html_comp_i(32,'Returnonclick',0,d,[ bool ]).
 html_comp_i(32,'Eventgx','',d,[ str ]).
 html_comp_i(32,'Controltype',2,d,[ num ]).
 html_comp_i(32,'Inputtype',0,d,[ num ]).
+html_comp_i(32,'Editautocomplete',0,d,[ num ]).
+html_comp_i(32,'Autocorrection',-1,d,[ bool ]).
+html_comp_i(32,'Autocapitalization','FirstWord',d,[ str ]).
 html_comp_i(32,'Notifycontextchange',0,d,[ bool ]).
 html_comp_i(32,'Colreadonly',-1,d,[ bool ]).
 html_comp_i(32,'Autocomplete',-1,d,[ bool ]).
@@ -817,18 +827,18 @@ html_comp_i(32,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(32,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(32,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(32,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(32,'Coltitle','DESCUENTOVENTA',d,[ str ]).
+html_comp_i(32,'Coltitle','NOMBRECOMPLETOCLIENTE',d,[ str ]).
 html_comp_i(32,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(32,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(32,'Horizontalalignment',right,d,[ str ]).
+html_comp_i(32,'Horizontalalignment',left,d,[ str ]).
 html_comp_i(32,'Gxformat',0,d,[ num ]).
 html_comp_i(32,'Colvisible',-1,v,[ bool ]).
 html_comp_i(32,'Title','',d,[ str ]).
 html_comp_i(32,'Invitemsg','',d,[ str ]).
 html_comp_i(33,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(33,'Colcount',12,d,[ num ]).
-html_comp_i(33,'Colattid',59,v,[ num ]).
-html_comp_i(33,'Controlname','Totalventa',d,[ str ]).
+html_comp_i(33,'Colattid',57,v,[ num ]).
+html_comp_i(33,'Controlname','Impuestoventa',d,[ str ]).
 html_comp_i(33,'Class','Attribute',v,[ str ]).
 html_comp_i(33,'Columnclass','WWColumn WWOptionalColumn',v,[ str ]).
 html_comp_i(33,'Returnonclick',0,d,[ bool ]).
@@ -845,7 +855,7 @@ html_comp_i(33,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(33,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(33,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(33,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(33,'Coltitle','TOTALVENTA',d,[ str ]).
+html_comp_i(33,'Coltitle','IMPUESTOVENTA',d,[ str ]).
 html_comp_i(33,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(33,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(33,'Horizontalalignment',right,d,[ str ]).
@@ -855,8 +865,8 @@ html_comp_i(33,'Title','',d,[ str ]).
 html_comp_i(33,'Invitemsg','',d,[ str ]).
 html_comp_i(34,'Isabstractlayoutcontrol',0,d,[ bool ]).
 html_comp_i(34,'Colcount',12,d,[ num ]).
-html_comp_i(34,'Colattid',1,v,[ num ]).
-html_comp_i(34,'Controlname','Idempleado',d,[ str ]).
+html_comp_i(34,'Colattid',58,v,[ num ]).
+html_comp_i(34,'Controlname','Descuentoventa',d,[ str ]).
 html_comp_i(34,'Class','Attribute',v,[ str ]).
 html_comp_i(34,'Columnclass','WWColumn WWOptionalColumn',v,[ str ]).
 html_comp_i(34,'Returnonclick',0,d,[ bool ]).
@@ -873,7 +883,7 @@ html_comp_i(34,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(34,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(34,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(34,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(34,'Coltitle','IDEMPLEADO',d,[ str ]).
+html_comp_i(34,'Coltitle','DESCUENTOVENTA',d,[ str ]).
 html_comp_i(34,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(34,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
 html_comp_i(34,'Horizontalalignment',right,d,[ str ]).
@@ -882,18 +892,15 @@ html_comp_i(34,'Colvisible',-1,v,[ bool ]).
 html_comp_i(34,'Title','',d,[ str ]).
 html_comp_i(34,'Invitemsg','',d,[ str ]).
 html_comp_i(35,'Isabstractlayoutcontrol',0,d,[ bool ]).
-html_comp_i(35,'Colcount',80,d,[ num ]).
-html_comp_i(35,'Colattid',23,v,[ num ]).
-html_comp_i(35,'Controlname','Nombrecompletoempleado',d,[ str ]).
+html_comp_i(35,'Colcount',12,d,[ num ]).
+html_comp_i(35,'Colattid',59,v,[ num ]).
+html_comp_i(35,'Controlname','Totalventa',d,[ str ]).
 html_comp_i(35,'Class','Attribute',v,[ str ]).
 html_comp_i(35,'Columnclass','WWColumn WWOptionalColumn',v,[ str ]).
 html_comp_i(35,'Returnonclick',0,d,[ bool ]).
 html_comp_i(35,'Eventgx','',d,[ str ]).
 html_comp_i(35,'Controltype',2,d,[ num ]).
 html_comp_i(35,'Inputtype',0,d,[ num ]).
-html_comp_i(35,'Editautocomplete',0,d,[ num ]).
-html_comp_i(35,'Autocorrection',-1,d,[ bool ]).
-html_comp_i(35,'Autocapitalization','FirstWord',d,[ str ]).
 html_comp_i(35,'Notifycontextchange',0,d,[ bool ]).
 html_comp_i(35,'Colreadonly',-1,d,[ bool ]).
 html_comp_i(35,'Autocomplete',-1,d,[ bool ]).
@@ -904,10 +911,10 @@ html_comp_i(35,'Colwidth',measure(0,px),d,[ measure ]).
 html_comp_i(35,'Height',measure(17,px),d,[ measure ]).
 html_comp_i(35,'Collinesfont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(35,'Collinescolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(35,'Coltitle','NOMBRECOMPLETOEMPLEADO',d,[ str ]).
+html_comp_i(35,'Coltitle','TOTALVENTA',d,[ str ]).
 html_comp_i(35,'Coltitlefont',font('Arial',10,[]),d,[ font ]).
 html_comp_i(35,'Coltitlecolor',rgb(255,255,255),d,[ color ]).
-html_comp_i(35,'Horizontalalignment',left,d,[ str ]).
+html_comp_i(35,'Horizontalalignment',right,d,[ str ]).
 html_comp_i(35,'Gxformat',0,d,[ num ]).
 html_comp_i(35,'Colvisible',-1,v,[ bool ]).
 html_comp_i(35,'Title','',d,[ str ]).
@@ -1003,16 +1010,16 @@ lit_i(20,1,div(20),[ ctlname('') ]).
 lit_i(26,1,s(t(12,2),25),[ ctlname(12),ctrltype(edit,26),pos(26),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(27,1,s(t(54,2),25),[ ctlname(54),ctrltype(edit,27),pos(27),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(28,1,s(t(55,2),25),[ ctlname(55),ctrltype(edit,28),pos(28),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(29,1,s(t(4,2),25),[ ctlname(4),ctrltype(edit,29),pos(29),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(30,1,s(t(30,2),25),[ ctlname(30),ctrltype(edit,30),pos(30),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(31,1,s(t(57,2),25),[ ctlname(57),ctrltype(edit,31),pos(31),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(32,1,s(t(58,2),25),[ ctlname(58),ctrltype(edit,32),pos(32),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(33,1,s(t(59,2),25),[ ctlname(59),ctrltype(edit,33),pos(33),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(34,1,s(t(1,2),25),[ ctlname(1),ctrltype(edit,34),pos(34),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(35,1,s(t(23,2),25),[ ctlname(23),ctrltype(edit,35),pos(35),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(29,1,s(t(1,2),25),[ ctlname(1),ctrltype(edit,29),pos(29),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(30,1,s(t(23,2),25),[ ctlname(23),ctrltype(edit,30),pos(30),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(31,1,s(t(4,2),25),[ ctlname(4),ctrltype(edit,31),pos(31),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(32,1,s(t(30,2),25),[ ctlname(30),ctrltype(edit,32),pos(32),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(33,1,s(t(57,2),25),[ ctlname(57),ctrltype(edit,33),pos(33),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(34,1,s(t(58,2),25),[ ctlname(58),ctrltype(edit,34),pos(34),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(35,1,s(t(59,2),25),[ ctlname(59),ctrltype(edit,35),pos(35),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(36,1,s(t('Update',23),25),[ ctlname('&Update'),ctrltype(edit,36),pos(36),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(37,1,s(t('Delete',23),25),[ ctlname('&Delete'),ctrltype(edit,37),pos(37),readonly,ispwd(0),e2n(1),width(0),rect(0,0,10,10),title('Nothing') ]).
-lit_i(25,1,s(25),[ ctlname('Grid'),el([ t(12,2),t(54,2),t(55,2),t(4,2),t(30,2),t(57,2),t(58,2),t(59,2),t(1,2),t(23,2),t('Update',23),t('Delete',23) ]),width(0),rect(0,0,10,10),title('Nothing') ]).
+lit_i(25,1,s(25),[ ctlname('Grid'),el([ t(12,2),t(54,2),t(55,2),t(1,2),t(23,2),t(4,2),t(30,2),t(57,2),t(58,2),t(59,2),t('Update',23),t('Delete',23) ]),width(0),rect(0,0,10,10),title('Nothing') ]).
 lit_i(24,1,div(24),[ ctlname('') ]).
 lit_i(23,1,div(23),[ ctlname('') ]).
 lit_i(19,1,div(19),[ ctlname('Gridtable') ]).
@@ -1066,6 +1073,31 @@ att_prop_i(2,55,'AttValidationFailedMsg','',d).
 att_prop_i(2,55,'DownloadOffline','0',d).
 att_prop_i(2,55,'VarServiceExtName','',d).
 att_prop_i(2,55,'FullName','DESCRIPCIONVENTA',v).
+att_prop_i(2,1,'ExternalName','IDEMPLEADO',d).
+att_prop_i(2,1,'ExternalNamespace','TiendaRopaProyecto',d).
+att_prop_i(2,1,'EmptyAsNull','Yes',d).
+att_prop_i(2,1,idBasedOn,84,v).
+att_prop_i(2,1,'AUTONUMBER','-1',d).
+att_prop_i(2,1,'AUTONUMBER_START','1',d).
+att_prop_i(2,1,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,1,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,1,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,1,'AttRegEx','',d).
+att_prop_i(2,1,'AttValidationFailedMsg','',d).
+att_prop_i(2,1,'DownloadOffline','0',d).
+att_prop_i(2,1,'VarServiceExtName','',d).
+att_prop_i(2,1,'FullName','IDEMPLEADO',v).
+att_prop_i(2,23,'ExternalName','NOMBRECOMPLETOEMPLEADO',d).
+att_prop_i(2,23,'ExternalNamespace','TiendaRopaProyecto',d).
+att_prop_i(2,23,'EmptyAsNull','Yes',d).
+att_prop_i(2,23,idBasedOn,85,v).
+att_prop_i(2,23,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,23,'DB_NLS_SUPPORT','Yes',d).
+att_prop_i(2,23,'AttRegEx','',d).
+att_prop_i(2,23,'AttValidationFailedMsg','',d).
+att_prop_i(2,23,'DownloadOffline','0',d).
+att_prop_i(2,23,'VarServiceExtName','',d).
+att_prop_i(2,23,'FullName','NOMBRECOMPLETOEMPLEADO',v).
 att_prop_i(2,4,'ExternalName','IDCLIENTE',d).
 att_prop_i(2,4,'ExternalNamespace','TiendaRopaProyecto',d).
 att_prop_i(2,4,'EmptyAsNull','Yes',d).
@@ -1114,37 +1146,48 @@ att_prop_i(2,59,idBasedOn,86,v).
 att_prop_i(2,59,'DownloadOffline','0',d).
 att_prop_i(2,59,'VarServiceExtName','',d).
 att_prop_i(2,59,'FullName','TOTALVENTA',v).
-att_prop_i(2,1,'ExternalName','IDEMPLEADO',d).
-att_prop_i(2,1,'ExternalNamespace','TiendaRopaProyecto',d).
-att_prop_i(2,1,'EmptyAsNull','Yes',d).
-att_prop_i(2,1,idBasedOn,84,v).
-att_prop_i(2,1,'AUTONUMBER','-1',d).
-att_prop_i(2,1,'AUTONUMBER_START','1',d).
-att_prop_i(2,1,'AUTONUMBER_STEP','1',d).
-att_prop_i(2,1,'AUTONUMBER_FORREPLICATION','-1',d).
-att_prop_i(2,1,'ATT_INITIAL_VALUE','',d).
-att_prop_i(2,1,'AttRegEx','',d).
-att_prop_i(2,1,'AttValidationFailedMsg','',d).
-att_prop_i(2,1,'DownloadOffline','0',d).
-att_prop_i(2,1,'VarServiceExtName','',d).
-att_prop_i(2,1,'FullName','IDEMPLEADO',v).
-att_prop_i(2,23,'ExternalName','NOMBRECOMPLETOEMPLEADO',d).
-att_prop_i(2,23,'ExternalNamespace','TiendaRopaProyecto',d).
-att_prop_i(2,23,'EmptyAsNull','Yes',d).
-att_prop_i(2,23,idBasedOn,85,v).
-att_prop_i(2,23,'ATT_INITIAL_VALUE','',d).
-att_prop_i(2,23,'DB_NLS_SUPPORT','Yes',d).
-att_prop_i(2,23,'AttRegEx','',d).
-att_prop_i(2,23,'AttValidationFailedMsg','',d).
-att_prop_i(2,23,'DownloadOffline','0',d).
-att_prop_i(2,23,'VarServiceExtName','',d).
-att_prop_i(2,23,'FullName','NOMBRECOMPLETOEMPLEADO',v).
 att_prop_i(2,56,'ExternalName','SUBTOTALVENTAPRODUCTO',d).
 att_prop_i(2,56,'ExternalNamespace','TiendaRopaProyecto',d).
 att_prop_i(2,56,idBasedOn,86,v).
 att_prop_i(2,56,'DownloadOffline','0',d).
 att_prop_i(2,56,'VarServiceExtName','',d).
 att_prop_i(2,56,'FullName','SUBTOTALVENTAPRODUCTO',v).
+att_prop_i(2,41,'ExternalName','CANTIDADPRODUCTO',d).
+att_prop_i(2,41,'ExternalNamespace','TiendaRopaProyecto',d).
+att_prop_i(2,41,'EmptyAsNull','Yes',d).
+att_prop_i(2,41,idBasedOn,87,v).
+att_prop_i(2,41,'AUTONUMBER','0',d).
+att_prop_i(2,41,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,41,'AttRegEx','',d).
+att_prop_i(2,41,'AttValidationFailedMsg','',d).
+att_prop_i(2,41,'DownloadOffline','0',d).
+att_prop_i(2,41,'VarServiceExtName','',d).
+att_prop_i(2,41,'FullName','CANTIDADPRODUCTO',v).
+att_prop_i(2,43,'ExternalName','PRECIOVENTAPRODUCTO',d).
+att_prop_i(2,43,'ExternalNamespace','TiendaRopaProyecto',d).
+att_prop_i(2,43,'EmptyAsNull','Yes',d).
+att_prop_i(2,43,idBasedOn,86,v).
+att_prop_i(2,43,'AUTONUMBER','0',d).
+att_prop_i(2,43,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,43,'AttRegEx','',d).
+att_prop_i(2,43,'AttValidationFailedMsg','',d).
+att_prop_i(2,43,'DownloadOffline','0',d).
+att_prop_i(2,43,'VarServiceExtName','',d).
+att_prop_i(2,43,'FullName','PRECIOVENTAPRODUCTO',v).
+att_prop_i(2,66,'ExternalName','IDDETALLEVENTAPRODUCTO',d).
+att_prop_i(2,66,'ExternalNamespace','TiendaRopaProyecto',d).
+att_prop_i(2,66,'EmptyAsNull','Yes',d).
+att_prop_i(2,66,idBasedOn,84,v).
+att_prop_i(2,66,'AUTONUMBER','-1',d).
+att_prop_i(2,66,'AUTONUMBER_START','1',d).
+att_prop_i(2,66,'AUTONUMBER_STEP','1',d).
+att_prop_i(2,66,'AUTONUMBER_FORREPLICATION','-1',d).
+att_prop_i(2,66,'ATT_INITIAL_VALUE','',d).
+att_prop_i(2,66,'AttRegEx','',d).
+att_prop_i(2,66,'AttValidationFailedMsg','',d).
+att_prop_i(2,66,'DownloadOffline','0',d).
+att_prop_i(2,66,'VarServiceExtName','',d).
+att_prop_i(2,66,'FullName','IDDETALLEVENTAPRODUCTO',v).
 att_prop_i(2,7,'ExternalName','IDPRODUCTO',d).
 att_prop_i(2,7,'ExternalNamespace','TiendaRopaProyecto',d).
 att_prop_i(2,7,'EmptyAsNull','Yes',d).
@@ -1175,65 +1218,75 @@ att_prop_i(2,40004,'AttRegEx','',d).
 att_prop_i(2,40004,'AttValidationFailedMsg','',d).
 att_prop_i(2,40004,'FullName','',v).
  
-tbl_prop_i(2,5,'AllDirSuper',[ [ 9,[ 7 ] ],[ 4,[ 12 ] ] ],v).
-tbl_prop_i(2,4,'AllDirSuper',[ [ 8,[ 4 ] ],[ 1,[ 1 ] ] ],v).
-tbl_prop_i(2,2004,'DirSubor',[ [ 5,[ 12 ] ] ],v).
-tbl_prop_i(2,8,'DirSubor',[ [ 4,[ 4 ] ] ],v).
-tbl_prop_i(2,1,'DirSubor',[ [ 4,[ 1 ] ] ],v).
-tbl_prop_i(2,2001,'DirSubor',[ [ 5,[ 12 ] ] ],v).
-tbl_prop_i(2,2003,'DirSubor',[ [ 5,[ 12 ] ] ],v).
-tbl_prop_i(2,2002,'DirSubor',[ [ 5,[ 12 ] ] ],v).
-tbl_prop_i(2,2000,'DirSubor',[ [ 5,[ 7 ] ] ],v).
-tbl_prop_i(2,9,'DirSubor',[ [ 5,[ 7 ] ] ],v).
-tbl_prop_i(2,4,'DirSubor',[ [ 5,[ 12 ] ] ],v).
-tbl_prop_i(2,2004,'DirSuper',[ [ 8,[ 4 ] ],[ 1,[ 1 ] ] ],v).
-tbl_prop_i(2,2001,'DirSuper',[ [ 8,[ 4 ] ],[ 1,[ 1 ] ] ],v).
-tbl_prop_i(2,2003,'DirSuper',[ [ 8,[ 4 ] ],[ 1,[ 1 ] ] ],v).
+tbl_prop_i(2,2001,'AllDirSuper',[ [ 22,[ 12 ] ] ],v).
+tbl_prop_i(2,2000,'AllDirSuper',[ [ 22,[ 12 ] ] ],v).
+tbl_prop_i(2,23,'AllDirSuper',[ [ 9,[ 7 ] ],[ 22,[ 12 ] ] ],v).
+tbl_prop_i(2,22,'AllDirSuper',[ [ 8,[ 4 ] ],[ 1,[ 1 ] ] ],v).
+tbl_prop_i(2,2005,'DirSubor',[ [ 23,[ 12 ] ] ],v).
+tbl_prop_i(2,8,'DirSubor',[ [ 22,[ 4 ] ] ],v).
+tbl_prop_i(2,1,'DirSubor',[ [ 22,[ 1 ] ] ],v).
+tbl_prop_i(2,2002,'DirSubor',[ [ 23,[ 12 ] ] ],v).
+tbl_prop_i(2,2004,'DirSubor',[ [ 23,[ 12 ] ] ],v).
+tbl_prop_i(2,2003,'DirSubor',[ [ 23,[ 12 ] ] ],v).
+tbl_prop_i(2,9,'DirSubor',[ [ 23,[ 7 ] ] ],v).
+tbl_prop_i(2,22,'DirSubor',[ [ 23,[ 12 ] ] ],v).
+tbl_prop_i(2,2005,'DirSuper',[ [ 8,[ 4 ] ],[ 1,[ 1 ] ] ],v).
 tbl_prop_i(2,2002,'DirSuper',[ [ 8,[ 4 ] ],[ 1,[ 1 ] ] ],v).
-tbl_prop_i(2,5,'DirSuper',[ [ 9,[ 7 ] ],[ 4,[ 12 ] ] ],v).
-tbl_prop_i(2,4,'DirSuper',[ [ 8,[ 4 ] ],[ 1,[ 1 ] ] ],v).
+tbl_prop_i(2,2004,'DirSuper',[ [ 8,[ 4 ] ],[ 1,[ 1 ] ] ],v).
+tbl_prop_i(2,2003,'DirSuper',[ [ 8,[ 4 ] ],[ 1,[ 1 ] ] ],v).
+tbl_prop_i(2,2001,'DirSuper',[ [ 9,[ 7 ] ],[ 22,[ 12 ] ] ],v).
+tbl_prop_i(2,2000,'DirSuper',[ [ 9,[ 7 ] ],[ 22,[ 12 ] ] ],v).
+tbl_prop_i(2,23,'DirSuper',[ [ 9,[ 7 ] ],[ 22,[ 12 ] ] ],v).
+tbl_prop_i(2,22,'DirSuper',[ [ 8,[ 4 ] ],[ 1,[ 1 ] ] ],v).
  
+tbl_att_prop_i(2,23,12,'AllowNulls',n).
+tbl_att_prop_i(2,23,66,'AllowNulls',n).
+tbl_att_prop_i(2,23,7,'AllowNulls',n).
 tbl_att_prop_i(2,9,7,'AllowNulls',n).
 tbl_att_prop_i(2,9,7,'AUTONUMBER',y).
-tbl_att_prop_i(2,5,12,'AllowNulls',n).
-tbl_att_prop_i(2,5,7,'AllowNulls',n).
-tbl_att_prop_i(2,2000,7,'AllowNulls',n).
-tbl_att_prop_i(2,2000,7,'AUTONUMBER',y).
-tbl_att_prop_i(2,4,12,'AllowNulls',n).
-tbl_att_prop_i(2,4,12,'AUTONUMBER',y).
-tbl_att_prop_i(2,4,54,'AllowNulls',n).
-tbl_att_prop_i(2,4,55,'AllowNulls',n).
-tbl_att_prop_i(2,4,1,'AllowNulls',n).
-tbl_att_prop_i(2,4,4,'AllowNulls',n).
-tbl_att_prop_i(2,4,58,'AllowNulls',n).
-tbl_att_prop_i(2,2002,12,'AllowNulls',n).
-tbl_att_prop_i(2,2002,12,'AUTONUMBER',y).
+tbl_att_prop_i(2,9,41,'AllowNulls',n).
+tbl_att_prop_i(2,9,43,'AllowNulls',n).
+tbl_att_prop_i(2,2000,12,'AllowNulls',n).
+tbl_att_prop_i(2,2000,66,'AllowNulls',n).
+tbl_att_prop_i(2,2001,12,'AllowNulls',n).
+tbl_att_prop_i(2,2001,66,'AllowNulls',n).
+tbl_att_prop_i(2,22,12,'AllowNulls',n).
+tbl_att_prop_i(2,22,12,'AUTONUMBER',y).
+tbl_att_prop_i(2,22,54,'AllowNulls',n).
+tbl_att_prop_i(2,22,55,'AllowNulls',n).
+tbl_att_prop_i(2,22,1,'AllowNulls',n).
+tbl_att_prop_i(2,22,4,'AllowNulls',n).
+tbl_att_prop_i(2,22,58,'AllowNulls',n).
 tbl_att_prop_i(2,2003,12,'AllowNulls',n).
 tbl_att_prop_i(2,2003,12,'AUTONUMBER',y).
-tbl_att_prop_i(2,2001,12,'AllowNulls',n).
-tbl_att_prop_i(2,2001,12,'AUTONUMBER',y).
+tbl_att_prop_i(2,2004,12,'AllowNulls',n).
+tbl_att_prop_i(2,2004,12,'AUTONUMBER',y).
+tbl_att_prop_i(2,2002,12,'AllowNulls',n).
+tbl_att_prop_i(2,2002,12,'AUTONUMBER',y).
 tbl_att_prop_i(2,1,1,'AllowNulls',n).
 tbl_att_prop_i(2,1,1,'AUTONUMBER',y).
 tbl_att_prop_i(2,1,23,'AllowNulls',n).
 tbl_att_prop_i(2,8,4,'AllowNulls',n).
 tbl_att_prop_i(2,8,4,'AUTONUMBER',y).
 tbl_att_prop_i(2,8,30,'AllowNulls',n).
-tbl_att_prop_i(2,2004,12,'AllowNulls',n).
-tbl_att_prop_i(2,2004,12,'AUTONUMBER',y).
+tbl_att_prop_i(2,2005,12,'AllowNulls',n).
+tbl_att_prop_i(2,2005,12,'AUTONUMBER',y).
  
 var_prop_i(2,'Fechaventa',idBasedOn,'',v).
  
  
  
-a_alias_i(se(56,[ [ 9,40004 ] ],[ t('coalesce(',1),t(40004,2),t(',',7),t('0',3),t(')',4) ]),'SUBTOTALVENTAPRODUCTO').
-a_alias_i(se(56,[ [ 2000,56 ] ],[ t('coalesce(',1),t(56,2),t(',',7),t('0',3),t(')',4) ]),'SUBTOTALVENTAPRODUCTO').
-a_alias_i([ 'sum(',se(56,[ [ 2000,56 ] ],[ t('coalesce(',1),t(56,2),t(',',7),t('0',3),t(')',4) ]) ],'GXC3').
-a_alias_i(se(40002,[ [ 2001,40002 ] ],[ t('coalesce(',1),t(40002,2),t(',',7),t('0',3),t(')',4) ]),'GXC3').
+a_alias_i([ 'sum(',se(40004,[ [ 9,41 ],[ 9,43 ] ],[ t(41,2),t(*,6),t(43,2) ]) ],'GXC5').
+a_alias_i(se(40004,[ [ 2000,40004 ] ],[ t('coalesce(',1),t(40004,2),t(',',7),t('0',3),t(')',4) ]),'GXC5').
+a_alias_i(se(56,[ [ 2000,40004 ] ],[ t('coalesce(',1),t(40004,2),t(',',7),t('0',3),t(')',4) ]),'SUBTOTALVENTAPRODUCTO').
+a_alias_i(se(56,[ [ 2001,56 ] ],[ t('coalesce(',1),t(56,2),t(',',7),t('0',3),t(')',4) ]),'SUBTOTALVENTAPRODUCTO').
+a_alias_i([ 'sum(',se(56,[ [ 2001,56 ] ],[ t('coalesce(',1),t(56,2),t(',',7),t('0',3),t(')',4) ]) ],'GXC3').
 a_alias_i(se(40002,[ [ 2002,40002 ] ],[ t('coalesce(',1),t(40002,2),t(',',7),t('0',3),t(')',4) ]),'GXC3').
-a_alias_i(se(57,[ [ 2002,40002 ] ],[ t('coalesce(',1),t(40002,2),t(',',7),t('0',3),t(')',4),t(*,6),t('0.15',3) ]),'IMPUESTOVENTA').
-a_alias_i(se(57,[ [ 2003,57 ] ],[ t('coalesce(',1),t(57,2),t(',',7),t('0',3),t(')',4) ]),'IMPUESTOVENTA').
-a_alias_i(se(59,[ [ 2001,40002 ],[ 2003,se(57,[ [ 2003,57 ] ],[ t('coalesce(',1),t(57,2),t(',',7),t('0',3),t(')',4) ]) ],[ 4,58 ] ],[ t('coalesce(',1),t(40002,2),t(',',7),t('0',3),t(')',4),t(+,5),t(57,2),t(-,5),t(58,2) ]),'TOTALVENTA').
-a_alias_i(se(59,[ [ 2004,59 ] ],[ t('coalesce(',1),t(59,2),t(',',7),t('0',3),t(')',4) ]),'TOTALVENTA').
+a_alias_i(se(40002,[ [ 2003,40002 ] ],[ t('coalesce(',1),t(40002,2),t(',',7),t('0',3),t(')',4) ]),'GXC3').
+a_alias_i(se(57,[ [ 2003,40002 ] ],[ t('coalesce(',1),t(40002,2),t(',',7),t('0',3),t(')',4),t(*,6),t('0.15',3) ]),'IMPUESTOVENTA').
+a_alias_i(se(57,[ [ 2004,57 ] ],[ t('coalesce(',1),t(57,2),t(',',7),t('0',3),t(')',4) ]),'IMPUESTOVENTA').
+a_alias_i(se(59,[ [ 2002,40002 ],[ 2004,se(57,[ [ 2004,57 ] ],[ t('coalesce(',1),t(57,2),t(',',7),t('0',3),t(')',4) ]) ],[ 22,58 ] ],[ t('coalesce(',1),t(40002,2),t(',',7),t('0',3),t(')',4),t(+,5),t(57,2),t(-,5),t(58,2) ]),'TOTALVENTA').
+a_alias_i(se(59,[ [ 2005,59 ] ],[ t('coalesce(',1),t(59,2),t(',',7),t('0',3),t(')',4) ]),'TOTALVENTA').
  
  
 struct_dt_i([ 26,20,0 ],name,'GeneXus\Common\GridState').
@@ -1465,22 +1518,22 @@ struct_dt_elem_i([ 26,56,0 ],4,pic,'99/99/99').
  
 sub_info_i(146,'Start',1,13,[ [ 'Pgmname',[ t('Httprequest',23),t('Querystring',3) ],[ t('Httprequest',23),t('Scriptname',3) ] ],[ [ t('Grid',3),t('Rows',3) ],'Update','Delete',[ t('Form',3),t('Caption',3) ] ] ]).
 sub_info_i(146,'Refresh',15,17,[ [],[] ]).
-sub_info_i(146,[ t('Grid',3,19,7),t('Load',3,19,12) ],19,25,[ [ 12,4,1 ],[ [ t('Update',23),t('Link',3) ],[ t('Delete',23),t('Link',3) ],[ t(54,2),t('Link',3) ],[ t(30,2),t('Link',3) ],[ t(23,2),t('Link',3) ] ] ]).
+sub_info_i(146,[ t('Grid',3,19,7),t('Load',3,19,12) ],19,25,[ [ 12,1,4 ],[ [ t('Update',23),t('Link',3) ],[ t('Delete',23),t('Link',3) ],[ t(54,2),t('Link',3) ],[ t(23,2),t('Link',3) ],[ t(30,2),t('Link',3) ] ] ]).
 sub_info_i(146,'''DoInsert''',27,29,[ [ 12 ],[] ]).
  
 pgm_parm_i(web,7,'NOTAUTHORIZED',[ [ svchar,256,0,0 ] ],[ [ 'GxObject',in,[] ] ]).
-pgm_parm_i(web,22,'VIEWEMPLEADOS',[ [ int,12,0,0 ],[ char,50,0,0 ] ],[ [ 'IDEMPLEADO',in,[] ],[ 'TabCode',in,[] ] ]).
 pgm_parm_i(web,25,'VIEWCLIENTES',[ [ int,12,0,0 ],[ char,50,0,0 ] ],[ [ 'IDCLIENTE',in,[] ],[ 'TabCode',in,[] ] ]).
-pgm_parm_i(web,33,'VIEWVENTAS_INVENTARIO',[ [ int,12,0,0 ],[ char,50,0,0 ] ],[ [ 'IDVENTA',in,[] ],[ 'TabCode',in,[] ] ]).
-pgm_parm_i(trn,3,'VENTAS_INVENTARIO',[ [ char,3,0,0 ],[ int,12,0,0 ] ],[ [ 'Mode',in,[] ],[ 'IDVENTA',in,[] ] ]).
+pgm_parm_i(web,22,'VIEWEMPLEADOS',[ [ int,12,0,0 ],[ char,50,0,0 ] ],[ [ 'IDEMPLEADO',in,[] ],[ 'TabCode',in,[] ] ]).
+pgm_parm_i(web,103,'VIEWVENTAS_INVENTARIO',[ [ int,12,0,0 ],[ char,50,0,0 ] ],[ [ 'IDVENTA',in,[] ],[ 'TabCode',in,[] ] ]).
+pgm_parm_i(trn,16,'VENTAS_INVENTARIO',[ [ char,3,0,0 ],[ int,12,0,0 ] ],[ [ 'Mode',in,[] ],[ 'IDVENTA',in,[] ] ]).
 pgm_parm_i(proc,12,'ISAUTHORIZED',[ [ svchar,256,0,0 ],[ boolean,4,0,0 ] ],[ [ 'GxObject',in,[] ],[ 'Authorized',out,[] ] ]).
  
-pgm_callprotocol_i(web,12,'WWVENTAS_INVENTARIO','INTERNAL','Secure').
+pgm_callprotocol_i(web,104,'WWVENTAS_INVENTARIO','INTERNAL','Secure').
 pgm_callprotocol_i(web,7,'NOTAUTHORIZED','INTERNAL','Secure').
-pgm_callprotocol_i(web,22,'VIEWEMPLEADOS','INTERNAL','Secure').
 pgm_callprotocol_i(web,25,'VIEWCLIENTES','INTERNAL','Secure').
-pgm_callprotocol_i(web,33,'VIEWVENTAS_INVENTARIO','INTERNAL','Secure').
-pgm_callprotocol_i(trn,3,'VENTAS_INVENTARIO','INTERNAL','Secure').
+pgm_callprotocol_i(web,22,'VIEWEMPLEADOS','INTERNAL','Secure').
+pgm_callprotocol_i(web,103,'VIEWVENTAS_INVENTARIO','INTERNAL','Secure').
+pgm_callprotocol_i(trn,16,'VENTAS_INVENTARIO','INTERNAL','Secure').
 pgm_callprotocol_i(proc,12,'ISAUTHORIZED','INTERNAL','Secure').
  
  

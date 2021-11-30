@@ -1,11 +1,9 @@
-current_obj_i(2,web,58).
+current_obj_i(2,web,102).
  
-current_guid('c8a01963-3f81-4b2d-9c32-7c7c57598f64').
- 
- 
-called_tree_i(13,58,1,12).
+current_guid('6d9b328e-92eb-4d9c-a7d4-3aba268d5b1d').
  
  
+called_tree_i(13,102,1,12).
  
  
  
@@ -22,7 +20,9 @@ called_tree_i(13,58,1,12).
  
  
  
-ij_object_dependency(compra_inventariodetalle_compra_productowc,[],[],[],58).
+ 
+ 
+ij_object_dependency(compra_inventariodetalle_compra_productowc,[],[],[],102).
  
  
 obj_parms_i([ 'long aP0_IDCOMPRA' ],[ [ 'Idcompra',in ] ]).

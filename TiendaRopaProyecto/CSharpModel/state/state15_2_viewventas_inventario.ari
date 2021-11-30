@@ -1,11 +1,9 @@
-current_obj_i(2,web,33).
+current_obj_i(2,web,103).
  
-current_guid('89d734d8-bb98-48ae-8185-0041fea5fd86').
- 
- 
-called_tree_i(13,33,1,12).
+current_guid('ffb1c4ad-76e3-4d2d-a0e1-550229ac1973').
  
  
+called_tree_i(13,103,1,12).
  
  
  
@@ -22,7 +20,9 @@ called_tree_i(13,33,1,12).
  
  
  
-ij_object_dependency(viewventas_inventario,[],[],[],33).
+ 
+ 
+ij_object_dependency(viewventas_inventario,[],[],[],103).
  
  
 obj_parms_i([ 'long aP0_IDVENTA','string aP1_TabCode' ],[ [ 'Idventa',in ],[ 'Tabcode',in ] ]).

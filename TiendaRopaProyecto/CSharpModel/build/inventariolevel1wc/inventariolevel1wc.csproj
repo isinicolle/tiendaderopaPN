@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	
+
+	<PropertyGroup>
+		<AssemblyName>inventariolevel1wc</AssemblyName>
+		<ProjectGuid>{acb15991-a4db-43d5-9f3d-6bd5fda99e06}</ProjectGuid>
+		<OutputType>Library</OutputType>
+		<PostgresqlSupport>false</PostgresqlSupport>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include=".\..\GeneXus.Programs.Common\GeneXus.Programs.Common.csproj" />
+
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="GeneXus.dll" > 
+			<HintPath>$(WebBinDirectory)\GeneXus.dll</HintPath>
+		</Reference>
+		<Reference Include="GeneXus.dll" > 
+			<HintPath>$(WebBinDirectory)\GeneXus.dll</HintPath>
+		</Reference>
+
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include = "$(WebDirectory)\isauthorized.cs" />
+		<Compile Include = "$(WebDirectory)\inventariolevel1wc.cs" />
+
+	</ItemGroup>
+	
+	<Import Project="..\DotNetBaseProject.targets"/>
+</Project>

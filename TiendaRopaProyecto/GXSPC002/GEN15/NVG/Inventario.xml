@@ -9,7 +9,7 @@
 <ObjDesc>Inventario</ObjDesc>
 <ObjPgmName>Inventario</ObjPgmName>
 <ObjClsName>Transaction</ObjClsName></Object>
-<Result>genreq</Result>
+<Result>nogenreq</Result>
 <Warnings></Warnings>
 <Errors></Errors>
 <Generator>
@@ -172,7 +172,7 @@
 <AfterDeleteRules></AfterDeleteRules>
 <TablesToControlOnDelete>
 <Table>
-<TableId>5</TableId>
+<TableId>23</TableId>
 <TableName>Ventas_inventarioDetalle_venta</TableName>
 <Description>Detalle_venta_producto</Description>
 <RecordsToRead>one</RecordsToRead>
@@ -182,9 +182,9 @@
 <AttriName>IDPRODUCTO</AttriName>
 <Description>IDPRODUCTO</Description></Attribute></KeyAttributes></Table>
 <Table>
-<TableId>3</TableId>
-<TableName>Compra_inventarioCompra_produc</TableName>
-<Description>Compra_producto</Description>
+<TableId>21</TableId>
+<TableName>Compra_inventarioDetalle_compr</TableName>
+<Description>Detalle_compra_producto</Description>
 <RecordsToRead>one</RecordsToRead>
 <KeyAttributes>
 <Attribute>

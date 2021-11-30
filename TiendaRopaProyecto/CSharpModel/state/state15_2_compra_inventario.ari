@@ -1,11 +1,9 @@
-current_obj_i(2,trn,2).
+current_obj_i(2,trn,15).
  
-current_guid('5c08eca3-0cfc-45b2-ace1-0793d5c19b34').
- 
- 
-called_tree_i(0,2,1,12).
+current_guid('dac8e3cb-3dad-4a11-b926-78bf7229174d').
  
  
+called_tree_i(0,15,1,12).
  
  
  
@@ -22,7 +20,9 @@ called_tree_i(0,2,1,12).
  
  
  
-ij_object_dependency(compra_inventario,[],[],[],2).
+ 
+ 
+ij_object_dependency(compra_inventario,[],[],[],15).
  
  
 obj_parms_i([ 'string aP0_Gx_mode','long aP1_IDCOMPRA' ],[ [ 'Mode',in ],[ 'Idcompra',in ] ]).

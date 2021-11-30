@@ -135,7 +135,7 @@ namespace GeneXus.Programs {
          {
             WebComp_Wcrecentlinks.componentjscripts();
          }
-         context.AddJavascriptSource("rwdmasterpage.js", "?202111280105143", false, true);
+         context.AddJavascriptSource("rwdmasterpage.js", "?202111301230580", false, true);
          context.WriteHtmlTextNl( "</body>") ;
          context.WriteHtmlTextNl( "</html>") ;
          if ( context.isSpaRequest( ) )
@@ -699,7 +699,7 @@ namespace GeneXus.Programs {
          idxLst = 1;
          while ( idxLst <= (getDataAreaObject() == null ? Form : getDataAreaObject().GetForm()).Jscriptsrc.Count )
          {
-            context.AddJavascriptSource(StringUtil.RTrim( ((string)(getDataAreaObject() == null ? Form : getDataAreaObject().GetForm()).Jscriptsrc.Item(idxLst))), "?202111280105150", true, true);
+            context.AddJavascriptSource(StringUtil.RTrim( ((string)(getDataAreaObject() == null ? Form : getDataAreaObject().GetForm()).Jscriptsrc.Item(idxLst))), "?202111301230586", true, true);
             idxLst = (int)(idxLst+1);
          }
          if ( ! outputEnabled )
@@ -714,7 +714,7 @@ namespace GeneXus.Programs {
 
       protected void include_jscripts( )
       {
-         context.AddJavascriptSource("rwdmasterpage.js", "?202111280105150", false, true);
+         context.AddJavascriptSource("rwdmasterpage.js", "?202111301230587", false, true);
          /* End function include_jscripts */
       }
 
